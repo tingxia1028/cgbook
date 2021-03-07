@@ -1,0 +1,810 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GI Draft · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../pbr/resource.html" />
+    
+    
+    <link rel="prev" href="../resource.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../space_trans/resource.html">
+            
+                <a href="../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../atmosphere/resource.html">
+            
+                <a href="../../atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="GI_draft.html">
+            
+                <a href="GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../pbr/resource.html">
+            
+                <a href="../../pbr/resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../color/resource.html">
+            
+                <a href="../../color/resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../shadow/resource.html">
+            
+                <a href="../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../texture/resource.html">
+            
+                <a href="../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >GI Draft</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gi-draft">GI draft</h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)* -->
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFgi">&#x4EC0;&#x4E48;&#x662F;GI</a></li>
+<li><a href="#%E5%85%88%E9%AA%8C%E7%9F%A5%E8%AF%86">&#x5148;&#x9A8C;&#x77E5;&#x8BC6;</a><ul>
+<li><a href="#radiometry">radiometry</a></li>
+<li><a href="#render-equation">render equation</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%BB%E8%A6%81%E6%80%9D%E8%B7%AF">&#x4E3B;&#x8981;&#x601D;&#x8DEF;</a><ul>
+<li><a href="#%E6%9C%80%E7%9B%B4%E8%A7%82%E7%9A%84%E6%80%9D%E8%B7%AF--ray-tracing-type">&#x6700;&#x76F4;&#x89C2;&#x7684;&#x601D;&#x8DEF; &#x2014;&#x2014;&#x2014; ray tracing type</a></li>
+<li><a href="#%E6%8A%8A%E8%80%97%E8%B4%B9%E6%80%A7%E8%83%BD%E7%9A%84%E8%AE%A1%E7%AE%97%E6%8F%90%E5%89%8D%E5%A4%84%E7%90%86--precomputed-type">&#x628A;&#x8017;&#x8D39;&#x6027;&#x80FD;&#x7684;&#x8BA1;&#x7B97;&#x63D0;&#x524D;&#x5904;&#x7406; &#x2014;&#x2014;&#x2014; precomputed type</a></li>
+<li><a href="#%E5%87%8F%E5%B0%91%E5%85%89%E7%85%A7%E8%AE%A1%E7%AE%97%E7%9A%84geometry%E7%B2%92%E5%BA%A6">&#x51CF;&#x5C11;&#x5149;&#x7167;&#x8BA1;&#x7B97;&#x7684;geometry&#x7C92;&#x5EA6;</a></li>
+<li><a href="#gi-data%E7%9A%84%E5%AD%98%E5%82%A8">GI data&#x7684;&#x5B58;&#x50A8;</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E6%B5%81%E6%B4%BE">&#x57FA;&#x672C;&#x6D41;&#x6D3E;</a><ul>
+<li><a href="#ray-tracing">ray tracing</a><ul>
+<li><a href="#basic-theory">basic theory</a></li>
+<li><a href="#solutions">solutions</a></li>
+</ul>
+</li>
+<li><a href="#photon-mapping">photon mapping</a><ul>
+<li><a href="#basic-theory-1">basic theory</a></li>
+<li><a href="#solutions-1">solutions</a></li>
+</ul>
+</li>
+<li><a href="#instant-radiosity">instant radiosity</a><ul>
+<li><a href="#solutions-2">solutions</a></li>
+</ul>
+</li>
+<li><a href="#light-propagation-volumes-gi">Light Propagation Volumes GI</a><ul>
+<li><a href="#basic-theory-2">basic theory</a></li>
+<li><a href="#solutions-3">solutions</a></li>
+</ul>
+</li>
+<li><a href="#radiosity">radiosity</a><ul>
+<li><a href="#basic-theory-3">basic theory</a></li>
+<li><a href="#solutions-4">solutions</a></li>
+</ul>
+</li>
+<li><a href="#voxel-based">voxel based</a><ul>
+<li><a href="#basic-theory-4">basic theory</a></li>
+<li><a href="#solutions-5">solutions</a></li>
+</ul>
+</li>
+<li><a href="#screen-space-gi">screen space GI</a><ul>
+<li><a href="#basic-theory-5">basic theory</a></li>
+<li><a href="#solutions-6">solutions</a></li>
+</ul>
+</li>
+<li><a href="#gi%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8">GI&#x6570;&#x636E;&#x5B58;&#x50A8;</a></li>
+</ul>
+</li>
+<li><a href="#%E7%8E%B0%E6%9C%89%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">&#x73B0;&#x6709;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</a><ul>
+<li><a href="#enlighten">Enlighten</a><ul>
+<li><a href="#features">features</a></li>
+<li><a href="#%E4%BC%98%E7%82%B9">&#x4F18;&#x70B9;</a></li>
+<li><a href="#%E7%BC%BA%E7%82%B9">&#x7F3A;&#x70B9;</a></li>
+</ul>
+</li>
+<li><a href="#nvdia%E3%80%80vxgi">NVDIA&#x3000;VXGI</a><ul>
+<li><a href="#features-1">features</a></li>
+</ul>
+</li>
+<li><a href="#cryengine-svogi">CryEngine SVOGI</a><ul>
+<li><a href="#features-2">features</a></li>
+<li><a href="#current-limitations">Current Limitations</a></li>
+</ul>
+</li>
+<li><a href="#dxr-gi">DXR GI</a><ul>
+<li><a href="#%E4%BC%98%E7%82%B9-1">&#x4F18;&#x70B9;</a></li>
+<li><a href="#%E7%BC%BA%E7%82%B9-1">&#x7F3A;&#x70B9;</a></li>
+</ul>
+</li>
+<li><a href="#ue4-lpv">UE4 LPV</a><ul>
+<li><a href="#features-3">features</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<h2 id="&#x4EC0;&#x4E48;&#x662F;gi">&#x4EC0;&#x4E48;&#x662F;GI</h2>
+<p><img src="1614496681913.png" alt="Alt text">
+Global illumination (GI) is a family of algorithms that simulate how light interacts and transfers between objects in a scene.
+&#x7B80;&#x5355;&#x7684;&#x7406;&#x89E3;&#x5C31;&#x662F; GI = direct lighting + indirect lighting, &#x4EA7;&#x751F;&#x5305;&#x62EC;&#x6F2B;&#x53CD;&#x5C04;&#xFF0C;&#x9AD8;&#x5149;&#xFF0C;&#x955C;&#x9762;&#x53CD;&#x5C04;&#xFF0C;&#x6563;&#x5C04;&#xFF0C;&#x7126;&#x6563;&#xFF0C;&#x9634;&#x5F71;&#x7B49;&#x6548;&#x679C;&#x3002;
+Direct lighting&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#xFF0C;&#x6240;&#x4EE5;&#x4EE5;&#x4E0B;&#x7684;&#x6280;&#x672F;&#x4E3B;&#x8981;&#x90FD;&#x662F;&#x9488;&#x5BF9;indirect lighting&#x7684;&#x8BA1;&#x7B97;&#x3002;</p>
+<h2 id="&#x5148;&#x9A8C;&#x77E5;&#x8BC6;">&#x5148;&#x9A8C;&#x77E5;&#x8BC6;</h2>
+<h3 id="radiometry">radiometry</h3>
+<ul>
+<li>radiant energy &amp; radiant flux
+<img src="1614498891143.png" alt="Alt text|200*50">
+<img src="1614498906070.png" alt="Alt text|600*100"></li>
+<li>radiant intensity
+&#x6BCF;&#x5355;&#x4F4D;&#x7ACB;&#x4F53;&#x89D2;&#x4E0A;&#x7684;radiant flux
+<img src="1614499068981.png" alt="Alt text"></li>
+<li>irradiance
+&#x6BCF;&#x5355;&#x4F4D;&#x7167;&#x5C04;&#x9762;&#x79EF;&#x6240;&#x63A5;&#x6536;&#x5230;&#x7684;radiant flux
+<img src="1614499107898.png" alt="Alt text"></li>
+<li>radiance 
+&#x6BCF;&#x5355;&#x4F4D;&#x7ACB;&#x4F53;&#x89D2;&#xFF0C;&#x6BCF;&#x5355;&#x4F4D;&#x5782;&#x76F4;&#x9762;&#x79EF;&#x7684;radiant flux.
+<img src="1614499167398.png" alt="Alt text"></li>
+</ul>
+<p><img src="1614500024150.png" alt="Alt text"></p>
+<h3 id="render-equation">render equation</h3>
+<ul>
+<li>basic equation
+<img src="1614507228160.png" alt="Alt text"></li>
+<li>a kind of BRDF
+<img src="1614499960868.png" alt="Alt text"></li>
+<li>extension
+<img src="1614500097835.png" alt="Alt text">
+<img src="1614500076724.png" alt="Alt text"></li>
+</ul>
+<h2 id="&#x4E3B;&#x8981;&#x601D;&#x8DEF;">&#x4E3B;&#x8981;&#x601D;&#x8DEF;</h2>
+<h3 id="&#x6700;&#x76F4;&#x89C2;&#x7684;&#x601D;&#x8DEF;-&#x2014;&#x2014;&#x2014;-ray-tracing-type">&#x6700;&#x76F4;&#x89C2;&#x7684;&#x601D;&#x8DEF; &#x2014;&#x2014;&#x2014; ray tracing type</h3>
+<ul>
+<li>tracing from camera</li>
+<li>tracing from light</li>
+<li>tracing from both camera and light<ul>
+<li>photon mapping</li>
+<li>instant radiosity</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x628A;&#x8017;&#x8D39;&#x6027;&#x80FD;&#x7684;&#x8BA1;&#x7B97;&#x63D0;&#x524D;&#x5904;&#x7406;-&#x2014;&#x2014;&#x2014;-precomputed-type">&#x628A;&#x8017;&#x8D39;&#x6027;&#x80FD;&#x7684;&#x8BA1;&#x7B97;&#x63D0;&#x524D;&#x5904;&#x7406; &#x2014;&#x2014;&#x2014; precomputed type</h3>
+<p><img src="1614507236642.png" alt="Alt text"></p>
+<ul>
+<li>&#x5BF9;&#x5149;&#x7167;&#x4F20;&#x8F93;&#x8FC7;&#x7A0B;&#x8FDB;&#x884C;&#x9884;&#x8BA1;&#x7B97;<ul>
+<li>precompute&#x5404;&#x4E2A;&#x65B9;&#x5411;&#x7684;&#x5165;&#x5C04;&#x5149;radiance<ul>
+<li>environment map </li>
+</ul>
+</li>
+<li>precompute irradiance&#x5373;&#x5404;&#x4E2A;&#x65B9;&#x5411;&#x5165;&#x5C04;&#x5149;radiance&#x7684;&#x79EF;&#x5206;&#x503C;<ul>
+<li>prefiltering</li>
+</ul>
+</li>
+<li>precompute &#x53EF;&#x89C1;&#x6027;&#x548C;&#x5165;&#x5C04;&#x5149;&#x4F59;&#x5F26;&#x9879;&#x5BF9;&#x5E94;&#x7684;&#x79EF;&#x5206;<ul>
+<li>PRT</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x5BF9;&#x5149;&#x7167;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x9884;&#x8BA1;&#x7B97;<ul>
+<li>precompute&#x9664;&#x53BB;Kd&#x548C;Ks&#x5269;&#x4F59;&#x79EF;&#x5206;&#x9879;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x51CF;&#x5C11;&#x5149;&#x7167;&#x8BA1;&#x7B97;&#x7684;geometry&#x7C92;&#x5EA6;">&#x51CF;&#x5C11;&#x5149;&#x7167;&#x8BA1;&#x7B97;&#x7684;geometry&#x7C92;&#x5EA6;</h3>
+<ul>
+<li>&#x628A;&#x573A;&#x666F;&#x7684;&#x8868;&#x9762;&#x7EC6;&#x5206;&#x6210;&#x4E00;&#x4E9B;&#x7C92;&#x5EA6;&#x8F83;&#x5927;&#x7684;&#x9762;&#x7247;<ul>
+<li>radiosity</li>
+</ul>
+</li>
+<li>&#x8BA1;&#x7B97;&#x573A;&#x666F;&#x4E2D;&#x7A7A;&#x767D;&#x4F4D;&#x7F6E;&#x7684;&#x5149;&#x7167;&#x4FE1;&#x606F;&#xFF0C;&#x7269;&#x4F53;&#x7684;&#x5149;&#x7167;&#x7531;&#x8FD9;&#x4E9B;&#x4F4D;&#x7F6E;&#x7684;&#x7ED3;&#x679C;&#x8BA1;&#x7B97;<ul>
+<li>light probe</li>
+</ul>
+</li>
+<li>&#x628A;3d&#x7A7A;&#x95F4;&#x5212;&#x5206;&#x6210;&#x4E00;&#x4E9B;&#x5B50;&#x96C6;&#xFF0C;&#x4EE5;&#x5B50;&#x96C6;&#x7684;&#x5149;&#x7167;&#x4FE1;&#x606F;&#x4F5C;&#x4E3A;&#x4EE3;&#x8868;<ul>
+<li>voxel</li>
+</ul>
+</li>
+<li>&#x5C06;&#x8BA1;&#x7B97;&#x9650;&#x5236;&#x5728;&#x5C4F;&#x5E55;&#x7A7A;&#x95F4;<ul>
+<li>screen space GI</li>
+</ul>
+</li>
+</ul>
+<h3 id="gi-data&#x7684;&#x5B58;&#x50A8;">GI data&#x7684;&#x5B58;&#x50A8;</h3>
+<ul>
+<li>lightmap</li>
+<li>cubemap</li>
+<li>spherical harmonics</li>
+<li>spherical guassian</li>
+</ul>
+<h2 id="&#x57FA;&#x672C;&#x6D41;&#x6D3E;">&#x57FA;&#x672C;&#x6D41;&#x6D3E;</h2>
+<h3 id="ray-tracing">ray tracing</h3>
+<h4 id="basic-theory">basic theory</h4>
+<ul>
+<li>path tracing
+  <img src="1614524459468.png" alt="Alt text"><ul>
+<li>&#x57FA;&#x672C;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;</li>
+<li>&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5149;&#x7EBF;&#xFF0C;&#x7ED9;&#x5B9A;&#x53C2;&#x6570;&#xFF08;x,y,u,v,t&#xFF09;</li>
+<li>&#x627E;&#x5230;&#x4E0E;&#x8FD9;&#x4E2A;&#x5149;&#x7EBF;&#x6700;&#x8FD1;&#x7684;&#x4E00;&#x4E2A;&#x8868;&#x9762;&#x4EA4;&#x70B9;&#x5904;</li>
+<li>&#x968F;&#x673A;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x53D1;&#x5C04;(emitted)&#x6216;&#x53CD;&#x5C04;(reflected)&#x5149;&#x3002;
+ &#x5982;&#x679C;&#x8BA1;&#x7B97;&#x53D1;&#x5C04;&#x5149;&#xFF1A;&#x8FD4;&#x56DE; weight <em> Le&#x3002;
+ &#x5982;&#x679C;&#x8BA1;&#x7B97;&#x53CD;&#x5C04;&#x5149;&#xFF1A;weight </em>= reflectance&#xFF0C;BRDF pdf&#x968F;&#x673A;&#x6563;&#x5C04;&#xFF0C;&#x8FD4;&#x56DE;&#x7B2C;&#x4E8C;&#x6B65;&#x3002;
+&#x7B97;&#x6CD5;&#x5728;path&#x5230;&#x8FBE;&#x5149;&#x6E90;&#x65F6;&#x7EC8;&#x6B62;&#x3002;<h4 id="solutions">solutions</h4>
+<ul>
+<li><a href="https://developer.nvidia.com/rtxgi" target="_blank">DXR GI</a></li>
+<li><a href="https://www.ea.com/frostbite/news/real-time-raytracing-for-interactive-global-illumination-workflows-in-frostbite" target="_blank">frosbite</a>  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="photon-mapping">photon mapping</h3>
+<h4 id="basic-theory">basic theory</h4>
+<p><img src="1614526001818.png" alt="Alt text"></p>
+<ul>
+<li>&#x57FA;&#x672C;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;<ol>
+<li>&#x6784;&#x9020;photon map
+&#x5149;&#x5B50;&#x4ECE;&#x5149;&#x6E90;&#x53D1;&#x5C04;&#x5230;&#x573A;&#x666F;&#x4E2D;&#x3002;&#x4E00;&#x65E6;&#x5149;&#x5B50;&#x548C;&#x4E00;&#x4E2A;&#x51E0;&#x4F55;&#x9762;&#x76F8;&#x4EA4;&#xFF0C;&#x76F8;&#x4EA4;&#x70B9;&#x548C;&#x5165;&#x5C04;&#x65B9;&#x5411;&#x5C31;&#x4F1A;&#x88AB;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x53EB;&#x5149;&#x5B50;&#x8D34;&#x56FE;&#xFF08;photon map&#xFF09;&#x7684;&#x7F13;&#x5B58;&#x4E2D;&#x3002;</li>
+</ol>
+</li>
+<li>&#x5229;&#x7528;photon map&#x8BA1;&#x7B97;&#x8F90;&#x5C04;&#x5EA6;
+&#x7528;nearest neighbor&#x641C;&#x7D22;&#x51FD;&#x6570;&#x641C;&#x7D22;&#x5149;&#x5B50;&#x8D34;&#x56FE;&#xFF0C;&#x6536;&#x96C6;&#x4E34;&#x8FD1;&#x533A;&#x57DF;&#x7684;N&#x4E2A;&#x5149;&#x5B50; 
+&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x7403;&#x4F53;S&#xFF0C;&#x628A;&#x5F97;&#x5230;&#x7684;&#x8FD9;N&#x4E2A;&#x5149;&#x5B50;&#x5305;&#x56F4;&#x8D77;&#x6765; 
+&#x5BF9;&#x6BCF;&#x4E2A;&#x5149;&#x5B50;&#xFF0C;&#x6839;&#x636E;S&#x548C;BRDF&#xFF0C;&#x8BA1;&#x7B97;&#x5176;&#x5149;&#x901A;&#x91CF;&#x80FD;&#x91CF; 
+&#x6240;&#x6709;&#x5149;&#x5B50;&#x7684;&#x8D21;&#x732E;&#x603B;&#x548C;&#x5C06;&#x4E3A;&#x76F8;&#x4EA4;&#x70B9;&#x7684;&#x8F90;&#x5C04;&#x5F3A;&#x5EA6;</li>
+<li>&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;photon map
+<img src="1614526241041.png" alt="Alt text"><ul>
+<li>caustics photon map</li>
+<li>global photon map</li>
+<li>volume photon map<h4 id="solutions">solutions</h4>
+</li>
+</ul>
+</li>
+<li><a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1007%252F978-1-4842-4427-2_24.pdf" target="_blank">real-time GI with photon mapping</a></li>
+</ul>
+<h3 id="instant-radiosity">instant radiosity</h3>
+<h4 id="basic-theory">basic theory</h4>
+<p><img src="1614524998840.png" alt="Alt text"></p>
+<ul>
+<li>&#x57FA;&#x672C;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;<ol>
+<li>&#x4ECE;&#x5149;&#x6E90;&#x4E0A;&#x4EA7;&#x751F;N&#x4E2A;&#x7C92;&#x5B50;</li>
+<li>&#x4ECE;&#x5149;&#x6E90;&#x6253;&#x51FA;&#x5F88;&#x591A;light sub-path&#xFF0C;&#x8FD9;&#x4E9B;&#x5149;&#x4F1A;&#x505C;&#x5728;&#x67D0;&#x4E9B;&#x5730;&#x65B9;&#xFF0C;&#x5C31;&#x8BA4;&#x4E3A;&#x5B83;&#x505C;&#x5728;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x65B0;&#x7684;&#x865A;&#x62DF;&#x70B9;&#x5149;&#x6E90;&#x5149;&#x6E90;&#xFF08;VPL)
+VPLs&#x53EF;&#x4EE5;&#x5B58;&#x5728;&#x4E00;&#x5F20;Reflective Shadow Map(RSM)&#x4E2D;</li>
+<li>&#x7528;&#x65B0;&#x7684;VPL&#x8BA1;&#x7B97;&#x5149;&#x7167;
+&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5149;&#x6805;&#x5316;&#xFF0C;ray tracing&#x6216;&#x662F;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x3002;<h4 id="solutions">solutions</h4>
+<a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=https%3A%2F%2Fwww.cg.tuwien.ac.at%2Fresearch%2Fpublications%2F2008%2Fradax-2008-ir%2Fradax-2008-ir-paper.pdf" target="_blank">Instant Radiosity for Real-Time Global Illumination</a></li>
+</ol>
+</li>
+</ul>
+<h3 id="light-propagation-volumes-gi">Light Propagation Volumes GI</h3>
+<h4 id="basic-theory">basic theory</h4>
+<p>&#x672C;&#x8D28;&#x4E0A;&#x662F;instant radiosity&#x7ED3;&#x5408;radiance volume&#x7684;&#x601D;&#x60F3;&#x3002;
+<img src="1614556198687.png" alt="Alt text"></p>
+<ul>
+<li>&#x57FA;&#x672C;&#x7684;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;
+<img src="1613920870815.png" alt="Alt text"><h4 id="solutions">solutions</h4>
+<ul>
+<li><a href="https://docs.unrealengine.com/en-US/BuildingWorlds/LightingAndShadows/LightPropagationVolumes/index.html" target="_blank">UE4 :  LPV</a></li>
+<li><a href="http://www.crytek.com/technology/presentations/" target="_blank">CryEngine</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="radiosity">radiosity</h3>
+<h4 id="basic-theory"><a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=https%3A%2F%2Fgroups.csail.mit.edu%2Fgraphics%2Fclasses%2F6.837%2FF03%2Flectures%2F18_radiosity.pdf" target="_blank">basic theory</a></h4>
+<p><img src="1614515509978.png" alt="Alt text">
+<img src="1614515566756.png" alt="Alt text">
+<img src="1614515805708.png" alt="Alt text"></p>
+<ul>
+<li>&#x57FA;&#x672C;&#x7684;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;</li>
+<li>&#x5BF9;&#x573A;&#x666F;&#x7684;&#x8868;&#x9762;&#x8FDB;&#x884C;&#x66F2;&#x9762;&#x7EC6;&#x5206;</li>
+<li>&#x8BA1;&#x7B97;&#x4E24;&#x4E24;&#x66F2;&#x9762;&#x4E4B;&#x95F4;&#x7684;form factors
+ <img src="1614516157289.png" alt="Alt text"></li>
+<li>&#x6C42;&#x89E3;radiosity matrix(&#x8FED;&#x4EE3;&#x6CD5;)
+ &#x521D;&#x59CB;&#x6570;&#x636E;&#x4E3A;&#x76F4;&#x63A5;&#x5149;&#x7167;&#x7ED3;&#x679C;</li>
+<li>&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;pixel&#x7684;&#x5149;&#x7167;</li>
+<li>incremental radiosity&#x4F1A;&#x5728;&#x6750;&#x8D28;&#x6216;&#x8005;&#x7269;&#x4F53;&#x4F4D;&#x7F6E;&#x7B49;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x52A8;&#x6001;&#x66F4;&#x65B0;form factors&#x548C;radiosity<h4 id="solutions">solutions</h4>
+<ul>
+<li><a href="https://www.ea.com/frostbite/news/a-real-time-radiosity-architecture" target="_blank">frosbite 2010</a></li>
+<li><a href="https://www.siliconstudio.co.jp/middleware/enlighten/en/" target="_blank">enlighten</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="voxel-based">voxel based</h3>
+<h4 id="basic-theory">basic theory</h4>
+<ul>
+<li>&#x57FA;&#x672C;&#x7684;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;<ol>
+<li>&#x5C06;&#x573A;&#x666F;&#x4F53;&#x7D20;&#x5316;
+<img src="1614519758879.png" alt="Alt text"></li>
+<li>&#x6784;&#x5EFA;&#x6570;&#x636E;&#x7ED3;&#x6784;
+SVOGI &#x6784;&#x5EFA;&#x516B;&#x53C9;&#x6811;&#x7BA1;&#x7406;&#x4F53;&#x7D20;
+<img src="1614522409750.png" alt="Alt text">
+VXGI &#x6784;&#x5EFA;clipmap
+<img src="1614522384219.png" alt="Alt text"></li>
+<li>&#x5BF9;&#x4F53;&#x7D20;&#x7684;&#x7740;&#x8272;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x9884;&#x8FC7;&#x6EE4;</li>
+<li>cone tracing
+<img src="1613660005961.png" alt="Alt text"><ul>
+<li>visibility 
+<img src="1614089224045.png" alt="Alt text">
+25%=50% x 50%</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>reference
+<a href="https://gameinstitute.qq.com/community/detail/101636" target="_blank">&#x817E;&#x8BAF;&#x6E38;&#x620F;&#x5B66;&#x9662;</a>
+<a href="https://zhuanlan.zhihu.com/p/80849630" target="_blank">&#x77E5;&#x4E4E;</a>
+<a href="https://wickedengine.net/2017/08/30/voxel-based-global-illumination/" target="_blank">&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;</a><h4 id="solutions">solutions</h4>
+<ul>
+<li><a href="https://developer.nvidia.com/vxgi" target="_blank">VXGI</a></li>
+<li><a href="https://docs.cryengine.com/pages/viewpage.action?pageId=25535599" target="_blank">CryEngine : Sparsed Voxel-based Global Illumination (SVOGI)</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="screen-space-gi">screen space GI</h3>
+<h4 id="basic-theory">basic theory</h4>
+<ul>
+<li>SSDiffuse
+  <img src="1614473518604.png" alt="Alt text"></li>
+<li>&#x57FA;&#x672C;&#x7684;&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;
+1.&#x91C7;&#x6837;&#x4E0D;&#x540C;lod&#x7684;&#x6DF1;&#x5EA6;&#x56FE;&#x4FE1;&#x606F;&#x5E76;&#x5F97;&#x5230;&#x5176;&#x4E2D;&#x6700;&#x5927;&#x7684;&#x6DF1;&#x5EA6;&#x503C;&#x3002;&#xFF08;&#x8981;&#x6267;&#x884C;&#x591A;&#x5C11;&#x6B21;&#x5BFB;&#x627E;&#x5C31;&#x770B;&#x4F60;&#x8BBE;&#x7F6E;&#x591A;&#x5C11;&#x6B21;pass&#xFF09;
+2.&#x7528;ray marching&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5E76;&#x7528;&#x566A;&#x97F3;&#x56FE;&#x91C7;&#x6837;&#x4EE5;&#x5706;&#x7684;&#x5468;&#x957F;&#x6765;&#x627E;&#x5468;&#x56F4;&#x7684;&#x50CF;&#x7D20;&#x70B9;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x8FD9;&#x4E2A;&#x989C;&#x8272;&#x662F;&#x6839;&#x636E;&#x5F53;&#x524D;&#x573A;&#x666F;&#x989C;&#x8272;&#x505A;&#x7684;&#xFF08;&#x6240;&#x4EE5;ssgi&#x4E00;&#x822C;&#x653E;&#x5230;&#x6700;&#x540E;&#x5904;&#x7406;&#xFF09;&#x3002;&#x91C7;&#x6837;&#x7684;&#x70B9;&#x5B58;&#x50A8;&#x5230;rt&#x4E0A;
+3.&#x8FD9;&#x65F6;&#x7684;rt&#x662F;&#x5E26;&#x6709;&#x6BD4;&#x8F83;&#x660E;&#x663E;&#x7684;&#x952F;&#x9F7F;&#x7684;rt&#xFF0C;&#x9700;&#x8981;&#x7528;taa&#x65B9;&#x5F0F;&#x8FC7;&#x6EE4;&#x4E00;&#x6B21;
+4.&#x6700;&#x540E;&#x5728;&#x6A2A;&#x5411;&#x548C;&#x7EB5;&#x5411;&#x505A;&#x4E24;&#x6B21;&#x6A21;&#x7CCA;&#x5904;&#x7406;&#x3002;
+5.&#x8FD9;&#x6837;&#x5C31;&#x5F97;&#x5230;&#x4E86;ssgi&#x7684;&#x6F2B;&#x53CD;&#x5C04;&#x65B9;&#x5411;&#x7684;&#x95F4;&#x63A5;&#x5149;&#x7167;&#x4E86;&#xFF0C;&#x6700;&#x540E;&#x53EA;&#x9700;&#x8981;&#x628A;&#x573A;&#x666F;&#x56FE;&#x548C;&#x8FD9;&#x4E2A;&#x95F4;&#x63A5;&#x5149;rt combine&#x4E00;&#x4E0B;&#x5C31;&#x597D;&#x4E86;&#x3002;</li>
+<li>SSR<h4 id="solutions">solutions</h4>
+</li>
+<li><a href="https://docs.unrealengine.com/en-US/BuildingWorlds/LightingAndShadows/ScreenSpaceGlobalIllumination/index.html" target="_blank">UE4 SSGI</a></li>
+</ul>
+<h3 id="gi&#x6570;&#x636E;&#x5B58;&#x50A8;">GI&#x6570;&#x636E;&#x5B58;&#x50A8;</h3>
+<ul>
+<li>light maps
+<img src="1613529700545.png" alt="Alt tex|500*200">
+<img src="1614556994179.png" alt="Alt text"></li>
+<li>spherical harmonics
+<img src="1614555573300.png" alt="Alt text"><ul>
+<li>Spherical harmonics from offline photon mapper</li>
+<li>Texel has irradiance at surface point, as a continuous function on a sphere</li>
+<li>Probes for dynamic objects also stored as SHs</li>
+<li>SH: Great for diffuse, but specular
+ &#x9002;&#x5408;&#x5B58;&#x50A8;&#x4F4E;&#x9891;&#x7684;&#x4FE1;&#x606F;</li>
+</ul>
+</li>
+<li>spherical guassian
+<img src="1614555729075.png" alt="Alt text"><ul>
+<li>Approximate incoming radiance using spherical gaussians</li>
+<li>Intuitive &amp; compact representation for diffuse and specular</li>
+<li>Probes for dynamic objects also stored as SGs</li>
+<li>Extensive implementation details on Matt&#x2019;s blog [Pettineo16]</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x73B0;&#x6709;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x73B0;&#x6709;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h2>
+<h3 id="enlighten"><a href="https://www.siliconstudio.co.jp/middleware/enlighten/en/features/" target="_blank">Enlighten</a></h3>
+<p>Enlighten calculates the effect of global illumination in real-time. Lights, materials and objects can be moved and updated at runtime with the global illumination updating in milliseconds.
+Enlighten makes use of both lightmaps and light probes to enable efficient rendering. Probes makes lighting of complex meshes with very many small features, such as foliage, are more efficiently lit using probes.
+<img src="1614085243348.png" alt="Alt text"></p>
+<h4 id="features">features</h4>
+<ul>
+<li>light maps and light probes</li>
+<li>iterate fast
+ Enlighten continuously updates global illumination in the background</li>
+<li>dynamic world
+ outdoor, innerdoor...</li>
+<li>real-time reflections, even for off-camera objects</li>
+<li>emissive surfaces will have almost zero performance cost<h4 id="&#x4F18;&#x70B9;">&#x4F18;&#x70B9;</h4>
+</li>
+<li>&#x72EC;&#x7ACB;&#x7684;SDK</li>
+<li>&#x652F;&#x6301;&#x591A;&#x4E2A;&#x5E73;&#x53F0;, mobile, pc, console, VR</li>
+<li>&#x6BD4;&#x8F83;&#x6210;&#x719F;&#x7684;&#x5546;&#x4E1A;&#x5316;&#x4EA7;&#x54C1;&#xFF0C;&#x8FED;&#x4EE3;&#x89E3;&#x51B3;&#x4E86;&#x5F88;&#x591A;&#x95EE;&#x9898;<h4 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h4>
+</li>
+<li>CPU&#x8BA1;&#x7B97;&#xFF0C;&#x56E0;&#x6B64;&#x514D;&#x4E0D;&#x4E86;&#x5728;GPU-CPU&#x4E4B;&#x95F4;&#x66F4;&#x65B0;&#x6570;&#x636E;</li>
+<li>enlighten&#x4E0D;&#x80FD;&#x591F;&#x5F88;&#x597D;&#x5904;&#x7406;&#x573A;&#x666F;&#x88AB;&#x7834;&#x574F;&#xFF0C;&#x7ED3;&#x6784;&#x6539;&#x53D8;&#x7B49;&#x65F6;&#x5019;&#x7684;&#x5149;&#x7167;&#x53D8;&#x5316;&#x60C5;&#x51B5;</li>
+<li>&#x8D35;&#xFF01;&#xFF01;</li>
+</ul>
+<h3 id="nvdia&#x3000;vxgi"><a href="https://developer.nvidia.com/vxgi" target="_blank">NVDIA&#x3000;VXGI</a></h3>
+<p>It provides means to quickly compute a voxel representation of a mesh scene and use that representation with Voxel Cone Tracing for diffuse and specular global illumination, ambient occlusion, and high-quality area lighting.</p>
+<h4 id="features">features</h4>
+<ul>
+<li>Indirect diffuse and specular interreflections</li>
+<li>High-quality planar area lights with soft shadows</li>
+<li>Large-scale, stable ambient occlusion </li>
+<li>Dynamic and procedural geometry</li>
+<li>Dynamic lights and emissive materials</li>
+<li>Virtual Reality support, including MRS and LMS</li>
+</ul>
+<h3 id="cryengine-svogi"><a href="https://docs.cryengine.com/pages/viewpage.action?pageId=25535599" target="_blank">CryEngine SVOGI</a></h3>
+<h4 id="features">features</h4>
+<ul>
+<li>Dynamic indirect light bounce from static and most of dynamic objects.</li>
+<li>Large scale AO and indirect shadows from static geometry (vegetation, brushes and terrain).</li>
+<li>Works without pre-baking and does not require manual setup of many bounce lights or light volumes.</li>
+</ul>
+<h4 id="current-limitations">Current Limitations</h4>
+<ul>
+<li>Large scale AO and indirect shadows may be cast properly only by static geometry.</li>
+<li>GI is not working on some forward rendering components like particles or water.</li>
+<li>Some artifacts like ghosting, aliasing, light leaking and noise may be noticeable in some cases.</li>
+<li>Procedural vegetation and merged vegetation do not cast occlusion or secondary shadows.</li>
+<li>If the camera is teleported to a completely new location it may take up to a few seconds until occlusion is working properly.</li>
+<li>Only objects and materials with enabled shadow map casting may produce proper bounced light.</li>
+<li>For dynamic objects indirect light bounce is working only in the areas near voxelized static geometry.</li>
+<li>Bounce light may have a noticeable delay of 1-2 frames.</li>
+<li>r_Supersampling = 2 makes GI look strange but setting lower LowSpecMode (2X lower) pretty much restores the look and speed. Temporal AA (r_AntialiasingMode 2/3) works just fine.</li>
+</ul>
+<h3 id="dxr-gi"><a href="https://developer.nvidia.com/rtxgi" target="_blank">DXR GI</a></h3>
+<p>provides scalable solutions to compute multi-bounce indirect lighting without bake times, light leaks, or expensive per-frame costs.</p>
+<h4 id="&#x4F18;&#x70B9;">&#x4F18;&#x70B9;</h4>
+<ul>
+<li>&#x5BA4;&#x5185;&#x5916;&#x53CA;&#x5BA4;&#x5185;&#x3002;RTX&#x53EF;&#x907F;&#x514D;&#x6F0F;&#x5149;&#x3002;</li>
+<li>&#x6E38;&#x620F;&#x8FD0;&#x884C;&#x65F6;&#x3002;RTX GI&#x53EF;&#x4FDD;&#x969C;&#x6027;&#x80FD;&#xFF0C;&#x53EF;&#x8DE8;GPU&#x6269;&#x5C55;&#xFF0C;&#x5206;&#x8FA8;&#x7387;&#x9AD8;&#x8FBE;4K&#xFF0C;&#x4E14;&#x65E0;&#x566A;&#x70B9;&#x3002;</li>
+<li>&#x6E38;&#x620F;&#x5236;&#x4F5C;&#x3002;RTX GI&#x53EF;&#x544A;&#x522B;&#x70D8;&#x7119;&#x8017;&#x65F6;&#xFF0C;&#x65E0;&#x9700;&#x6BCF;&#x63A2;&#x5934;&#x8C03;&#x4F18;&#xFF0C;&#x5E76;&#x80FD;&#x591F;&#x52A0;&#x901F;&#x5F53;&#x524D;&#x5149;&#x7167;&#x63A2;&#x9488;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x548C;&#x4E13;&#x4E1A;&#x5EA6;&#x7684;&#x63D0;&#x5347;&#x3002;</li>
+<li>&#x4EFB;&#x4F55;&#x5149;&#x7167;&#x7C7B;&#x578B;&#xFF1A;RTX GI&#x53EF;&#x9488;&#x5BF9;&#x70B9;&#x3001;&#x7EBF;&#x3001;&#x9762;&#x79EF;&#x7167;&#x660E;&#x3001;&#x5929;&#x7A7A;&#x76D2;&#x7167;&#x660E;&#x548C;&#x53D1;&#x5149;&#x7269;&#x4F53;&#x81EA;&#x52A8;&#x5C55;&#x5F00;&#x5DE5;&#x4F5C;&#x3002;</li>
+<li>&#x5F15;&#x64CE;&#xFF1A;RTX GI&#x53EF;&#x5347;&#x7EA7;&#x73B0;&#x6709;&#x5149;&#x7167;&#x63A2;&#x9488;&#x5F15;&#x64CE;&#x6570;&#x636E;&#x8DEF;&#x5F84;&#x548C;&#x5DE5;&#x5177;&#x3002;</li>
+<li>&#x5185;&#x5BB9;&#x521B;&#x5EFA;&#xFF1A;RTX GI&#x91C7;&#x7528;&#x5B8C;&#x5168;&#x52A8;&#x6001;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x65E0;&#x9700;&#x4EBA;&#x5DE5;&#x5E72;&#x9884;&#x3002;</li>
+<li>&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF1A;&#x4E00;&#x6761;&#x4EE3;&#x7801;&#x8DEF;&#x5F84;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x6240;&#x6709;&#xFF0C;&#x4ECE;&#x80FD;&#x591F;&#x907F;&#x514D;&#x65E7;&#x6709;&#x9057;&#x7559;&#x5E73;&#x53F0;&#x6F0F;&#x5149;&#x73B0;&#x8C61;&#x7684;&#x70D8;&#x7119;&#x5149;&#x7167;&#x63A2;&#x9488;&#xFF0C;&#x4EF7;&#x683C;&#x8F83;&#x4F4E;&#x7684;GPU&#x4E0A;&#x6162;&#x6162;&#x66F4;&#x65B0;&#x7684;&#x8FD0;&#x884C;&#x65F6;GI&#xFF0C;&#x5230;&#x53D1;&#x70E7;&#x53CB;&#x7EA7;GPU&#x4E0A;&#x7684;&#x5373;&#x65F6;&#x52A8;&#x6001;GI&#x3002;&#x5B83;&#x80FD;&#x591F;&#x5728;&#x53D1;&#x6325;&#x9AD8;&#x7AEF;PC&#x5F3A;&#x5927;&#x529F;&#x80FD;&#x7684;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x5E7F;&#x6CDB;&#x7684;&#x652F;&#x6301;&#x3002;<h4 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h4>
+</li>
+<li>&#x6BCF;&#x4E2A;&#x7EA7;&#x8054;5MB GPU RAM&#xFF0C;&#x6240;&#x6709;&#x7EA7;&#x8054;&#x548C;&#x4E2D;&#x95F4;&#x5C42;&#x5CF0;&#x503C;&#x5747;&#x4E3A;20MB</li>
+<li>&#x5728;&#x56FA;&#x5B9A;&#x65F6;&#x95F4;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;1-2&#x6BEB;&#x79D2;/&#x5E27;&#x53EF;&#x83B7;&#x6700;&#x4F73;&#x6027;&#x80FD;&#xFF0C;&#x5728;&#x8D85;&#x9AD8;&#x56FA;&#x5B9A;&#x753B;&#x8D28;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;1-2 Mray/&#x5E27;&#x53EF;&#x83B7;&#x6700;&#x4F73;&#x6027;&#x80FD;&#xFF08;&#x5728;2080 Ti&#x4E0A;&#x4EA6;&#x5982;&#x6B64;&#xFF09;</li>
+<li>&#x5728;&#x9488;&#x5BF9;&#x5176;&#x4ED6;&#x6548;&#x679C;&#xFF08;&#x5982;&#x5149;&#x9762;&#x548C;&#x9634;&#x5F71;&#x5149;&#x7EBF;&#xFF09;&#x4F7F;&#x7528;&#x5149;&#x7EBF;&#x8FFD;&#x8E2A;&#x65F6;&#xFF0C;&#x53EF;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x5F00;&#x9500;&#x3002;</li>
+<li>&#x5728;&#x753B;&#x9762;&#x5F00;&#x53D1;&#x548C;&#x5236;&#x4F5C;&#x65E9;&#x671F;&#x5C31;&#x5E94;&#x5F15;&#x5165;RTX GI&#x3002;GI&#x80FD;&#x591F;&#x6781;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x6539;&#x53D8;&#x5149;&#x7167;&#xFF0C;&#x6BD4;&#x76F4;&#x5C04;&#x5149;&#x9700;&#x8981;&#x66F4;&#x591A;&#x7B26;&#x5408;&#x7269;&#x7406;&#x539F;&#x7406;&#x7684;&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#x548C;&#x8C03;&#x4F18;&#xFF0C;&#x4E5F;&#x4E3A;&#x6E38;&#x620F;&#x9886;&#x57DF;&#x5E26;&#x6765;&#x4E86;&#x5168;&#x65B0;&#x673A;&#x9047;&#x3002;</li>
+<li>&#x57FA;&#x4E8E;&#x4F4E;&#x7AEF;GPU&#x5219;&#x5149;&#x7167;&#x6D41;&#x901F;&#x8F83;&#x6162;&#xFF08;&#x4E16;&#x754C;-&#x7A7A;&#x95F4;&#x5EF6;&#x8FDF;&#xFF0C;&#x65E0;&#x5C4F;&#x5E55;-&#x7A7A;&#x95F4;&#x91CD;&#x5F71;&#xFF09;</li>
+<li>&#x9634;&#x5F71;&#x56FE;&#x7C7B;&#x7684;&#x504F;&#x7F6E;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x8C03;&#x4F18;&#x81F3;&#x573A;&#x666F;&#x6BD4;&#x4F8B;&#x3002;</li>
+<li>&#x65E0;&#x6CD5;&#x9632;&#x6B62;&#x96F6;&#x539A;&#x5EA6;/&#x5355;&#x9762;&#x5899;&#x6F0F;&#x5149;</li>
+<li>&#x5FC5;&#x987B;&#x4E0E;&#x53E6;&#x5916;&#x7684;&#x5149;&#x9762;&#x5168;&#x5C40;&#x7167;&#x660E;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x5982;&#x5C4F;&#x5E55;-&#x7A7A;&#x95F4;&#x5149;&#x7EBF;&#x8FFD;&#x8E2A;&#x3001;&#x53BB;&#x566A;&#x51E0;&#x4F55;&#x5149;&#x7EBF;&#x8FFD;&#x8E2A;&#x6216;&#x73AF;&#x5883;&#x63A2;&#x9488;&#xFF09;&#x914D;&#x5408;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<h3 id="ue4-lpv"><a href="https://docs.unrealengine.com/en-US/BuildingWorlds/LightingAndShadows/LightPropagationVolumes/index.html" target="_blank">UE4 LPV</a></h3>
+<h4 id="features">features</h4>
+<ul>
+<li>Computed each frame which allows dynamic material/light/geometry.</li>
+<li>Diffuse and approximated specular material interaction.</li>
+<li>Limited distance (larger volume e.g. 2x would be easy but memory requirements and some computations would grow by 8x).</li>
+<li>Constant detail in world space (it would be better to have more detail nearby and less detail in distance).</li>
+<li>Not affecting translucency.</li>
+<li>Light bounce is not affected by decals.</li>
+<li>Decal shading just works (unlike with baked lighting where the lighting is applied in the base pass before decals get applied).</li>
+<li>Requires compute shader (DirectX 11) support.</li>
+<li>Supports one or more Directional light for light bounce.</li>
+<li>Changing the size at runtime has minor artifacts that fade away over time.</li>
+<li>Emissive lighting for cheap area lights (not currently implemented).</li>
+<li>Occlusion (not currently implemented).</li>
+<li>Point light shadows approximated by occlusion (not currently implemented).</li>
+<li>Secondary occlusion through geometry voxelization which has some performance cost but quite better quality (not currently implemented).</li>
+</ul>
+<h2 id="&#x6742;">&#x6742;</h2>
+<ul>
+<li>Ray tracing &#x5149;&#x7EBF;&#x8FFD;&#x8E2A;</li>
+<li>Path tracing &#x8DEF;&#x5F84;&#x8FFD;&#x8E2A;</li>
+<li>Photon mapping &#x5149;&#x5B50;&#x6620;&#x5C04;</li>
+<li>Point Based Global Illumination &#x57FA;&#x4E8E;&#x70B9;&#x7684;&#x5168;&#x5C40;&#x5149;&#x7167;</li>
+<li>Radiosity &#x8F90;&#x5C04;&#x5EA6;</li>
+<li>Metropolis light transport &#x6885;&#x7279;&#x6CE2;&#x5229;&#x65AF;&#x5149;&#x7167;&#x4F20;&#x8F93;</li>
+<li>Spherical harmonic lighting &#x7403;&#x8C10;&#x5149;&#x7167;</li>
+<li>Spherical Gaussian lightmaps </li>
+<li>Ambient occlusion &#x73AF;&#x5883;&#x5149;&#x906E;&#x853D;</li>
+<li>Voxel-based Global Illumination &#x57FA;&#x4E8E;&#x4F53;&#x7D20;&#x7684;&#x5168;&#x5C40;&#x5149;&#x7167;</li>
+<li>Light Propagation Volumes Global Illumination</li>
+<li>Deferred Radiance Transfer Global Illumination</li>
+<li>Deep G-Buffer based Global Illumination</li>
+<li>screen space GI</li>
+</ul>
+<h2 id="rrs">RRS</h2>
+<ul>
+<li>category 1 : features<ul>
+<li>diffuse GI
+<img src="1613535427973.png" alt="Alt text"></li>
+<li>specular GI
+<img src="1613535286771.png" alt="Alt text"></li>
+<li>ambient occlusion</li>
+<li>area lighting</li>
+</ul>
+</li>
+<li>category 2<ul>
+<li>precompute lighting<ul>
+<li>precomputed radiance transfer</li>
+</ul>
+</li>
+<li>real-time</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: GI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../pbr/resource.html" class="navigation navigation-next " aria-label="Next page: PBR">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GI Draft","level":"1.4.1","depth":2,"next":{"title":"PBR","level":"1.5","depth":1,"path":"pbr/resource.md","ref":"pbr/resource.md","articles":[]},"previous":{"title":"GI","level":"1.4","depth":1,"path":"GI/resource.md","ref":"GI/resource.md","articles":[{"title":"GI Draft","level":"1.4.1","depth":2,"path":"GI/GI_draft/GI_draft.md","ref":"GI/GI_draft/GI_draft.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"GI/GI_draft/GI_draft.md","mtime":"2021-03-07T05:00:33.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-07T05:04:57.619Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
