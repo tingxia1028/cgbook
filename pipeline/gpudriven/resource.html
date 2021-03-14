@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Volume Rendering Basic Theory · GitBook</title>
+        <title>GPU Driven Rendering · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../GI/resource.html" />
+    <link rel="next" href="../framegraph/resource.html" />
     
     
-    <link rel="prev" href="../resource.html" />
+    <link rel="prev" href="../multi_indirect_draw/resource.html" />
     
 
     </head>
@@ -128,9 +128,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../resource.html">
+        <li class="chapter " data-level="1.4" data-path="../../volume/resource.html">
             
-                <a href="../resource.html">
+                <a href="../../volume/resource.html">
             
                     
                     Volume Rendering
@@ -142,9 +142,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="volume_rendering.html">
+        <li class="chapter " data-level="1.4.1" data-path="../../volume/volume_rendering/volume_rendering.html">
             
-                <a href="volume_rendering.html">
+                <a href="../../volume/volume_rendering/volume_rendering.html">
             
                     
                     Volume Rendering Basic Theory
@@ -316,9 +316,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1" data-path="../../pipeline/visibility/resource.html">
+        <li class="chapter " data-level="1.11.1" data-path="../visibility/resource.html">
             
-                <a href="../../pipeline/visibility/resource.html">
+                <a href="../visibility/resource.html">
             
                     
                     Dynamic Visibility
@@ -330,9 +330,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1.1" data-path="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+        <li class="chapter " data-level="1.11.1.1" data-path="../visibility/dynamic_visibility_draft/draft.html">
             
-                <a href="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+                <a href="../visibility/dynamic_visibility_draft/draft.html">
             
                     
                     Dynamic Visibility Draft
@@ -348,9 +348,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="../../pipeline/multi_indirect_draw/resource.html">
+        <li class="chapter " data-level="1.11.2" data-path="../multi_indirect_draw/resource.html">
             
-                <a href="../../pipeline/multi_indirect_draw/resource.html">
+                <a href="../multi_indirect_draw/resource.html">
             
                     
                     Multi-Indirect Draw
@@ -361,9 +361,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.3" data-path="../../pipeline/gpudriven/resource.html">
+        <li class="chapter active" data-level="1.11.3" data-path="resource.html">
             
-                <a href="../../pipeline/gpudriven/resource.html">
+                <a href="resource.html">
             
                     
                     GPU Driven Rendering
@@ -374,9 +374,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.4" data-path="../../pipeline/framegraph/resource.html">
+        <li class="chapter " data-level="1.11.4" data-path="../framegraph/resource.html">
             
-                <a href="../../pipeline/framegraph/resource.html">
+                <a href="../framegraph/resource.html">
             
                     
                     Frame Graph
@@ -467,7 +467,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Volume Rendering Basic Theory</a>
+        <a href="../.." >GPU Driven Rendering</a>
     </h1>
 </div>
 
@@ -482,62 +482,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="volume-rendering-basic-theory">Volume Rendering Basic Theory</h1>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!--**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*-->
+                                <h1 id="resources">Resources</h1>
+<h2 id="prior-knowledge">prior knowledge</h2>
 <ul>
-<li><a href="#volume-rendering-basic-theory">Volume Rendering Basic Theory</a><ul>
-<li><a href="#properties-of-volumes">properties of volumes</a></li>
-<li><a href="#light-propagation-in-volumes">light propagation in volumes</a></li>
-<li><a href="#discrete-methods">discrete methods</a></li>
+<li><a href="../visibility/dynamic_visibility_draft/draft.html">hierarchical z-buffer</a></li>
+<li><a href="../../texture/multiple_textures/multiple_textures.html">bindless texture, virtual texture</a></li>
+<li>deferred texturing</li>
+<li>MultiDrawIndexedInstancedIndirect</li>
+<li>gather4</li>
+<li>cpu occlusion culling</li>
 </ul>
-</li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<h2 id="properties-of-volumes">properties of volumes</h2>
+<h2 id="presentations">presentations</h2>
 <ul>
-<li><p>what are volumes</p>
-<p>Volumes, are collections of particles, ranging from atoms and molecules to any particle size.</p>
+<li><p><a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=https%3A%2F%2Fadvances.realtimerendering.com%2Fs2015%2Faaltonenhaar_siggraph2015_combined_final_footer_220dpi.pdf" target="_blank">siggraph15, &lt; GPU-Driven Rendering Pipelines&gt; @ ubisoft</a></p>
+<p><a href="https://www.jianshu.com/p/4b695378cc2e" target="_blank">&#x4E2D;&#x6587;&#x89E3;&#x8BFB;</a> &#x4E0A;&#x9762;&#x7684;pdf&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x89E6;&#x7684;&#x4EBA;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x6BD4;&#x8F83;&#x5403;&#x529B;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x770B;&#x8FD9;&#x7BC7;&#x4E2D;&#x6587;&#x89E3;&#x8BF4;&#xFF0C;&#x66F4;&#x597D;&#x63A5;&#x53D7;&#x3002;</p>
 </li>
-<li>collision probability
-the chance of a photon collision <ul>
-<li>probability density of collision per unit distance
-de&#xFB01;ned by a coe&#xFB03;cient &#x3C3;(x), which is the probability density of collision per unit distance traveled inside the volume. The physical unit of a collision coe&#xFB03;cient is inverse length.</li>
-<li>mean free path
-the average distance traveled between collisions.</li>
-</ul>
+<li><p><a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=https%3A%2F%2Ffrostbite-wp-prd.s3.amazonaws.com%2Fwp-content%2Fuploads%2F2016%2F03%2F29204330%2FGDC_2016_Compute.pdf" target="_blank">gdc16, &lt; Optimizing the Graphics Pipeline With Compute&gt; @ EA</a></p>
+</li>
+<li><p><a href="https://www.gdcvault.com/play/1025480/Terrain-Rendering-in-Far-Cry" target="_blank">gdc18, TerrainRenderingFarCry5 @ ubisoft</a></p>
 </li>
 </ul>
-<h2 id="light-propagation-in-volumes">light propagation in volumes</h2>
 <ul>
-<li><p>radiative transformation equation(RTE)</p>
-<p> what happens to a radiance beam as it travels forward
-  <img src="1615108669961.png" alt="Alt text"></p>
-<ul>
-<li>absorption
-<img src="1615108829848.png" alt="Alt text"></li>
-<li>out-scattering
-<img src="1615108853099.png" alt="Alt text"></li>
-<li>emission
-<img src="1615108866549.png" alt="Alt text"></li>
-<li>in-scattering
-<img src="1615108886932.png" alt="Alt text"></li>
-<li>RTE
-<img src="1615109054124.png" alt="Alt text"></li>
+<li><a href="https://interplayoflight.wordpress.com/2018/05/25/gpu-driven-rendering-experiments-at-the-digital-dragons-conference/" target="_blank">dragons conference 18, GPU driven Occlusion Culling</a>
+&#x6709;&#x5BF9;&#x5E94;&#x7684;presentation pdf &#x548C; demo source code<ul>
+<li><a href="https://interplayoflight.wordpress.com/2017/11/15/experiments-in-gpu-based-occlusion-culling/" target="_blank">&#x4E00;&#x4E9B;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x7684;blog part1</a></li>
+<li><a href="https://interplayoflight.wordpress.com/2018/01/15/experiments-in-gpu-based-occlusion-culling-part-2-multidrawindirect-and-mesh-lodding/" target="_blank">&#x4E00;&#x4E9B;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x7684;blog part2</a></li>
 </ul>
 </li>
-<li><p>Volume Rendering Equation(VRE)</p>
-<p>  describes the radiance in terms of where it comes from
-  <img src="1615109504308.png" alt="Alt text">
-  <img src="1615109702623.png" alt="Alt text">
-  <img src="1615109751580.png" alt="Alt text"></p>
-</li>
 </ul>
-<h2 id="discrete-methods">discrete methods</h2>
-<p>&#x79EF;&#x5206;&#x8F6C;&#x6362;&#x6210;&#x79BB;&#x6563;&#x6C42;&#x548C;&#xFF0C;&#x6CBF;&#x4E00;&#x4E2A;&#x65B9;&#x5411;ray marching&#x6765;&#x7D2F;&#x79EF;&#x3002;
-<img src="1615113372333.png" alt="Alt text">
-&#x8FD9;&#x90E8;&#x5206;&#x5F85;&#x63A8;&#x5BFC;</p>
 
                                 
                                 </section>
@@ -565,12 +537,12 @@ the average distance traveled between collisions.</li>
 
             
                 
-                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: Volume Rendering">
+                <a href="../multi_indirect_draw/resource.html" class="navigation navigation-prev " aria-label="Previous page: Multi-Indirect Draw">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../../GI/resource.html" class="navigation navigation-next " aria-label="Next page: GI">
+                <a href="../framegraph/resource.html" class="navigation navigation-next " aria-label="Next page: Frame Graph">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -581,7 +553,7 @@ the average distance traveled between collisions.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Volume Rendering Basic Theory","level":"1.4.1","depth":2,"next":{"title":"GI","level":"1.5","depth":1,"path":"GI/resource.md","ref":"GI/resource.md","articles":[{"title":"GI Draft","level":"1.5.1","depth":2,"path":"GI/GI_draft/GI_draft.md","ref":"GI/GI_draft/GI_draft.md","articles":[]},{"title":"Voxel Based GI","level":"1.5.2","depth":2,"path":"GI/voxel_based/resource.md","ref":"GI/voxel_based/resource.md","articles":[]}]},"previous":{"title":"Volume Rendering","level":"1.4","depth":1,"path":"volume/resource.md","ref":"volume/resource.md","articles":[{"title":"Volume Rendering Basic Theory","level":"1.4.1","depth":2,"path":"volume/volume_rendering/volume_rendering.md","ref":"volume/volume_rendering/volume_rendering.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"volume/volume_rendering/volume_rendering.md","mtime":"2021-03-07T11:07:44.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-14T15:17:52.897Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GPU Driven Rendering","level":"1.11.3","depth":2,"next":{"title":"Frame Graph","level":"1.11.4","depth":2,"path":"pipeline/framegraph/resource.md","ref":"pipeline/framegraph/resource.md","articles":[]},"previous":{"title":"Multi-Indirect Draw","level":"1.11.2","depth":2,"path":"pipeline/multi_indirect_draw/resource.md","ref":"pipeline/multi_indirect_draw/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pipeline/gpudriven/resource.md","mtime":"2021-03-14T14:58:42.197Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-14T15:17:52.897Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

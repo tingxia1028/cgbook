@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Volume Rendering Basic Theory · GitBook</title>
+        <title>Multiple Textures · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../GI/resource.html" />
+    <link rel="next" href="virtual_textures.md" />
     
     
     <link rel="prev" href="../resource.html" />
@@ -128,9 +128,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../resource.html">
+        <li class="chapter " data-level="1.4" data-path="../../volume/resource.html">
             
-                <a href="../resource.html">
+                <a href="../../volume/resource.html">
             
                     
                     Volume Rendering
@@ -142,9 +142,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="volume_rendering.html">
+        <li class="chapter " data-level="1.4.1" data-path="../../volume/volume_rendering/volume_rendering.html">
             
-                <a href="volume_rendering.html">
+                <a href="../../volume/volume_rendering/volume_rendering.html">
             
                     
                     Volume Rendering Basic Theory
@@ -257,9 +257,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../../texture/resource.html">
+        <li class="chapter " data-level="1.10" data-path="../resource.html">
             
-                <a href="../../texture/resource.html">
+                <a href="../resource.html">
             
                     
                     Texture
@@ -271,9 +271,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="../../texture/multiple_textures/multiple_textures.html">
+        <li class="chapter active" data-level="1.10.1" data-path="multiple_textures.html">
             
-                <a href="../../texture/multiple_textures/multiple_textures.html">
+                <a href="multiple_textures.html">
             
                     
                     Multiple Textures
@@ -284,7 +284,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.2" data-path="../../texture/multiple_textures/virtual_textures.md">
+        <li class="chapter " data-level="1.10.2" data-path="virtual_textures.md">
             
                 <span>
             
@@ -467,7 +467,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Volume Rendering Basic Theory</a>
+        <a href="../.." >Multiple Textures</a>
     </h1>
 </div>
 
@@ -482,62 +482,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="volume-rendering-basic-theory">Volume Rendering Basic Theory</h1>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!--**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*-->
-<ul>
-<li><a href="#volume-rendering-basic-theory">Volume Rendering Basic Theory</a><ul>
-<li><a href="#properties-of-volumes">properties of volumes</a></li>
-<li><a href="#light-propagation-in-volumes">light propagation in volumes</a></li>
-<li><a href="#discrete-methods">discrete methods</a></li>
-</ul>
-</li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<h2 id="properties-of-volumes">properties of volumes</h2>
-<ul>
-<li><p>what are volumes</p>
-<p>Volumes, are collections of particles, ranging from atoms and molecules to any particle size.</p>
-</li>
-<li>collision probability
-the chance of a photon collision <ul>
-<li>probability density of collision per unit distance
-de&#xFB01;ned by a coe&#xFB03;cient &#x3C3;(x), which is the probability density of collision per unit distance traveled inside the volume. The physical unit of a collision coe&#xFB03;cient is inverse length.</li>
-<li>mean free path
-the average distance traveled between collisions.</li>
-</ul>
-</li>
-</ul>
-<h2 id="light-propagation-in-volumes">light propagation in volumes</h2>
-<ul>
-<li><p>radiative transformation equation(RTE)</p>
-<p> what happens to a radiance beam as it travels forward
-  <img src="1615108669961.png" alt="Alt text"></p>
-<ul>
-<li>absorption
-<img src="1615108829848.png" alt="Alt text"></li>
-<li>out-scattering
-<img src="1615108853099.png" alt="Alt text"></li>
-<li>emission
-<img src="1615108866549.png" alt="Alt text"></li>
-<li>in-scattering
-<img src="1615108886932.png" alt="Alt text"></li>
-<li>RTE
-<img src="1615109054124.png" alt="Alt text"></li>
-</ul>
-</li>
-<li><p>Volume Rendering Equation(VRE)</p>
-<p>  describes the radiance in terms of where it comes from
-  <img src="1615109504308.png" alt="Alt text">
-  <img src="1615109702623.png" alt="Alt text">
-  <img src="1615109751580.png" alt="Alt text"></p>
-</li>
-</ul>
-<h2 id="discrete-methods">discrete methods</h2>
-<p>&#x79EF;&#x5206;&#x8F6C;&#x6362;&#x6210;&#x79BB;&#x6563;&#x6C42;&#x548C;&#xFF0C;&#x6CBF;&#x4E00;&#x4E2A;&#x65B9;&#x5411;ray marching&#x6765;&#x7D2F;&#x79EF;&#x3002;
-<img src="1615113372333.png" alt="Alt text">
-&#x8FD9;&#x90E8;&#x5206;&#x5F85;&#x63A8;&#x5BFC;</p>
+                                <h1 id="directx-multiple-textures">DirectX multiple textures</h1>
+<h2 id="texture-array">texture array</h2>
+<p><img src="1615728939112.png" alt="Alt text"></p>
+<pre><code class="lang-cpp">Texture2DArray gTexArray : register(t0);
+float4 PS(VertexPosHTex pIn) : SV_Target
+{
+    float4 texColor = gTexArray.Sample(gSam, float3(pIn.Tex, gTexIndex));
+    return texColor;
+}
+
+inline UINT D3D11CalcSubresource(UINT MipSlice, UINT ArraySlice, UINT MipLevels )
+{ return MipSlice + ArraySlice * MipLevels; }
+</code></pre>
+<h2 id="bindless-texture">bindless texture</h2>
+<p>&#x4E0E;&#x4F20;&#x7EDF;&#x7684;TextureArray&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;Shader&#x8BFB;&#x53D6;&#x65F6;&#x5B8C;&#x5168;&#x4E0D;&#x5BF9;&#x8D34;&#x56FE;&#x5728;&#x7269;&#x7406;&#x5185;&#x5B58;&#x4E2D;&#x6392;&#x5217;&#x6709;&#x4EFB;&#x4F55;&#x8981;&#x6C42;&#xFF0C;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x4E2D;&#x653E;&#x5165;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#xFF0C;&#x4EFB;&#x610F;&#x5927;&#x5C0F;&#xFF0C;&#x4EFB;&#x610F;&#x683C;&#x5F0F;&#x7684;&#x8D34;&#x56FE;&#xFF0C;&#x5176;&#x81EA;&#x7531;&#x5EA6;&#x8981;&#x8FDC;&#x9AD8;&#x4E8E;&#x4F20;&#x7EDF;&#x7684;TextureArray&#x3002;
+<img src="1615729835413.png" alt="Alt text"></p>
+<pre><code class="lang-cpp">Texture2D gDiffuseMap[num] : <span class="hljs-keyword">register</span>(tX, spaceX);
+</code></pre>
+<p><img src="1615729953407.png" alt="Alt text">
+&#x8FD9;&#x91CC;&#x4E3A;&#x5565;uv&#x662F;&#x4E58;&#x4EE5;3&#x91C7;&#x6837;&#x7684;&#xFF1F;&#xFF1F;
+<img src="1615729959880.png" alt="Alt text"></p>
+<h2 id="virtual-texture">virtual texture</h2>
+<p>&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x662F;&#xFF0C;&#x4F1A;&#x5C06;&#x7EB9;&#x7406;&#x7684;mipmap chain&#x5206;&#x5272;&#x4E3A;&#x76F8;&#x540C;&#x5927;&#x5C0F;&#x7684;tile&#x6216;page,&#x8FD9;&#x91CC;&#x7684;&#x7EB9;&#x7406;&#x53EB;&#x865A;&#x7EB9;&#x7406;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x67D0;&#x79CD;&#x6620;&#x5C04;&#xFF0C;&#x6620;&#x5C04;&#x5230;&#x4E00;&#x5F20;&#x5185;&#x5B58;&#x4E2D;&#x5B58;&#x5728;&#x7684;&#x7EB9;&#x7406;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x7EB9;&#x7406;&#x662F;&#x7269;&#x7406;&#x7EB9;&#x7406;&#xFF0C;&#x5728;&#x6E38;&#x620F;&#x89C6;&#x91CE;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x7269;&#x7406;&#x7EB9;&#x7406;&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x51FA;&#x53BB;&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x7269;&#x7406;&#x7EB9;&#x7406;&#x4F1A;&#x88AB;&#x52A0;&#x8F7D;&#x3002;
+<img src="1615732215917.png" alt="Alt text"></p>
 
                                 
                                 </section>
@@ -565,12 +533,12 @@ the average distance traveled between collisions.</li>
 
             
                 
-                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: Volume Rendering">
+                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: Texture">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../../GI/resource.html" class="navigation navigation-next " aria-label="Next page: GI">
+                <a href="virtual_textures.md" class="navigation navigation-next " aria-label="Next page: Virtual Texture">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -581,7 +549,7 @@ the average distance traveled between collisions.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Volume Rendering Basic Theory","level":"1.4.1","depth":2,"next":{"title":"GI","level":"1.5","depth":1,"path":"GI/resource.md","ref":"GI/resource.md","articles":[{"title":"GI Draft","level":"1.5.1","depth":2,"path":"GI/GI_draft/GI_draft.md","ref":"GI/GI_draft/GI_draft.md","articles":[]},{"title":"Voxel Based GI","level":"1.5.2","depth":2,"path":"GI/voxel_based/resource.md","ref":"GI/voxel_based/resource.md","articles":[]}]},"previous":{"title":"Volume Rendering","level":"1.4","depth":1,"path":"volume/resource.md","ref":"volume/resource.md","articles":[{"title":"Volume Rendering Basic Theory","level":"1.4.1","depth":2,"path":"volume/volume_rendering/volume_rendering.md","ref":"volume/volume_rendering/volume_rendering.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"volume/volume_rendering/volume_rendering.md","mtime":"2021-03-07T11:07:44.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-14T15:17:52.897Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Multiple Textures","level":"1.10.1","depth":2,"next":{"title":"Virtual Texture","level":"1.10.2","depth":2,"path":"texture/multiple_textures/virtual_textures.md","ref":"texture/multiple_textures/virtual_textures.md","articles":[]},"previous":{"title":"Texture","level":"1.10","depth":1,"path":"texture/resource.md","ref":"texture/resource.md","articles":[{"title":"Multiple Textures","level":"1.10.1","depth":2,"path":"texture/multiple_textures/multiple_textures.md","ref":"texture/multiple_textures/multiple_textures.md","articles":[]},{"title":"Virtual Texture","level":"1.10.2","depth":2,"path":"texture/multiple_textures/virtual_textures.md","ref":"texture/multiple_textures/virtual_textures.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"texture/multiple_textures/multiple_textures.md","mtime":"2021-03-14T14:51:18.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-14T15:17:52.897Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
