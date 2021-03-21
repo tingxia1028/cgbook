@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../framegraph/resource.html" />
     
-    
-    <link rel="prev" href="../multi_indirect_draw/resource.html" />
+    <link rel="prev" href="../cs/resource.html" />
     
 
     </head>
@@ -348,12 +346,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="../multi_indirect_draw/resource.html">
+        <li class="chapter " data-level="1.11.2" data-path="../cs/resource.html">
             
-                <a href="../multi_indirect_draw/resource.html">
+                <a href="../cs/resource.html">
             
                     
-                    Multi-Indirect Draw
+                    Compute Shader
             
                 </a>
             
@@ -374,12 +372,44 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.4" data-path="../framegraph/resource.html">
+
+            </ul>
             
-                <a href="../framegraph/resource.html">
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../structure/framegraph/resource.html">
+            
+                <a href="../../structure/framegraph/resource.html">
             
                     
                     Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../structure/ecs/resource.html">
+            
+                <a href="../../structure/ecs/resource.html">
+            
+                    
+                    ECS
             
                 </a>
             
@@ -392,12 +422,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" >
+        <li class="chapter " data-level="1.13" >
             
                 <span>
             
                     
-                    Special Effect
+                    Graphics API
             
                 </span>
             
@@ -406,7 +436,44 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="../../special_effect/atmosphere/resource.html">
+        <li class="chapter " data-level="1.13.1" data-path="../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1.1" data-path="../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../special_effect/atmosphere/resource.html">
             
                 <a href="../../special_effect/atmosphere/resource.html">
             
@@ -417,9 +484,55 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                <a href="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.12.2" data-path="../../special_effect/cloud/resource.html">
+        <li class="chapter " data-level="1.14.1.2" data-path="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                <a href="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../special_effect/cloud/resource.html">
             
                 <a href="../../special_effect/cloud/resource.html">
             
@@ -488,9 +601,24 @@
 <li><a href="../visibility/dynamic_visibility_draft/draft.html">hierarchical z-buffer</a></li>
 <li><a href="../../texture/multiple_textures/multiple_textures.html">bindless texture, virtual texture</a></li>
 <li>deferred texturing</li>
-<li>MultiDrawIndexedInstancedIndirect</li>
-<li>gather4</li>
-<li>cpu occlusion culling</li>
+<li><a href="">cpu occlusion culling</a></li>
+<li>steam compaction<ul>
+<li><a href="chrome-extension://cdonnmffkdaoajfknoeeecmchibpmkmg/assets/pdf/web/viewer.html?file=http%3A%2F%2Fwww.cs.cmu.edu%2F~guyb%2Fpapers%2FBle93.pdf" target="_blank">Blelloch, Prefix Sumsand Their Applications</a></li>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-39-parallel-prefix-sum-scan-cuda" target="_blank">GPU Gems 3, Chapter 39. Parallel Prefix Sum (Scan) with CUDA</a></li>
+</ul>
+</li>
+<li><a href="https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/sm5-attributes-numthreads" target="_blank">compute shader</a></li>
+<li>directX instructions<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/gather4--sm5---asm-" target="_blank">gather4</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-advanced-stages-cs-resources" target="_blank">StructuredBuffer &amp; AppendStructuredBuffer</a></li>
+<li>RWBuffer</li>
+<li>RWTexture2D</li>
+<li>DrawIndexedInstanced vs DrawIndexInstancedIndirect vs MultiDrawIndexedInstancedIndirect<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/97671775" target="_blank">multi-indirect draw</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="presentations">presentations</h2>
 <ul>
@@ -537,14 +665,10 @@
 
             
                 
-                <a href="../multi_indirect_draw/resource.html" class="navigation navigation-prev " aria-label="Previous page: Multi-Indirect Draw">
+                <a href="../cs/resource.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Compute Shader">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../framegraph/resource.html" class="navigation navigation-next " aria-label="Next page: Frame Graph">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -553,7 +677,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GPU Driven Rendering","level":"1.11.3","depth":2,"next":{"title":"Frame Graph","level":"1.11.4","depth":2,"path":"pipeline/framegraph/resource.md","ref":"pipeline/framegraph/resource.md","articles":[]},"previous":{"title":"Multi-Indirect Draw","level":"1.11.2","depth":2,"path":"pipeline/multi_indirect_draw/resource.md","ref":"pipeline/multi_indirect_draw/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pipeline/gpudriven/resource.md","mtime":"2021-03-14T14:58:42.197Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-14T15:17:52.897Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GPU Driven Rendering","level":"1.11.3","depth":2,"next":{"title":"Structure","level":"1.12","depth":1,"ref":"","articles":[{"title":"Frame Graph","level":"1.12.1","depth":2,"path":"structure/framegraph/resource.md","ref":"structure/framegraph/resource.md","articles":[]},{"title":"ECS","level":"1.12.2","depth":2,"path":"structure/ecs/resource.md","ref":"structure/ecs/resource.md","articles":[]}]},"previous":{"title":"Compute Shader","level":"1.11.2","depth":2,"path":"pipeline/cs/resource.md","ref":"pipeline/cs/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pipeline/gpudriven/resource.md","mtime":"2021-03-16T10:01:50.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-21T13:39:50.812Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

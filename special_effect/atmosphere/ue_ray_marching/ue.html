@@ -1,0 +1,1001 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>A Scalable and Production Ready Sky and Atmosphere Rendering Technique · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../multi_scattering/multi_scattering.html" />
+    
+    
+    <link rel="prev" href="../resource.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../space_trans/resource.html">
+            
+                <a href="../../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../ray_tracing/resource.html">
+            
+                <a href="../../../ray_tracing/resource.html">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../volume/resource.html">
+            
+                <a href="../../../volume/resource.html">
+            
+                    
+                    Volume Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../volume/volume_rendering/volume_rendering.html">
+            
+                <a href="../../../volume/volume_rendering/volume_rendering.html">
+            
+                    
+                    Volume Rendering Basic Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../GI/resource.html">
+            
+                <a href="../../../GI/resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../GI/GI_draft/GI_draft.html">
+            
+                <a href="../../../GI/GI_draft/GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../GI/voxel_based/resource.html">
+            
+                <a href="../../../GI/voxel_based/resource.html">
+            
+                    
+                    Voxel Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../pbr/resource.html">
+            
+                <a href="../../../pbr/resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../light/resource.html">
+            
+                <a href="../../../light/resource.html">
+            
+                    
+                    Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../color/resource.html">
+            
+                <a href="../../../color/resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../shadow/resource.html">
+            
+                <a href="../../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../../texture/resource.html">
+            
+                <a href="../../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../../texture/multiple_textures/multiple_textures.html">
+            
+                <a href="../../../texture/multiple_textures/multiple_textures.html">
+            
+                    
+                    Multiple Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../../texture/multiple_textures/virtual_textures.md">
+            
+                <span>
+            
+                    
+                    Virtual Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Pipeline
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../pipeline/visibility/resource.html">
+            
+                <a href="../../../pipeline/visibility/resource.html">
+            
+                    
+                    Dynamic Visibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                <a href="../../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                    
+                    Dynamic Visibility Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../pipeline/cs/resource.html">
+            
+                <a href="../../../pipeline/cs/resource.html">
+            
+                    
+                    Compute Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../../pipeline/gpudriven/resource.html">
+            
+                <a href="../../../pipeline/gpudriven/resource.html">
+            
+                    
+                    GPU Driven Rendering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../../structure/framegraph/resource.html">
+            
+                <a href="../../../structure/framegraph/resource.html">
+            
+                    
+                    Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../../structure/ecs/resource.html">
+            
+                <a href="../../../structure/ecs/resource.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    Graphics API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1.1" data-path="../../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.14.1.1" data-path="ue.html">
+            
+                <a href="ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.1.2" data-path="../multi_scattering/multi_scattering.html">
+            
+                <a href="../multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../cloud/resource.html">
+            
+                <a href="../../cloud/resource.html">
+            
+                    
+                    Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >A Scalable and Production Ready Sky and Atmosphere Rendering Technique</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="a-scalable-and-production-ready-sky-and-atmosphere-rendering-technique">A Scalable and Production Ready Sky and Atmosphere Rendering Technique</h1>
+<ul>
+<li><a href="#contributions">contributions</a></li>
+<li><a href="#artifacts">artifacts</a></li>
+<li><a href="#leave-over">leave over</a></li>
+<li><a href="#transmittance-lut">transmittance LUT</a><ul>
+<li><a href="#transmittance">transmittance</a></li>
+<li><a href="#lut">LUT</a></li>
+</ul>
+</li>
+<li><a href="#sky-view-lut">sky-view LUT</a></li>
+<li><a href="#aerial-perspective-lut">aerial-perspective LUT</a></li>
+<li><a href="#multi-scattering-lut">multi-scattering LUT</a></li>
+</ul>
+<h2 id="contributions">contributions</h2>
+<ul>
+<li>propose a sky and aerial perspective rendering technique re-lying on LUTs to evaluate expensive parts of the lighting integralat lower resolution while maintaining important visual features.</li>
+<li>propose a novel way to evaluate the contribution of light mul-tiple scattering in the atmosphere. It can approximate an infinitenumber of scattering orders and can also be used to acceleratepath tracing.</li>
+<li>supportsdynamic time of dayalong with dynamicupdates of the atmospheric properties, all while rendering efficiently on a wide range of devices, from a low-end Apple iPhone6s to consoles and high-end gaming PCs</li>
+</ul>
+<h2 id="artifacts">artifacts</h2>
+<ul>
+<li>when using very high scattering coef&#xFB01;cients, the hue can be lost or even start to drift as compared to the ground truth.</li>
+<li>we assume that the light scattering direction is isotropic right after the second bounce. This is in fact an approximation, which is con&#xFB01;rmed by a comparison between our model and the reference path tracer. For Mie scattering only, with g = 0.0 and g = 0.8, RMSE is 0.0058 and 0.039, respectively.
+<img src="1616324748018.png" alt="Alt text"></li>
+</ul>
+<h2 id="leave-over">leave over</h2>
+<ul>
+<li>&#x4E4B;&#x524D;&#x7684;LUT&#x7684;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x662F;&#xFF0C;&#x6709;volumetric shadowing due to hills and mountains&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6709;&#x4E9B;artifacts.
+epipolar lines [Yus13], shadow volumes [Bru17b], or a variant of shadow volumes extruding meshes from shadow maps [Hoo16]</li>
+<li>&#x4E91;&#x548C;&#x5927;&#x6C14;&#x5305;&#x62EC;&#x4F53;&#x79EF;&#x96FE;&#x90FD;&#x662F;&#x6D89;&#x53CA;&#x5230;volume rendering</li>
+<li>ozone &#x7684; density &#x9AD8;&#x5EA6;&#x5206;&#x5E03;&#x4E5F;&#x662F;&#x6709;&#x7279;&#x5B9A;&#x7684;&#x5206;&#x5E03;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x9700;&#x8981;&#x518D;&#x770B;&#x4E0B;</li>
+</ul>
+<h2 id="transmittance-lut">transmittance LUT</h2>
+<h3 id="transmittance">transmittance</h3>
+<p><img src="1606041400540.png" alt="Alt text"></p>
+<p>&#x6CE8;&#x610F;$\beta$&#x7684;&#x5B9A;&#x4E49;&#xFF0C; represent the ratio of light that is lost by  interactions with a particle.</p>
+<p><img src="1606041323852.png" alt="Alt text"></p>
+<h3 id="lut">LUT</h3>
+<p>&#x4EFB;&#x4F55;&#x4E00;&#x70B9;&#x4EE5;&#x4EFB;&#x4E00;&#x89D2;&#x5EA6;&#x5230;&#x5927;&#x6C14;&#x8FB9;&#x754C;&#x7684;transmittance&#xFF0C;&#x53EF;&#x4EE5;&#x6700;&#x7EC8;&#x8F6C;&#x6362;&#x6210;&#x4EE5;r, $cos(\theta)$&#x4E3A;&#x53D8;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x8868;&#x793A;
+<img src="1606041438077.png" alt="Alt text"></p>
+<pre><code class="lang-cpp">Length ComputeOpticalLengthToTopAtmosphereBoundary(
+    IN(AtmosphereParameters) atmosphere, IN(DensityProfile) profile,
+    Length r, Number mu) {
+  assert(r &gt;= atmosphere.bottom_radius &amp;&amp; r &lt;= atmosphere.top_radius);
+  assert(mu &gt;= -1.0 &amp;&amp; mu &lt;= 1.0);
+  // Number of intervals for the numerical integration.
+  const int SAMPLE_COUNT = 500;
+  // The integration step, i.e. the length of each integration interval.
+  Length dx =
+      DistanceToTopAtmosphereBoundary(atmosphere, r, mu) / Number(SAMPLE_COUNT);
+  // Integration loop.
+  Length result = 0.0 * m;
+  for (int i = 0; i &lt;= SAMPLE_COUNT; ++i) {
+    Length d_i = Number(i) * dx;
+    // Distance between the current sample point and the planet center.
+    Length r_i = sqrt(d_i * d_i + 2.0 * r * mu * d_i + r * r);
+    // Number density at the current sample point (divided by the number density
+    // at the bottom of the atmosphere, yielding a dimensionless number).
+    Number y_i = GetProfileDensity(profile, r_i - atmosphere.bottom_radius);
+    // Sample weight (from the trapezoidal rule).
+    Number weight_i = i == 0 || i == SAMPLE_COUNT ? 0.5 : 1.0;
+    result += y_i * weight_i * dx;
+  }
+  return result;
+}
+
+DimensionlessSpectrum ComputeTransmittanceToTopAtmosphereBoundary(
+    IN(AtmosphereParameters) atmosphere, Length r, Number mu) {
+  assert(r &gt;= atmosphere.bottom_radius &amp;&amp; r &lt;= atmosphere.top_radius);
+  assert(mu &gt;= -1.0 &amp;&amp; mu &lt;= 1.0);
+  return exp(-(
+      atmosphere.rayleigh_scattering *
+          ComputeOpticalLengthToTopAtmosphereBoundary(
+              atmosphere, atmosphere.rayleigh_density, r, mu) +
+      atmosphere.mie_extinction *
+          ComputeOpticalLengthToTopAtmosphereBoundary(
+              atmosphere, atmosphere.mie_density, r, mu) +
+      atmosphere.absorption_extinction *
+          ComputeOpticalLengthToTopAtmosphereBoundary(
+              atmosphere, atmosphere.absorption_density, r, mu)));
+}
+</code></pre>
+<p>&#x4ECE;camera&#x5230;&#x4EFB;&#x610F;&#x8DDD;&#x79BB;&#x7684;transmittance, &#x9664;&#x6CD5;&#x5173;&#x7CFB;</p>
+<pre><code class="lang-cpp">DimensionlessSpectrum GetTransmittance(
+    IN(AtmosphereParameters) atmosphere,
+    IN(TransmittanceTexture) transmittance_texture,
+    Length r, Number mu, Length d, bool ray_r_mu_intersects_ground) {
+  assert(r &gt;= atmosphere.bottom_radius &amp;&amp; r &lt;= atmosphere.top_radius);
+  assert(mu &gt;= -1.0 &amp;&amp; mu &lt;= 1.0);
+  assert(d &gt;= 0.0 * m);
+
+  Length r_d = ClampRadius(atmosphere, sqrt(d * d + 2.0 * r * mu * d + r * r));
+  Number mu_d = ClampCosine((r * mu + d) / r_d);
+
+  if (ray_r_mu_intersects_ground) {
+    return min(
+        GetTransmittanceToTopAtmosphereBoundary(
+            atmosphere, transmittance_texture, r_d, -mu_d) /
+        GetTransmittanceToTopAtmosphereBoundary(
+            atmosphere, transmittance_texture, r, -mu),
+        DimensionlessSpectrum(1.0));
+  } else {
+    return min(
+        GetTransmittanceToTopAtmosphereBoundary(
+            atmosphere, transmittance_texture, r, mu) /
+        GetTransmittanceToTopAtmosphereBoundary(
+            atmosphere, transmittance_texture, r_d, mu_d),
+        DimensionlessSpectrum(1.0));
+  }
+}
+</code></pre>
+<h2 id="sky-view-lut">sky-view LUT</h2>
+<p>resolution: 192 * 108</p>
+<ul>
+<li><p>u v &#x542B;&#x4E49;
+&#x5176;&#x5B9E;&#x662F;&#x5EFA;&#x7ACB;&#x4E86;&#x4EE5; &#x5929;&#x9876;&#x65B9;&#x5411;&#x4E3A;z&#x8F74;&#xFF0C; &#x592A;&#x9633;&#x5728;&#x5782;&#x76F4;&#x4E8E;&#x5929;&#x9876;&#x65B9;&#x5411;&#x7684;&#x5E73;&#x9762;&#x7684;&#x5411;&#x91CF;&#x4E3A;x&#x8F74;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">SkyViewLutParamsToUv</span><span class="hljs-params">(AtmosphereParameters Atmosphere, in <span class="hljs-keyword">bool</span> IntersectGround, in <span class="hljs-keyword">float</span> viewZenithCosAngle, in <span class="hljs-keyword">float</span> lightViewCosAngle, in <span class="hljs-keyword">float</span> viewHeight, out float2 uv)</span>
+</span>{
+  <span class="hljs-keyword">float</span> Vhorizon = <span class="hljs-built_in">sqrt</span>(viewHeight * viewHeight - Atmosphere.BottomRadius * Atmosphere.BottomRadius);
+  <span class="hljs-keyword">float</span> CosBeta = Vhorizon / viewHeight;                <span class="hljs-comment">// GroundToHorizonCos</span>
+  <span class="hljs-keyword">float</span> Beta = <span class="hljs-built_in">acos</span>(CosBeta);
+  <span class="hljs-keyword">float</span> ZenithHorizonAngle = PI - Beta;
+
+  <span class="hljs-keyword">if</span> (!IntersectGround)
+  {
+      <span class="hljs-keyword">float</span> coord = <span class="hljs-built_in">acos</span>(viewZenithCosAngle) / ZenithHorizonAngle;
+      coord = <span class="hljs-number">1.0</span> - coord;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> NONLINEARSKYVIEWLUT</span>
+      coord = <span class="hljs-built_in">sqrt</span>(coord); <span class="hljs-comment">// more samples near horizon</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+      coord = <span class="hljs-number">1.0</span> - coord; <span class="hljs-comment">// dx uv (0, 0) left top </span>
+      uv.y = coord * <span class="hljs-number">0.5f</span>;
+  }
+  <span class="hljs-keyword">else</span>
+  {
+      <span class="hljs-keyword">float</span> coord = (<span class="hljs-built_in">acos</span>(viewZenithCosAngle) - ZenithHorizonAngle) / Beta;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> NONLINEARSKYVIEWLUT</span>
+      coord = <span class="hljs-built_in">sqrt</span>(coord);
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+      uv.y = coord * <span class="hljs-number">0.5f</span> + <span class="hljs-number">0.5f</span>;
+  }
+
+  {
+      <span class="hljs-keyword">float</span> coord = -lightViewCosAngle * <span class="hljs-number">0.5f</span> + <span class="hljs-number">0.5f</span>; <span class="hljs-comment">// left and right is symmetrical</span>
+      coord = <span class="hljs-built_in">sqrt</span>(coord);
+      uv.x = coord;
+  }
+
+  <span class="hljs-comment">// Constrain uvs to valid sub texel range (avoid zenith derivative issue making LUT usage visible)</span>
+  uv = float2(fromUnitToSubUvs(uv.x, <span class="hljs-number">192.0f</span>), fromUnitToSubUvs(uv.y, <span class="hljs-number">108.0f</span>));
+}
+</code></pre>
+<h2 id="aerial-perspective-lut">aerial-perspective LUT</h2>
+</li>
+<li>3d texture
+resolution 32  <em> 32 </em> 32,   32depth = 32 km</li>
+<li>In-scattering is stored in the RGB channels while the transmittance is stored in the A channel, as the mean of the wavelength dependent RGB transmittance.
+<img src="1615129850972.png" alt="Alt text"></li>
+</ul>
+<h2 id="multi-scattering-lut">multi-scattering LUT</h2>
+<ul>
+<li>&#x542B;&#x4E49;
+ &#x5E94;&#x8BE5;&#x5E0C;&#x671B;&#x5F97;&#x5230;&#x89C6;&#x7EBF;&#x65B9;&#x5411;&#x7684;&#x79EF;&#x5206;&#x8DEF;&#x5F84;&#x4E0A;&#x4EFB;&#x610F;&#x67D0;&#x4E00;&#x70B9;&#x7684;&#x9AD8;&#x9636;&#x6563;&#x5C04;luminance,  &#x5728;&#x8BE5;&#x70B9;&#x4F1A;&#x8FDB;&#x884C;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x6563;&#x5C04;(&#x6563;&#x5C04;&#x540E;&#x5149;&#x7684;&#x4F20;&#x64AD;&#x65B9;&#x5411;&#x4F1A;&#x53D8;&#x6210;&#x89C6;&#x7EBF;&#x65B9;&#x5411;&#x7684;&#x53CD;&#x65B9;&#x5411;)&#x3002;</li>
+<li>2d texture
+ resolution 32 * 32</li>
+<li>u v &#x542B;&#x4E49;
+u&#x662F;&#x9633;&#x5149;&#x53CD;&#x65B9;&#x5411;&#x7684;&#x5929;&#x9876;&#x89D2;cos&#x503C;&#xFF0C;v&#x503C;&#x662F;&#x79BB;&#x5730;&#x7403;&#x534A;&#x5F84;&#x9AD8;&#x5EA6;&#x7684;&#x5F52;&#x4E00;&#x5316;&#x503C;&#x3002;</li>
+<li>assumptions<ul>
+<li>2&#x9636;&#x53CA;2&#x9636;&#x4EE5;&#x4E0A;&#x7684;multi-scattering&#x5728;&#x8BA1;&#x7B97;&#x65F6;&#x5047;&#x8BBE;&#x662F;&#x5404;&#x5411;&#x540C;&#x6027;&#x7684;&#xFF0C;&#x76F8;&#x4F4D;&#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;(1 / 4pi)</li>
+<li>&#x8BA1;&#x7B97;&#x5927;&#x4E8E;2&#x9636;&#x7684;&#x6563;&#x5C04;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#x4E0A;&#x70B9;&#x6536;&#x5230;&#x7684;2&#x9636;&#x6563;&#x5C04;&#x5149;illuminance&#x662F;&#x76F8;&#x7B49;&#x7684;</li>
+<li>&#x5FFD;&#x7565;&#x53EF;&#x89C1;&#x6027;</li>
+</ul>
+</li>
+</ul>
+<p><img src="1616325690870.png" alt="Alt text">
+<img src="1616325668807.png" alt="Alt text">
+<img src="1616324547318.png" alt="Alt text"></p>
+<pre><code class="lang-cpp"><span class="hljs-function">float3 <span class="hljs-title">GetMultipleScattering</span><span class="hljs-params">(AtmosphereParameters Atmosphere, float3 scattering, float3 extinction, float3 worlPos, <span class="hljs-keyword">float</span> viewZenithCosAngle)</span>
+</span>{
+    float2 uv = saturate(float2(viewZenithCosAngle*<span class="hljs-number">0.5f</span> + <span class="hljs-number">0.5f</span>, (length(worlPos) - Atmosphere.BottomRadius) / (Atmosphere.TopRadius - Atmosphere.BottomRadius)));
+    uv = float2(fromUnitToSubUvs(uv.x, MultiScatteringLUTRes), fromUnitToSubUvs(uv.y, MultiScatteringLUTRes));
+
+    float3 multiScatteredLuminance = MultiScatTexture.SampleLevel(samplerLinearClamp, uv, <span class="hljs-number">0</span>).rgb;
+    <span class="hljs-keyword">return</span> multiScatteredLuminance;
+}
+</code></pre>
+<p>&#x628A;texture&#x7684;u&#x548C;v&#x5206;&#x6210;8*8&#x4E2A;&#x7EBF;&#x7A0B;&#x7EC4;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x3002;</p>
+<pre><code class="lang-cpp">    <span class="hljs-keyword">auto</span> DispatchCS = [&amp;](UINT w, UINT h)
+    {
+        uint32 DispatchSizeX = w;<span class="hljs-comment">// divRoundUp(w, 8); </span>
+        uint32 DispatchSizeY = h;<span class="hljs-comment">// divRoundUp(h, 8);</span>
+        uint32 DispatchSizeZ = <span class="hljs-number">1</span>;
+        context-&gt;Dispatch(DispatchSizeX, DispatchSizeY, DispatchSizeZ);
+    };
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x5BF9;&#x67D0;&#x4E00;&#x4E2A;&#x9AD8;&#x5EA6;&#x548C;&#x592A;&#x9633;&#x5929;&#x9876;&#x89D2;&#xFF0C;&#x7528;compute shader&#x628A;&#x79EF;&#x5206;&#x7684;&#x65B9;&#x5411;4pi&#x5206;&#x6210;&#x4E86;64&#x4E2A;&#x91C7;&#x6837;&#x65B9;&#x5411;&#x8FDB;&#x884C;&#x6C42;&#x548C;&#x3002;
+&#x5404;&#x4E2A;&#x65B9;&#x5411;&#x7684;2&#x9636;&#x6563;&#x5C04;illuminance&#x5B58;&#x5728;MultiScatAs1SharedMem.</p>
+<pre><code class="lang-cpp">numthreads(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">64</span>)]
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">NewMultiScattCS</span><span class="hljs-params">(uint3 ThreadId : SV_DispatchThreadID)</span>
+</span>{
+    float2 pixPos = float2(ThreadId.xy) + <span class="hljs-number">0.5f</span>;
+    float2 uv = pixPos / MultiScatteringLUTRes;
+
+
+    uv = float2(fromSubUvsToUnit(uv.x, MultiScatteringLUTRes), fromSubUvsToUnit(uv.y, MultiScatteringLUTRes));
+
+    AtmosphereParameters Atmosphere = GetAtmosphereParameters();
+
+    <span class="hljs-keyword">float</span> cosSunZenithAngle = uv.x * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>;
+    float3 sunDir = float3(<span class="hljs-number">0.0</span>, <span class="hljs-built_in">sqrt</span>(saturate(<span class="hljs-number">1.0</span> - cosSunZenithAngle * cosSunZenithAngle)), cosSunZenithAngle);
+    <span class="hljs-comment">// We adjust again viewHeight according to PLANET_RADIUS_OFFSET to be in a valid range.</span>
+    <span class="hljs-keyword">float</span> viewHeight = Atmosphere.BottomRadius + saturate(uv.y + PLANET_RADIUS_OFFSET) * (Atmosphere.TopRadius - Atmosphere.BottomRadius - PLANET_RADIUS_OFFSET);
+
+    float3 WorldPos = float3(<span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, viewHeight);
+    float3 WorldDir = float3(<span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>);
+
+
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">bool</span> ground = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> SampleCountIni = <span class="hljs-number">20</span>;<span class="hljs-comment">// a minimum set of step is required for accuracy unfortunately</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> DepthBufferValue = <span class="hljs-number">-1.0</span>;
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">bool</span> VariableSampleCount = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">bool</span> MieRayPhase = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> SphereSolidAngle = <span class="hljs-number">4.0</span> * PI;
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> IsotropicPhase = <span class="hljs-number">1.0</span> / SphereSolidAngle;
+
+
+    <span class="hljs-comment">// Reference. Since there are many sample, it requires MULTI_SCATTERING_POWER_SERIE to be true for accuracy and to avoid divergences (see declaration for explanations)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SQRTSAMPLECOUNT 8</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> sqrtSample = <span class="hljs-keyword">float</span>(SQRTSAMPLECOUNT);
+    <span class="hljs-keyword">float</span> i = <span class="hljs-number">0.5f</span> + <span class="hljs-keyword">float</span>(ThreadId.z / SQRTSAMPLECOUNT);
+    <span class="hljs-keyword">float</span> j = <span class="hljs-number">0.5f</span> + <span class="hljs-keyword">float</span>(ThreadId.z - <span class="hljs-keyword">float</span>((ThreadId.z / SQRTSAMPLECOUNT)*SQRTSAMPLECOUNT));
+    {
+        <span class="hljs-keyword">float</span> randA = i / sqrtSample;
+        <span class="hljs-keyword">float</span> randB = j / sqrtSample;
+        <span class="hljs-keyword">float</span> theta = <span class="hljs-number">2.0f</span> * PI * randA;
+        <span class="hljs-keyword">float</span> phi = PI * randB;
+        <span class="hljs-keyword">float</span> cosPhi = <span class="hljs-built_in">cos</span>(phi);
+        <span class="hljs-keyword">float</span> sinPhi = <span class="hljs-built_in">sin</span>(phi);
+        <span class="hljs-keyword">float</span> cosTheta = <span class="hljs-built_in">cos</span>(theta);
+        <span class="hljs-keyword">float</span> sinTheta = <span class="hljs-built_in">sin</span>(theta);
+        WorldDir.x = cosTheta * sinPhi;
+        WorldDir.y = sinTheta * sinPhi;
+        WorldDir.z = cosPhi;
+        SingleScatteringResult result = IntegrateScatteredLuminance(pixPos, WorldPos, WorldDir, sunDir, Atmosphere, ground, SampleCountIni, DepthBufferValue, VariableSampleCount, MieRayPhase);
+
+        MultiScatAs1SharedMem[ThreadId.z] = result.MultiScatAs1 * SphereSolidAngle / (sqrtSample * sqrtSample);
+        LSharedMem[ThreadId.z] = result.L * SphereSolidAngle / (sqrtSample * sqrtSample);
+    }
+<span class="hljs-meta">#<span class="hljs-meta-keyword">undef</span> SQRTSAMPLECOUNT</span>
+
+<span class="hljs-comment">// &#x8FD9;&#x91CC;&#x662F;&#x5728;&#x628A;&#x8FD9;&#x4E9B;&#x503C;&#x901A;&#x8FC7;&#x4E8C;&#x5206;&#x6CD5;&#x7D2F;&#x52A0;&#x5230;&#x7B2C;0&#x4E2A;&#x5143;&#x7D20;&#x4E0A;</span>
+    GroupMemoryBarrierWithGroupSync();
+
+    <span class="hljs-comment">// 64 to 32</span>
+    <span class="hljs-keyword">if</span> (ThreadId.z &lt; <span class="hljs-number">32</span>)
+    {
+        MultiScatAs1SharedMem[ThreadId.z] += MultiScatAs1SharedMem[ThreadId.z + <span class="hljs-number">32</span>];
+        LSharedMem[ThreadId.z] += LSharedMem[ThreadId.z + <span class="hljs-number">32</span>];
+    }
+    GroupMemoryBarrierWithGroupSync();
+
+    <span class="hljs-comment">// 32 to 16</span>
+    <span class="hljs-keyword">if</span> (ThreadId.z &lt; <span class="hljs-number">16</span>)
+    {
+        MultiScatAs1SharedMem[ThreadId.z] += MultiScatAs1SharedMem[ThreadId.z + <span class="hljs-number">16</span>];
+        LSharedMem[ThreadId.z] += LSharedMem[ThreadId.z + <span class="hljs-number">16</span>];
+    }
+    GroupMemoryBarrierWithGroupSync();
+
+    <span class="hljs-comment">// 16 to 8 (16 is thread group min hardware size with intel, no sync required from there)</span>
+    <span class="hljs-keyword">if</span> (ThreadId.z &lt; <span class="hljs-number">8</span>)
+    {
+        MultiScatAs1SharedMem[ThreadId.z] += MultiScatAs1SharedMem[ThreadId.z + <span class="hljs-number">8</span>];
+        LSharedMem[ThreadId.z] += LSharedMem[ThreadId.z + <span class="hljs-number">8</span>];
+    }
+    GroupMemoryBarrierWithGroupSync();
+    <span class="hljs-keyword">if</span> (ThreadId.z &lt; <span class="hljs-number">4</span>)
+    {
+        MultiScatAs1SharedMem[ThreadId.z] += MultiScatAs1SharedMem[ThreadId.z + <span class="hljs-number">4</span>];
+        LSharedMem[ThreadId.z] += LSharedMem[ThreadId.z + <span class="hljs-number">4</span>];
+    }
+    GroupMemoryBarrierWithGroupSync();
+    <span class="hljs-keyword">if</span> (ThreadId.z &lt; <span class="hljs-number">2</span>)
+    {
+        MultiScatAs1SharedMem[ThreadId.z] += MultiScatAs1SharedMem[ThreadId.z + <span class="hljs-number">2</span>];
+        LSharedMem[ThreadId.z] += LSharedMem[ThreadId.z + <span class="hljs-number">2</span>];
+    }
+    GroupMemoryBarrierWithGroupSync();
+    <span class="hljs-keyword">if</span> (ThreadId.z &lt; <span class="hljs-number">1</span>)
+    {
+        MultiScatAs1SharedMem[ThreadId.z] += MultiScatAs1SharedMem[ThreadId.z + <span class="hljs-number">1</span>];
+        LSharedMem[ThreadId.z] += LSharedMem[ThreadId.z + <span class="hljs-number">1</span>];
+    }
+    GroupMemoryBarrierWithGroupSync();
+    <span class="hljs-comment">// &#x53EA;&#x6709;&#x8BA1;&#x7B97;&#x5230;&#x7B2C;0&#x4E2A;&#x503C;&#xFF0C;&#x5373;&#x7D2F;&#x52A0;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x624D;&#x4F1A;&#x53BB;&#x66F4;&#x65B0;&#x5230;texture&#x91CC;</span>
+    <span class="hljs-keyword">if</span> (ThreadId.z &gt; <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">return</span>;
+
+    float3 MultiScatAs1            = MultiScatAs1SharedMem[<span class="hljs-number">0</span>] * IsotropicPhase;    <span class="hljs-comment">// Equation 7 f_ms</span>
+    float3 InScatteredLuminance    = LSharedMem[<span class="hljs-number">0</span>] * IsotropicPhase;                <span class="hljs-comment">// Equation 5 L_2ndOrder</span>
+
+    <span class="hljs-comment">// MultiScatAs1 represents the amount of luminance scattered as if the integral of scattered luminance over the sphere would be 1.</span>
+    <span class="hljs-comment">//  - 1st order of scattering: one can ray-march a straight path as usual over the sphere. That is InScatteredLuminance.</span>
+    <span class="hljs-comment">//  - 2nd order of scattering: the inscattered luminance is InScatteredLuminance at each of samples of fist order integration. Assuming a uniform phase function that is represented by MultiScatAs1,</span>
+    <span class="hljs-comment">//  - 3nd order of scattering: the inscattered luminance is (InScatteredLuminance * MultiScatAs1 * MultiScatAs1)</span>
+    <span class="hljs-comment">//  - etc.</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span>    MULTI_SCATTERING_POWER_SERIE==0</span>
+    float3 MultiScatAs1SQR = MultiScatAs1 * MultiScatAs1;
+    float3 L = InScatteredLuminance * (<span class="hljs-number">1.0</span> + MultiScatAs1 + MultiScatAs1SQR + MultiScatAs1 * MultiScatAs1SQR + MultiScatAs1SQR * MultiScatAs1SQR);
+<span class="hljs-meta">#<span class="hljs-meta-keyword">else</span></span>
+    <span class="hljs-comment">// For a serie, sum_{n=0}^{n=+inf} = 1 + r + r^2 + r^3 + ... + r^n = 1 / (1.0 - r), see https://en.wikipedia.org/wiki/Geometric_series </span>
+    <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x7528;&#x4E86;&#x8BBA;&#x6587;&#x91CC;&#x62D6;&#x5230;&#x7684;&#x7B80;&#x5316;&#x516C;&#x5F0F;&#x6765;&#x8BA1;&#x7B97;&#x7684;</span>
+    <span class="hljs-keyword">const</span> float3 r = MultiScatAs1;
+    <span class="hljs-keyword">const</span> float3 SumOfAllMultiScatteringEventsContribution = <span class="hljs-number">1.0f</span> / (<span class="hljs-number">1.0</span> - r);
+    float3 L = InScatteredLuminance * SumOfAllMultiScatteringEventsContribution;<span class="hljs-comment">// Equation 10 Psi_ms</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+
+    OutputTexture[ThreadId.xy] = float4(MultipleScatteringFactor * L, <span class="hljs-number">1.0f</span>);
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: Atmosphere">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../multi_scattering/multi_scattering.html" class="navigation navigation-next " aria-label="Next page: multi-scattering计算的一些思考">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"A Scalable and Production Ready Sky and Atmosphere Rendering Technique","level":"1.14.1.1","depth":3,"next":{"title":"multi-scattering计算的一些思考","level":"1.14.1.2","depth":3,"path":"special_effect/atmosphere/multi_scattering/multi_scattering.md","ref":"special_effect/atmosphere/multi_scattering/multi_scattering.md","articles":[]},"previous":{"title":"Atmosphere","level":"1.14.1","depth":2,"path":"special_effect/atmosphere/resource.md","ref":"special_effect/atmosphere/resource.md","articles":[{"title":"A Scalable and Production Ready Sky and Atmosphere Rendering Technique","level":"1.14.1.1","depth":3,"path":"special_effect/atmosphere/ue_ray_marching/ue.md","ref":"special_effect/atmosphere/ue_ray_marching/ue.md","articles":[]},{"title":"multi-scattering计算的一些思考","level":"1.14.1.2","depth":3,"path":"special_effect/atmosphere/multi_scattering/multi_scattering.md","ref":"special_effect/atmosphere/multi_scattering/multi_scattering.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"special_effect/atmosphere/ue_ray_marching/ue.md","mtime":"2021-03-21T13:38:37.744Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-21T13:39:50.812Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
