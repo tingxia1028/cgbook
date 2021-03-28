@@ -1,0 +1,1059 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GPU Driven Occlusion Culling · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../resource.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../space_trans/resource.html">
+            
+                <a href="../../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../camera/resource.html">
+            
+                <a href="../../../camera/resource.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../camera/photography/photography.html">
+            
+                <a href="../../../camera/photography/photography.html">
+            
+                    
+                    科学解释摄影中的一些概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../ray_tracing/resource.html">
+            
+                <a href="../../../ray_tracing/resource.html">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../volume/resource.html">
+            
+                <a href="../../../volume/resource.html">
+            
+                    
+                    Volume Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../volume/volume_rendering/volume_rendering.html">
+            
+                <a href="../../../volume/volume_rendering/volume_rendering.html">
+            
+                    
+                    Volume Rendering Basic Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../GI/resource.html">
+            
+                <a href="../../../GI/resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../GI/GI_draft/GI_draft.html">
+            
+                <a href="../../../GI/GI_draft/GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../GI/voxel_based/resource.html">
+            
+                <a href="../../../GI/voxel_based/resource.html">
+            
+                    
+                    Voxel Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../pbr/resource.html">
+            
+                <a href="../../../pbr/resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../pbr/material/resource.html">
+            
+                <a href="../../../pbr/material/resource.html">
+            
+                    
+                    Material
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../light/resource.html">
+            
+                <a href="../../../light/resource.html">
+            
+                    
+                    Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../color/resource.html">
+            
+                <a href="../../../color/resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../../shadow/resource.html">
+            
+                <a href="../../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../../texture/resource.html">
+            
+                <a href="../../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../texture/multiple_textures/multiple_textures.html">
+            
+                <a href="../../../texture/multiple_textures/multiple_textures.html">
+            
+                    
+                    Multiple Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../texture/multiple_textures/virtual_textures.md">
+            
+                <span>
+            
+                    
+                    Virtual Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Pipeline
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../visibility/resource.html">
+            
+                <a href="../../visibility/resource.html">
+            
+                    
+                    Dynamic Visibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../../visibility/dynamic_visibility_draft/draft.html">
+            
+                <a href="../../visibility/dynamic_visibility_draft/draft.html">
+            
+                    
+                    Dynamic Visibility Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../cs/resource.html">
+            
+                <a href="../../cs/resource.html">
+            
+                    
+                    Compute Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    GPU Driven Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.12.3.1" data-path="oc.html">
+            
+                <a href="oc.html">
+            
+                    
+                    GPU Driven Occlusion Culling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../../structure/framegraph/resource.html">
+            
+                <a href="../../../structure/framegraph/resource.html">
+            
+                    
+                    Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../../structure/ecs/resource.html">
+            
+                <a href="../../../structure/ecs/resource.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Graphics API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1.1" data-path="../../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                <a href="../../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.1.2" data-path="../../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                <a href="../../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../../special_effect/cloud/resource.html">
+            
+                <a href="../../../special_effect/cloud/resource.html">
+            
+                    
+                    Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    Engine
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../../engine/filament/resource.html">
+            
+                <a href="../../../engine/filament/resource.html">
+            
+                    
+                    Filament
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >GPU Driven Occlusion Culling</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gpu-driven-occlusion-culling">GPU Driven Occlusion Culling</h1>
+<p><a href="https://interplayoflight.wordpress.com/2018/05/25/gpu-driven-rendering-experiments-at-the-digital-dragons-conference/" target="_blank">https://interplayoflight.wordpress.com/2018/05/25/gpu-driven-rendering-experiments-at-the-digital-dragons-conference/</a> 18&#x5E74;&#x8FD9;&#x4E2A;course&#x7684;&#x4E00;&#x4E9B;notes&#x548C;thoughts</p>
+<ul>
+<li><a href="#main-thoughts">main thoughts</a></li>
+<li><a href="#steps">steps</a><ul>
+<li><a href="#occlusion-buffer">Occlusion buffer</a></li>
+<li><a href="#hierarchical-z-mip-chain">Hierarchical-Z mip chain</a></li>
+<li><a href="#prop-visibility-calculation">Prop visibility calculation</a></li>
+<li><a href="#stream-compaction">stream compaction</a></li>
+<li><a href="#multidrawinstancedindirect">MultiDrawInstancedIndirect</a></li>
+</ul>
+</li>
+<li><a href="#batching">batching</a><ul>
+<li><a href="#mesh-lod">mesh LOD</a></li>
+<li><a href="#material">material</a></li>
+<li><a href="#texture">texture</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9C%80%E5%90%8E%E9%99%84%E4%B8%8A%E4%B8%80%E4%B8%AA%E9%92%88%E5%AF%B9%E6%AF%8F%E4%B8%80%E6%AD%A5%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%95%B4%E7%90%86%E7%9A%84xmind">&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;XMind</a></li>
+</ul>
+<h2 id="main-thoughts">main thoughts</h2>
+<ul>
+<li>using a compute shader to perform the occlusion tests producing a list of visible props</li>
+<li>consuming on the GPU to avoid rendering occluded objects</li>
+<li>using instance rendering to render the props</li>
+</ul>
+<h2 id="steps">steps</h2>
+<h3 id="occlusion-buffer">Occlusion buffer</h3>
+<ul>
+<li>render the depth of all main occluders to the occlusion buffer</li>
+<li>without pixel shader
+<img src="1616321501069.png" alt="Alt text"></li>
+</ul>
+<h3 id="hierarchical-z-mip-chain">Hierarchical-Z mip chain</h3>
+<ul>
+<li>create a Hierarchical-Z mip chain of the occlusion buffer, using the max operator to produce each mip level</li>
+<li><p>using a compute shader to do the downsampling</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">downscale</span><span class="hljs-params">(uint3 threadID : SV_DispatchThreadID)</span>
+</span>{
+  <span class="hljs-keyword">if</span> (all(threadID.xy &lt; RTSize.xy))
+  {
+     float4 depths = inputRT.Gather(samplerPoint, (threadID.xy + <span class="hljs-number">0.5</span>)/ RTSize.xy);
+
+     <span class="hljs-comment">//find and return max depth</span>
+     outputRT[threadID.xy] = max(max(depths.x, depths.y), max(depths.z, depths.w));
+   }
+}
+</code></pre>
+<p>gather &#x4E0D;&#x652F;&#x6301; mip level &#x53C2;&#x6570;, &#x4E14;&#x53EA;&#x6709;shader model 5&#x652F;&#x6301;&#xFF0C;&#x8FD8;&#x662F;&#x7528;4 texture reads<br><img src="1616321514410.png" alt="Alt text">
+<img src="1616321521279.png" alt="Alt text">
+<img src="1616321537964.png" alt="Alt text"></p>
+<p><img src="1616321546085.png" alt="Alt text"></p>
+</li>
+</ul>
+<h3 id="prop-visibility-calculation">Prop visibility calculation</h3>
+<ul>
+<li><p>packed data for instances of props in a Structured buffer</p>
+<ul>
+<li>world transformation</li>
+<li>axis aligned bounding box</li>
+</ul>
+</li>
+<li><p>choose whether perform frustum culling</p>
+</li>
+<li><p>compute shader to calculate visibilities</p>
+<p> &#x6839;&#x636E;&#x7269;&#x4F53;&#x7684;boundingbox&#x6295;&#x5F71;&#x5230;clip space&#x7684;&#x9762;&#x79EF;&#x5927;&#x5C0F;&#xFF0C;&#x51B3;&#x5B9A;&#x91C7;&#x6837;&#x90A3;&#x4E00;&#x4E2A;mip level&#xFF0C;&#x5C06;bdbox&#x7684;&#x516B;&#x4E2A;corner&#x7684;&#x6700;&#x5C0F;&#x6DF1;&#x5EA6;&#x548C;&#x91C7;&#x6837;&#x5F97;&#x5230;&#x7684;&#x6700;&#x5927;&#x6DF1;&#x5EA6;&#x5BF9;&#x6BD4;&#xFF0C;&#x5982;&#x679C;&#x6700;&#x5C0F;&#x6DF1;&#x5EA6;&gt;&#x91C7;&#x6837;&#x6DF1;&#x5EA6;&#xFF0C;&#x5219;&#x7269;&#x4F53;&#x88AB;&#x906E;&#x6321;&#x3002;</p>
+<pre><code class="lang-cpp">  for (int i = 0; i &lt; 8; i++)
+  {
+      //transform World space aaBox to NDC
+      float4 clipPos = mul(float4(boxCorners[i], 1), ViewProjection);
+
+      clipPos.z = max(clipPos.z, 0);
+
+      clipPos.xyz = clipPos.xyz / clipPos.w;
+
+      clipPos.xy = clamp(clipPos.xy, -1, 1);
+      clipPos.xy = clipPos.xy * float2(0.5, -0.5) + float2(0.5, 0.5);
+
+      minXY = min(clipPos.xy, minXY);
+      maxXY = max(clipPos.xy, maxXY);
+
+      minZ = saturate(min(minZ, clipPos.z));        
+  }
+
+  if (all(maxXY &gt; 0) &amp;&amp; all(minXY &lt; 1) )  // &#x505A;&#x4E86;&#x4E00;&#x6B21;frustum culling
+  {
+      float4 boxUVs = float4(minXY, maxXY);
+
+      // Calculate hi-Z buffer mip
+      int2 size = (maxXY - minXY) * RTSize.xy;
+
+      if (alwaysVisible || (maxXY - minXY).y &gt;= 0.001 )
+      {
+          float mip = ceil(log2(max(size.x, size.y)));   // &#x8FD9;&#x91CC;&#x662F;&#x8BA1;&#x7B97;mip level&#x7684;&#x5730;&#x65B9;
+
+          mip = clamp(mip, 0, MaxMipLevel);
+
+          // Texel footprint for the lower (finer-grained) level
+          float  level_lower = max(mip - 1, 0);
+          float2 scale = exp2(-level_lower);
+          float2 a = floor(boxUVs.xy*scale);
+          float2 b = ceil(boxUVs.zw*scale);
+          float2 dims = b - a;
+
+          // Use the lower level if we only touch &lt;= 2 texels in both dimensions
+          if (dims.x &lt;= 2 &amp;&amp; dims.y &lt;= 2)
+              mip = level_lower;
+
+          //load depths from high z buffer
+          float4 depth = { inputRT.SampleLevel(samplerPoint, boxUVs.xy, mip),
+                           inputRT.SampleLevel(samplerPoint, boxUVs.zy, mip),
+                           inputRT.SampleLevel(samplerPoint, boxUVs.xw, mip),
+                           inputRT.SampleLevel(samplerPoint, boxUVs.zw, mip)
+          };
+
+          //find the max depth
+          float maxDepth = max(max(depth.x, depth.y), max(depth.z, depth.w));
+
+          if (alwaysVisible || ActivateCulling == 0 || minZ &lt;= maxDepth)
+          {
+              predicate = true;
+
+              //increase instance count for this particular prop type
+              InterlockedAdd(drawcallDataOut[ instanceDataIn[threadID.x].DrawcallID * 5 + 1], 1);
+          }
+      }
+  }
+</code></pre>
+</li>
+</ul>
+<h3 id="stream-compaction">stream compaction</h3>
+<ul>
+<li>save prop visibility result as bool
+instanceFlagsData[threadID.x] = predicate; 
+<img src="1616321562288.png" alt="Alt text"></li>
+<li><p>parallel prefix scan
+<img src="1616321570805.png" alt="Alt text">
+&#x5982;&#x679C;&#x7B2C;i&#x4E2A;instance&#x53EF;&#x89C1;(input[i] &gt; 0), &#x628A;&#x8FD9;&#x4E2A;instance&#x7684;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x7ED9;&#x538B;&#x7F29;&#x7ED3;&#x679C;&#x7684;&#x7B2C;Output[i]&#x4E2A;data.</p>
+<ul>
+<li><p>stream compaction</p>
+<p>  &#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x5982;&#x4F55;&#x5F97;&#x5230;&#x524D;i-1&#x4E2A;&#x6570;&#x636E;&#x7684;&#x548C;
+  <img src="1616321433966.png" alt="Alt text"></p>
+<ul>
+<li><p>&#x6BCF;&#x6B21;&#x5C06;&#x76F8;&#x90BB;&#x4E24;&#x4E2A;&#x503C;&#x6C42;&#x548C;
+<img src="1616321445793.png" alt="Alt text"></p>
+<pre><code class="lang-cpp">   <span class="hljs-comment">//perform reduction</span>
+<span class="hljs-keyword">for</span> (d = NoofDrawcalls &gt;&gt; <span class="hljs-number">1</span>; d &gt; <span class="hljs-number">0</span>; d &gt;&gt;= <span class="hljs-number">1</span>)
+{
+GroupMemoryBarrierWithGroupSync();
+
+<span class="hljs-keyword">if</span> (tID &lt; d)
+{
+    <span class="hljs-keyword">int</span> ai = offset * (<span class="hljs-number">2</span> * tID + <span class="hljs-number">1</span>) - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">int</span> bi = offset * (<span class="hljs-number">2</span> * tID + <span class="hljs-number">2</span>) - <span class="hljs-number">1</span>;
+    temp[bi] += temp[ai];
+}
+offset *= <span class="hljs-number">2</span>;
+}
+</code></pre>
+</li>
+<li><p>&#x518D;&#x6BCF;&#x6B21;&#x5C06;&#x5E8F;&#x5217;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x5BF9;&#x6BD4;&#x6700;&#x540E;&#x4E24;&#x4E2A;&#x6570;&#x503C;
+<img src="1616321459915.png" alt="Alt text">
+&#x4EE5;&#x4E0A;&#x8BA1;&#x7B97;&#x53EF;&#x4EE5;&#x7528;compute shader &#x5E76;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x9700;&#x8981;&#x505A;&#x4E00;&#x6B21;&#x540C;&#x6B65;</p>
+<pre><code class="lang-cpp"><span class="hljs-comment">//perform downsweep and build scan</span>
+  <span class="hljs-keyword">for</span> (d = <span class="hljs-number">1</span>; d &lt; NoofDrawcalls; d *= <span class="hljs-number">2</span>)
+{
+offset &gt;&gt;= <span class="hljs-number">1</span>;
+
+GroupMemoryBarrierWithGroupSync();
+
+<span class="hljs-keyword">if</span> (tID &lt; d)
+{
+    <span class="hljs-keyword">int</span> ai = offset * (<span class="hljs-number">2</span> * tID + <span class="hljs-number">1</span>) - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">int</span> bi = offset * (<span class="hljs-number">2</span> * tID + <span class="hljs-number">2</span>) - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">int</span> t = temp[ai];
+    temp[ai] = temp[bi];
+    temp[bi] += t;
+}
+}
+</code></pre>
+<p>&#x4E3A;&#x5565;&#x6700;&#x591A;2048&#x4E2A;&#x6570;&#x636E;&#x5462;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x7EC4;&#x6700;&#x591A;1024&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BA1;&#x7B97;2&#x4E2A;&#x6570;&#x7684;&#x548C;&#xFF0C;&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;2048&#x4E2A;&#x6570;&#x636E;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D85;&#x8FC7;2048&#x4E2A;&#x6570;&#x636E;&#x600E;&#x4E48;&#x529E;</p>
+<p>&#x6BCF;2048&#x4E2A;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;compute shader thread group&#x8BA1;&#x7B97;&#x7EC4;&#x5185;&#x7684;&#x7D2F;&#x52A0;&#x548C;&#xFF0C;&#x7136;&#x548C;&#x628A;&#x6700;&#x5927;&#x7684;&#x548C;&#x8BB0;&#x5230;&#x53E6;&#x5916;&#x7684;&#x6570;&#x7EC4;&#x91CC;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x7528;&#x4E00;&#x4E2A;pass, &#x5BF9;&#x6BCF;&#x4E2A;group&#x91CC;&#x7684;&#x6570;&#x636E;&#x5206;&#x522B;&#x52A0;&#x4E0A;&#x4E4B;&#x524D;&#x6240;&#x6709;&#x7EC4;&#x7684;&#x6700;&#x5927;&#x7684;&#x548C;
+<img src="1616321473831.png" alt="Alt text"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="multidrawinstancedindirect">MultiDrawInstancedIndirect</h3>
+<ul>
+<li>DX12 &#x76F4;&#x63A5;&#x652F;&#x6301;<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">ExecuteIndirect</span><span class="hljs-params">(
+ID3D12CommandSignature *pCommandSignature,
+UINT                   MaxCommandCount,
+ID3D12Resource         *pArgumentBuffer,
+UINT64                 ArgumentBufferOffset,
+ID3D12Resource         *pCountBuffer,
+UINT64                 CountBufferOffset
+)</span></span>;
+</code></pre>
+<img src="1616946953324.png" alt="Alt text">
+<img src="1616946963830.png" alt="Alt text">
+<img src="1616946973545.png" alt="Alt text"></li>
+<li>DX11 &#x4F7F;&#x7528;NVIDIA &#x6216;&#x8005; AMD &#x7684; driver extension
+nv &#x548C; amd &#x8FD8;&#x662F;&#x9700;&#x8981;&#x628A;vertex &#x6570;&#x636E;&#x62CD;&#x5230;&#x4E00;&#x8D77;<ul>
+<li>nvapi<pre><code class="lang-cpp">NvAPI_D3D11_MultiDrawIndexedInstancedIndirect(
+        d3dImmediateContext,
+        drawCount,                                            <span class="hljs-comment">//drawCount,</span>
+        renderingContext.m_instanceArgsBuffer-&gt;GetBuffer(),
+        <span class="hljs-number">0</span>,                                                    <span class="hljs-comment">//alignedByteOffsetForArgs</span>
+        <span class="hljs-number">5</span> * <span class="hljs-keyword">sizeof</span>(UINT)                                    <span class="hljs-comment">//alignedByteStrideForArgs</span>
+    );
+</code></pre>
+</li>
+</ul>
+</li>
+<li>DX11 &#x9664;&#x4E86; NVIDIA &#x548C; AMD&#xFF0C;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x5C01;&#x88C5;&#x591A;&#x4E2A;DrawIndexedInstancedIndirect &#x6216;&#x8005; &#x628A;&#x6240;&#x6709;&#x7269;&#x4F53;&#x751F;&#x6210;&#x76F8;&#x540C;&#x9876;&#x70B9;&#x6570;&#x7684;cluster&#xFF0C;&#x518D;&#x8C03;&#x7528;DrawIndexedInstancedIndirect<pre><code class="lang-cpp">  <span class="hljs-keyword">for</span> (UINT i = <span class="hljs-number">0</span>; i &lt; drawCount; i++)
+  {
+  d3dImmediateContext-&gt;DrawIndexedInstancedIndirect(
+          argumentsBuffer,
+          i * <span class="hljs-number">5</span> * <span class="hljs-keyword">sizeof</span>(UINT)
+      );
+  }
+</code></pre>
+</li>
+</ul>
+<h2 id="batching">batching</h2>
+<h3 id="mesh-lod">mesh LOD</h3>
+<p> <img src="1616321582036.png" alt="Alt text"></p>
+<h3 id="mesh-cluster">mesh cluster</h3>
+<p> &#x8FD9;&#x91CC;&#x770B;&#x4E86;&#x4E00;&#x4E2A;unity&#x7684;demo&#x91CC;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x662F;&#x5C06;&#x4E00;&#x4E2A;object&#x7684;bounding box&#x5206;&#x6210;&#x591A;&#x4E2A;voxel&#xFF0C;&#x5373;&#x4E00;&#x4E2A;&#x4E2A;&#x5C0F;&#x7684;&#x7ACB;&#x65B9;&#x4F53;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x6240;&#x6709;vertex&#x6839;&#x636E;&#x4F4D;&#x7F6E;&#x5BF9;&#x5E94;&#x5230;&#x4E0D;&#x540C;&#x7684;voxel. &#x7136;&#x540E;&#x518D;&#x5F00;&#x59CB;&#x5206;&#x914D;cluster&#xFF0C;eg. &#x4E00;&#x4E2A;cluster 255&#x4E2A;&#x9876;&#x70B9;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;voxel&#xFF0C;&#x5982;&#x679C;&gt;=255&#x4E2A;&#x9876;&#x70B9;&#xFF0C;&#x628A;&#x524D;255&#x4E2A;&#x9876;&#x70B9;&#x5206;&#x914D;&#x7ED9;&#x4E00;&#x4E2A;cluster&#xFF0C;&#x5982;&#x679C;&lt;255&#xFF0C;&#x5219;&#x5C06;&#x6240;&#x6709;&#x9876;&#x70B9;&#x5148;&#x5206;&#x914D;&#x7ED9;&#x8FD9;&#x4E2A;cluster&#xFF0C;&#x7136;&#x540E;&#x518D;&#x641C;&#x7D22;&#x5468;&#x56F4;&#x6B65;&#x957F;&#x662F;1&#x7684;voxel&#x91CC;&#x7684;&#x9876;&#x70B9;&#x6765;&#x586B;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x6EE1;&#xFF0C;&#x518D;&#x641C;&#x6B65;&#x957F;&#x662F;2&#x7684;voxel. &#x8FD9;&#x6837;&#x7684;&#x60F3;&#x6CD5;&#x662F;&#x5C3D;&#x91CF;&#x628A;&#x4F4D;&#x7F6E;&#x76F8;&#x8FD1;&#x7684;&#x9876;&#x70B9;&#x5206;&#x914D;&#x5230;&#x4E00;&#x4E2A;cluster&#x91CC;&#x3002;&#x4F46;&#x662F;&#x611F;&#x89C9;&#x6709;&#x70B9;&#x8FC7;&#x4E8E;&#x590D;&#x6742;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x516B;&#x53C9;&#x6811;&#x7684;&#x7A7A;&#x95F4;&#x5173;&#x7CFB;&#x53EF;&#x4EE5;&#x66F4;&#x5FEB;&#x7684;&#x904D;&#x5386;&#x3002;</p>
+<pre><code class="lang-cpp"> <span class="hljs-keyword">int</span> loopStart = min(currentVoxel.count, max(lastedVertex - currentVoxel.count, <span class="hljs-number">0</span>)); 
+ <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; loopStart; j++)
+ {
+     Triangle* tri = currentVoxel.Pop();
+     currentPoints.Add(tri-&gt;a);
+     currentPoints.Add(tri-&gt;b);
+     currentPoints.Add(tri-&gt;c);
+ }
+ lastedVertex -= loopStart;
+
+ <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> size = <span class="hljs-number">1</span>; lastedVertex &gt; <span class="hljs-number">0</span>; size++)
+ {
+     int3 leftDown = max(voxelCoord - size, <span class="hljs-number">0</span>);
+     int3 rightUp = min(voxelSize, voxelCoord + size);
+     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = leftDown.x; x &lt; rightUp.x; ++x)
+         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y = leftDown.y; y &lt; rightUp.y; ++y)
+             <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = leftDown.z; z &lt; rightUp.z; ++z)
+             {
+                 ref Voxel vxl = ref voxels[x, y, z];
+                 <span class="hljs-keyword">int</span> vxlCount = vxl.count;
+                 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; vxlCount; ++j)
+                 {
+                     voxelCoord = int3(x, y, z);
+                     Triangle* tri = vxl.Pop();
+                     currentPoints.Add(tri-&gt;a);
+                     currentPoints.Add(tri-&gt;b);
+                     currentPoints.Add(tri-&gt;c);
+                     lastedVertex--;
+                     <span class="hljs-keyword">if</span> (lastedVertex &lt;= <span class="hljs-number">0</span>) <span class="hljs-keyword">goto</span> CONTINUE;
+                 }
+             }
+
+ }
+ CONTINUE:
+</code></pre>
+<h3 id="material">material</h3>
+<ul>
+<li><p>single constant buffer</p>
+<p> shader &#x91CC; PerObjectData&#x6570;&#x7EC4;&#xFF0C;size=2&#xFF0C;&#x53EF;&#x652F;&#x6301;&#x52A8;&#x6001;&#x5927;&#x5C0F;</p>
+</li>
+</ul>
+<h3 id="texture">texture</h3>
+<ul>
+<li>texture array</li>
+<li>bindless texture</li>
+<li>virtual texture</li>
+</ul>
+<h2 id="&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;xmind">&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;XMind</h2>
+<p>GPU driven rendering.png<img src="1616932355926.png" alt="Alt text"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../resource.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: GPU Driven Rendering">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GPU Driven Occlusion Culling","level":"1.12.3.1","depth":3,"next":{"title":"Structure","level":"1.13","depth":1,"ref":"","articles":[{"title":"Frame Graph","level":"1.13.1","depth":2,"path":"structure/framegraph/resource.md","ref":"structure/framegraph/resource.md","articles":[]},{"title":"ECS","level":"1.13.2","depth":2,"path":"structure/ecs/resource.md","ref":"structure/ecs/resource.md","articles":[]}]},"previous":{"title":"GPU Driven Rendering","level":"1.12.3","depth":2,"path":"pipeline/gpudriven/resource.md","ref":"pipeline/gpudriven/resource.md","articles":[{"title":"GPU Driven Occlusion Culling","level":"1.12.3.1","depth":3,"path":"pipeline/gpudriven/oc/oc.md","ref":"pipeline/gpudriven/oc/oc.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pipeline/gpudriven/oc/oc.md","mtime":"2021-03-28T15:58:35.917Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-28T15:59:54.429Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
