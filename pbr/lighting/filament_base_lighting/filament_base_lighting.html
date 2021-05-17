@@ -1,0 +1,1005 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Filament Basic Physical Lighting · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../light/resource.html" />
+    
+    
+    <link rel="prev" href="../resource.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../space_trans/resource.html">
+            
+                <a href="../../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../camera/resource.html">
+            
+                <a href="../../../camera/resource.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../camera/photography/photography.html">
+            
+                <a href="../../../camera/photography/photography.html">
+            
+                    
+                    科学解释摄影中的一些概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../ray_tracing/resource.html">
+            
+                <a href="../../../ray_tracing/resource.html">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../volume/resource.html">
+            
+                <a href="../../../volume/resource.html">
+            
+                    
+                    Volume Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../volume/volume_rendering/volume_rendering.html">
+            
+                <a href="../../../volume/volume_rendering/volume_rendering.html">
+            
+                    
+                    Volume Rendering Basic Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../GI/resource.html">
+            
+                <a href="../../../GI/resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../GI/GI_draft/GI_draft.html">
+            
+                <a href="../../../GI/GI_draft/GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../GI/precompute/resource.html">
+            
+                <a href="../../../GI/precompute/resource.html">
+            
+                    
+                    Precomputed Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../GI/voxel_based/resource.html">
+            
+                <a href="../../../GI/voxel_based/resource.html">
+            
+                    
+                    Voxel Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../../GI/distance_field/resource.html">
+            
+                <a href="../../../GI/distance_field/resource.html">
+            
+                    
+                    Distance Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../resource.html">
+            
+                <a href="../../resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../material/resource.html">
+            
+                <a href="../../material/resource.html">
+            
+                    
+                    Material
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    Lighting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.2.1" data-path="filament_base_lighting.html">
+            
+                <a href="filament_base_lighting.html">
+            
+                    
+                    Filament Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../light/resource.html">
+            
+                <a href="../../../light/resource.html">
+            
+                    
+                    Light
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    Area Light
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../color/resource.html">
+            
+                <a href="../../../color/resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../../shadow/resource.html">
+            
+                <a href="../../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../../shadow/assignment/assignment.html">
+            
+                <a href="../../../shadow/assignment/assignment.html">
+            
+                    
+                    games202 shadow assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../../texture/resource.html">
+            
+                <a href="../../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../texture/multiple_textures/multiple_textures.html">
+            
+                <a href="../../../texture/multiple_textures/multiple_textures.html">
+            
+                    
+                    Multiple Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../texture/multiple_textures/virtual_textures.md">
+            
+                <span>
+            
+                    
+                    Virtual Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Pipeline
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../../pipeline/visibility/resource.html">
+            
+                <a href="../../../pipeline/visibility/resource.html">
+            
+                    
+                    Dynamic Visibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                <a href="../../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                    
+                    Dynamic Visibility Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../../pipeline/cs/resource.html">
+            
+                <a href="../../../pipeline/cs/resource.html">
+            
+                    
+                    Compute Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../../pipeline/gpudriven/resource.html">
+            
+                <a href="../../../pipeline/gpudriven/resource.html">
+            
+                    
+                    GPU Driven Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.3.1" data-path="../../../pipeline/gpudriven/oc/oc.html">
+            
+                <a href="../../../pipeline/gpudriven/oc/oc.html">
+            
+                    
+                    GPU Driven Occlusion Culling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../../pipeline/cb/resource.html">
+            
+                <a href="../../../pipeline/cb/resource.html">
+            
+                    
+                    Checkerboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../../structure/framegraph/resource.html">
+            
+                <a href="../../../structure/framegraph/resource.html">
+            
+                    
+                    Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../../structure/ecs/resource.html">
+            
+                <a href="../../../structure/ecs/resource.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Graphics API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1.1" data-path="../../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                <a href="../../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.1.2" data-path="../../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                <a href="../../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../../special_effect/cloud/resource.html">
+            
+                <a href="../../../special_effect/cloud/resource.html">
+            
+                    
+                    Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    Engine
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../../engine/filament/resource.html">
+            
+                <a href="../../../engine/filament/resource.html">
+            
+                    
+                    Filament
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.16.1.1" data-path="filament_base_lighting.html">
+            
+                <a href="filament_base_lighting.html">
+            
+                    
+                    Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../../engine/ue/resource.html">
+            
+                <a href="../../../engine/ue/resource.html">
+            
+                    
+                    Unreal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Filament Basic Physical Lighting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="filament-basic-physical-lighting">Filament Basic Physical Lighting</h1>
+<h2 id="light-units-&#x7EDF;&#x4E00;&#x5EA6;&#x91CF;&#x8861;">light units (&#x7EDF;&#x4E00;&#x5EA6;&#x91CF;&#x8861;)</h2>
+<center>
+<img src="1620954006499.png" width="500" height="400/">
+</center>
+<center>
+<img src="1620954047568.png" width="500" height="400/">
+</center>
+
+<ul>
+<li>luminous intensity &#x548C; illuminance &#x7684;&#x8F6C;&#x6362;&#x5173;&#x7CFB;
+<img src="1620956508536.png" alt="Alt text"></li>
+</ul>
+<h2 id="direct-lighting">direct Lighting</h2>
+<h3 id="directional-light">directional light</h3>
+<ul>
+<li>diffuse almost correct, but specular has artifacts
+<img src="1620955338332.png" alt="Alt text"></li>
+</ul>
+<p>E&#x22A5;  is the illuminance of the light source for a surface perpendicular to said light source
+<img src="1620955379564.png" alt="Alt text"></p>
+<h3 id="punctual-light">punctual light</h3>
+<h4 id="point-light">point light</h4>
+<p>&#x7403;&#x9762;&#x79EF;&#x5206;&#x7684;&#x5F0F;&#x5B50;&#x5E94;&#x8BE5;&#x5C11;&#x4E86;&#x4E00;&#x9879;sin(theta)&#x9879;
+<img src="1620956181001.png" alt="Alt text"></p>
+<h4 id="spot-light">spot light</h4>
+<p><img src="1620956313777.png" alt="Alt text">
+<img src="1620956633360.png" alt="Alt text">
+&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;artist&#x8C03;&#x8282;&#x53C2;&#x6570;&#xFF0C;&#x9700;&#x8981;&#x628A;outer angle&#x548C;perceived illuminance&#x89E3;&#x8026;&#xFF0C;&#x8FD1;&#x4F3C;&#x6210;
+<img src="1620956950654.png" alt="Alt text">
+&#x4F46;&#x662F;&#x4E5F;&#x4EC5;&#x9650;&#x4E8E;a matte, diffuse mask that absorbs light&#x7684;&#x6750;&#x8D28;&#x624D;&#x8FD1;&#x4F3C;&#x7269;&#x7406;&#x6B63;&#x786E;&#x3002;
+&#x6700;&#x7EC8;&#xFF0C;spot light &#x7684; render equation&#x6709;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#xFF1A;
+<img src="1620957045233.png" alt="Alt text"></p>
+<h4 id="attenuation-function">attenuation function</h4>
+<p>&#x4F46;&#x5176;&#x5B9E;point light&#x548C;spot light&#x5E76;&#x4E0D;&#x9075;&#x5FAA;inverse square law attenuation.
+<img src="1620957194726.png" alt="Alt text">
+<img src="1620957380603.png" alt="Alt text"></p>
+<h3 id="photometric-lights">Photometric lights</h3>
+<p>&#x5982;&#x4F55;&#x7ED9;artist&#x66F4;&#x5927;&#x7684;&#x81EA;&#x7531;&#x53BB;&#x63A7;&#x5236;the distribution of light within the space.
+Photometric lights use a photometric profile to describe their luminous intensity distribution. </p>
+<ul>
+<li>IES (Illuminating Engineering Society) </li>
+<li>EULUMDAT (European Lumen Data format)</li>
+</ul>
+<p><img src="1620958211542.png" alt="Alt text">
+<img src="1620958425095.png" alt="Alt text"></p>
+<p>&#x6BD4;punctual light&#x591A;&#x4E00;&#x9879;&#x5404;&#x4E2A;&#x65B9;&#x5411;&#x91C7;&#x6837;&#x7684;intensity
+IES profile&#x751F;&#x6210;pass&#x4F7F;&#x7528;&#x7684;a photometric profile as a texture&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code>- Photometric profile as a mask
+- Photometric profile
+</code></pre><pre><code class="lang-cpp"><span class="hljs-keyword">float</span> multiplier;
+<span class="hljs-comment">// Photometric profile used as a mask</span>
+<span class="hljs-keyword">if</span> (photometricLight.isMasked()) {
+    <span class="hljs-comment">// The desired intensity is set by the artist</span>
+    <span class="hljs-comment">// The integrated intensity comes from a Monte-Carlo</span>
+    <span class="hljs-comment">// integration over the unit sphere around the luminaire</span>
+    multiplier = photometricLight.getDesiredIntensity() /
+            photometricLight.getIntegratedIntensity();
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// Multiplier provided for convenience, set to 1.0 by default</span>
+    multiplier = photometricLight.getMultiplier();
+}
+
+<span class="hljs-comment">// The max intensity in cd comes from the IES profile</span>
+<span class="hljs-keyword">float</span> lightIntensity = photometricLight.getMaxIntensity() * multiplier;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: Lighting">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../light/resource.html" class="navigation navigation-next " aria-label="Next page: Light">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Filament Basic Physical Lighting","level":"1.7.2.1","depth":3,"next":{"title":"Light","level":"1.8","depth":1,"path":"light/resource.md","ref":"light/resource.md","articles":[{"title":"Area Light","level":"1.8.1","depth":2,"ref":"","articles":[]}]},"previous":{"title":"Lighting","level":"1.7.2","depth":2,"path":"pbr/lighting/resource.md","ref":"pbr/lighting/resource.md","articles":[{"title":"Filament Basic Physical Lighting","level":"1.7.2.1","depth":3,"path":"pbr/lighting/filament_base_lighting/filament_base_lighting.md","ref":"pbr/lighting/filament_base_lighting/filament_base_lighting.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pbr/lighting/filament_base_lighting/filament_base_lighting.md","mtime":"2021-05-14T03:08:28.235Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-17T12:06:20.365Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
