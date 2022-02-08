@@ -82,7 +82,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../../volume/resource.html" />
+    <link rel="next" href="../../denoising/resource.html" />
     
     
     <link rel="prev" href="../resource.html" />
@@ -229,6 +229,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.2" data-path="../../denoising/resource.html">
+            
+                <a href="../../denoising/resource.html">
+            
+                    
+                    Denoising and Filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../intersection_acceleration/resource.html">
+            
+                <a href="../../intersection_acceleration/resource.html">
+            
+                    
+                    Intersection Acceleration Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -293,12 +319,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../../../GI/ssr/resource.html">
+        <li class="chapter " data-level="1.6.2" data-path="../../../GI/ssgi/resource.html">
             
-                <a href="../../../GI/ssr/resource.html">
+                <a href="../../../GI/ssgi/resource.html">
             
                     
-                    SSR
+                    SSGI
             
                 </a>
             
@@ -1079,24 +1105,24 @@ Monte Carlo integration makes it possible to estimate the reflected radiance <st
 </ul>
 <h3 id="variance"><a name="variance" class="anchor-navigation-ex-anchor" href="#variance"><i class="fa fa-link" aria-hidden="true"></i></a>variance</h3>
 <p><strong>Variance is a fundamental concept for quantifying the error in a value estimated by a Monte Carlo algorithm.</strong> It provides a precise way to quantify this error and measure how improvements to Monte Carlo algorithms <strong>reduce the error</strong> in the final result.
-<a href="1626617039982.png" data-lightbox="1ebca1e2-da06-4233-a65d-fa234bc9b027" data-title="Alt text"><img src="1626617039982.png" alt="Alt text"></a></p>
+<a href="1626617039982.png" data-lightbox="97b139bc-c5d7-4754-8f89-6adf665434c4" data-title="Alt text"><img src="1626617039982.png" alt="Alt text"></a></p>
 <h2 id="the-monte-carlo-estimator"><a name="the-monte-carlo-estimator" class="anchor-navigation-ex-anchor" href="#the-monte-carlo-estimator"><i class="fa fa-link" aria-hidden="true"></i></a>The Monte Carlo Estimator</h2>
 <ul>
 <li>estimator --- approximates the value of an arbitrary integral
-<a href="1626659663766.png" data-lightbox="46657c8c-236b-4d13-ab70-9bb1401165e6" data-title="Alt text"><img src="1626659663766.png" alt="Alt text"></a></li>
+<a href="1626659663766.png" data-lightbox="7cb3e0cf-f59e-40c6-a378-ea501d7f27ca" data-title="Alt text"><img src="1626659663766.png" alt="Alt text"></a></li>
 <li>unbias independent of the sample nums N and the dimensionality of the integral
-<a href="1626659804463.png" data-lightbox="62771bd5-d392-4083-8b06-291cbecc09a0" data-title="Alt text"><img src="1626659804463.png" alt="Alt text"></a></li>
+<a href="1626659804463.png" data-lightbox="6b6e9ba6-735b-4c12-87ba-cd181790cab5" data-title="Alt text"><img src="1626659804463.png" alt="Alt text"></a></li>
 <li>rate of convergence
  O(n^(1/2))</li>
 </ul>
 <h2 id="sampling-random-variable"><a name="sampling-random-variable" class="anchor-navigation-ex-anchor" href="#sampling-random-variable"><i class="fa fa-link" aria-hidden="true"></i></a>Sampling Random Variable</h2>
 <h3 id="the-inversion-method"><a name="the-inversion-method" class="anchor-navigation-ex-anchor" href="#the-inversion-method"><i class="fa fa-link" aria-hidden="true"></i></a>The Inversion Method</h3>
-<p><a href="1626674195920.png" data-lightbox="ab5b6466-cdb7-44b5-bff0-c78220f27e65" data-title="Alt text"><img src="1626674195920.png" alt="Alt text"></a>
+<p><a href="1626674195920.png" data-lightbox="876087a2-0bcf-436c-a36d-c43b6f00edbe" data-title="Alt text"><img src="1626674195920.png" alt="Alt text"></a>
 &#x7B49;&#x4E8E;&#x662F;&#x8BA1;&#x7B97;&#x51FA;cdf, &#x7136;&#x540E;&#x4EE5;&#x4E00;&#x4E2A;&#x5747;&#x5300;&#x968F;&#x673A;&#x91C7;&#x6837;&#x53BB;&#x83B7;&#x5F97;[0,1]&#x7684;&#x968F;&#x673A;&#x6570; y&#xFF0C;&#x7136;&#x540E;&#x53CD;&#x7B97;&#x51FA;cdf(x) = y&#x7684;x&#x503C;&#x662F;&#x591A;&#x5C11;&#x4F5C;&#x4E3A;&#x91C7;&#x6837;&#x503C;&#x3002;
-<a href="1626674267105.png" data-lightbox="35524506-fb69-436b-b53c-ffd5fa5fed6c" data-title="Alt text"><img src="1626674267105.png" alt="Alt text"></a></p>
+<a href="1626674267105.png" data-lightbox="e1202b72-08aa-4856-92ef-a60dbb3001b9" data-title="Alt text"><img src="1626674267105.png" alt="Alt text"></a></p>
 <h3 id="the-rejection-method"><a name="the-rejection-method" class="anchor-navigation-ex-anchor" href="#the-rejection-method"><i class="fa fa-link" aria-hidden="true"></i></a>The Rejection Method</h3>
-<p><a href="1626750887937.png" data-lightbox="8846f3ff-628b-4049-82eb-e975b7fe2f5c" data-title="Alt text"><img src="1626750887937.png" alt="Alt text"></a>
-<a href="1626750852806.png" data-lightbox="23f6c614-d30f-4b91-8f72-763ac4fbd866" data-title="Alt text"><img src="1626750852806.png" alt="Alt text"></a></p>
+<p><a href="1626750887937.png" data-lightbox="5b95b5fe-ee64-4555-9f84-b955f0821955" data-title="Alt text"><img src="1626750887937.png" alt="Alt text"></a>
+<a href="1626750852806.png" data-lightbox="d22d8a4c-51b8-446c-894d-ea817d04e501" data-title="Alt text"><img src="1626750852806.png" alt="Alt text"></a></p>
 <h2 id="metropolis-sampling"><a name="metropolis-sampling" class="anchor-navigation-ex-anchor" href="#metropolis-sampling"><i class="fa fa-link" aria-hidden="true"></i></a>Metropolis Sampling</h2>
 <p>a technique for generating a set of samples from a <strong>non-negative function</strong>  that is <strong>distributed proportionally to f &#x2019;s value</strong> (Metropolis et al. 1953).</p>
 <h3 id="main-ideas"><a name="main-ideas" class="anchor-navigation-ex-anchor" href="#main-ideas"><i class="fa fa-link" aria-hidden="true"></i></a>main ideas</h3>
@@ -1104,31 +1130,31 @@ Monte Carlo integration makes it possible to estimate the reflected radiance <st
 <li>start-up X_0</li>
 <li>make mutation from X_i-1 to X_i  ---  transition function T<ul>
 <li>&#x548C;&#x524D;&#x4E00;&#x4E2A;sample&#x6709;&#x5173;
-<a href="1627804841091.png" data-lightbox="335bcb6d-b957-4c71-bff7-7f874538780d" data-title="Alt text"><img src="1627804841091.png" alt="Alt text"></a></li>
+<a href="1627804841091.png" data-lightbox="e58995b0-9734-4c46-ac43-c4c40ea2f9e0" data-title="Alt text"><img src="1627804841091.png" alt="Alt text"></a></li>
 <li>&#x548C;&#x524D;&#x4E00;&#x4E2A;sample&#x65E0;&#x5173;&#xFF0C;&#x968F;&#x673A;
-<a href="1627804868935.png" data-lightbox="17d99b33-65de-423c-9d1c-9f2f9ce2200d" data-title="Alt text"><img src="1627804868935.png" alt="Alt text"></a></li>
+<a href="1627804868935.png" data-lightbox="98131072-0236-44aa-a443-728b15fc6c3e" data-title="Alt text"><img src="1627804868935.png" alt="Alt text"></a></li>
 </ul>
 </li>
 <li>weather new X_i is accepted --- acceptance probability a
-<a href="1627804773701.png" data-lightbox="d92ad110-3711-4805-9f3d-6b000511918f" data-title="Alt text"><img src="1627804773701.png" alt="Alt text"></a></li>
+<a href="1627804773701.png" data-lightbox="95337488-c97e-4981-aeae-0701dfb8bdd9" data-title="Alt text"><img src="1627804773701.png" alt="Alt text"></a></li>
 <li>final target  --- equilibrium
-<a href="1627804236521.png" data-lightbox="a7ccc8f8-bdf2-40a2-8013-878b7f043ce3" data-title="Alt text"><img src="1627804236521.png" alt="Alt text"></a></li>
+<a href="1627804236521.png" data-lightbox="96af3558-b184-474d-9d52-c61946f592ef" data-title="Alt text"><img src="1627804236521.png" alt="Alt text"></a></li>
 <li>pseudocode
-<a href="1627804323896.png" data-lightbox="7e22c308-b191-46bd-808e-68100e778235" data-title="Alt text"><img src="1627804323896.png" alt="Alt text"></a><h3 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>example</h3>
+<a href="1627804323896.png" data-lightbox="2ca1eb76-d31d-4847-b0f2-4dcc5fd0b53d" data-title="Alt text"><img src="1627804323896.png" alt="Alt text"></a><h3 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>example</h3>
 &#x4E0A;&#x9762;&#x7684;&#x7406;&#x8BBA;&#x542C;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x592A;&#x62BD;&#x8C61;&#xFF0C;&#x7528;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x7406;&#x89E3;&#x662F;&#x6700;&#x597D;&#x4E0D;&#x8FC7;&#x7684;&#x3002;
 &#x4E3A;&#x4E86;&#x62DF;&#x5408;&#x4EE5;&#x4E0B;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x51FD;&#x6570;&#xFF0C;&#x91C7;&#x7528;&#x4E24;&#x79CD;mutation&#x7684;&#x65B9;&#x5F0F;
-<a href="1627805172503.png" data-lightbox="f4727310-a5fa-4d15-a6f7-e3209e4f4575" data-title="Alt text"><img src="1627805172503.png" alt="Alt text"></a><ul>
+<a href="1627805172503.png" data-lightbox="f74d48c2-e8b0-4f85-a70e-6ab6f3a5016f" data-title="Alt text"><img src="1627805172503.png" alt="Alt text"></a><ul>
 <li>uniform random  ---- &#x4E0D;&#x4F1A;&#x4E00;&#x76F4;&#x9677;&#x5165;&#x4E00;&#x4E2A;small region&#x51FA;&#x4E0D;&#x6765;
-<a href="1627805237190.png" data-lightbox="0eaa993e-3c63-4a3a-8bba-ea315a0a4276" data-title="Alt text"><img src="1627805237190.png" alt="Alt text"></a></li>
+<a href="1627805237190.png" data-lightbox="e34f626b-4a32-4cd5-be99-f232a640a65f" data-title="Alt text"><img src="1627805237190.png" alt="Alt text"></a></li>
 <li>random offset  --- &#x6536;&#x655B;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x65B9;&#x5DEE;&#x5C0F;
-<a href="1627805267017.png" data-lightbox="283846c0-3a56-4ed6-a2f5-69ab835677f5" data-title="Alt text"><img src="1627805267017.png" alt="Alt text"></a></li>
+<a href="1627805267017.png" data-lightbox="616edeb6-71f1-4555-b34f-dc1834fb49ae" data-title="Alt text"><img src="1627805267017.png" alt="Alt text"></a></li>
 <li>comparison
-<a href="1627805328166.png" data-lightbox="682158f0-57b1-44aa-88e7-5ff3c9211f3f" data-title="Alt text"><img src="1627805328166.png" alt="Alt text"></a></li>
+<a href="1627805328166.png" data-lightbox="f3068833-05dd-4b64-a835-06bbf19ccb40" data-title="Alt text"><img src="1627805328166.png" alt="Alt text"></a></li>
 </ul>
 </li>
 </ul>
 <h3 id="estimate-integrals"><a name="estimate-integrals" class="anchor-navigation-ex-anchor" href="#estimate-integrals"><i class="fa fa-link" aria-hidden="true"></i></a>estimate integrals</h3>
-<p><a href="1627805563755.png" data-lightbox="d18a04ed-bd08-4a48-bc8e-567b1536ec64" data-title="Alt text"><img src="1627805563755.png" alt="Alt text"></a>
+<p><a href="1627805563755.png" data-lightbox="afb9298a-3415-4f40-8bd6-1f50d28108b9" data-title="Alt text"><img src="1627805563755.png" alt="Alt text"></a>
 &#x5176;&#x5B9E;&#x8FD9;&#x91CC;&#x6CA1;&#x592A;&#x61C2;&#x3002;&#x3002;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x8FD1;&#x4F3C;&#x6709;&#x70B9;&#x50CF;&#x4E4B;&#x524D;games202&#x91CC;&#x8BF4;&#x7684;chebyshelve&#x4E0D;&#x7B49;&#x5F0F;&#x8FD1;&#x4F3C;&#x3002;</p>
 <h3 id="disadvantages"><a name="disadvantages" class="anchor-navigation-ex-anchor" href="#disadvantages"><i class="fa fa-link" aria-hidden="true"></i></a>disadvantages</h3>
 <p>successive samples in the sequence are statistically correlated, and it may needs more samples so can well distributed across the domain.</p>
@@ -1137,27 +1163,27 @@ Monte Carlo integration makes it possible to estimate the reflected radiance <st
 <ul>
 <li>&#x4E00;&#x7EF4;
 &#x8F6C;&#x6362;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x79CD; one-to-one transformation&#xFF1A;
-<a href="1627806175112.png" data-lightbox="a609b4cc-b4da-4065-847d-c1fa46ac864e" data-title="Alt text"><img src="1627806175112.png" alt="Alt text"></a></li>
+<a href="1627806175112.png" data-lightbox="e3bc9f29-8345-40d3-8dac-896690a01a18" data-title="Alt text"><img src="1627806175112.png" alt="Alt text"></a></li>
 <li>&#x63A8;&#x5E7F;&#x5230;&#x591A;&#x7EF4;
-<a href="1627806276242.png" data-lightbox="e74b059e-79cb-44d4-adea-127336aa4ac1" data-title="Alt text"><img src="1627806276242.png" alt="Alt text"></a></li>
+<a href="1627806276242.png" data-lightbox="874d9b16-2181-4add-acb7-27b41d7b77f9" data-title="Alt text"><img src="1627806276242.png" alt="Alt text"></a></li>
 <li>&#x8054;&#x60F3;&#x5230;render equation&#x6700;&#x5E38;&#x7528;&#x7684;&#x534A;&#x7403;&#x79EF;&#x5206;
- <a href="1627806488975.png" data-lightbox="ea80193e-2fe6-44f6-8f68-c1bab70e2ea3" data-title="Alt text"><img src="1627806488975.png" alt="Alt text"></a></li>
+ <a href="1627806488975.png" data-lightbox="4f67e8af-a730-4884-a679-b8b3b3dac7fd" data-title="Alt text"><img src="1627806488975.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="2d-sampling-with-multidimensional-transformations"><a name="2d-sampling-with-multidimensional-transformations" class="anchor-navigation-ex-anchor" href="#2d-sampling-with-multidimensional-transformations"><i class="fa fa-link" aria-hidden="true"></i></a>2D Sampling with Multidimensional Transformations</h2>
 <p>&#x57FA;&#x672C;&#x7684;&#x601D;&#x60F3;&#x662F;
-<a href="1627807466609.png" data-lightbox="17ced251-5e0e-4da0-947c-61b28548346e" data-title="Alt text"><img src="1627807466609.png" alt="Alt text"></a>
+<a href="1627807466609.png" data-lightbox="a36f6443-05a2-4f7f-896e-ae633119a526" data-title="Alt text"><img src="1627807466609.png" alt="Alt text"></a>
 &#x5148;&#x6839;&#x636E;p(x)&#x5F97;&#x5230;x&#x7684;&#x4E00;&#x4E2A;sample&#xFF0C;&#x518D;&#x6839;&#x636E;p(y|x)&#x5206;&#x5E03;&#x5F97;&#x5230;y&#x7684;&#x4E00;&#x4E2A;sample.</p>
 <ul>
 <li>&#x4EE5;&#x5747;&#x5300;&#x7403;&#x9762;&#x91C7;&#x6837;&#x4E3A;&#x4F8B;
-<a href="1627808644495.png" data-lightbox="5f4a61a3-539e-4cd8-be19-52e66332e604" data-title="Alt text"><img src="1627808644495.png" alt="Alt text"></a>
+<a href="1627808644495.png" data-lightbox="29e60ab7-0ece-4a77-8f4c-057266e8fb9f" data-title="Alt text"><img src="1627808644495.png" alt="Alt text"></a>
 &#x6C42;&#x5F97;cdf&#xFF0C;&#x6C42;&#x9006;&#xFF0C;&#x5F97;&#x5230;&#x5747;&#x5300;&#x91C7;&#x6837;&#x5982;&#x4F55;&#x8F6C;&#x6362;&#x5230;&#x5747;&#x5300;&#x7403;&#x9762;&#x91C7;&#x6837;
-<a href="1627808693616.png" data-lightbox="17705be1-9fed-47bc-919c-0875b2a6b2a5" data-title="Alt text"><img src="1627808693616.png" alt="Alt text"></a></li>
+<a href="1627808693616.png" data-lightbox="01086ad6-b260-439f-853b-7e7f2b4e941e" data-title="Alt text"><img src="1627808693616.png" alt="Alt text"></a></li>
 <li>Malley&#x2019;s method --- &#x6B63;&#x597D;&#x5E26;&#x5230;&#x4E4B;&#x524D;&#x770B;SSR&#x7684;GGX visible normal&#x4E2D;&#x7684;&#x91C7;&#x6837;&#x65B9;&#x6CD5;
  &#x5C31;&#x662F;&#x628A;&#x5355;&#x4F4D;&#x7403;&#x7684;cos(theta)&#x5206;&#x5E03;&#x91C7;&#x6837;&#x8F6C;&#x6362;&#x6210;&#x5355;&#x4F4D;&#x5706;&#x7684;&#x91C7;&#x6837;
- <a href="1627807932088.png" data-lightbox="16eacbe1-731e-4b9d-8d75-1366b1abe0be" data-title="Alt text"><img src="1627807932088.png" alt="Alt text"></a>
- <a href="1627808257369.png" data-lightbox="a35d636c-21f1-4e12-9015-e286f75e6e08" data-title="Alt text"><img src="1627808257369.png" alt="Alt text"></a>
+ <a href="1627807932088.png" data-lightbox="c4c2d82a-5cba-43ce-9a27-74a7c2d81af8" data-title="Alt text"><img src="1627807932088.png" alt="Alt text"></a>
+ <a href="1627808257369.png" data-lightbox="bb8c9448-61e1-420c-b989-ea33c084a7da" data-title="Alt text"><img src="1627808257369.png" alt="Alt text"></a>
 &#x800C;&#x5355;&#x4F4D;&#x7403;&#x4E0A;&#x7684;&#x5747;&#x5300;&#x91C7;&#x6837;&#x6B63;&#x597D;&#x4E5F;&#x6EE1;&#x8DB3;&#x540C;&#x6837;&#x7684;&#x6982;&#x7387;&#x5206;&#x5E03;
-<a href="1627808303715.png" data-lightbox="8b37de18-a80f-417a-9594-89deb09d3917" data-title="Alt text"><img src="1627808303715.png" alt="Alt text"></a></li>
+<a href="1627808303715.png" data-lightbox="867bd9cf-f093-4e53-8ce3-72dd1601261a" data-title="Alt text"><img src="1627808303715.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="&#x5982;&#x4F55;&#x63D0;&#x9AD8;&#x79EF;&#x5206;&#x5668;&#x7684;&#x6548;&#x7387;"><a name="&#x5982;&#x4F55;&#x63D0;&#x9AD8;&#x79EF;&#x5206;&#x5668;&#x7684;&#x6548;&#x7387;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x63D0;&#x9AD8;&#x79EF;&#x5206;&#x5668;&#x7684;&#x6548;&#x7387;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x63D0;&#x9AD8;&#x79EF;&#x5206;&#x5668;&#x7684;&#x6548;&#x7387;</h2>
 <p><a href="https://zhuanlan.zhihu.com/p/82984446" target="_blank">https://zhuanlan.zhihu.com/p/82984446</a></p>
@@ -1168,7 +1194,7 @@ Monte Carlo integration makes it possible to estimate the reflected radiance <st
 <li>&#x901A;&#x8FC7;&#x7ED3;&#x5408;&#x6765;&#x81EA;&#x4E0D;&#x540C;&#x4F30;&#x8BA1;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
 </ul>
 <h3 id="efficiency-of-an-estimator"><a name="efficiency-of-an-estimator" class="anchor-navigation-ex-anchor" href="#efficiency-of-an-estimator"><i class="fa fa-link" aria-hidden="true"></i></a>efficiency of an estimator</h3>
-<p><a href="1627809136109.png" data-lightbox="7d904f92-1e85-4bea-8eab-f7203759c116" data-title="Alt text"><img src="1627809136109.png" alt="Alt text"></a></p>
+<p><a href="1627809136109.png" data-lightbox="79a141b9-084e-4757-abea-1df988a2bb5f" data-title="Alt text"><img src="1627809136109.png" alt="Alt text"></a></p>
 <ul>
 <li>variance</li>
 <li>time</li>
@@ -1176,12 +1202,12 @@ Monte Carlo integration makes it possible to estimate the reflected radiance <st
 <h3 id="russian-roulette-and-splitting"><a name="russian-roulette-and-splitting" class="anchor-navigation-ex-anchor" href="#russian-roulette-and-splitting"><i class="fa fa-link" aria-hidden="true"></i></a>Russian Roulette and Splitting</h3>
 <h4 id="russian-roulette"><a name="russian-roulette" class="anchor-navigation-ex-anchor" href="#russian-roulette"><i class="fa fa-link" aria-hidden="true"></i></a>Russian Roulette</h4>
 <p>&#x76EE;&#x6807;&#x662F;&#x65E0;&#x504F;&#x5730; skip tracing unimportant rays.
-<a href="1627810079106.png" data-lightbox="8bf9f4b3-f810-4ead-a2e8-df528410409a" data-title="Alt text"><img src="1627810079106.png" alt="Alt text"></a> 
+<a href="1627810079106.png" data-lightbox="e2271fba-686a-4623-a6e7-e0e5d791c6d2" data-title="Alt text"><img src="1627810079106.png" alt="Alt text"></a> 
 &#x901A;&#x5E38;c=0
 &#x4F46;&#x662F;&#x95EE;&#x9898;&#x662F;Russian Roulette&#x4F1A;&#x589E;&#x5927;&#x65B9;&#x5DEE;&#x3002;</p>
 <h4 id="splitting"><a name="splitting" class="anchor-navigation-ex-anchor" href="#splitting"><i class="fa fa-link" aria-hidden="true"></i></a>splitting</h4>
 <p>increases the number of samples taken in order to improve efficiency
-<a href="1627810454097.png" data-lightbox="2dadf79f-6cd6-4882-a702-d54617c8488d" data-title="Alt text"><img src="1627810454097.png" alt="Alt text"></a></p>
+<a href="1627810454097.png" data-lightbox="1643f470-040e-472e-aad8-7d41d40911de" data-title="Alt text"><img src="1627810454097.png" alt="Alt text"></a></p>
 <h3 id="careful-sample-placement"><a name="careful-sample-placement" class="anchor-navigation-ex-anchor" href="#careful-sample-placement"><i class="fa fa-link" aria-hidden="true"></i></a>Careful Sample Placement</h3>
 <p>&#x8BA8;&#x8BBA;&#x4E86;&#x51CF;&#x5C11;&#x65B9;&#x5DEE;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;</p>
 <h4 id="stratified-sampling"><a name="stratified-sampling" class="anchor-navigation-ex-anchor" href="#stratified-sampling"><i class="fa fa-link" aria-hidden="true"></i></a>Stratified Sampling</h4>
@@ -1191,16 +1217,16 @@ Monte Carlo integration makes it possible to estimate the reflected radiance <st
 <h3 id="&#x5F15;&#x5165;bias"><a name="&#x5F15;&#x5165;bias" class="anchor-navigation-ex-anchor" href="#&#x5F15;&#x5165;bias"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F15;&#x5165;bias</h3>
 <p>&#x6539;&#x6210;&#x6709;&#x504F;&#x4F30;&#x8BA1;&#x4F46;&#x662F;&#x65B9;&#x5DEE;&#x66F4;&#x5C0F;</p>
 <h3 id="importance-sampling"><a name="importance-sampling" class="anchor-navigation-ex-anchor" href="#importance-sampling"><i class="fa fa-link" aria-hidden="true"></i></a>Importance Sampling</h3>
-<p><a href="1627813234215.png" data-lightbox="2502c898-4fbd-4b8b-adaf-48004f54c224" data-title="Alt text"><img src="1627813234215.png" alt="Alt text"></a>
+<p><a href="1627813234215.png" data-lightbox="8d7c6e24-a5b4-48e5-aaf4-0d31a7868142" data-title="Alt text"><img src="1627813234215.png" alt="Alt text"></a>
 &#x91C7;&#x6837;&#x7684;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x5206;&#x5E03;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x63A5;&#x8FD1;&#x539F;&#x51FD;&#x6570;&#x3002;
 eg.
 if directions are sampled from distributions that match other factors of the integrand (the BSDF, the incoming illumination distribution, etc.), efficiency is similarly improved.
 &#x4E00;&#x4E2A;&#x7C97;&#x7CD9;&#x7684;&#x8BC1;&#x660E;&#xFF1A;
-<a href="1627813510708.png" data-lightbox="a1321ae6-3d90-411e-b3cc-1c432b3c211d" data-title="Alt text"><img src="1627813510708.png" alt="Alt text"></a></p>
+<a href="1627813510708.png" data-lightbox="b2fe5252-3848-4ec6-a518-8c1c05a450fd" data-title="Alt text"><img src="1627813510708.png" alt="Alt text"></a></p>
 <h4 id="multiple-importance-sampling"><a name="multiple-importance-sampling" class="anchor-navigation-ex-anchor" href="#multiple-importance-sampling"><i class="fa fa-link" aria-hidden="true"></i></a>Multiple Importance Sampling</h4>
 <p>&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x76F8;&#x4E58;&#x7684;&#x79EF;&#x5206;&#x4F30;&#x8BA1;&#x662F;&#x66F4;&#x52A0;&#x56F0;&#x96BE;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x7684;&#x5206;&#x522B;&#x91C7;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x6709;&#x7684;&#x65F6;&#x5019;&#x9519;&#x8BEF;&#x7684;&#x5206;&#x5E03;&#x91C7;&#x6837;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x751A;&#x81F3;&#x6BD4;&#x968F;&#x673A;&#x5747;&#x5300;&#x91C7;&#x6837;&#x8FD8;&#x8981;&#x7CDF;&#x7CD5;&#x3002;
-<a href="1627813735820.png" data-lightbox="c213c9f4-57f8-4568-87c1-6b040cee893f" data-title="Alt text"><img src="1627813735820.png" alt="Alt text"></a>
-<a href="1627813818578.png" data-lightbox="ccdb3453-ac6e-4b99-8be9-63f8e5e1e00e" data-title="Alt text"><img src="1627813818578.png" alt="Alt text"></a></p>
+<a href="1627813735820.png" data-lightbox="e7770774-962c-4450-a951-6b040e1cb310" data-title="Alt text"><img src="1627813735820.png" alt="Alt text"></a>
+<a href="1627813818578.png" data-lightbox="226e19a6-5780-46a5-bcef-62e9599f5f37" data-title="Alt text"><img src="1627813818578.png" alt="Alt text"></a></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; tingxia.top 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-08-01 18:43:58
 </span></footer></body></html>
@@ -1235,7 +1261,7 @@ if directions are sampled from distributions that match other factors of the int
                 </a>
                 
                 
-                <a href="../../../volume/resource.html" class="navigation navigation-next " aria-label="Next page: Volume Rendering">
+                <a href="../../denoising/resource.html" class="navigation navigation-next " aria-label="Next page: Denoising and Filtering">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1246,7 +1272,7 @@ if directions are sampled from distributions that match other factors of the int
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Monte Carlo Integration","level":"1.4.1.1","depth":3,"next":{"title":"Volume Rendering","level":"1.5","depth":1,"path":"volume/resource.md","ref":"volume/resource.md","articles":[{"title":"Volume Rendering Basic Theory","level":"1.5.1","depth":2,"path":"volume/volume_rendering/volume_rendering.md","ref":"volume/volume_rendering/volume_rendering.md","articles":[]}]},"previous":{"title":"Sampling","level":"1.4.1","depth":2,"path":"ray_tracing/sampling/resource.md","ref":"ray_tracing/sampling/resource.md","articles":[{"title":"Monte Carlo Integration","level":"1.4.1.1","depth":3,"path":"ray_tracing/sampling/montecarlo/montecarlo.md","ref":"ray_tracing/sampling/montecarlo/montecarlo.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ray_tracing/sampling/montecarlo/montecarlo.md","mtime":"2021-08-01T10:43:58.545Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-15T09:36:30.849Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Monte Carlo Integration","level":"1.4.1.1","depth":3,"next":{"title":"Denoising and Filtering","level":"1.4.2","depth":2,"path":"ray_tracing/denoising/resource.md","ref":"ray_tracing/denoising/resource.md","articles":[]},"previous":{"title":"Sampling","level":"1.4.1","depth":2,"path":"ray_tracing/sampling/resource.md","ref":"ray_tracing/sampling/resource.md","articles":[{"title":"Monte Carlo Integration","level":"1.4.1.1","depth":3,"path":"ray_tracing/sampling/montecarlo/montecarlo.md","ref":"ray_tracing/sampling/montecarlo/montecarlo.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ray_tracing/sampling/montecarlo/montecarlo.md","mtime":"2021-08-01T10:43:58.545Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-08T04:01:23.342Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

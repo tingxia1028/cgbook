@@ -229,6 +229,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.2" data-path="../ray_tracing/denoising/resource.html">
+            
+                <a href="../ray_tracing/denoising/resource.html">
+            
+                    
+                    Denoising and Filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../ray_tracing/intersection_acceleration/resource.html">
+            
+                <a href="../ray_tracing/intersection_acceleration/resource.html">
+            
+                    
+                    Intersection Acceleration Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -293,12 +319,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../GI/ssr/resource.html">
+        <li class="chapter " data-level="1.6.2" data-path="../GI/ssgi/resource.html">
             
-                <a href="../GI/ssr/resource.html">
+                <a href="../GI/ssgi/resource.html">
             
                     
-                    SSR
+                    SSGI
             
                 </a>
             
@@ -1019,20 +1045,36 @@
                                 
                                 <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#resources"><b></b>Resources</a></li></ul></div><a href="#resources" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="resources"><a name="resources" class="anchor-navigation-ex-anchor" href="#resources"><i class="fa fa-link" aria-hidden="true"></i></a>Resources</h1>
 <ul>
-<li><p>TAA</p>
-<ul>
+<li>TAA<ul>
+<li>talk<ul>
 <li><a href="https://research.activision.com/publications/2020-03/dynamic-temporal-antialiasing-and-upsampling-in-call-of-duty" target="_blank">Dynamic Temporal Antialiasing in Call of Duty: In&#xFB01;nite Warfare</a></li>
 <li><a href="http://advances.realtimerendering.com/s2016/" target="_blank">Temporal Antialiasing in Uncharted 4</a></li>
+<li><a href="https://docs.google.com/viewer?url=http%3A%2F%2Ftwvideo01.ubm-us.net%2Fo1%2Fvault%2Fgdc2016%2FPresentations%2FPedersen_LasseJonFuglsang_TemporalReprojectionAntiAliasing.pdf" target="_blank">16 Inside GDC</a></li>
+<li><a href="http://advances.realtimerendering.com/s2014/#_HIGH-QUALITY_TEMPORAL_SUPERSAMPLING" target="_blank">14 Unreal</a></li>
 </ul>
 </li>
-<li><p>FXAA</p>
+<li>implementation                <a href="https://github.com/NVIDIAGameWorks/Falcor/blob/master/Source/RenderPasses/Antialiasing/TAA/TAA.ps.slang" target="_blank">https://github.com/NVIDIAGameWorks/Falcor/blob/master/Source/RenderPasses/Antialiasing/TAA/TAA.ps.slang</a>
+<a href="https://github.com/playdeadgames/temporal" target="_blank">https://github.com/playdeadgames/temporal</a>
+<a href="https://github.com/h3r2tic/rtoy-samples/blob/master/assets/shaders/taa.glsl" target="_blank">https://github.com/h3r2tic/rtoy-samples/blob/master/assets/shaders/taa.glsl</a>
+<a href="https://github.com/Unity-Technologies/Graphics/blob/master/com.unity.render-pipelines.high-definition/Runtime/PostProcessing/Shaders/TemporalAntialiasing.hlsl" target="_blank">https://github.com/Unity-Technologies/Graphics/blob/master/com.unity.render-pipelines.high-definition/Runtime/PostProcessing/Shaders/TemporalAntialiasing.hlsl</a>
+<a href="https://github.com/TheRealMJP/MSAAFilter/blob/master/MSAAFilter/Resolve.hlsl" target="_blank">https://github.com/TheRealMJP/MSAAFilter/blob/master/MSAAFilter/Resolve.hlsl</a>
+<a href="https://github.com/turanszkij/WickedEngine/blob/master/WickedEngine/shaders/temporalaaCS.hlsl" target="_blank">https://github.com/turanszkij/WickedEngine/blob/master/WickedEngine/shaders/temporalaaCS.hlsl</a>
+<a href="https://gist.github.com/Erkaman/f24ef6bd7499be363e6c99d116d8734d" target="_blank">https://gist.github.com/Erkaman/f24ef6bd7499be363e6c99d116d8734d</a>
+<a href="https://github.com/GameTechDev/TAA/blob/main/MiniEngine/Core/Shaders/TAAResolve.hlsl" target="_blank">https://github.com/GameTechDev/TAA/blob/main/MiniEngine/Core/Shaders/TAAResolve.hlsl</a>
+<a href="https://github.com/PanosK92/SpartanEngine/blob/master/Data/shaders/temporal_antialiasing.hlsl" target="_blank">https://github.com/PanosK92/SpartanEngine/blob/master/Data/shaders/temporal_antialiasing.hlsl</a>
+<a href="https://github.com/NVIDIA/Q2RTX/blob/master/src/refresh/vkpt/shader/asvgf_taau.comp" target="_blank">https://github.com/NVIDIA/Q2RTX/blob/master/src/refresh/vkpt/shader/asvgf_taau.comp</a>
+<a href="https://ziyadbarakat.wordpress.com/2020/07/28/temporal-anti-aliasing-step-by-step/" target="_blank">https://ziyadbarakat.wordpress.com/2020/07/28/temporal-anti-aliasing-step-by-step/</a></li>
+</ul>
+</li>
+</ul>
 <ul>
+<li>FXAA<ul>
 <li><a href="https://zhuanlan.zhihu.com/p/373379681" target="_blank">FXAA&#x7B97;&#x6CD5;&#x6F14;&#x4E49;</a></li>
 </ul>
 </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; tingxia.top 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2021-08-15 17:32:04
+2022-02-04 10:59:44
 </span></footer></body></html>
                                 
                                 </section>
@@ -1076,7 +1118,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AA","level":"1.12","depth":1,"next":{"title":"Real-Time AA Summary","level":"1.12.1","depth":2,"path":"aa/aa_summary/aa_summary.md","ref":"aa/aa_summary/aa_summary.md","articles":[]},"previous":{"title":"games202 shadow assignment","level":"1.11.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"aa/resource.md","mtime":"2021-08-15T09:32:04.775Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-15T09:36:30.849Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AA","level":"1.12","depth":1,"next":{"title":"Real-Time AA Summary","level":"1.12.1","depth":2,"path":"aa/aa_summary/aa_summary.md","ref":"aa/aa_summary/aa_summary.md","articles":[]},"previous":{"title":"games202 shadow assignment","level":"1.11.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"aa/resource.md","mtime":"2022-02-04T02:59:44.650Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-08T04:01:23.342Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
