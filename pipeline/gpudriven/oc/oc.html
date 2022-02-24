@@ -49,6 +49,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -252,6 +256,25 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../../ray_tracing/intersection_acceleration/bvh/bvh.md">
+            
+                <span>
+            
+                    
+                    BVH and KdTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -998,6 +1021,128 @@
             
         </li>
     
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" >
+            
+                <span>
+            
+                    
+                    PBR
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1.1" data-path="../../../ray_tracing/intersection_acceleration/bvh/bvh.md">
+            
+                <span>
+            
+                    
+                    Primitives and Intersection Acceleration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.1.2" data-path="../../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    Real-Time Rendering
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.2.1" data-path="../../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2.2" data-path="../../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2.3" data-path="../../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -1074,7 +1219,7 @@
 <ul>
 <li>render the depth of all main occluders to the occlusion buffer</li>
 <li>without pixel shader<center>
-<a href="1616321501069.png" data-lightbox="2ee55384-5e9d-4200-bd86-f06831b85345" data-title="undefined"><img src="1616321501069.png" alt="undefined"></a>
+<a href="1616321501069.png" data-lightbox="e3e6383e-294c-48c0-a5bc-aa8b527460df" data-title="undefined"><img src="1616321501069.png" alt="undefined"></a>
 </center>
 
 
@@ -1097,13 +1242,13 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>gather &#x4E0D;&#x652F;&#x6301; mip level &#x53C2;&#x6570;, &#x4E14;&#x53EA;&#x6709;shader model 5&#x652F;&#x6301;&#xFF0C;&#x8FD8;&#x662F;&#x7528;4 texture reads
-<a href="1616321514410.png" data-lightbox="1752dbdd-cac9-47f3-b8e3-9b7229d17d98" data-title="undefined"><img src="1616321514410.png" alt="undefined"></a>
+<a href="1616321514410.png" data-lightbox="6d336035-03d4-4c37-8032-64f3a1c0f449" data-title="undefined"><img src="1616321514410.png" alt="undefined"></a>
 <br>
-<a href="1616321521279.png" data-lightbox="6074c356-18c1-4d5c-99ca-7d221a73c4a2" data-title="undefined"><img src="1616321521279.png" alt="undefined"></a>
+<a href="1616321521279.png" data-lightbox="4f207201-bc34-47c1-807c-8533475994eb" data-title="undefined"><img src="1616321521279.png" alt="undefined"></a>
 <br>
-<a href="1616321537964.png" data-lightbox="2c0fe14e-4765-4d43-9aef-bcbb085a3858" data-title="undefined"><img src="1616321537964.png" alt="undefined"></a>
+<a href="1616321537964.png" data-lightbox="e036f2bc-7f99-4f71-bf87-538342717d21" data-title="undefined"><img src="1616321537964.png" alt="undefined"></a>
 <br>
-<a href="1616321546085.png" data-lightbox="5b5e848f-6a2a-41b6-b68c-d03d788a9bd9" data-title="undefined"><img src="1616321546085.png" alt="undefined"></a>
+<a href="1616321546085.png" data-lightbox="92a93408-3da9-4b0a-80af-1dd1640af18e" data-title="undefined"><img src="1616321546085.png" alt="undefined"></a>
 <br></p>
 </li>
 </ul>
@@ -1187,17 +1332,17 @@
 <ul>
 <li>save prop visibility result as bool
 instanceFlagsData[threadID.x] = predicate; 
-<a href="1616321562288.png" data-lightbox="7c76b1a3-01cf-4d08-a217-c22fffd62ffc" data-title="Alt text"><img src="1616321562288.png" alt="Alt text"></a></li>
+<a href="1616321562288.png" data-lightbox="16b1fad1-a556-4d05-b5b8-8363d23c7544" data-title="Alt text"><img src="1616321562288.png" alt="Alt text"></a></li>
 <li><p>parallel prefix scan
-<a href="1616321570805.png" data-lightbox="aca7b77c-0913-4bc0-a1d1-5a41aac179df" data-title="Alt text"><img src="1616321570805.png" alt="Alt text"></a>
+<a href="1616321570805.png" data-lightbox="1a65f8dc-6a12-4608-90e7-82f6d7fd1880" data-title="Alt text"><img src="1616321570805.png" alt="Alt text"></a>
 &#x5982;&#x679C;&#x7B2C;i&#x4E2A;instance&#x53EF;&#x89C1;(input[i] &gt; 0), &#x628A;&#x8FD9;&#x4E2A;instance&#x7684;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x7ED9;&#x538B;&#x7F29;&#x7ED3;&#x679C;&#x7684;&#x7B2C;Output[i]&#x4E2A;data.</p>
 <ul>
 <li><p>stream compaction</p>
 <p>  &#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x5982;&#x4F55;&#x5F97;&#x5230;&#x524D;i-1&#x4E2A;&#x6570;&#x636E;&#x7684;&#x548C;
-  <a href="1616321433966.png" data-lightbox="e0c618d8-2539-4e5b-accb-e9e7ed89df7d" data-title="Alt text"><img src="1616321433966.png" alt="Alt text"></a></p>
+  <a href="1616321433966.png" data-lightbox="6b975de1-0617-4bd4-8bce-6215d290b0ab" data-title="Alt text"><img src="1616321433966.png" alt="Alt text"></a></p>
 <ul>
 <li><p>&#x6BCF;&#x6B21;&#x5C06;&#x76F8;&#x90BB;&#x4E24;&#x4E2A;&#x503C;&#x6C42;&#x548C;
-<a href="1616321445793.png" data-lightbox="41396a03-a7a5-431a-86a5-eafdc6a9c009" data-title="Alt text"><img src="1616321445793.png" alt="Alt text"></a></p>
+<a href="1616321445793.png" data-lightbox="adf5410c-ac91-4ee7-adf3-4f9579bccdab" data-title="Alt text"><img src="1616321445793.png" alt="Alt text"></a></p>
 <pre class="language-"><code class="lang-cpp">   <span class="token comment">//perform reduction</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span>d <span class="token operator">=</span> NoofDrawcalls <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span> d <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span> d <span class="token operator">&gt;&gt;=</span> <span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
@@ -1214,7 +1359,7 @@ offset <span class="token operator">*=</span> <span class="token number">2</span
 </code></pre>
 </li>
 <li><p>&#x518D;&#x6BCF;&#x6B21;&#x5C06;&#x5E8F;&#x5217;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x5BF9;&#x6BD4;&#x6700;&#x540E;&#x4E24;&#x4E2A;&#x6570;&#x503C;
-<a href="1616321459915.png" data-lightbox="6e5e1b05-d46c-4bde-9520-7fe251c4574d" data-title="Alt text"><img src="1616321459915.png" alt="Alt text"></a>
+<a href="1616321459915.png" data-lightbox="f90ec3f1-3d45-411c-85fe-add7bee9ff69" data-title="Alt text"><img src="1616321459915.png" alt="Alt text"></a>
 &#x4EE5;&#x4E0A;&#x8BA1;&#x7B97;&#x53EF;&#x4EE5;&#x7528;compute shader &#x5E76;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x9700;&#x8981;&#x505A;&#x4E00;&#x6B21;&#x540C;&#x6B65;</p>
 <pre class="language-"><code class="lang-cpp"><span class="token comment">//perform downsweep and build scan</span>
   <span class="token keyword">for</span> <span class="token punctuation">(</span>d <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> d <span class="token operator">&lt;</span> NoofDrawcalls<span class="token punctuation">;</span> d <span class="token operator">*=</span> <span class="token number">2</span><span class="token punctuation">)</span>
@@ -1239,7 +1384,7 @@ offset <span class="token operator">&gt;&gt;=</span> <span class="token number">
 <ul>
 <li><p>&#x8D85;&#x8FC7;2048&#x4E2A;&#x6570;&#x636E;&#x600E;&#x4E48;&#x529E;</p>
 <p>&#x6BCF;2048&#x4E2A;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;compute shader thread group&#x8BA1;&#x7B97;&#x7EC4;&#x5185;&#x7684;&#x7D2F;&#x52A0;&#x548C;&#xFF0C;&#x7136;&#x548C;&#x628A;&#x6700;&#x5927;&#x7684;&#x548C;&#x8BB0;&#x5230;&#x53E6;&#x5916;&#x7684;&#x6570;&#x7EC4;&#x91CC;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x7528;&#x4E00;&#x4E2A;pass, &#x5BF9;&#x6BCF;&#x4E2A;group&#x91CC;&#x7684;&#x6570;&#x636E;&#x5206;&#x522B;&#x52A0;&#x4E0A;&#x4E4B;&#x524D;&#x6240;&#x6709;&#x7EC4;&#x7684;&#x6700;&#x5927;&#x7684;&#x548C;
-<a href="1616321473831.png" data-lightbox="52445de3-7b6d-408f-a8ac-9c84da79213b" data-title="Alt text"><img src="1616321473831.png" alt="Alt text"></a></p>
+<a href="1616321473831.png" data-lightbox="841652be-b050-4dce-a138-263958331677" data-title="Alt text"><img src="1616321473831.png" alt="Alt text"></a></p>
 </li>
 </ul>
 </li>
@@ -1257,9 +1402,9 @@ ID3D12Resource         <span class="token operator">*</span>pCountBuffer<span cl
 UINT64                 CountBufferOffset
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<a href="1616946953324.png" data-lightbox="a1f98a9b-49a3-4c79-9886-e28873c2809c" data-title="Alt text"><img src="1616946953324.png" alt="Alt text"></a>
-<a href="1616946963830.png" data-lightbox="8bd0365a-2ee4-4c83-b721-505bcea592ae" data-title="Alt text"><img src="1616946963830.png" alt="Alt text"></a>
-<a href="1616946973545.png" data-lightbox="4999b598-52f6-494b-ae9d-a20efce7f926" data-title="Alt text"><img src="1616946973545.png" alt="Alt text"></a></li>
+<a href="1616946953324.png" data-lightbox="7907ec0b-25f5-4419-a9df-29b6b2a20294" data-title="Alt text"><img src="1616946953324.png" alt="Alt text"></a>
+<a href="1616946963830.png" data-lightbox="6a0fe461-57de-4c4d-ba68-513193f45efc" data-title="Alt text"><img src="1616946963830.png" alt="Alt text"></a>
+<a href="1616946973545.png" data-lightbox="791bfae7-ad27-4334-9cdd-5e98803a29bf" data-title="Alt text"><img src="1616946973545.png" alt="Alt text"></a></li>
 <li>DX11 &#x4F7F;&#x7528;NVIDIA &#x6216;&#x8005; AMD &#x7684; driver extension
 nv &#x548C; amd &#x8FD8;&#x662F;&#x9700;&#x8981;&#x628A;vertex &#x6570;&#x636E;&#x62CD;&#x5230;&#x4E00;&#x8D77;<ul>
 <li>nvapi<pre class="language-"><code class="lang-cpp"><span class="token function">NvAPI_D3D11_MultiDrawIndexedInstancedIndirect</span><span class="token punctuation">(</span>
@@ -1285,7 +1430,7 @@ nv &#x548C; amd &#x8FD8;&#x662F;&#x9700;&#x8981;&#x628A;vertex &#x6570;&#x636E;&
 </ul>
 <h2 id="batching"><a name="batching" class="anchor-navigation-ex-anchor" href="#batching"><i class="fa fa-link" aria-hidden="true"></i></a>batching</h2>
 <h3 id="mesh-lod"><a name="mesh-lod" class="anchor-navigation-ex-anchor" href="#mesh-lod"><i class="fa fa-link" aria-hidden="true"></i></a>mesh LOD</h3>
-<p> <a href="1616321582036.png" data-lightbox="e302beb9-cc9c-4f80-a075-298ea7608c36" data-title="Alt text"><img src="1616321582036.png" alt="Alt text"></a></p>
+<p> <a href="1616321582036.png" data-lightbox="d17a438b-6a64-4706-ba56-c9714d965944" data-title="Alt text"><img src="1616321582036.png" alt="Alt text"></a></p>
 <h3 id="mesh-cluster"><a name="mesh-cluster" class="anchor-navigation-ex-anchor" href="#mesh-cluster"><i class="fa fa-link" aria-hidden="true"></i></a>mesh cluster</h3>
 <p> &#x8FD9;&#x91CC;&#x770B;&#x4E86;&#x4E00;&#x4E2A;unity&#x7684;demo&#x91CC;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x662F;&#x5C06;&#x4E00;&#x4E2A;object&#x7684;bounding box&#x5206;&#x6210;&#x591A;&#x4E2A;voxel&#xFF0C;&#x5373;&#x4E00;&#x4E2A;&#x4E2A;&#x5C0F;&#x7684;&#x7ACB;&#x65B9;&#x4F53;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x6240;&#x6709;vertex&#x6839;&#x636E;&#x4F4D;&#x7F6E;&#x5BF9;&#x5E94;&#x5230;&#x4E0D;&#x540C;&#x7684;voxel. &#x7136;&#x540E;&#x518D;&#x5F00;&#x59CB;&#x5206;&#x914D;cluster&#xFF0C;eg. &#x4E00;&#x4E2A;cluster 255&#x4E2A;&#x9876;&#x70B9;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;voxel&#xFF0C;&#x5982;&#x679C;&gt;=255&#x4E2A;&#x9876;&#x70B9;&#xFF0C;&#x628A;&#x524D;255&#x4E2A;&#x9876;&#x70B9;&#x5206;&#x914D;&#x7ED9;&#x4E00;&#x4E2A;cluster&#xFF0C;&#x5982;&#x679C;&lt;255&#xFF0C;&#x5219;&#x5C06;&#x6240;&#x6709;&#x9876;&#x70B9;&#x5148;&#x5206;&#x914D;&#x7ED9;&#x8FD9;&#x4E2A;cluster&#xFF0C;&#x7136;&#x540E;&#x518D;&#x641C;&#x7D22;&#x5468;&#x56F4;&#x6B65;&#x957F;&#x662F;1&#x7684;voxel&#x91CC;&#x7684;&#x9876;&#x70B9;&#x6765;&#x586B;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x6EE1;&#xFF0C;&#x518D;&#x641C;&#x6B65;&#x957F;&#x662F;2&#x7684;voxel. &#x8FD9;&#x6837;&#x7684;&#x60F3;&#x6CD5;&#x662F;&#x5C3D;&#x91CF;&#x628A;&#x4F4D;&#x7F6E;&#x76F8;&#x8FD1;&#x7684;&#x9876;&#x70B9;&#x5206;&#x914D;&#x5230;&#x4E00;&#x4E2A;cluster&#x91CC;&#x3002;&#x4F46;&#x662F;&#x611F;&#x89C9;&#x6709;&#x70B9;&#x8FC7;&#x4E8E;&#x590D;&#x6742;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x516B;&#x53C9;&#x6811;&#x7684;&#x7A7A;&#x95F4;&#x5173;&#x7CFB;&#x53EF;&#x4EE5;&#x66F4;&#x5FEB;&#x7684;&#x904D;&#x5386;&#x3002;</p>
 <pre class="language-"><code class="lang-cpp"> <span class="token keyword">int</span> loopStart <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>currentVoxel<span class="token punctuation">.</span>count<span class="token punctuation">,</span> <span class="token function">max</span><span class="token punctuation">(</span>lastedVertex <span class="token operator">-</span> currentVoxel<span class="token punctuation">.</span>count<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
@@ -1336,7 +1481,7 @@ nv &#x548C; amd &#x8FD8;&#x662F;&#x9700;&#x8981;&#x628A;vertex &#x6570;&#x636E;&
 <li>virtual texture</li>
 </ul>
 <h2 id="&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;xmind"><a name="&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;xmind" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;xmind"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x540E;&#x9644;&#x4E0A;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x6B65;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6574;&#x7406;&#x7684;XMind</h2>
-<p>GPU driven rendering.png<a href="1616932355926.png" data-lightbox="f8d439a6-ac7b-4f06-bb07-f4f3544710d8" data-title="Alt text"><img src="1616932355926.png" alt="Alt text"></a></p>
+<p>GPU driven rendering.png<a href="1616932355926.png" data-lightbox="cebd23b5-0a79-4a5b-ae20-993bc37e6d03" data-title="Alt text"><img src="1616932355926.png" alt="Alt text"></a></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; tingxia.top 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-05-14 11:16:54
 </span></footer></body></html>
@@ -1382,7 +1527,7 @@ nv &#x548C; amd &#x8FD8;&#x662F;&#x9700;&#x8981;&#x628A;vertex &#x6570;&#x636E;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GPU Driven Occlusion Culling","level":"1.14.3.1","depth":3,"next":{"title":"Checkerboard","level":"1.14.4","depth":2,"path":"pipeline/cb/resource.md","ref":"pipeline/cb/resource.md","articles":[]},"previous":{"title":"GPU Driven Rendering","level":"1.14.3","depth":2,"path":"pipeline/gpudriven/resource.md","ref":"pipeline/gpudriven/resource.md","articles":[{"title":"GPU Driven Occlusion Culling","level":"1.14.3.1","depth":3,"path":"pipeline/gpudriven/oc/oc.md","ref":"pipeline/gpudriven/oc/oc.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pipeline/gpudriven/oc/oc.md","mtime":"2021-05-14T03:16:54.731Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-08T04:01:23.342Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GPU Driven Occlusion Culling","level":"1.14.3.1","depth":3,"next":{"title":"Checkerboard","level":"1.14.4","depth":2,"path":"pipeline/cb/resource.md","ref":"pipeline/cb/resource.md","articles":[]},"previous":{"title":"GPU Driven Rendering","level":"1.14.3","depth":2,"path":"pipeline/gpudriven/resource.md","ref":"pipeline/gpudriven/resource.md","articles":[{"title":"GPU Driven Occlusion Culling","level":"1.14.3.1","depth":3,"path":"pipeline/gpudriven/oc/oc.md","ref":"pipeline/gpudriven/oc/oc.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pipeline/gpudriven/oc/oc.md","mtime":"2021-05-14T03:16:54.731Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T07:01:50.426Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1421,6 +1566,14 @@ nv &#x548C; amd &#x8FD8;&#x662F;&#x9700;&#x8981;&#x628A;vertex &#x6570;&#x636E;&
     
         
         <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
         
     
         
