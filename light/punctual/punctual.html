@@ -1073,6 +1073,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.19.2.2" data-path="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                <a href="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                    
+                    Advanced BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1348,48 +1361,48 @@
 <p>&#x6700;&#x5F00;&#x59CB;&#x770B;&#x5230;punctual light&#x7684;&#x65F6;&#x5019;&#x67E5;&#x4E86;&#x4E0B;&#x5B57;&#x5178;&#xFF0C;punctual&#x662F;&#x5B88;&#x65F6;&#x7684;&#x7CBE;&#x786E;&#x7684;&#xFF0C;&#x518D;&#x5E26;&#x8FDB;&#x53BB;&#x5B9E;&#x5728;&#x662F;&#x5F88;&#x8D39;&#x89E3;&#x3002;&#x7136;&#x540E;&#x770B;&#x4E86;RTR&#x8FD9;&#x672C;&#x4E66;&#x7684;&#x5BF9;&#x5E94;&#x7AE0;&#x8282;&#x624D;&#x660E;&#x767D;&#xFF1A;
 <em>We use the term &#x201C;punctual,&#x201D; from the Latin punctus meaning &#x201C;point,&#x201D; for the class consisting of all sources of illumination that <strong>originate from a single, local position</strong>.</em></p>
 <h2 id="light-direction"><a name="light-direction" class="anchor-navigation-ex-anchor" href="#light-direction"><i class="fa fa-link" aria-hidden="true"></i></a>light direction</h2>
-<p><a href="1623632026523.png" data-lightbox="f85c8e78-e1e3-4a82-b4f0-15a9a59cc8c5" data-title="Alt text"><img src="1623632026523.png" alt="Alt text"></a></p>
+<p><a href="1623632026523.png" data-lightbox="4c4be6d3-59e7-4922-b167-6df9b11a756a" data-title="Alt text"><img src="1623632026523.png" alt="Alt text"></a></p>
 <h2 id="pointomni-light"><a name="pointomni-light" class="anchor-navigation-ex-anchor" href="#pointomni-light"><i class="fa fa-link" aria-hidden="true"></i></a>Point/Omni Light</h2>
 <h3 id="attenuation"><a name="attenuation" class="anchor-navigation-ex-anchor" href="#attenuation"><i class="fa fa-link" aria-hidden="true"></i></a>attenuation</h3>
 <p>&#x5176;&#x5B9E;&#x4E3B;&#x8981;&#x662F;&#x60F3;&#x770B;&#x770B;&#x8FD9;&#x4E2A;&#x8870;&#x51CF;&#x51FD;&#x6570;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0A;&#x5468;&#x5728;&#x5206;&#x4EAB;&#x4E00;&#x7BC7;&#x5173;&#x4E8E;&#x70B9;&#x5149;&#x8870;&#x51CF;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x53D1;&#x73B0;&#x5728;&#x5230;&#x5149;&#x6E90;&#x8DDD;&#x79BB;r&#x65E0;&#x9650;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5149;&#x5F3A;&#x4F1A;&#x8D8B;&#x4E8E;&#x65E0;&#x7A77;&#x5927;&#xFF0C;&#x5C31;&#x4F1A;&#x6709;&#x70B9;&#x8D39;&#x89E3;&#xFF0C;&#x90A3;&#x70B9;&#x5149;&#x7684;intensity&#x7684;&#x5B9A;&#x4E49;&#x7A76;&#x7ADF;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x4E66;&#x91CC;&#x627E;&#x5230;&#x4E86;&#x7B54;&#x6848;&#xFF1A;
-<a href="1623632305731.png" data-lightbox="ea9dece9-9497-4106-b3e9-9282d29e949c" data-title="Alt text"><img src="1623632305731.png" alt="Alt text"></a>
+<a href="1623632305731.png" data-lightbox="cba5a846-9799-4ba5-9bcd-66933aef673e" data-title="Alt text"><img src="1623632305731.png" alt="Alt text"></a>
 &#x70B9;&#x5149;&#x7684;&#x8870;&#x51CF;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x8DDD;&#x79BB;&#x5E73;&#x65B9;&#x7684;&#x5012;&#x6570;&#xFF0C;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x7684;&#x70B9;&#x5149;&#x7684;intensity&#x5B9E;&#x9645;&#x662F;&#x5728;&#x67D0;&#x4E2A;&#x7ED9;&#x5B9A;&#x8DDD;&#x79BB;&#x4E0B;&#x7684;intensity. &#x8FD9;&#x6837;&#x4E00;&#x8BF4;&#x5C31;&#x89C9;&#x5F97;&#x6BD4;&#x8F83;&#x5408;&#x7406;&#x4E86;&#x3002;</p>
 <h3 id="singularity-problem"><a name="singularity-problem" class="anchor-navigation-ex-anchor" href="#singularity-problem"><i class="fa fa-link" aria-hidden="true"></i></a>singularity problem</h3>
 <p>&#x8DDD;&#x79BB;&#x5E73;&#x65B9;&#x7684;&#x5012;&#x6570;&#x7684;&#x8870;&#x51CF;&#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x9762;&#x4E34;&#x4E00;&#x4E2A;<strong>&#x9664;0</strong>&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4EE5;&#x4E0B;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;</p>
 <ul>
 <li>&#x5206;&#x6BCD;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x5F88;&#x5C0F;&#x7684;&#x6570;
- <a href="1623632656467.png" data-lightbox="15d74822-01bb-4324-a05f-a7e5a96f52ce" data-title="Alt text"><img src="1623632656467.png" alt="Alt text"></a>
+ <a href="1623632656467.png" data-lightbox="f03426bc-9a56-4a48-9b41-22aa2c953278" data-title="Alt text"><img src="1623632656467.png" alt="Alt text"></a>
  UE &#x7684;DeferredLightingCommon.ush&#x91CC;&#x5B9E;&#x73B0;&#x662F;&#x53D6;&#x7684;1 cm.</li>
 <li>&#x8DDD;&#x79BB;&#x505A;&#x622A;&#x65AD;
- <a href="1623640484870.png" data-lightbox="71554022-4a0e-4f21-975b-59f9bad509b6" data-title="Alt text"><img src="1623640484870.png" alt="Alt text"></a>
+ <a href="1623640484870.png" data-lightbox="9e9dfd50-229d-4e31-97fd-4e0d1494f29f" data-title="Alt text"><img src="1623640484870.png" alt="Alt text"></a>
  CryEngine and Frostbite &#x662F;&#x8FD9;&#x4E48;&#x505A;&#x7684;&#xFF0C;it has a physical interpretation: the radius of the physical object emitting the light, &#x8FD9;&#x91CC;&#x8003;&#x8651;&#x4E86;&#x5149;&#x6E90;&#x7684;&#x7269;&#x7406;&#x534A;&#x5F84;&#x3002;</li>
 <li>siggraph 2020 talk
  <a href="http://www.cemyuksel.com/research/pointlightattenuation/" target="_blank">http://www.cemyuksel.com/research/pointlightattenuation/</a>
- <a href="1623641226957.png" data-lightbox="f2c22927-39ea-481f-b752-f22679ef7b71" data-title="Alt text"><img src="1623641226957.png" alt="Alt text"></a>
+ <a href="1623641226957.png" data-lightbox="abc5836a-49e5-45d3-a8df-b023678359e7" data-title="Alt text"><img src="1623641226957.png" alt="Alt text"></a>
 &#x4F5C;&#x8005;&#x628A;&#x70B9;&#x5149;&#x8FD1;&#x4F3C;&#x4E3A;&#x4E00;&#x4E2A;spherical disk light, &#x628A;&#x8DDD;&#x79BB;&#x7684;attenuation&#x8F6C;&#x6362;&#x6210;&#x7ACB;&#x4F53;&#x89D2;&#x7684;&#x5927;&#x5C0F;&#x3002;
-<a href="1623641249052.png" data-lightbox="09e02708-34c1-46d7-81dd-9e4eabde6c1c" data-title="Alt text"><img src="1623641249052.png" alt="Alt text"></a>
-<a href="1623641347082.png" data-lightbox="1cc7d39d-5284-455f-adee-d535e72a3aa8" data-title="Alt text"><img src="1623641347082.png" alt="Alt text"></a>
- <a href="1623641363379.png" data-lightbox="1d0bba48-7093-40b1-8295-4973749d3625" data-title="Alt text"><img src="1623641363379.png" alt="Alt text"></a>
+<a href="1623641249052.png" data-lightbox="24f1a353-4900-4fc6-9a4a-142965add27e" data-title="Alt text"><img src="1623641249052.png" alt="Alt text"></a>
+<a href="1623641347082.png" data-lightbox="ee797b46-9676-45fb-88a7-9a59abedbb3c" data-title="Alt text"><img src="1623641347082.png" alt="Alt text"></a>
+ <a href="1623641363379.png" data-lightbox="2acc3e94-7358-4df5-93b7-ee4119afbdd3" data-title="Alt text"><img src="1623641363379.png" alt="Alt text"></a>
  &#x5728;&#x8DDD;&#x79BB;&#x6BD4;&#x8F83;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#x5BF9;inverse squared&#x6709;&#x66F4;&#x597D;&#x7684;&#x8FD1;&#x4F3C;&#x3002;
- <a href="1623641376322.png" data-lightbox="dd7fb7cc-3356-4943-a76a-c6607c46937a" data-title="Alt text"><img src="1623641376322.png" alt="Alt text"></a></li>
+ <a href="1623641376322.png" data-lightbox="9a86f792-7c2b-464a-a7cb-5e1f1fe45067" data-title="Alt text"><img src="1623641376322.png" alt="Alt text"></a></li>
 </ul>
 <h3 id="self-defined-attenuation-function"><a name="self-defined-attenuation-function" class="anchor-navigation-ex-anchor" href="#self-defined-attenuation-function"><i class="fa fa-link" aria-hidden="true"></i></a>self-defined attenuation function</h3>
 <p>&#x5BF9;&#x4E8E;&#x6709;&#x4E9B;&#x573A;&#x666F;&#xFF0C;&#x62DF;&#x5408;inverse-square curve&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x5FC5;&#x8981;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x8870;&#x51CF;&#x51FD;&#x6570;&#xFF1A;
-<a href="1623642294631.png" data-lightbox="10148c7f-b8c6-4721-b5b3-1d7ebc9b22a8" data-title="Alt text"><img src="1623642294631.png" alt="Alt text"></a></p>
+<a href="1623642294631.png" data-lightbox="6f783334-8de0-4089-bd8a-08b804e285e5" data-title="Alt text"><img src="1623642294631.png" alt="Alt text"></a></p>
 <h3 id="large-distances-calculation"><a name="large-distances-calculation" class="anchor-navigation-ex-anchor" href="#large-distances-calculation"><i class="fa fa-link" aria-hidden="true"></i></a>large distances calculation</h3>
 <p>&#x8DDD;&#x79BB;&#x6BD4;&#x8F83;&#x8FDC;&#x4E86;&#x4E4B;&#x540E;&#xFF0C;&#x70B9;&#x5149;&#x8870;&#x51CF;&#x7684;&#x5F88;&#x591A;&#x51E0;&#x4E4E;&#x63A5;&#x8FD1;&#x4E8E;0&#xFF0C;&#x4ECE;&#x6027;&#x80FD;&#x4E0A;&#x8003;&#x8651;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x8BA1;&#x7B97;&#x6027;&#x4EF7;&#x6BD4;&#x5C31;&#x4E0D;&#x9AD8;&#x4E86;&#x3002;</p>
 <ul>
 <li>&#x548C;&#x4E00;&#x4E2A; windowing function &#x76F8;&#x4E58;
- <a href="1623641835495.png" data-lightbox="f5dc7f06-9e9a-4206-900a-35450e276e57" data-title="Alt text"><img src="1623641835495.png" alt="Alt text"></a>
+ <a href="1623641835495.png" data-lightbox="1658963c-dbb4-4431-ac29-8666880d3dc3" data-title="Alt text"><img src="1623641835495.png" alt="Alt text"></a>
 UE &#x548C; Frostbite &#x90FD;&#x7528;&#x7684;&#x7A97;&#x53E3;&#x51FD;&#x6570;&#x662F;&#xFF08;unreal &#x91CC;&#x7684; attenuation radius&#x5C31;&#x662F;r_max&#xFF09;&#xFF1A;
-<a href="1623641915105.png" data-lightbox="2cd45fc6-2192-49e3-86b4-05b6ed5dd54b" data-title="Alt text"><img src="1623641915105.png" alt="Alt text"></a></li>
+<a href="1623641915105.png" data-lightbox="b70df285-5a0b-40b1-a86f-f1c90581923f" data-title="Alt text"><img src="1623641915105.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="spot-light"><a name="spot-light" class="anchor-navigation-ex-anchor" href="#spot-light"><i class="fa fa-link" aria-hidden="true"></i></a>Spot Light</h2>
 <p>spot light&#x76F8;&#x6BD4;&#x70B9;&#x5149;&#x8FD8;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x8870;&#x51CF;&#x51FD;&#x6570;&#x3002;
-<a href="1623642402485.png" data-lightbox="27c91eb1-34dc-4621-857b-e427e2785d85" data-title="Alt text"><img src="1623642402485.png" alt="Alt text"></a>
-<a href="1623642519629.png" data-lightbox="1132c25f-0fa9-4518-ac32-ea1cc59324a3" data-title="Alt text"><img src="1623642519629.png" alt="Alt text"></a>
+<a href="1623642402485.png" data-lightbox="cc16e821-f1b9-4bf3-814c-345d2cd0a9c0" data-title="Alt text"><img src="1623642402485.png" alt="Alt text"></a>
+<a href="1623642519629.png" data-lightbox="d222c094-25ca-4a09-a0cd-6aff7611108e" data-title="Alt text"><img src="1623642519629.png" alt="Alt text"></a>
 Frosbite &#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x51FD;&#x6570;
-<a href="1623642588840.png" data-lightbox="378f92bf-162a-4f12-8da5-5318da5abb96" data-title="Alt text"><img src="1623642588840.png" alt="Alt text"></a></p>
+<a href="1623642588840.png" data-lightbox="eec8bf99-10b0-47be-baa8-327db7880a43" data-title="Alt text"><img src="1623642588840.png" alt="Alt text"></a></p>
 <h2 id="others"><a name="others" class="anchor-navigation-ex-anchor" href="#others"><i class="fa fa-link" aria-hidden="true"></i></a>Others</h2>
 <ul>
 <li>IES profiles</li>
@@ -1437,7 +1450,7 @@ Frosbite &#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x51FD;&#x6570;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Punctual Light","level":"1.8.1","depth":2,"next":{"title":"Area Light","level":"1.8.2","depth":2,"ref":"","articles":[]},"previous":{"title":"Light","level":"1.8","depth":1,"path":"light/resource.md","ref":"light/resource.md","articles":[{"title":"Punctual Light","level":"1.8.1","depth":2,"path":"light/punctual/punctual.md","ref":"light/punctual/punctual.md","articles":[]},{"title":"Area Light","level":"1.8.2","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"light/punctual/punctual.md","mtime":"2021-06-14T03:56:40.380Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-06T06:30:36.636Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Punctual Light","level":"1.8.1","depth":2,"next":{"title":"Area Light","level":"1.8.2","depth":2,"ref":"","articles":[]},"previous":{"title":"Light","level":"1.8","depth":1,"path":"light/resource.md","ref":"light/resource.md","articles":[{"title":"Punctual Light","level":"1.8.1","depth":2,"path":"light/punctual/punctual.md","ref":"light/punctual/punctual.md","articles":[]},{"title":"Area Light","level":"1.8.2","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"light/punctual/punctual.md","mtime":"2021-06-14T03:56:40.380Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-24T05:48:06.517Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
