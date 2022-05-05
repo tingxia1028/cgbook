@@ -1,0 +1,1652 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Real-Time Light and Color · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../shadow/resource.html" />
+    
+    
+    <link rel="prev" href="../resource.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../space_trans/resource.html">
+            
+                <a href="../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../camera/resource.html">
+            
+                <a href="../../camera/resource.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../camera/photography/photography.html">
+            
+                <a href="../../camera/photography/photography.html">
+            
+                    
+                    科学解释摄影中的一些概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../ray_tracing/resource.html">
+            
+                <a href="../../ray_tracing/resource.html">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../ray_tracing/sampling/resource.html">
+            
+                <a href="../../ray_tracing/sampling/resource.html">
+            
+                    
+                    Sampling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../ray_tracing/denoising/resource.html">
+            
+                <a href="../../ray_tracing/denoising/resource.html">
+            
+                    
+                    Denoising and Filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../ray_tracing/intersection_acceleration/resource.html">
+            
+                <a href="../../ray_tracing/intersection_acceleration/resource.html">
+            
+                    
+                    Intersection Acceleration Structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../ray_tracing/intersection_acceleration/bvh/bvh.md">
+            
+                <span>
+            
+                    
+                    BVH and KdTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../volume/resource.html">
+            
+                <a href="../../volume/resource.html">
+            
+                    
+                    Volume Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../volume/volume_rendering/volume_rendering.html">
+            
+                <a href="../../volume/volume_rendering/volume_rendering.html">
+            
+                    
+                    Volume Rendering Basic Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../GI/resource.html">
+            
+                <a href="../../GI/resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../GI/GI_draft/GI_draft.html">
+            
+                <a href="../../GI/GI_draft/GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../GI/ssgi/resource.html">
+            
+                <a href="../../GI/ssgi/resource.html">
+            
+                    
+                    SSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../GI/precompute/resource.html">
+            
+                <a href="../../GI/precompute/resource.html">
+            
+                    
+                    Precomputed Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../GI/voxel_based/resource.html">
+            
+                <a href="../../GI/voxel_based/resource.html">
+            
+                    
+                    Voxel Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../GI/distance_field/resource.html">
+            
+                <a href="../../GI/distance_field/resource.html">
+            
+                    
+                    Distance Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../pbr/resource.html">
+            
+                <a href="../../pbr/resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../pbr/material/resource.html">
+            
+                <a href="../../pbr/material/resource.html">
+            
+                    
+                    Material
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../pbr/material/reflection_models/reflection_models.html">
+            
+                <a href="../../pbr/material/reflection_models/reflection_models.html">
+            
+                    
+                    Reflection Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../pbr/lighting/resource.html">
+            
+                <a href="../../pbr/lighting/resource.html">
+            
+                    
+                    Lighting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Filament Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../light/resource.html">
+            
+                <a href="../../light/resource.html">
+            
+                    
+                    Light
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../light/punctual/punctual.html">
+            
+                <a href="../../light/punctual/punctual.html">
+            
+                    
+                    Punctual Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    Area Light
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.9.1" data-path="light_color.html">
+            
+                <a href="light_color.html">
+            
+                    
+                    Real-Time Light and Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../shadow/resource.html">
+            
+                <a href="../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../shadow/assignment/assignment.html">
+            
+                <a href="../../shadow/assignment/assignment.html">
+            
+                    
+                    games202 shadow assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../ao/resource.html">
+            
+                <a href="../../ao/resource.html">
+            
+                    
+                    AO
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../aa/resource.html">
+            
+                <a href="../../aa/resource.html">
+            
+                    
+                    AA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../texture/resource.html">
+            
+                <a href="../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../texture/multiple_textures/multiple_textures.html">
+            
+                <a href="../../texture/multiple_textures/multiple_textures.html">
+            
+                    
+                    Multiple Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../texture/multiple_textures/virtual_textures.md">
+            
+                <span>
+            
+                    
+                    Virtual Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Pipeline
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../pipeline/visibility/resource.html">
+            
+                <a href="../../pipeline/visibility/resource.html">
+            
+                    
+                    Dynamic Visibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                <a href="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                    
+                    Dynamic Visibility Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../pipeline/cs/resource.html">
+            
+                <a href="../../pipeline/cs/resource.html">
+            
+                    
+                    Compute Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../../pipeline/gpudriven/resource.html">
+            
+                <a href="../../pipeline/gpudriven/resource.html">
+            
+                    
+                    GPU Driven Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="../../pipeline/gpudriven/oc/oc.html">
+            
+                <a href="../../pipeline/gpudriven/oc/oc.html">
+            
+                    
+                    GPU Driven Occlusion Culling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../../pipeline/cb/resource.html">
+            
+                <a href="../../pipeline/cb/resource.html">
+            
+                    
+                    Checkerboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../structure/framegraph/resource.html">
+            
+                <a href="../../structure/framegraph/resource.html">
+            
+                    
+                    Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../structure/ecs/resource.html">
+            
+                <a href="../../structure/ecs/resource.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    Graphics API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    Special Effect
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1.1" data-path="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                <a href="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.2" data-path="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                <a href="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../special_effect/cloud/resource.html">
+            
+                <a href="../../special_effect/cloud/resource.html">
+            
+                    
+                    Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../simulation/resource.html">
+            
+                <a href="../../simulation/resource.html">
+            
+                    
+                    Simulation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../simulation/fluid/resource.html">
+            
+                <a href="../../simulation/fluid/resource.html">
+            
+                    
+                    Fluid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../simultation/cloth/resource.md">
+            
+                <span>
+            
+                    
+                    Cloth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../course/resource.html">
+            
+                <a href="../../course/resource.html">
+            
+                    
+                    Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../course/UC_Davis_Computer_Graphics/UC_Davis_Computer_Graphics.html">
+            
+                <a href="../../course/UC_Davis_Computer_Graphics/UC_Davis_Computer_Graphics.html">
+            
+                    
+                    UC Davis Compute Graphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    UCSD CES 272 Advanced Image Synthesis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.2.1" data-path="../../course/UCSD_CSE_272_part1/part1.html">
+            
+                <a href="../../course/UCSD_CSE_272_part1/part1.html">
+            
+                    
+                    Intro & Simple BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2.2" data-path="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                <a href="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                    
+                    Advanced BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    Engine
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../engine/filament/resource.html">
+            
+                <a href="../../engine/filament/resource.html">
+            
+                    
+                    Filament
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1.1" data-path="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../engine/ue/resource.html">
+            
+                <a href="../../engine/ue/resource.html">
+            
+                    
+                    Unreal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" >
+            
+                <span>
+            
+                    
+                    PBR
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1.1" data-path="../../ray_tracing/intersection_acceleration/bvh/bvh.md">
+            
+                <span>
+            
+                    
+                    Primitives and Intersection Acceleration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.1.2" data-path="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.1.3" data-path="../../pbr/material/reflection_models/reflection_models.html">
+            
+                <a href="../../pbr/material/reflection_models/reflection_models.html">
+            
+                    
+                    Reflection Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" >
+            
+                <span>
+            
+                    
+                    Real-Time Rendering
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.21.2.1" data-path="light_color.html">
+            
+                <a href="light_color.html">
+            
+                    
+                    Real-Time Light and Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.2" data-path="../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.3" data-path="../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.4" data-path="../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Real-Time Light and Color</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#real-time-light-and-color"><b></b>Real-Time Light and Color</a></li><ul><li><span class="title-icon "></span><a href="#light-quantities"><b></b>Light Quantities</a></li><ul><li><span class="title-icon "></span><a href="#radiometry&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;"><b></b>Radiometry(&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;)</a></li><li><span class="title-icon "></span><a href="#photometry"><b></b>Photometry</a></li><li><span class="title-icon "></span><a href="#colorimetry&#x8272;&#x5EA6;&#x5B66;"><b></b>Colorimetry(&#x8272;&#x5EA6;&#x5B66;)</a></li><li><span class="title-icon "></span><a href="#rendering-with-rgb-colors"><b></b>Rendering with RGB colors</a></li></ul><li><span class="title-icon "></span><a href="#display-encoding"><b></b>Display Encoding</a></li><ul><li><span class="title-icon "></span><a href="#linear-vs-nonlinear"><b></b>linear vs. nonlinear</a></li><li><span class="title-icon "></span><a href="#eotf-vs-oetf"><b></b>EOTF vs. OETF</a></li><li><span class="title-icon "></span><a href="#gamma-correction"><b></b>gamma correction</a></li></ul><li><span class="title-icon "></span><a href="#scene-to-screen"><b></b>Scene to Screen</a></li><ul><li><span class="title-icon "></span><a href="#high-dynamic-range-display-encoding"><b></b>High Dynamic Range Display Encoding</a></li><li><span class="title-icon "></span><a href="#tone-mapping"><b></b>Tone Mapping</a></li></ul></ul></ul></div><a href="#real-time-light-and-color" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="real-time-light-and-color"><a name="real-time-light-and-color" class="anchor-navigation-ex-anchor" href="#real-time-light-and-color"><i class="fa fa-link" aria-hidden="true"></i></a>Real-Time Light and Color</h1>
+<ul>
+<li><a href="#light-quantities">Light Quantities</a><ul>
+<li><a href="#radiometry%E8%BE%90%E5%B0%84%E5%BA%A6%E9%87%8F%E5%AD%A6">Radiometry(&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;)</a></li>
+<li><a href="#photometry">Photometry</a></li>
+<li><a href="#colorimetry%E8%89%B2%E5%BA%A6%E5%AD%A6">Colorimetry(&#x8272;&#x5EA6;&#x5B66;)</a></li>
+<li><a href="#rendering-with-rgb-colors">Rendering with RGB colors</a></li>
+</ul>
+</li>
+<li><a href="#display-encoding">Display Encoding</a><ul>
+<li><a href="#linear-vs-nonlinear">linear vs. nonlinear</a></li>
+<li><a href="#eotf-vs-oetf">EOTF vs. OETF</a></li>
+<li><a href="#gamma-correction">gamma correction</a><ul>
+<li><a href="#transformation">transformation</a></li>
+<li><a href="#problem-with-neglecting-gamma-correction">problem with neglecting gamma correction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#scene-to-screen">Scene to Screen</a><ul>
+<li><a href="#high-dynamic-range-display-encoding">High Dynamic Range Display Encoding</a></li>
+<li><a href="#tone-mapping">Tone Mapping</a><ul>
+<li><a href="#tone-reproduction-transform">Tone Reproduction Transform</a></li>
+<li><a href="#exposure">Exposure</a></li>
+<li><a href="#color-grading">Color Grading</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="light-quantities"><a name="light-quantities" class="anchor-navigation-ex-anchor" href="#light-quantities"><i class="fa fa-link" aria-hidden="true"></i></a>Light Quantities</h2>
+<h3 id="radiometry&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;"><a name="radiometry&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;" class="anchor-navigation-ex-anchor" href="#radiometry&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;"><i class="fa fa-link" aria-hidden="true"></i></a>Radiometry(&#x8F90;&#x5C04;&#x5EA6;&#x91CF;&#x5B66;)</h3>
+<p>Radiometry deals with the <strong>measurement of electromagnetic radiation</strong>.
+<a href="1651391530146.png" data-lightbox="9b66ea7b-12bc-4f73-960a-6daa08496c52" data-title="Alt text"><img src="1651391530146.png" alt="Alt text"></a></p>
+<ul>
+<li>Radiant &#xFB02;ux is the &#xFB02;ow of radiant energy over time&#x2014;power&#x2014;measured in watts (W).</li>
+<li>Radiance, <strong>L(lambda, x, d)</strong>, is a measure of electromagnetic radiation in a single ray<ul>
+<li>An important property of radiance is that it is not a&#xFB00;ected by distance, ignoring atmospheric e&#xFB00;ects such as fog.</li>
+</ul>
+</li>
+<li>SPD
+<a href="1651393596085.png" data-lightbox="ccdea3b0-b22d-4fb0-aa2b-d8abbd61c1d8" data-title="Alt text"><img src="1651393596085.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="photometry"><a name="photometry" class="anchor-navigation-ex-anchor" href="#photometry"><i class="fa fa-link" aria-hidden="true"></i></a>Photometry</h3>
+<p>Photometry, is like radiometry, except that it weights everything by the sensitivity of the human eye.
+The <strong>conversion curve</strong> and the <strong>units of measurement</strong> are the only di&#xFB00;erence between the theory of photometry and the theory of radiometry.</p>
+<ul>
+<li>CIE photometric curve
+<a href="1651392499567.png" data-lightbox="35812e3c-3534-45f1-bf9f-7cfd3b4af970" data-title="Alt text"><img src="1651392499567.png" alt="Alt text"></a></li>
+<li>units
+<a href="1651392622325.png" data-lightbox="a9165355-dff4-40b9-b531-2faba96e3b42" data-title="Alt text"><img src="1651392622325.png" alt="Alt text"></a><ul>
+<li>Luminance is often used to describe the brightness of &#xFB02;at surfaces.</li>
+</ul>
+</li>
+</ul>
+<h3 id="colorimetry&#x8272;&#x5EA6;&#x5B66;"><a name="colorimetry&#x8272;&#x5EA6;&#x5B66;" class="anchor-navigation-ex-anchor" href="#colorimetry&#x8272;&#x5EA6;&#x5B66;"><i class="fa fa-link" aria-hidden="true"></i></a>Colorimetry(&#x8272;&#x5EA6;&#x5B66;)</h3>
+<p>Colorimetry deals with the relationship between <strong>spectral power distributions(SPD)</strong> and the <strong>perception of color</strong>.</p>
+<ul>
+<li>human biology
+For color perception, the eye works by having three di&#xFB00;erent types of cone receptors in the retina, with each type of receptor responding di&#xFB00;erently to various wavelengths.</li>
+<li>color matching function
+<a href="1651393057961.png" data-lightbox="5a69d1f8-e192-45ac-bbc8-5a1e90071388" data-title="Alt text"><img src="1651393057961.png" alt="Alt text"></a>
+For an arbitrary spectral distribution, the color-matching functions can be multiplied by the distribution and the area under each resulting curve (i.e., the <strong>integral</strong>) gives the relative amounts to set the colored lights to match the perceived color produced by the spectrum ---di&#xFB00;erent spectral distributions can resolve to the same three weights --- metamer(&#x6761;&#x4EF6;&#x7B49;&#x8272;)
+&#x4EFB;&#x610F;&#x670D;&#x4ECE;&#x4E00;&#x4E2A;SPD&#x7684;&#x5149;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x79EF;&#x5206;&#x8BA1;&#x7B97;&#x51FA;&#x4EE5;&#x4E09;&#x4E2A;&#x989C;&#x8272;&#x4E3A;&#x57FA;&#x672C;&#x7EC4;&#x6210;&#x7684;color-matching functions&#x7684;&#x6743;&#x91CD;&#x7EC4;&#x5408;&#x3002;</li>
+<li>mathematical abstraction color matching function
+<a href="1651393401857.png" data-lightbox="80b65120-d1bb-4224-bafd-28cc122e11bf" data-title="Alt text"><img src="1651393401857.png" alt="Alt text"></a><ul>
+<li>transformation between a SPD 
+<a href="1651393841754.png" data-lightbox="957859cc-69c2-414c-841a-f2550c951137" data-title="Alt text"><img src="1651393841754.png" alt="Alt text"></a>
+These X, Y , and Z tristimulus values are weights that de&#xFB01;ne a color in <strong>CIE XYZ space</strong>.<ul>
+<li>CIE 1931 chromaticity diagram
+&#x5BF9;X, Y, Z&#x505A;&#x5F52;&#x4E00;&#x5316;&#xFF0C;&#x7B80;&#x5316;&#x6210;2&#x7EF4;to describe just the chromaticity, keeping luminance constant
+<a href="1651408867050.png" data-lightbox="13e6eb84-1808-4042-b392-84d66a4bfecd" data-title="Alt text"><img src="1651408867050.png" alt="Alt text"></a>
+<a href="1651409093206.png" data-lightbox="b64e872c-b05d-4d97-954f-ab9e71da9160" data-title="Alt text"><img src="1651409093206.png" alt="Alt text"></a>
+<a href="1651409104193.png" data-lightbox="3260eb61-0582-4511-b36b-d1904021090d" data-title="Alt text"><img src="1651409104193.png" alt="Alt text"></a></li>
+</ul>
+</li>
+<li>other color spaces
+<a href="1651409513865.png" data-lightbox="8cd440e1-2e4d-4797-83bc-ab96a0c5a213" data-title="Alt text"><img src="1651409513865.png" alt="Alt text"></a>
+linear sRGB color space</li>
+<li>sRGB to XYZ
+<a href="1651410092378.png" data-lightbox="04b7f74d-7ef4-4763-824c-5795202ed1b3" data-title="Alt text"><img src="1651410092378.png" alt="Alt text"></a>
+Y means luminance</li>
+</ul>
+</li>
+</ul>
+<h3 id="rendering-with-rgb-colors"><a name="rendering-with-rgb-colors" class="anchor-navigation-ex-anchor" href="#rendering-with-rgb-colors"><i class="fa fa-link" aria-hidden="true"></i></a>Rendering with RGB colors</h3>
+<p>Strictly speaking, RGB values <strong>represent perceptual</strong> rather than physical quantities. Using them for physically based rendering is technically a category error.</p>
+<ul>
+<li>physically correct<ul>
+<li>spectral re&#xFB02;ectance curve
+<a href="1651410328621.png" data-lightbox="86e018e3-7b9e-47de-aec9-1d625c6e71fc" data-title="Alt text"><img src="1651410328621.png" alt="Alt text"></a></li>
+<li>SPD of incident light * spectral reflection curve = SPD of reflected light</li>
+</ul>
+</li>
+<li>in predictive rendering, these subtle errors can be important</li>
+<li>for the majority of rendering systems, RGB rendering works surprisingly well</li>
+</ul>
+<h2 id="display-encoding"><a name="display-encoding" class="anchor-navigation-ex-anchor" href="#display-encoding"><i class="fa fa-link" aria-hidden="true"></i></a>Display Encoding</h2>
+<h3 id="linear-vs-nonlinear"><a name="linear-vs-nonlinear" class="anchor-navigation-ex-anchor" href="#linear-vs-nonlinear"><i class="fa fa-link" aria-hidden="true"></i></a>linear vs. nonlinear</h3>
+<ul>
+<li>linear
+When we <strong>calculate</strong> the e&#xFB00;ect of lighting, texturing, or other operations, the values used are assumed to be <strong>linear</strong>. Informally, this means that <strong>addition and multiplication work as expected</strong>.</li>
+<li>nonlinear
+To avoid a variety of <strong>visual artifacts</strong>, display bu&#xFB00;ers and textures use <strong>nonlinear encodings</strong> that we must take into account.</li>
+</ul>
+<h3 id="eotf-vs-oetf"><a name="eotf-vs-oetf" class="anchor-navigation-ex-anchor" href="#eotf-vs-oetf"><i class="fa fa-link" aria-hidden="true"></i></a>EOTF vs. OETF</h3>
+<ul>
+<li>electrical optical transfer function (EOTF) / display transfer function
+describes the relationship between the <strong>digital values in the display bu&#xFB00;er</strong> and the <strong>radiance levels emitted from the display</strong></li>
+<li>optical electric transfer function (OETF)
+the opposite of EOTF</li>
+</ul>
+<h3 id="gamma-correction"><a name="gamma-correction" class="anchor-navigation-ex-anchor" href="#gamma-correction"><i class="fa fa-link" aria-hidden="true"></i></a>gamma correction</h3>
+<p>&#x56E0;&#x4E3A;display equipment&#x7684;buffer&#x503C;&#x548C;&#x771F;&#x6B63;&#x5C55;&#x793A;&#x7684;radiance&#x662F;&#x975E;&#x7EBF;&#x6027;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53C8;&#x5E0C;&#x671B;whatever value we compute will emit a corresponding radiance level(&#x5373;&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x503C;&#x548C;emit&#x7684;&#x503C;&#x662F;&#x7EBF;&#x6027;&#x7684;)&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x8981;cancel out the display transfer function ---- &#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x53EB;gamma &#x6821;&#x6B63;
+<a href="1651718308817.png" data-lightbox="d8cc6324-fa4e-47b9-9520-7608d47bdfa8" data-title="Alt text"><img src="1651718308817.png" alt="Alt text"></a></p>
+<h4 id="transformation"><a name="transformation" class="anchor-navigation-ex-anchor" href="#transformation"><i class="fa fa-link" aria-hidden="true"></i></a>transformation</h4>
+<ul>
+<li>linear to sRGB
+<a href="1651718554713.png" data-lightbox="54451df3-2a0a-4ea3-ad3b-1532cee3b5d4" data-title="Alt text"><img src="1651718554713.png" alt="Alt text"></a></li>
+<li>sRGB to linear
+<a href="1651718711610.png" data-lightbox="32ba2b6c-c2de-4fdf-b648-0c3d7c226359" data-title="Alt text"><img src="1651718711610.png" alt="Alt text"></a></li>
+</ul>
+<h4 id="problem-with-neglecting-gamma-correction"><a name="problem-with-neglecting-gamma-correction" class="anchor-navigation-ex-anchor" href="#problem-with-neglecting-gamma-correction"><i class="fa fa-link" aria-hidden="true"></i></a>problem with neglecting gamma correction</h4>
+<ul>
+<li>lower linear values will appear too dim on the screen</li>
+<li>shading computations that are correct for physically linear radiance values are performed on nonlinear values
+<a href="1651718995502.png" data-lightbox="2d59d46c-9814-45c5-9e62-54af16a69e19" data-title="Alt text"><img src="1651718995502.png" alt="Alt text"></a></li>
+<li>a&#xFB00;ects the quality of antialiased edges
+<a href="1651719063827.png" data-lightbox="d55fccac-a6c3-4d5e-90c2-e8667cdbba7f" data-title="Alt text"><img src="1651719063827.png" alt="Alt text"></a></li>
+</ul>
+<h2 id="scene-to-screen"><a name="scene-to-screen" class="anchor-navigation-ex-anchor" href="#scene-to-screen"><i class="fa fa-link" aria-hidden="true"></i></a>Scene to Screen</h2>
+<h3 id="high-dynamic-range-display-encoding"><a name="high-dynamic-range-display-encoding" class="anchor-navigation-ex-anchor" href="#high-dynamic-range-display-encoding"><i class="fa fa-link" aria-hidden="true"></i></a>High Dynamic Range Display Encoding</h3>
+<p>HDR displays use the Rec. 2020 and Rec. 2100 standards.</p>
+<ul>
+<li>color gamut
+<a href="1651719930661.png" data-lightbox="e06a6b13-1b9e-4bde-bb2a-5f92eef70862" data-title="Alt text"><img src="1651719930661.png" alt="Alt text"></a></li>
+<li>nonlinear display encodings
+Rec. 2100 de&#xFB01;nes two nonlinear display encodings: <strong>perceptual quantizer (PQ)</strong> [1213] and hybrid log-gamma (HLG). The HLG encoding is not used much in rendering situations, so we will focus here on PQ, which de&#xFB01;nes <strong>a peak luminance value of 10, 000 cd/m^2</strong></li>
+<li>transfer to an HDR display<ul>
+<li>RGB value: the rendering color space --&gt; Rec.2020 color space</li>
+<li>apply the PQ encoding</li>
+</ul>
+</li>
+</ul>
+<h3 id="tone-mapping"><a name="tone-mapping" class="anchor-navigation-ex-anchor" href="#tone-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Tone Mapping</h3>
+<p>Tone mapping or tone reproduction is the process of converting <strong>scene radiance values</strong> to <strong>display radiance values</strong>.
+<a href="1651720680377.png" data-lightbox="20abd855-b69f-48d2-891a-b20855dd48fa" data-title="Alt text"><img src="1651720680377.png" alt="Alt text"></a>
+<a href="1651720607332.png" data-lightbox="d1bb5c10-87e3-40fa-93c4-03e9aa9e669a" data-title="Alt text"><img src="1651720607332.png" alt="Alt text"></a>
+The process of scaling by exposure and then applying a tone reproduction transform is a type of global tone mapping.
+<a href="1651733398689.png" data-lightbox="118aebe3-d14f-4cec-b9ca-012c835300dc" data-title="Alt text"><img src="1651733398689.png" alt="Alt text"></a></p>
+<h4 id="tone-reproduction-transform"><a name="tone-reproduction-transform" class="anchor-navigation-ex-anchor" href="#tone-reproduction-transform"><i class="fa fa-link" aria-hidden="true"></i></a>Tone Reproduction Transform</h4>
+<p>Tone reproduction transforms are often expressed as <strong>one-dimensional curves</strong> mapping scene-referred input values to display-referred output values.</p>
+<ul>
+<li>applied independently to R, G, and B values 
+may cause shifts in saturation and hue</li>
+<li>applied to luminance
+the resulting display-referred color may be out of the display&#x2019;s RGB gamut, in which case it will need to be mapped back in
+<a href="1651721410807.png" data-lightbox="58a6c140-99b2-425f-a78e-137d4cad3c88" data-title="Alt text"><img src="1651721410807.png" alt="Alt text"></a></li>
+</ul>
+<h4 id="exposure"><a name="exposure" class="anchor-navigation-ex-anchor" href="#exposure"><i class="fa fa-link" aria-hidden="true"></i></a>Exposure</h4>
+<p>Relies on analyzing the <strong>scene-referred luminance values</strong>. To avoid introducing stalls, this analysis is typically done by sampling the previous frame.</p>
+<ul>
+<li>the log-average scene luminance</li>
+<li>a histogram of luminance values</li>
+</ul>
+<h4 id="color-grading"><a name="color-grading" class="anchor-navigation-ex-anchor" href="#color-grading"><i class="fa fa-link" aria-hidden="true"></i></a>Color Grading</h4>
+<p>Color grading is typically performed by interactively manipulating the colors in an example scene image, until the desired creative &#x201C;look&#x201D; is achieved.</p>
+<ul>
+<li>a three-dimensional color lookup table (LUT)</li>
+<li>grading scene-referred data
+scene-referred data must be remapped to the range [0, 1] before grading
+<a href="1651732101278.png" data-lightbox="8876c582-e11e-4985-b592-2bf558e84202" data-title="Alt text"><img src="1651732101278.png" alt="Alt text"></a>
+<a href="1651732130571.png" data-lightbox="e3176e1a-9839-4c50-9dbf-a18a045d30d8" data-title="Alt text"><img src="1651732130571.png" alt="Alt text"></a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tingxia.top 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-05-05 14:57:17
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: Color">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../shadow/resource.html" class="navigation navigation-next " aria-label="Next page: Shadow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Real-Time Light and Color","level":"1.9.1","depth":2,"next":{"title":"Shadow","level":"1.10","depth":1,"path":"shadow/resource.md","ref":"shadow/resource.md","articles":[{"title":"Real-Time Shadow Summary","level":"1.10.1","depth":2,"path":"shadow/shadow_summary/shadow_summary.md","ref":"shadow/shadow_summary/shadow_summary.md","articles":[]},{"title":"games202 shadow assignment","level":"1.10.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]}]},"previous":{"title":"Color","level":"1.9","depth":1,"path":"color/resource.md","ref":"color/resource.md","articles":[{"title":"Real-Time Light and Color","level":"1.9.1","depth":2,"path":"color/light_color/light_color.md","ref":"color/light_color/light_color.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"color/light_color/light_color.md","mtime":"2022-05-05T06:57:17.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-05T07:04:22.562Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
