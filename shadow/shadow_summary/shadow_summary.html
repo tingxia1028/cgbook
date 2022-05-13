@@ -440,6 +440,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7.1.2" data-path="../../pbr/material/brdf/brdf.html">
+            
+                <a href="../../pbr/material/brdf/brdf.html">
+            
+                    
+                    Deep in Microfacet BRDF
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1422,13 +1435,13 @@
 <li>light travels a straight way</li>
 <li>occlusion cause shadow<h3 id="soft-shadow"><a name="soft-shadow" class="anchor-navigation-ex-anchor" href="#soft-shadow"><i class="fa fa-link" aria-hidden="true"></i></a>soft shadow</h3>
 <a href="https://blog.demofox.org/2017/07/01/why-are-some-shadows-soft-and-other-shadows-hard/" target="_blank">https://blog.demofox.org/2017/07/01/why-are-some-shadows-soft-and-other-shadows-hard/</a>
-<a href="1608434607656.png" data-lightbox="ef9345fe-3df7-4828-8fa1-1dbc95e31af9" data-title="Alt text"><img src="1608434607656.png" alt="Alt text"></a><pre class="language-"><code>soft shadow &#x5E76;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8FB9;&#x7F18;blur, &#x4ECE;&#x5F62;&#x6210;&#x539F;&#x7406;&#x4E0A;&#x770B;umbra&#x548C;&#x8DDD;&#x79BB;&#x5149;&#x6E90;&#x7684;&#x8FDC;&#x8FD1;&#x8FD8;&#x6709;&#x5149;&#x6E90;&#x7684;&#x5927;&#x5C0F;&#x90FD;&#x6709;&#x5173;&#x7CFB;
+<a href="1608434607656.png" data-lightbox="5e48fb41-276c-44d4-b47b-b3182a285a3c" data-title="Alt text"><img src="1608434607656.png" alt="Alt text"></a><pre class="language-"><code>soft shadow &#x5E76;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8FB9;&#x7F18;blur, &#x4ECE;&#x5F62;&#x6210;&#x539F;&#x7406;&#x4E0A;&#x770B;umbra&#x548C;&#x8DDD;&#x79BB;&#x5149;&#x6E90;&#x7684;&#x8FDC;&#x8FD1;&#x8FD8;&#x6709;&#x5149;&#x6E90;&#x7684;&#x5927;&#x5C0F;&#x90FD;&#x6709;&#x5173;&#x7CFB;
 </code></pre><h3 id="the-math-behind-shadow-mapping"><a name="the-math-behind-shadow-mapping" class="anchor-navigation-ex-anchor" href="#the-math-behind-shadow-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>The math behind shadow mapping</h3>
-<a href="1621074455335.png" data-lightbox="3f719583-eb4d-4f51-8b50-9ded540106b3" data-title="Alt text"><img src="1621074455335.png" alt="Alt text"></a></li>
+<a href="1621074455335.png" data-lightbox="21b2ab3e-ba5a-49c6-9822-365118562aaf" data-title="Alt text"><img src="1621074455335.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="state-of-art"><a name="state-of-art" class="anchor-navigation-ex-anchor" href="#state-of-art"><i class="fa fa-link" aria-hidden="true"></i></a>state of art</h2>
 <h3 id="projection-shadow"><a name="projection-shadow" class="anchor-navigation-ex-anchor" href="#projection-shadow"><i class="fa fa-link" aria-hidden="true"></i></a>projection shadow</h3>
-<p><a href="1621039761497.png" data-lightbox="2b7de90b-c775-4a70-bb31-4b75b84a7a54" data-title="Alt text"><img src="1621039761497.png" alt="Alt text"></a>
+<p><a href="1621039761497.png" data-lightbox="24efda67-d9f2-43f1-9dad-5fcf21774cb6" data-title="Alt text"><img src="1621039761497.png" alt="Alt text"></a>
  simply apply this matrix to the objects that should cast shadows on the plane &#x3C0;, and render this projected object with a dark color and no illumination.</p>
 <ul>
 <li>&#x8003;&#x8651;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#xFF1A;<ul>
@@ -1452,7 +1465,7 @@
 <li>occluding objects cannot shadow themselves</li>
 </ul>
 <h3 id="shadow-volume"><a name="shadow-volume" class="anchor-navigation-ex-anchor" href="#shadow-volume"><i class="fa fa-link" aria-hidden="true"></i></a>shadow volume</h3>
-<p> <a href="1608451366928.png" data-lightbox="82c80ee3-0e5d-45ac-a130-a8a1e551bc8b" data-title="Alt text"><img src="1608451366928.png" alt="Alt text"></a>
+<p> <a href="1608451366928.png" data-lightbox="d470e634-435a-4938-b57c-d5428ff35387" data-title="Alt text"><img src="1608451366928.png" alt="Alt text"></a>
 the count is incremented as a ray passes through a frontfacing triangle of a shadow volume and decremented on leaving through a backfacing triangle.
  &#x4E24;&#x4E2A;pass&#xFF1A;</p>
 <ul>
@@ -1464,7 +1477,7 @@ the count is incremented as a ray passes through a frontfacing triangle of a sha
 </ul>
 <h3 id="shadow-maps"><a name="shadow-maps" class="anchor-navigation-ex-anchor" href="#shadow-maps"><i class="fa fa-link" aria-hidden="true"></i></a>shadow maps</h3>
 <h4 id="basic-principle"><a name="basic-principle" class="anchor-navigation-ex-anchor" href="#basic-principle"><i class="fa fa-link" aria-hidden="true"></i></a>basic principle</h4>
-<p> <a href="1608452394577.png" data-lightbox="ea51294f-bf56-4ee5-a686-2eec0a3a1ac2" data-title="Alt text"><img src="1608452394577.png" alt="Alt text"></a>
+<p> <a href="1608452394577.png" data-lightbox="53f9d5de-d121-45fd-a4fa-2e4af8c1dccf" data-title="Alt text"><img src="1608452394577.png" alt="Alt text"></a>
 from the light&apos;s point of view.</p>
 <ul>
 <li><p>texture </p>
@@ -1517,21 +1530,21 @@ Bias&#x6839;&#x636E;&#x7269;&#x4F53;&#x7684;normal&#x548C;&#x5149;&#x7167;&#x65B
 </ul>
 </li>
 <li>perspective aliasing and projective aliasing
-<a href="1621069322084.png" data-lightbox="c2aee9cc-aee1-4efe-b79a-c2ede54c0cab" data-title="Alt text"><img src="1621069322084.png" alt="Alt text"></a>
+<a href="1621069322084.png" data-lightbox="bedf56da-8916-4b32-a5be-91c029c6f54e" data-title="Alt text"><img src="1621069322084.png" alt="Alt text"></a>
  &#x79BB;viewer&#x66F4;&#x8FD1;&#x7684;&#x533A;&#x57DF;&#x5728;shadow map&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x91C7;&#x6837;<ul>
 <li>&#x589E;&#x5927;shadow map&#x7684;resolution</li>
 <li>matrix-warping techniques
 &#x66F4;&#x6539;light&#x7684;camera&#x7684;&#x53C2;&#x6570;
-<a href="1608456717650.png" data-lightbox="eb236e56-9b04-4caa-b4da-71ea3bd4fd12" data-title="Alt text"><img src="1608456717650.png" alt="Alt text"></a><ul>
+<a href="1608456717650.png" data-lightbox="0d88d696-d171-4612-8290-027fe99f1672" data-title="Alt text"><img src="1608456717650.png" alt="Alt text"></a><ul>
 <li>PCM(Perspective Shadow Maps)
-<a href="1621071985403.png" data-lightbox="bb99a1f8-fd95-4174-995d-0f4b0000b1d4" data-title="Alt text"><img src="1621071985403.png" alt="Alt text"></a></li>
+<a href="1621071985403.png" data-lightbox="68c72fb6-e912-4d07-93a4-8c5617db15cd" data-title="Alt text"><img src="1621071985403.png" alt="Alt text"></a></li>
 <li>Light Space Perspective Shadow Maps(LiPSM)</li>
 <li>Trapezoidal Shadow Maps(TSM)
-<a href="1621071798065.png" data-lightbox="9dc16e54-de5a-465f-a36b-eb4aa1ce6720" data-title="Alt text"><img src="1621071798065.png" alt="Alt text"></a></li>
+<a href="1621071798065.png" data-lightbox="2509553f-415d-4f91-a5fa-efe3b9ab356e" data-title="Alt text"><img src="1621071798065.png" alt="Alt text"></a></li>
 </ul>
 </li>
 <li>cascade shadow
-<a href="1608456762658.png" data-lightbox="6efdf195-f6fd-49f3-967b-2119227e4d20" data-title="Alt text"><img src="1608456762658.png" alt="Alt text"></a></li>
+<a href="1608456762658.png" data-lightbox="4717834e-ab0b-498e-966e-8d614f4bb756" data-title="Alt text"><img src="1608456762658.png" alt="Alt text"></a></li>
 </ul>
 </li>
 </ul>
@@ -1550,9 +1563,9 @@ Bias&#x6839;&#x636E;&#x7269;&#x4F53;&#x7684;normal&#x548C;&#x5149;&#x7167;&#x65B
 <p> &#x57FA;&#x4E8E;&#x7684;&#x4E3B;&#x8981;&#x5047;&#x8BBE;&#x662F;the average blocker is a reasonable estimate of the penumbra size.
 The average distance of these occluders from the location is used to determine the sample area width.
 The width of the surface area to the sample grows as the average occluder gets farther from the receiver and closer to the light.
-<a href="1621079601033.png" data-lightbox="fb5725c5-9885-467d-9842-1b9673290595" data-title="Alt text"><img src="1621079601033.png" alt="Alt text"></a>
-<a href="1621079241581.png" data-lightbox="42341815-9218-4af4-9e2d-92ea104cb379" data-title="Alt text"><img src="1621079241581.png" alt="Alt text"></a>
-<a href="1621079283613.png" data-lightbox="25fc7dad-2b92-4397-95a8-a349c093fbea" data-title="Alt text"><img src="1621079283613.png" alt="Alt text"></a></p>
+<a href="1621079601033.png" data-lightbox="9095625e-c1f1-4729-ad8f-af32907ae941" data-title="Alt text"><img src="1621079601033.png" alt="Alt text"></a>
+<a href="1621079241581.png" data-lightbox="7a41a1b1-2b78-4b38-b14a-a530be523117" data-title="Alt text"><img src="1621079241581.png" alt="Alt text"></a>
+<a href="1621079283613.png" data-lightbox="6b056c92-875a-48b9-a369-0f6f0d670697" data-title="Alt text"><img src="1621079283613.png" alt="Alt text"></a></p>
 <h3 id="filtered-shadow-map"><a name="filtered-shadow-map" class="anchor-navigation-ex-anchor" href="#filtered-shadow-map"><i class="fa fa-link" aria-hidden="true"></i></a>filtered shadow map</h3>
 <h4 id="vsmvariance-shadow-map"><a name="vsmvariance-shadow-map" class="anchor-navigation-ex-anchor" href="#vsmvariance-shadow-map"><i class="fa fa-link" aria-hidden="true"></i></a>VSM(Variance Shadow Map)</h4>
 <ul>
@@ -1560,18 +1573,18 @@ The width of the surface area to the sample grows as the average occluder gets f
 receiver&#x662F;&#x4E00;&#x4E2A;&#x5E73;&#x9762;&#x3002;</li>
 <li><p>&#x57FA;&#x672C;&#x539F;&#x7406;
 &#x5F97;&#x5230;&#x4E00;&#x4E2A;an upper bound on the visibility percentage of the receiver. &#x4E3A;&#x4E86;&#x63D0;&#x5347;PCF&#x7684;&#x7B2C;&#x4E09;&#x6B65;&#x7684;&#x6548;&#x7387;&#x3002;
-<a href="1621125552424.png" data-lightbox="cdcfad20-92f2-4226-8acc-be225a6ee87f" data-title="Alt text"><img src="1621125552424.png" alt="Alt text"></a>
-<a href="1621125587639.png" data-lightbox="05149ebc-9892-4c46-94fd-c83d9a5c6fac" data-title="Alt text"><img src="1621125587639.png" alt="Alt text"></a>
-<a href="1621125694575.png" data-lightbox="7dd2c44e-d3e9-4995-8db8-a55a093224d6" data-title="Alt text"><img src="1621125694575.png" alt="Alt text"></a>
+<a href="1621125552424.png" data-lightbox="4c7128f3-c586-480f-ab25-20dbe5e6473c" data-title="Alt text"><img src="1621125552424.png" alt="Alt text"></a>
+<a href="1621125587639.png" data-lightbox="cd8278f7-8b79-4f36-8944-7425d07b3caa" data-title="Alt text"><img src="1621125587639.png" alt="Alt text"></a>
+<a href="1621125694575.png" data-lightbox="96aa26b1-5432-4575-8917-8c4d274d99e6" data-title="Alt text"><img src="1621125694575.png" alt="Alt text"></a>
 &#x8FD9;&#x4E2A;&#x4E0D;&#x7B49;&#x5F0F;&#x7406;&#x8BBA;&#x4E0A;&#x53EA;&#x6709;t&#x5728;&#x5747;&#x503C;&#x7684;&#x53F3;&#x4FA7;&#x624D;&#x6B63;&#x786E;&#x3002;
-<a href="1621125923741.png" data-lightbox="71760903-0580-4391-8762-21076e884834" data-title="Alt text"><img src="1621125923741.png" alt="Alt text"></a>
-<a href="1621125730070.png" data-lightbox="77c1682b-4797-4d28-bda6-b3035e458998" data-title="Alt text"><img src="1621125730070.png" alt="Alt text"></a>
+<a href="1621125923741.png" data-lightbox="94cdf2bb-b309-4e1f-951b-1426da42f3ee" data-title="Alt text"><img src="1621125923741.png" alt="Alt text"></a>
+<a href="1621125730070.png" data-lightbox="b47dab23-7a4b-42b7-b6a9-f1b495fc3242" data-title="Alt text"><img src="1621125730070.png" alt="Alt text"></a>
 PCSS&#x7B2C;&#x4E00;&#x6B65;&#x4E2D;&#x7684;the average depth of blockers&#x662F;&#x5982;&#x4F55;&#x8FD1;&#x4F3C;&#x7684;&#xFF1F;
-<a href="1621125765738.png" data-lightbox="23d5bcf0-caf2-48d9-acf9-b420ba21153a" data-title="Alt text"><img src="1621125765738.png" alt="Alt text"></a></p>
+<a href="1621125765738.png" data-lightbox="33c33d76-4bbe-436d-87bd-fcac6c74a396" data-title="Alt text"><img src="1621125765738.png" alt="Alt text"></a></p>
 </li>
 <li><p>&#x5982;&#x4F55;&#x5F97;&#x5230;average&#x4FE1;&#x606F;
 MIPMAP and Summed Area Table (SAT)
-<a href="1621126252923.png" data-lightbox="7199848a-f7e9-4efd-ae98-1f00a3c6674f" data-title="Alt text"><img src="1621126252923.png" alt="Alt text"></a></p>
+<a href="1621126252923.png" data-lightbox="285e9c71-cb8b-426d-b422-e6fc74c1d218" data-title="Alt text"><img src="1621126252923.png" alt="Alt text"></a></p>
 </li>
 <li><p>&#x4F18;&#x70B9;
 VSM can work with just a single, high-quality sample to determine the entire area&#x2019;s e&#xFB00;ect and produce a smooth penumbra</p>
@@ -1583,18 +1596,18 @@ VSM can work with just a single, high-quality sample to determine the entire are
 </ul>
 <h4 id="csm-convolution-shadow-mapping--esmexponential-shadow-map"><a name="csm-convolution-shadow-mapping--esmexponential-shadow-map" class="anchor-navigation-ex-anchor" href="#csm-convolution-shadow-mapping--esmexponential-shadow-map"><i class="fa fa-link" aria-hidden="true"></i></a>CSM (Convolution Shadow Mapping) &amp; ESM(Exponential Shadow Map)</h4>
 <p>&#x628A;shadow&#x51FD;&#x6570;&#x7528;&#x5E42;&#x51FD;&#x6570;&#x6765;&#x5EFA;&#x6A21;&#xFF1A;
-<a href="1621210324776.png" data-lightbox="96c4c4ca-505a-4c15-b757-1ab18399d524" data-title="Alt text"><img src="1621210324776.png" alt="Alt text"></a>
-<a href="1621210268510.png" data-lightbox="a3e567be-6d6c-4be8-a441-68186e78c4ff" data-title="Alt text"><img src="1621210268510.png" alt="Alt text"></a>
+<a href="1621210324776.png" data-lightbox="a06dcfe1-6d6a-4dbf-be5b-030c4ca6fe61" data-title="Alt text"><img src="1621210324776.png" alt="Alt text"></a>
+<a href="1621210268510.png" data-lightbox="17e4715d-07a8-4c9b-a1fd-7053400870bd" data-title="Alt text"><img src="1621210268510.png" alt="Alt text"></a>
 &#x7136;&#x540E;&#x7528;convolution&#x6765;&#x505A;filtering&#xFF0C;&#x8FD9;&#x4E2A;filtering&#x8FC7;&#x7684;&#x503C;&#x5C31;&#x4E0D;&#x662F;&#x975E;0&#x5373;1&#xFF0C;&#x6709;&#x4E86;&#x4E2D;&#x95F4;&#x503C;&#x5373;soft shadow.
-<a href="1621210359444.png" data-lightbox="63954074-ec19-40c9-a12e-41594f68d99b" data-title="Alt text"><img src="1621210359444.png" alt="Alt text"></a></p>
+<a href="1621210359444.png" data-lightbox="5bfab631-85e8-4197-a30d-b09fb80a968f" data-title="Alt text"><img src="1621210359444.png" alt="Alt text"></a></p>
 <h4 id="moment-shadow-mapping"><a name="moment-shadow-mapping" class="anchor-navigation-ex-anchor" href="#moment-shadow-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Moment Shadow Mapping</h4>
 <ul>
 <li>&#x57FA;&#x672C;&#x601D;&#x8DEF;
 Use higher order moments to represent a distribution</li>
 <li><p>&#x57FA;&#x672C;&#x539F;&#x7406;
  &#x77E9;
-<a href="1621210799615.png" data-lightbox="c1123963-790a-45be-a0dd-03327c2e2942" data-title="Alt text"><img src="1621210799615.png" alt="Alt text"></a></p>
-<p><a href="1621210869084.png" data-lightbox="7081c2da-857b-419d-ad66-83ab4789253c" data-title="Alt text"><img src="1621210869084.png" alt="Alt text"></a></p>
+<a href="1621210799615.png" data-lightbox="17ea3101-af91-491f-a38c-54100b84ad99" data-title="Alt text"><img src="1621210799615.png" alt="Alt text"></a></p>
+<p><a href="1621210869084.png" data-lightbox="e1d98fea-56c1-495a-839a-1c81a8856d61" data-title="Alt text"><img src="1621210869084.png" alt="Alt text"></a></p>
 </li>
 <li>&#x7F3A;&#x70B9;<ul>
 <li>Costly storage (might be fine)</li>
@@ -1605,9 +1618,9 @@ Use higher order moments to represent a distribution</li>
 <h4 id="sdfsigned-distance-field"><a name="sdfsigned-distance-field" class="anchor-navigation-ex-anchor" href="#sdfsigned-distance-field"><i class="fa fa-link" aria-hidden="true"></i></a>SDF(Signed Distance Field)</h4>
 <ul>
 <li>&#x57FA;&#x672C;&#x539F;&#x7406;
-<a href="1621251388188.png" data-lightbox="9e116d5c-7c0e-47d9-8fb1-454893f574ed" data-title="Alt text"><img src="1621251388188.png" alt="Alt text"></a>
-<a href="1621251450572.png" data-lightbox="6f0a0652-7393-4f58-8759-c1a2aa118342" data-title="Alt text"><img src="1621251450572.png" alt="Alt text"></a>
-<a href="1621252375451.png" data-lightbox="31400f70-e939-4236-96d5-e276c1a8ae81" data-title="Alt text"><img src="1621252375451.png" alt="Alt text"></a>
+<a href="1621251388188.png" data-lightbox="90e30d11-c9da-4690-9782-5aaffc6aeab9" data-title="Alt text"><img src="1621251388188.png" alt="Alt text"></a>
+<a href="1621251450572.png" data-lightbox="b24d904b-f30f-4f43-8337-236770b64d79" data-title="Alt text"><img src="1621251450572.png" alt="Alt text"></a>
+<a href="1621252375451.png" data-lightbox="dd5df902-c53a-4e89-bfe7-fcd878b5660d" data-title="Alt text"><img src="1621252375451.png" alt="Alt text"></a>
  &#x4E0D;&#x540C;&#x7684;k&#x51B3;&#x5B9A;&#x7684;&#x9634;&#x5F71;&#x6709;&#x591A;soft<pre class="language-"><code class="lang-cpp">  <span class="token keyword">float</span> <span class="token function">softshadow</span><span class="token punctuation">(</span> in vec3 ro<span class="token punctuation">,</span> in vec3 rd<span class="token punctuation">,</span> <span class="token keyword">float</span> mint<span class="token punctuation">,</span> <span class="token keyword">float</span> maxt<span class="token punctuation">,</span> <span class="token keyword">float</span> k <span class="token punctuation">)</span>
   <span class="token punctuation">{</span>
       <span class="token keyword">float</span> res <span class="token operator">=</span> <span class="token number">1.0</span><span class="token punctuation">;</span>
@@ -1633,8 +1646,8 @@ Use higher order moments to represent a distribution</li>
 <li>Need heavy storage</li>
 <li>Artifact<ul>
 <li>&#x590D;&#x6742;&#x51E0;&#x4F55;&#x4E0B;&#x4EA7;&#x51FA;&#x7684;banding effects
-<a href="1621252618129.png" data-lightbox="6f081f4c-9e2e-4edc-91d4-68698af1b884" data-title="Alt text"><img src="1621252618129.png" alt="Alt text"></a>
-<a href="1621252631082.png" data-lightbox="fc550fbf-f66d-4dee-806f-c1a765f0ecb7" data-title="Alt text"><img src="1621252631082.png" alt="Alt text"></a></li>
+<a href="1621252618129.png" data-lightbox="5876d5c0-e749-482f-a06e-539b15d3a4c5" data-title="Alt text"><img src="1621252618129.png" alt="Alt text"></a>
+<a href="1621252631082.png" data-lightbox="61e51a20-9500-4a04-8d49-00a19256eefe" data-title="Alt text"><img src="1621252631082.png" alt="Alt text"></a></li>
 </ul>
 </li>
 </ul>
@@ -1710,7 +1723,7 @@ This function is typically approximated by a series of samples at di&#xFB00;eren
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Real-Time Shadow Summary","level":"1.10.1","depth":2,"next":{"title":"games202 shadow assignment","level":"1.10.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]},"previous":{"title":"Shadow","level":"1.10","depth":1,"path":"shadow/resource.md","ref":"shadow/resource.md","articles":[{"title":"Real-Time Shadow Summary","level":"1.10.1","depth":2,"path":"shadow/shadow_summary/shadow_summary.md","ref":"shadow/shadow_summary/shadow_summary.md","articles":[]},{"title":"games202 shadow assignment","level":"1.10.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"shadow/shadow_summary/shadow_summary.md","mtime":"2021-06-14T00:40:18.333Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-05T07:04:22.562Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Real-Time Shadow Summary","level":"1.10.1","depth":2,"next":{"title":"games202 shadow assignment","level":"1.10.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]},"previous":{"title":"Shadow","level":"1.10","depth":1,"path":"shadow/resource.md","ref":"shadow/resource.md","articles":[{"title":"Real-Time Shadow Summary","level":"1.10.1","depth":2,"path":"shadow/shadow_summary/shadow_summary.md","ref":"shadow/shadow_summary/shadow_summary.md","articles":[]},{"title":"games202 shadow assignment","level":"1.10.2","depth":2,"path":"shadow/assignment/assignment.md","ref":"shadow/assignment/assignment.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"shadow/shadow_summary/shadow_summary.md","mtime":"2021-06-14T00:40:18.333Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-13T13:36:08.271Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
