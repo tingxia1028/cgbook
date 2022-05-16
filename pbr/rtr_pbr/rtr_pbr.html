@@ -1,0 +1,2042 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Real-Time PBR Summary · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../material/resource.html" />
+    
+    
+    <link rel="prev" href="../resource.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../space_trans/resource.html">
+            
+                <a href="../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../camera/resource.html">
+            
+                <a href="../../camera/resource.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../camera/photography/photography.html">
+            
+                <a href="../../camera/photography/photography.html">
+            
+                    
+                    科学解释摄影中的一些概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../ray_tracing/resource.html">
+            
+                <a href="../../ray_tracing/resource.html">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../ray_tracing/sampling/resource.html">
+            
+                <a href="../../ray_tracing/sampling/resource.html">
+            
+                    
+                    Sampling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../ray_tracing/denoising/resource.html">
+            
+                <a href="../../ray_tracing/denoising/resource.html">
+            
+                    
+                    Denoising and Filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../ray_tracing/intersection_acceleration/resource.html">
+            
+                <a href="../../ray_tracing/intersection_acceleration/resource.html">
+            
+                    
+                    Intersection Acceleration Structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../ray_tracing/intersection_acceleration/bvh/bvh.md">
+            
+                <span>
+            
+                    
+                    BVH and KdTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../volume/resource.html">
+            
+                <a href="../../volume/resource.html">
+            
+                    
+                    Volume Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../volume/volume_rendering/volume_rendering.html">
+            
+                <a href="../../volume/volume_rendering/volume_rendering.html">
+            
+                    
+                    Volume Rendering Basic Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../GI/resource.html">
+            
+                <a href="../../GI/resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../GI/GI_draft/GI_draft.html">
+            
+                <a href="../../GI/GI_draft/GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../GI/ssgi/resource.html">
+            
+                <a href="../../GI/ssgi/resource.html">
+            
+                    
+                    SSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../GI/precompute/resource.html">
+            
+                <a href="../../GI/precompute/resource.html">
+            
+                    
+                    Precomputed Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../GI/voxel_based/resource.html">
+            
+                <a href="../../GI/voxel_based/resource.html">
+            
+                    
+                    Voxel Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../GI/distance_field/resource.html">
+            
+                <a href="../../GI/distance_field/resource.html">
+            
+                    
+                    Distance Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="rtr_pbr.html">
+            
+                <a href="rtr_pbr.html">
+            
+                    
+                    Real-Time PBR Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../material/resource.html">
+            
+                <a href="../material/resource.html">
+            
+                    
+                    Material
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../material/reflection_models/reflection_models.html">
+            
+                <a href="../material/reflection_models/reflection_models.html">
+            
+                    
+                    Reflection Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../material/brdf/brdf.html">
+            
+                <a href="../material/brdf/brdf.html">
+            
+                    
+                    Deep in Microfacet BRDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../lighting/resource.html">
+            
+                <a href="../lighting/resource.html">
+            
+                    
+                    Lighting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Filament Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../light/resource.html">
+            
+                <a href="../../light/resource.html">
+            
+                    
+                    Light
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../light/punctual/punctual.html">
+            
+                <a href="../../light/punctual/punctual.html">
+            
+                    
+                    Punctual Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    Area Light
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../color/resource.html">
+            
+                <a href="../../color/resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../color/light_color/light_color.html">
+            
+                <a href="../../color/light_color/light_color.html">
+            
+                    
+                    Real-Time Light and Color Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../shadow/resource.html">
+            
+                <a href="../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../shadow/assignment/assignment.html">
+            
+                <a href="../../shadow/assignment/assignment.html">
+            
+                    
+                    games202 shadow assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../ao/resource.html">
+            
+                <a href="../../ao/resource.html">
+            
+                    
+                    AO
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../aa/resource.html">
+            
+                <a href="../../aa/resource.html">
+            
+                    
+                    AA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../aa/specular_aa/specular_aa.html">
+            
+                <a href="../../aa/specular_aa/specular_aa.html">
+            
+                    
+                    Specular AA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../texture/resource.html">
+            
+                <a href="../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../texture/multiple_textures/multiple_textures.html">
+            
+                <a href="../../texture/multiple_textures/multiple_textures.html">
+            
+                    
+                    Multiple Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../texture/multiple_textures/virtual_textures.md">
+            
+                <span>
+            
+                    
+                    Virtual Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Pipeline
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../pipeline/visibility/resource.html">
+            
+                <a href="../../pipeline/visibility/resource.html">
+            
+                    
+                    Dynamic Visibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                <a href="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                    
+                    Dynamic Visibility Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../pipeline/cs/resource.html">
+            
+                <a href="../../pipeline/cs/resource.html">
+            
+                    
+                    Compute Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../../pipeline/gpudriven/resource.html">
+            
+                <a href="../../pipeline/gpudriven/resource.html">
+            
+                    
+                    GPU Driven Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="../../pipeline/gpudriven/oc/oc.html">
+            
+                <a href="../../pipeline/gpudriven/oc/oc.html">
+            
+                    
+                    GPU Driven Occlusion Culling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../../pipeline/cb/resource.html">
+            
+                <a href="../../pipeline/cb/resource.html">
+            
+                    
+                    Checkerboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../structure/framegraph/resource.html">
+            
+                <a href="../../structure/framegraph/resource.html">
+            
+                    
+                    Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../structure/ecs/resource.html">
+            
+                <a href="../../structure/ecs/resource.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    Graphics API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    Special Effect
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1.1" data-path="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                <a href="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.2" data-path="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                <a href="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../special_effect/cloud/resource.html">
+            
+                <a href="../../special_effect/cloud/resource.html">
+            
+                    
+                    Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../simulation/resource.html">
+            
+                <a href="../../simulation/resource.html">
+            
+                    
+                    Simulation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../simulation/fluid/resource.html">
+            
+                <a href="../../simulation/fluid/resource.html">
+            
+                    
+                    Fluid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../simultation/cloth/resource.md">
+            
+                <span>
+            
+                    
+                    Cloth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../course/resource.html">
+            
+                <a href="../../course/resource.html">
+            
+                    
+                    Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../course/UC_Davis_Computer_Graphics/UC_Davis_Computer_Graphics.html">
+            
+                <a href="../../course/UC_Davis_Computer_Graphics/UC_Davis_Computer_Graphics.html">
+            
+                    
+                    UC Davis Compute Graphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    UCSD CES 272 Advanced Image Synthesis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.2.1" data-path="../../course/UCSD_CSE_272_part1/part1.html">
+            
+                <a href="../../course/UCSD_CSE_272_part1/part1.html">
+            
+                    
+                    Intro & Simple BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2.2" data-path="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                <a href="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                    
+                    Advanced BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    Engine
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../engine/filament/resource.html">
+            
+                <a href="../../engine/filament/resource.html">
+            
+                    
+                    Filament
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1.1" data-path="../lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../engine/ue/resource.html">
+            
+                <a href="../../engine/ue/resource.html">
+            
+                    
+                    Unreal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" >
+            
+                <span>
+            
+                    
+                    PBR
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1.1" data-path="../../ray_tracing/intersection_acceleration/bvh/bvh.md">
+            
+                <span>
+            
+                    
+                    Primitives and Intersection Acceleration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.1.2" data-path="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.1.3" data-path="../material/reflection_models/reflection_models.html">
+            
+                <a href="../material/reflection_models/reflection_models.html">
+            
+                    
+                    Reflection Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" >
+            
+                <span>
+            
+                    
+                    Real-Time Rendering
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.2.1" data-path="../../color/light_color/light_color.html">
+            
+                <a href="../../color/light_color/light_color.html">
+            
+                    
+                    Real-Time Light and Color Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21.2.2" data-path="rtr_pbr.html">
+            
+                <a href="rtr_pbr.html">
+            
+                    
+                    Real-Time PBR Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.3" data-path="../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.4" data-path="../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.5" data-path="../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Real-Time PBR Summary</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#real-time-pbr-summary"><b></b>Real-Time PBR Summary</a></li><ul><li><span class="title-icon "></span><a href="#physics-of-light"><b></b>Physics of Light</a></li><ul><li><span class="title-icon "></span><a href="#physical-optics"><b></b>physical optics</a></li><li><span class="title-icon "></span><a href="#particles"><b></b>particles</a></li><li><span class="title-icon "></span><a href="#media"><b></b>media</a></li><li><span class="title-icon "></span><a href="#surfaces"><b></b>surfaces</a></li><li><span class="title-icon "></span><a href="#subsurface-scattering"><b></b>subsurface scattering</a></li></ul><li><span class="title-icon "></span><a href="#the-camera"><b></b>The Camera</a></li><ul><li><span class="title-icon "></span><a href="#pinhole"><b></b>pinhole</a></li><li><span class="title-icon "></span><a href="#physically-based-camera"><b></b>physically based camera</a></li></ul><li><span class="title-icon "></span><a href="#the-brdf"><b></b>The BRDF</a></li><ul><li><span class="title-icon "></span><a href="#definition"><b></b>definition</a></li><li><span class="title-icon "></span><a href="#models--of-brdf"><b></b>models  of BRDF</a></li></ul><li><span class="title-icon "></span><a href="#local-illumination"><b></b>Local Illumination</a></li><li><span class="title-icon "></span><a href="#fresnel-reflectance"><b></b>Fresnel Reflectance</a></li><ul><li><span class="title-icon "></span><a href="#definition_1"><b></b>definition</a></li><li><span class="title-icon "></span><a href="#external-reflection"><b></b>External Reflection</a></li><li><span class="title-icon "></span><a href="#typical-fresnel-reflectance-values"><b></b>Typical Fresnel Reflectance Values</a></li><li><span class="title-icon "></span><a href="#internal-reflection"><b></b>Internal Reflection</a></li></ul><li><span class="title-icon "></span><a href="#microgeometry"><b></b>Microgeometry</a></li><ul><li><span class="title-icon "></span><a href="#microgeometry-on-specular-reflectance"><b></b>microgeometry on specular reflectance</a></li><li><span class="title-icon "></span><a href="#microgeometry-on--subsurface-reflectance"><b></b>microgeometry on  subsurface reflectance</a></li></ul><li><span class="title-icon "></span><a href="#microfacet-theory"><b></b>Microfacet Theory</a></li><ul><li><span class="title-icon "></span><a href="#definition_2"><b></b>definition</a></li><li><span class="title-icon "></span><a href="#modeling"><b></b>modeling</a></li></ul><li><span class="title-icon "></span><a href="#brdf-models-for-surface-reflection"><b></b>BRDF Models for Surface Reflection</a></li><ul><li><span class="title-icon "></span><a href="#half-vector"><b></b>half vector</a></li><li><span class="title-icon "></span><a href="#specular-brdf"><b></b>specular BRDF</a></li><li><span class="title-icon "></span><a href="#ndf_1"><b></b>NDF</a></li><li><span class="title-icon "></span><a href="#multiple-bounce-surface-re&#xFB02;ection"><b></b>multiple-bounce surface re&#xFB02;ection</a></li></ul><li><span class="title-icon "></span><a href="#brdf-models-for-subsurface-scattering"><b></b>BRDF Models for Subsurface Scattering</a></li><ul><li><span class="title-icon "></span><a href="#subsurface-albedo"><b></b>subsurface albedo</a></li><li><span class="title-icon "></span><a href="#scale-of-subsurface-scattering-and-roughness"><b></b>scale of subsurface scattering and roughness</a></li><li><span class="title-icon "></span><a href="#smooth-surface-subsurface-models"><b></b>smooth-surface subsurface models</a></li><li><span class="title-icon "></span><a href="#rough-surface-subsurface-models"><b></b>rough-surface subsurface models</a></li></ul><li><span class="title-icon "></span><a href="#brdf-models-for-cloth"><b></b>BRDF Models for Cloth</a></li><ul><li><span class="title-icon "></span><a href="#empirical-cloth-models"><b></b>Empirical Cloth Models</a></li><li><span class="title-icon "></span><a href="#microfacet-cloth-models"><b></b>Microfacet Cloth Models</a></li><li><span class="title-icon "></span><a href="#micro-cylinder-cloth-models"><b></b>Micro-Cylinder Cloth Models</a></li></ul><li><span class="title-icon "></span><a href="#wave-optics-brdf-models"><b></b>Wave Optics BRDF Models</a></li><ul><li><span class="title-icon "></span><a href="#diffraction-models"><b></b>Diffraction Models</a></li><li><span class="title-icon "></span><a href="#models-for-thin-film-interface"><b></b>Models for Thin-Film Interface</a></li></ul><li><span class="title-icon "></span><a href="#layered-materials"><b></b>Layered Materials</a></li><ul><li><span class="title-icon "></span><a href="#clear-coat"><b></b>clear coat</a></li><li><span class="title-icon "></span><a href="#layered-material-models"><b></b>layered material models</a></li></ul><li><span class="title-icon "></span><a href="#blending-and-filtering-materials"><b></b>Blending and Filtering Materials</a></li><ul><li><span class="title-icon "></span><a href="#material-blending"><b></b>Material Blending</a></li><li><span class="title-icon "></span><a href="#material-filtering"><b></b>Material Filtering</a></li></ul></ul></ul></div><a href="#real-time-pbr-summary" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="real-time-pbr-summary"><a name="real-time-pbr-summary" class="anchor-navigation-ex-anchor" href="#real-time-pbr-summary"><i class="fa fa-link" aria-hidden="true"></i></a>Real-Time PBR Summary</h1>
+<ul>
+<li><a href="#physics-of-light">Physics of Light</a><ul>
+<li><a href="#physical-optics">physical optics</a></li>
+<li><a href="#particles">particles</a></li>
+<li><a href="#media">media</a></li>
+<li><a href="#surfaces">surfaces</a></li>
+<li><a href="#subsurface-scattering">subsurface scattering</a></li>
+</ul>
+</li>
+<li><a href="#the-camera">The Camera</a><ul>
+<li><a href="#pinhole">pinhole</a></li>
+<li><a href="#physically-based-camera">physically based camera</a></li>
+</ul>
+</li>
+<li><a href="#the-brdf">The BRDF</a><ul>
+<li><a href="#definition">definition</a></li>
+<li><a href="#models--of-brdf">models  of BRDF</a></li>
+</ul>
+</li>
+<li><a href="#local-illumination">Local Illumination</a></li>
+<li><a href="#fresnel-reflectance">Fresnel Reflectance</a><ul>
+<li><a href="#definition-1">definition</a><ul>
+<li><a href="#assumption">assumption</a></li>
+<li><a href="#reflection-vs-refraction">reflection vs. refraction</a></li>
+</ul>
+</li>
+<li><a href="#external-reflection">External Reflection</a><ul>
+<li><a href="#physics">physics</a></li>
+<li><a href="#mathematical-model">mathematical model</a></li>
+</ul>
+</li>
+<li><a href="#typical-fresnel-reflectance-values">Typical Fresnel Reflectance Values</a><ul>
+<li><a href="#dielectrics">dielectrics</a></li>
+<li><a href="#metals">metals</a></li>
+<li><a href="#semiconductors">semiconductors</a></li>
+<li><a href="#fresnel-re%EF%AC%82ectance-values-in-water">fresnel re&#xFB02;ectance values in water</a></li>
+<li><a href="#parameterizing-fresnel-values">parameterizing fresnel values</a></li>
+</ul>
+</li>
+<li><a href="#internal-reflection">Internal Reflection</a></li>
+</ul>
+</li>
+<li><a href="#microgeometry">Microgeometry</a><ul>
+<li><a href="#microgeometry-on-specular-reflectance">microgeometry on specular reflectance</a></li>
+<li><a href="#microgeometry-on--subsurface-reflectance">microgeometry on  subsurface reflectance</a></li>
+</ul>
+</li>
+<li><a href="#microfacet-theory">Microfacet Theory</a><ul>
+<li><a href="#definition-2">definition</a></li>
+<li><a href="#modeling">modeling</a><ul>
+<li><a href="#ndf">NDF</a></li>
+<li><a href="#masking-and-shadowing-function">masking and shadowing function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#brdf-models-for-surface-reflection">BRDF Models for Surface Reflection</a><ul>
+<li><a href="#half-vector">half vector</a></li>
+<li><a href="#specular-brdf">specular BRDF</a></li>
+<li><a href="#ndf-1">NDF</a><ul>
+<li><a href="#isotropic-ndf">isotropic NDF</a></li>
+<li><a href="#anisotropic-ndf">anisotropic NDF</a></li>
+</ul>
+</li>
+<li><a href="#multiple-bounce-surface-re%EF%AC%82ection">multiple-bounce surface re&#xFB02;ection</a></li>
+</ul>
+</li>
+<li><a href="#brdf-models-for-subsurface-scattering">BRDF Models for Subsurface Scattering</a><ul>
+<li><a href="#subsurface-albedo">subsurface albedo</a></li>
+<li><a href="#scale-of-subsurface-scattering-and-roughness">scale of subsurface scattering and roughness</a></li>
+<li><a href="#smooth-surface-subsurface-models">smooth-surface subsurface models</a></li>
+<li><a href="#rough-surface-subsurface-models">rough-surface subsurface models</a></li>
+</ul>
+</li>
+<li><a href="#brdf-models-for-cloth">BRDF Models for Cloth</a><ul>
+<li><a href="#empirical-cloth-models">Empirical Cloth Models</a><ul>
+<li><a href="#uncharted-2-diffuse-brdf">Uncharted 2 diffuse BRDF</a></li>
+<li><a href="#uncharted-4-diffuse-term">Uncharted 4 diffuse term</a></li>
+<li><a href="#disney-diffuse-sheen-term">Disney diffuse sheen term</a></li>
+</ul>
+</li>
+<li><a href="#microfacet-cloth-models">Microfacet Cloth Models</a><ul>
+<li><a href="#game-the-order-1886">Game The Order: 1886</a></li>
+<li><a href="#imageworks">Imageworks</a></li>
+</ul>
+</li>
+<li><a href="#micro-cylinder-cloth-models">Micro-Cylinder Cloth Models</a></li>
+</ul>
+</li>
+<li><a href="#wave-optics-brdf-models">Wave Optics BRDF Models</a><ul>
+<li><a href="#diffraction-models">Diffraction Models</a></li>
+<li><a href="#models-for-thin-film-interface">Models for Thin-Film Interface</a></li>
+</ul>
+</li>
+<li><a href="#layered-materials">Layered Materials</a><ul>
+<li><a href="#clear-coat">clear coat</a></li>
+<li><a href="#layered-material-models">layered material models</a></li>
+</ul>
+</li>
+<li><a href="#blending-and-filtering-materials">Blending and Filtering Materials</a><ul>
+<li><a href="#material-blending">Material Blending</a></li>
+<li><a href="#material-filtering">Material Filtering</a><ul>
+<li><a href="#filtering-normals-and-normal-distributions">Filtering Normals and Normal Distributions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="physics-of-light"><a name="physics-of-light" class="anchor-navigation-ex-anchor" href="#physics-of-light"><i class="fa fa-link" aria-hidden="true"></i></a>Physics of Light</h2>
+<h3 id="physical-optics"><a name="physical-optics" class="anchor-navigation-ex-anchor" href="#physical-optics"><i class="fa fa-link" aria-hidden="true"></i></a>physical optics</h3>
+<p><a href="1652698542620.png" data-lightbox="0d91bc68-9b3e-46fc-b4c8-ad42d42ac786" data-title="Alt text"><img src="1652698542620.png" alt="Alt text"></a></p>
+<ul>
+<li>Light waves carry energy  --&gt; irradiance (d phi / d A)
+proportional to the square of the amplitudes</li>
+<li>constructive interference vs. destructive interference
+<a href="1652698555686.png" data-lightbox="3c0ca4eb-dfb6-4d58-a8e9-02ecfe660444" data-title="Alt text"><img src="1652698555686.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="particles"><a name="particles" class="anchor-navigation-ex-anchor" href="#particles"><i class="fa fa-link" aria-hidden="true"></i></a>particles</h3>
+<ul>
+<li>isolated molecules
+the scattered waves are incoherent and their energy adds linearly
+<a href="1652698608036.png" data-lightbox="37288e1f-f27c-4164-8c6d-508ff46f27c5" data-title="Alt text"><img src="1652698608036.png" alt="Alt text"></a></li>
+<li>multi-molecule clusters
+the scattered light waves in each cluster are in phase and interfere constructively. This causes the scattered wave energy to add up quadratically
+<a href="1652698592782.png" data-lightbox="736993bf-a15b-47f7-8357-f6ca31ecac94" data-title="Alt text"><img src="1652698592782.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="media"><a name="media" class="anchor-navigation-ex-anchor" href="#media"><i class="fa fa-link" aria-hidden="true"></i></a>media</h3>
+<ul>
+<li>homogeneous media</li>
+<li>non-homogeneous media</li>
+<li>scattering and absorption
+<a href="1652698650359.png" data-lightbox="8ec5599e-0741-473a-bfe4-60c4c8493664" data-title="Alt text"><img src="1652698650359.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="surfaces"><a name="surfaces" class="anchor-navigation-ex-anchor" href="#surfaces"><i class="fa fa-link" aria-hidden="true"></i></a>surfaces</h3>
+<p>An object surface is a two-dimensional interface <strong>separating volumes with di&#xFB00;erent index of refraction(IOR) values</strong>.
+<a href="1652698682742.png" data-lightbox="a89f3ffa-fef7-49dd-945c-730e3e7ac8ff" data-title="Alt text"><img src="1652698682742.png" alt="Alt text"></a></p>
+<ul>
+<li>transmitted wave and re&#xFB02;ected wave</li>
+<li>have the same frequency as the incident wave</li>
+<li>the phase velocity&#x2014;the speed the wave travels through the medium&#x2014;changes proportionally to the relative index of refraction (n 1 /n 2 ). Since the frequency is &#xFB01;xed, the wavelength also changes proportionally to (n 1/n 2)</li>
+<li>Snell&apos;s law
+<a href="1652698694650.png" data-lightbox="f0ea226d-6c6b-4740-a39e-0786cc7b2e8a" data-title="Alt text"><img src="1652698694650.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="subsurface-scattering"><a name="subsurface-scattering" class="anchor-navigation-ex-anchor" href="#subsurface-scattering"><i class="fa fa-link" aria-hidden="true"></i></a>subsurface scattering</h3>
+<p><a href="1652698713958.png" data-lightbox="6e16c3f9-f15e-4f33-b54c-2a568dd48f66" data-title="Alt text"><img src="1652698713958.png" alt="Alt text"></a></p>
+<ul>
+<li>local vs. global subsurface scattering
+<a href="1652698724017.png" data-lightbox="2763515a-dc9d-49f7-abd9-362ef38eb2f0" data-title="Alt text"><img src="1652698724017.png" alt="Alt text"></a></li>
+<li>specular term models surface re&#xFB02;ection</li>
+<li>diffuse term models local subsurface scattering</li>
+</ul>
+<h2 id="the-camera"><a name="the-camera" class="anchor-navigation-ex-anchor" href="#the-camera"><i class="fa fa-link" aria-hidden="true"></i></a>The Camera</h2>
+<h3 id="pinhole"><a name="pinhole" class="anchor-navigation-ex-anchor" href="#pinhole"><i class="fa fa-link" aria-hidden="true"></i></a>pinhole</h3>
+<ul>
+<li>a zero-size mathematical point and no lens</li>
+<li>restricts each point on the sensor surface to collect a single ray of light
+<a href="1652698798001.png" data-lightbox="13266ad2-35fd-4266-80e8-c0465dda1fd9" data-title="Alt text"><img src="1652698798001.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="physically-based-camera"><a name="physically-based-camera" class="anchor-navigation-ex-anchor" href="#physically-based-camera"><i class="fa fa-link" aria-hidden="true"></i></a>physically based camera</h3>
+<ul>
+<li>including a lens allows for the use of a larger aperture</li>
+<li>have a limited depth of &#xFB01;eld
+<a href="1652698777210.png" data-lightbox="6a19fb53-f7b0-4f3e-9a91-fda6824e6521" data-title="Alt text"><img src="1652698777210.png" alt="Alt text"></a></li>
+</ul>
+<h2 id="the-brdf"><a name="the-brdf" class="anchor-navigation-ex-anchor" href="#the-brdf"><i class="fa fa-link" aria-hidden="true"></i></a>The BRDF</h2>
+<h3 id="definition"><a name="definition" class="anchor-navigation-ex-anchor" href="#definition"><i class="fa fa-link" aria-hidden="true"></i></a>definition</h3>
+<ul>
+<li>bidirectional re&#xFB02;ectance distribution function (BRDF)
+f(l, v)
+<a href="1652699017294.png" data-lightbox="43f8e02c-7daf-4f5f-90bf-aa94260e249c" data-title="Alt text"><img src="1652699017294.png" alt="Alt text"></a></li>
+<li><p>reflectance equation
+<a href="1652699029171.png" data-lightbox="c23fd09c-e752-44b9-8334-13e318967904" data-title="Alt text"><img src="1652699029171.png" alt="Alt text"></a></p>
+</li>
+<li><p>two constraints for BRDF</p>
+<ul>
+<li>Helmholtz reciprocity
+<a href="1652699041476.png" data-lightbox="b2a1dd70-8b1a-4138-8391-ccb626d51ddf" data-title="Alt text"><img src="1652699041476.png" alt="Alt text"></a></li>
+<li>conservation of energy
+the outgoing energy cannot be greater than the incoming energy</li>
+</ul>
+</li>
+</ul>
+<h3 id="models--of-brdf"><a name="models--of-brdf" class="anchor-navigation-ex-anchor" href="#models--of-brdf"><i class="fa fa-link" aria-hidden="true"></i></a>models  of BRDF</h3>
+<ul>
+<li>Lambertian
+BRDF is a constant
+<a href="1652699069290.png" data-lightbox="ee52eeae-7d01-4d7c-a511-117c563c05a5" data-title="Alt text"><img src="1652699069290.png" alt="Alt text"></a></li>
+<li>others
+<a href="1652699081107.png" data-lightbox="8ffa3e28-8710-4fe9-a66b-1f9f4548ca20" data-title="Alt text"><img src="1652699081107.png" alt="Alt text"></a></li>
+</ul>
+<h2 id="local-illumination"><a name="local-illumination" class="anchor-navigation-ex-anchor" href="#local-illumination"><i class="fa fa-link" aria-hidden="true"></i></a>Local Illumination</h2>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x591A;&#x4E2A;pi&#xFF0C;&#x611F;&#x89C9;&#x4E0D;&#x5408;&#x7406;&#x554A;&#xFF0C;&#x8DDF;c_light&#x7684;&#x5B9A;&#x4E49;&#x6709;&#x5173;</p>
+<ul>
+<li>directional light
+<a href="1652699112774.png" data-lightbox="5f7a2417-8a32-46f3-b1ba-6a96c4c8c8be" data-title="Alt text"><img src="1652699112774.png" alt="Alt text"></a></li>
+<li>punctual light
+<a href="1652699126219.png" data-lightbox="2d6371bc-51e0-4b56-a5f3-ebec15180152" data-title="Alt text"><img src="1652699126219.png" alt="Alt text"></a></li>
+</ul>
+<h2 id="fresnel-reflectance"><a name="fresnel-reflectance" class="anchor-navigation-ex-anchor" href="#fresnel-reflectance"><i class="fa fa-link" aria-hidden="true"></i></a>Fresnel Reflectance</h2>
+<h3 id="definition_1"><a name="definition_1" class="anchor-navigation-ex-anchor" href="#definition_1"><i class="fa fa-link" aria-hidden="true"></i></a>definition</h3>
+<p>The <strong>interaction of light with a planar interface between two substances</strong> follows the Fresnel equations developed by Augustin-Jean Fresnel.</p>
+<h4 id="assumption"><a name="assumption" class="anchor-navigation-ex-anchor" href="#assumption"><i class="fa fa-link" aria-hidden="true"></i></a>assumption</h4>
+<p>  The surface is assumed to not have any irregularities between 1 light wavelength and 100 wavelengths in size.</p>
+<h4 id="reflection-vs-refraction"><a name="reflection-vs-refraction" class="anchor-navigation-ex-anchor" href="#reflection-vs-refraction"><i class="fa fa-link" aria-hidden="true"></i></a>reflection vs. refraction</h4>
+<ul>
+<li>reflection<ul>
+<li>direction
+<a href="1652699212149.png" data-lightbox="032fa0fb-af9f-4a5d-9f82-e414a20d7a80" data-title="Alt text"><img src="1652699212149.png" alt="Alt text"></a></li>
+<li>Fresnel reflectance F
+The amount of light re&#xFB02;ected (as a fraction of incoming light) is described by the Fresnel re&#xFB02;ectance F, which depends on the incoming angle.</li>
+</ul>
+</li>
+<li>refraction
+depends on the refractive indexes(n_1, n_2) of substances on the two sides of the surface</li>
+</ul>
+<h3 id="external-reflection"><a name="external-reflection" class="anchor-navigation-ex-anchor" href="#external-reflection"><i class="fa fa-link" aria-hidden="true"></i></a>External Reflection</h3>
+<h4 id="physics"><a name="physics" class="anchor-navigation-ex-anchor" href="#physics"><i class="fa fa-link" aria-hidden="true"></i></a>physics</h4>
+<p>External re&#xFB02;ection is the case where n1 &lt; n2.
+eg. from air to object</p>
+<ul>
+<li>incoming angle = 0&#xB0; ---&gt; F = F0</li>
+<li>incoming angle = 90&#xB0; ---&gt; F = 1
+<a href="1652699248780.png" data-lightbox="88621cbf-3ff1-45f4-8032-72eb97430c2c" data-title="Alt text"><img src="1652699248780.png" alt="Alt text"></a>
+<a href="1652699266901.png" data-lightbox="ec5cf49c-54fe-47c4-ae3d-bf7c360ecd46" data-title="Alt text"><img src="1652699266901.png" alt="Alt text"></a>
+&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6839;&#x636E;sin&#x89D2;&#x5EA6;&#x4F5C;&#x4E3A;x&#x8F74;&#xFF0C;&#x56E0;&#x4E3A;&#x900F;&#x89C6;&#x7F29;&#x77ED;</li>
+</ul>
+<h4 id="mathematical-model"><a name="mathematical-model" class="anchor-navigation-ex-anchor" href="#mathematical-model"><i class="fa fa-link" aria-hidden="true"></i></a>mathematical model</h4>
+<ul>
+<li>Schlick&#x2019;s
+<a href="1652699313554.png" data-lightbox="3c641eab-c60d-4b2c-a8fe-d647d7f583d6" data-title="Alt text"><img src="1652699313554.png" alt="Alt text"></a><ul>
+<li>pros
+simple calculation</li>
+<li>cons
+artifacts near grazing angle
+<a href="1652699350446.png" data-lightbox="213505d6-1d67-4b39-b270-c6c133bfdff3" data-title="Alt text"><img src="1652699350446.png" alt="Alt text"></a></li>
+</ul>
+</li>
+</ul>
+<h3 id="typical-fresnel-reflectance-values"><a name="typical-fresnel-reflectance-values" class="anchor-navigation-ex-anchor" href="#typical-fresnel-reflectance-values"><i class="fa fa-link" aria-hidden="true"></i></a>Typical Fresnel Reflectance Values</h3>
+<h4 id="dielectrics"><a name="dielectrics" class="anchor-navigation-ex-anchor" href="#dielectrics"><i class="fa fa-link" aria-hidden="true"></i></a>dielectrics</h4>
+<p><a href="1652699371919.png" data-lightbox="d8265255-7923-4456-b5e0-f81d47b1012b" data-title="Alt text"><img src="1652699371919.png" alt="Alt text"></a>
+For unknown dielectrics, 0.04 is a reasonable default value, not too far o&#xFB00; from most common materials.</p>
+<h4 id="metals"><a name="metals" class="anchor-navigation-ex-anchor" href="#metals"><i class="fa fa-link" aria-hidden="true"></i></a>metals</h4>
+<p>Recall that metals immediately <strong>absorb any transmitted light</strong>, so they do not exhibit any subsurface scattering or transparency. All the visible color of a metal comes from F0 .
+<a href="1652699391991.png" data-lightbox="70e1f35d-3ab3-43bf-9012-ad0dcb16f907" data-title="Alt text"><img src="1652699391991.png" alt="Alt text"></a></p>
+<h4 id="semiconductors"><a name="semiconductors" class="anchor-navigation-ex-anchor" href="#semiconductors"><i class="fa fa-link" aria-hidden="true"></i></a>semiconductors</h4>
+<p><a href="1652699412476.png" data-lightbox="58e4ea02-cf51-4ece-9f9f-b8ddbf4490dd" data-title="Alt text"><img src="1652699412476.png" alt="Alt text"></a></p>
+<h4 id="fresnel-re&#xFB02;ectance-values-in-water"><a name="fresnel-re&#xFB02;ectance-values-in-water" class="anchor-navigation-ex-anchor" href="#fresnel-re&#xFB02;ectance-values-in-water"><i class="fa fa-link" aria-hidden="true"></i></a>fresnel re&#xFB02;ectance values in water</h4>
+<ul>
+<li>in air ---&gt; n &#x2248; 1</li>
+<li>in water ---&gt; n &#x2248; 1.33
+<a href="1652699440915.png" data-lightbox="32e16eaf-6355-4965-8e78-0c3cf0ceff23" data-title="Alt text"><img src="1652699440915.png" alt="Alt text"></a></li>
+</ul>
+<h4 id="parameterizing-fresnel-values"><a name="parameterizing-fresnel-values" class="anchor-navigation-ex-anchor" href="#parameterizing-fresnel-values"><i class="fa fa-link" aria-hidden="true"></i></a>parameterizing fresnel values</h4>
+<ul>
+<li>using metallic to represent specular color F0 or the diffuse color in one texture</li>
+<li>no materials have values of F 0lower than 0.02, values of F0 below 0.02 are used to &#x201C;turn o&#xFB00;&#x201D; Fresnel edge brightening</li>
+</ul>
+<h3 id="internal-reflection"><a name="internal-reflection" class="anchor-navigation-ex-anchor" href="#internal-reflection"><i class="fa fa-link" aria-hidden="true"></i></a>Internal Reflection</h3>
+<p>Internal re&#xFB02;ection happens when n1 &gt; n2.
+eg. traveling in the interior of a transparent object and encounters the object&#x2019;s surface
+<a href="1652699501478.png" data-lightbox="1dca5777-044f-4cf0-8ac4-9d8d7417a8b9" data-title="Alt text"><img src="1652699501478.png" alt="Alt text"></a>
+total internal re&#xFB02;ection when outcoming angle is larger than 90&#xB0;
+<a href="1652699527851.png" data-lightbox="179dc5d8-4c4a-412e-9168-f108835398a0" data-title="Alt text"><img src="1652699527851.png" alt="Alt text"></a></p>
+<h2 id="microgeometry"><a name="microgeometry" class="anchor-navigation-ex-anchor" href="#microgeometry"><i class="fa fa-link" aria-hidden="true"></i></a>Microgeometry</h2>
+<h3 id="microgeometry-on-specular-reflectance"><a name="microgeometry-on-specular-reflectance" class="anchor-navigation-ex-anchor" href="#microgeometry-on-specular-reflectance"><i class="fa fa-link" aria-hidden="true"></i></a>microgeometry on specular reflectance</h3>
+<ul>
+<li>reflectance</li>
+<li>shadowing and masking
+<a href="1652699559328.png" data-lightbox="c9e27c97-108e-4194-b230-0167ca7e4dab" data-title="Alt text"><img src="1652699559328.png" alt="Alt text"></a></li>
+<li>interreflection</li>
+</ul>
+<h3 id="microgeometry-on--subsurface-reflectance"><a name="microgeometry-on--subsurface-reflectance" class="anchor-navigation-ex-anchor" href="#microgeometry-on--subsurface-reflectance"><i class="fa fa-link" aria-hidden="true"></i></a>microgeometry on  subsurface reflectance</h3>
+<ul>
+<li>retroreflection
+Retrore&#xFB02;ection tends to give rough surfaces a &#xFB02;at appearance
+<a href="1652699580120.png" data-lightbox="21195ab1-0291-4a3f-883c-7b0793dc390f" data-title="Alt text"><img src="1652699580120.png" alt="Alt text"></a></li>
+</ul>
+<h2 id="microfacet-theory"><a name="microfacet-theory" class="anchor-navigation-ex-anchor" href="#microfacet-theory"><i class="fa fa-link" aria-hidden="true"></i></a>Microfacet Theory</h2>
+<h3 id="definition_2"><a name="definition_2" class="anchor-navigation-ex-anchor" href="#definition_2"><i class="fa fa-link" aria-hidden="true"></i></a>definition</h3>
+<ul>
+<li>The theory is based on the modeling of microgeometry <strong>as a collection of microfacets</strong>.</li>
+<li>Each of these tiny facets is &#xFB02;at, with a single microfacet normal m</li>
+<li>diffuse/specular/diffraction micro-BRDF<h3 id="modeling"><a name="modeling" class="anchor-navigation-ex-anchor" href="#modeling"><i class="fa fa-link" aria-hidden="true"></i></a>modeling</h3>
+<h4 id="ndf"><a name="ndf" class="anchor-navigation-ex-anchor" href="#ndf"><i class="fa fa-link" aria-hidden="true"></i></a>NDF</h4>
+statistical distribution of the microfacet normals m
+<a href="1652699620228.png" data-lightbox="4f0465dd-fffc-4432-b7bb-076c3889c90c" data-title="Alt text"><img src="1652699620228.png" alt="Alt text"></a></li>
+</ul>
+<h4 id="masking-and-shadowing-function"><a name="masking-and-shadowing-function" class="anchor-navigation-ex-anchor" href="#masking-and-shadowing-function"><i class="fa fa-link" aria-hidden="true"></i></a>masking and shadowing function</h4>
+<ul>
+<li>G1(m, v), the fraction of microfacets with normal m that are visible along the view vector v.
+<a href="1652699665423.png" data-lightbox="56c25132-bf1e-4fa1-a831-2fc7c804084c" data-title="Alt text"><img src="1652699665423.png" alt="Alt text"></a></li>
+<li>Heitz, Eric, &#x201C;Understanding the Masking-Shadowing Function in Microfacet-Based BRDFs&quot;</li>
+<li>Smith masking function
+<a href="1652699706809.png" data-lightbox="a5464047-b0d8-47c5-a65c-2339d6ce3678" data-title="Alt text"><img src="1652699706809.png" alt="Alt text"></a></li>
+<li>overall macrosurface BRDF
+<a href="1652699734697.png" data-lightbox="62c5f111-3d6f-446b-ab8b-ba6d15f1a750" data-title="Alt text"><img src="1652699734697.png" alt="Alt text"></a></li>
+<li>joint masking-shadowing function G2(l, v, m)<ul>
+<li>uncorrelated
+<a href="1652699763184.png" data-lightbox="08267cc1-edca-4e72-a9e6-4dcd558a1e91" data-title="Alt text"><img src="1652699763184.png" alt="Alt text"></a>
+nonphysically assumption which cause over-darkening</li>
+<li>relative azimuth angle between v and l
+<a href="1652699787478.png" data-lightbox="0f76477e-0c79-4f8b-8b3f-b043373594ed" data-title="Alt text"><img src="1652699787478.png" alt="Alt text"></a></li>
+<li>height correlation
+<a href="1652699804844.png" data-lightbox="5c9fd5fb-12c9-4fc2-8a76-7a0da9b3f4ab" data-title="Alt text"><img src="1652699804844.png" alt="Alt text"></a></li>
+<li>height and direction correlation
+<a href="1652699822630.png" data-lightbox="f6f8c313-ff61-45a0-9cc1-f43f12f1c002" data-title="Alt text"><img src="1652699822630.png" alt="Alt text"></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="brdf-models-for-surface-reflection"><a name="brdf-models-for-surface-reflection" class="anchor-navigation-ex-anchor" href="#brdf-models-for-surface-reflection"><i class="fa fa-link" aria-hidden="true"></i></a>BRDF Models for Surface Reflection</h2>
+<p>The <strong>specular BRDF</strong> terms used in physically based rendering are derived from <strong>microfacet theory</strong>.</p>
+<h3 id="half-vector"><a name="half-vector" class="anchor-navigation-ex-anchor" href="#half-vector"><i class="fa fa-link" aria-hidden="true"></i></a>half vector</h3>
+<p><a href="1652699874017.png" data-lightbox="70cd111b-8a52-4cac-903e-53cb59398412" data-title="Alt text"><img src="1652699874017.png" alt="Alt text"></a></p>
+<h3 id="specular-brdf"><a name="specular-brdf" class="anchor-navigation-ex-anchor" href="#specular-brdf"><i class="fa fa-link" aria-hidden="true"></i></a>specular BRDF</h3>
+<p><a href="1652699913038.png" data-lightbox="7df46eca-7951-4e42-a54d-54bf18dffda5" data-title="Alt text"><img src="1652699913038.png" alt="Alt text"></a></p>
+<ul>
+<li>Walter, Bruce, Stephen R. Marschner, Hongsong Li, and Kenneth E. Torrance, &#x201C;Microfacet Models for Refraction through Rough Surfaces,&#x201D; Rendering Techniques 2007, Eurographics Association, pp. 195&#x2013;206, June 2007.</li>
+</ul>
+<h3 id="ndf_1"><a name="ndf_1" class="anchor-navigation-ex-anchor" href="#ndf_1"><i class="fa fa-link" aria-hidden="true"></i></a>NDF</h3>
+<h4 id="isotropic-ndf"><a name="isotropic-ndf" class="anchor-navigation-ex-anchor" href="#isotropic-ndf"><i class="fa fa-link" aria-hidden="true"></i></a>isotropic NDF</h4>
+<ul>
+<li>Beckmann NDF
+<a href="1652699976561.png" data-lightbox="228c1c67-2ce6-4d1d-aa21-9421b9d6c985" data-title="Alt text"><img src="1652699976561.png" alt="Alt text"></a><ul>
+<li>alpha_b controls the surface roughness, it is proportional to the root mean square (RMS) slope of the microgeometry surface, so &#x3B1; b = 0 represents a perfectly smooth surface.</li>
+<li>deriving the Smith G2 function
+<a href="1652700011195.png" data-lightbox="7fa31028-0f17-45d8-bb5f-7ebe71347e58" data-title="Alt text"><img src="1652700011195.png" alt="Alt text"></a></li>
+<li>Blinn-Phong NDF
+<a href="1652700033629.png" data-lightbox="edb9c580-dbfe-4b67-b093-7345a2b8b64c" data-title="Alt text"><img src="1652700033629.png" alt="Alt text"></a></li>
+<li>GGX NDF
+<a href="1652700057193.png" data-lightbox="f0f443b8-7264-4c0e-ae92-b90947977cd9" data-title="Alt text"><img src="1652700057193.png" alt="Alt text"></a></li>
+</ul>
+</li>
+<li>comparison
+<a href="1652700079302.png" data-lightbox="a0fce1c3-c73f-4e73-b673-7b346ae116a0" data-title="Alt text"><img src="1652700079302.png" alt="Alt text"></a>
+ GGX has narrower peaks than Beckmann, as well as <strong>longer &#x201C;tails&#x201D;</strong> surrounding those peaks, which create the appearance of a haze or glow around the core of the highlight.</li>
+<li>other NDFs<ul>
+<li>generalized Trowbridge-Reitz (GTR) NDF
+<a href="1652700111323.png" data-lightbox="4f4ba1f2-3c22-4fc4-90b5-5922a9f966b8" data-title="Alt text"><img src="1652700111323.png" alt="Alt text"></a></li>
+<li>Student&#x2019;s t-distribution (STD)</li>
+<li>exponential power distribution (EPD)</li>
+<li>adding a second lobe ---&gt; a mix of two GGX NDFs</li>
+</ul>
+</li>
+</ul>
+<h4 id="anisotropic-ndf"><a name="anisotropic-ndf" class="anchor-navigation-ex-anchor" href="#anisotropic-ndf"><i class="fa fa-link" aria-hidden="true"></i></a>anisotropic NDF</h4>
+<p>The microfacet normal m needs to be transformed into <strong>the local frame or tangent space</strong> de&#xFB01;ned by the normal, tangent, and bitangent vectors, respectively, n, t, and b.
+<a href="1652700159602.png" data-lightbox="bc3b1f46-211b-40e5-bd2c-bf973ba67d97" data-title="Alt text"><img src="1652700159602.png" alt="Alt text"></a></p>
+<ul>
+<li>generalize from an isotropic NDF
+ <a href="1652700179366.png" data-lightbox="8c18ad92-dcd3-484d-ae8e-181b945515f5" data-title="Alt text"><img src="1652700179366.png" alt="Alt text"></a></li>
+<li>parameterization
+ <a href="1652700199951.png" data-lightbox="22c404d9-4d10-47ca-b9bc-2b5b56dcda0d" data-title="Alt text"><img src="1652700199951.png" alt="Alt text"></a>
+<a href="1652700217459.png" data-lightbox="856f9fd7-13c3-4b0e-8b02-418c97e669f4" data-title="Alt text"><img src="1652700217459.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="multiple-bounce-surface-re&#xFB02;ection"><a name="multiple-bounce-surface-re&#xFB02;ection" class="anchor-navigation-ex-anchor" href="#multiple-bounce-surface-re&#xFB02;ection"><i class="fa fa-link" aria-hidden="true"></i></a>multiple-bounce surface re&#xFB02;ection</h3>
+<p>The microfacet BRDF framework does not account for light that is re&#xFB02;ected (&#x201C;bounced&#x201D;) from the microsurface multiple times. This simpli&#xFB01;cation causes some <strong>energy loss and over-darkening</strong>, especially for rough metals</p>
+<ul>
+<li>Kulla, Christopher, and Alejandro Conty, &#x201C;Revisiting Physically Based Shading at Imageworks,&#x201D; SIGGRAPH Physically Based Shading in Theory and Practice course, Aug. 2017. 
+<a href="1652700237183.png" data-lightbox="726bbdde-b5f2-43fd-ae22-a8a5a6d8f01b" data-title="Alt text"><img src="1652700237183.png" alt="Alt text"></a></li>
+</ul>
+<h2 id="brdf-models-for-subsurface-scattering"><a name="brdf-models-for-subsurface-scattering" class="anchor-navigation-ex-anchor" href="#brdf-models-for-subsurface-scattering"><i class="fa fa-link" aria-hidden="true"></i></a>BRDF Models for Subsurface Scattering</h2>
+<p>BRDF models for <strong>local subsurface scattering</strong>, or di&#xFB00;use surface response, in opaque <strong>dielectrics</strong>.</p>
+<h3 id="subsurface-albedo"><a name="subsurface-albedo" class="anchor-navigation-ex-anchor" href="#subsurface-albedo"><i class="fa fa-link" aria-hidden="true"></i></a>subsurface albedo</h3>
+<ul>
+<li>the ratio between the energy of the light that <strong>escapes</strong> a surface compared to the energy of the light <strong>entering</strong> into the interior of the material.</li>
+<li>can depend on wavelength, light re&#xFB02;ecting di&#xFB00;usely will be colored from absorption by the pigment particles</li>
+<li>since dielectrics <strong>transmit most incoming light</strong> rather than re&#xFB02;ecting it at the surface, the subsurface albedo is usually brighter and thus more visually important than the specular color F0</li>
+<li>subsurface albedo can be thought of as the result of a <strong>&#x201C;race&#x201D;</strong> <strong>between absorption and scattering</strong></li>
+</ul>
+<h3 id="scale-of-subsurface-scattering-and-roughness"><a name="scale-of-subsurface-scattering-and-roughness" class="anchor-navigation-ex-anchor" href="#scale-of-subsurface-scattering-and-roughness"><i class="fa fa-link" aria-hidden="true"></i></a>scale of subsurface scattering and roughness</h3>
+<p>The correct deciding factor for which type of BRDF model to use relates to the <strong>relative size of the surface irregularities</strong> and the <strong>subsurface scattering distances</strong>.
+<a href="1652700259642.png" data-lightbox="9905c19a-a3da-4940-bc6d-adc3e1709e5b" data-title="Alt text"><img src="1652700259642.png" alt="Alt text"></a></p>
+<ul>
+<li>top left --&gt; diffuse micro-BRDF</li>
+<li>top right --&gt; smooth-surface diffuse model</li>
+<li>bottom --&gt; rough-surface diffuse model</li>
+</ul>
+<h3 id="smooth-surface-subsurface-models"><a name="smooth-surface-subsurface-models" class="anchor-navigation-ex-anchor" href="#smooth-surface-subsurface-models"><i class="fa fa-link" aria-hidden="true"></i></a>smooth-surface subsurface models</h3>
+<ul>
+<li>These are appropriate for modeling materials where the surface irregularities are <strong>smaller than</strong> the subsurface scattering distances.</li>
+<li>Di&#xFB00;use shading is <strong>not directly a&#xFB00;ected by surface roughness</strong>.</li>
+<li>Lambertian
+ <a href="1652700289371.png" data-lightbox="82c2fc24-8ddd-4e5a-a945-401cfa9538c2" data-title="Alt text"><img src="1652700289371.png" alt="Alt text"></a></li>
+<li>consider the Fresnel effect
+<a href="1652700323983.png" data-lightbox="bd302e4b-fa38-41cb-a468-5f54ce03f791" data-title="Alt text"><img src="1652700323983.png" alt="Alt text"></a></li>
+<li>Shirley, with perfect Fresnel mirror specular term
+<a href="1652700344080.png" data-lightbox="5a7041af-9379-4fa0-b6bb-7f292e8e5c26" data-title="Alt text"><img src="1652700344080.png" alt="Alt text"></a></li>
+<li>Kelemen and Szirmay-Kalos, with any specular term
+<a href="1652700359864.png" data-lightbox="57991b89-6d4e-4e2c-9791-9c4edeb9db60" data-title="Alt text"><img src="1652700359864.png" alt="Alt text"></a></li>
+</ul>
+<h3 id="rough-surface-subsurface-models"><a name="rough-surface-subsurface-models" class="anchor-navigation-ex-anchor" href="#rough-surface-subsurface-models"><i class="fa fa-link" aria-hidden="true"></i></a>rough-surface subsurface models</h3>
+<ul>
+<li>Disney
+<a href="1652700383014.png" data-lightbox="b847a2f9-764d-4264-bfcf-9d0e22e45609" data-title="Alt text"><img src="1652700383014.png" alt="Alt text"></a></li>
+<li>Oren-Nayar<ul>
+<li>a Lambertian micro-BRDF</li>
+<li>a spherical Gaussian NDF</li>
+<li>Torrance-Sparrow &#x201C;V-cavity&#x201D; masking-shadowing function</li>
+</ul>
+</li>
+<li>Hammon<ul>
+<li>consider interreflections with a two-bounce simulation</li>
+<li>surface irregularities are larger than scattering distances
+<a href="1652700406431.png" data-lightbox="de135a44-290b-4696-8ded-9b4a04fcfb1a" data-title="Alt text"><img src="1652700406431.png" alt="Alt text"></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="brdf-models-for-cloth"><a name="brdf-models-for-cloth" class="anchor-navigation-ex-anchor" href="#brdf-models-for-cloth"><i class="fa fa-link" aria-hidden="true"></i></a>BRDF Models for Cloth</h2>
+<h3 id="empirical-cloth-models"><a name="empirical-cloth-models" class="anchor-navigation-ex-anchor" href="#empirical-cloth-models"><i class="fa fa-link" aria-hidden="true"></i></a>Empirical Cloth Models</h3>
+<h4 id="uncharted-2-diffuse-brdf"><a name="uncharted-2-diffuse-brdf" class="anchor-navigation-ex-anchor" href="#uncharted-2-diffuse-brdf"><i class="fa fa-link" aria-hidden="true"></i></a>Uncharted 2 diffuse BRDF</h4>
+<p><a href="1652688994203.png" data-lightbox="90b6f471-1cdc-40ac-a129-11d1087c7ea3" data-title="Alt text"><img src="1652688994203.png" alt="Alt text"></a></p>
+<h4 id="uncharted-4-diffuse-term"><a name="uncharted-4-diffuse-term" class="anchor-navigation-ex-anchor" href="#uncharted-4-diffuse-term"><i class="fa fa-link" aria-hidden="true"></i></a>Uncharted 4 diffuse term</h4>
+<p><a href="1652689062231.png" data-lightbox="167bf9fe-2101-4df7-871a-70062aa48ce2" data-title="Alt text"><img src="1652689062231.png" alt="Alt text"></a></p>
+<h4 id="disney-diffuse-sheen-term"><a name="disney-diffuse-sheen-term" class="anchor-navigation-ex-anchor" href="#disney-diffuse-sheen-term"><i class="fa fa-link" aria-hidden="true"></i></a>Disney diffuse sheen term</h4>
+<p><a href="1652689274641.png" data-lightbox="84051f9b-5e95-4860-819e-4b59d253f7bf" data-title="Alt text"><img src="1652689274641.png" alt="Alt text"></a></p>
+<h3 id="microfacet-cloth-models"><a name="microfacet-cloth-models" class="anchor-navigation-ex-anchor" href="#microfacet-cloth-models"><i class="fa fa-link" aria-hidden="true"></i></a>Microfacet Cloth Models</h3>
+<p>Each of the cloth models we have seen so far are limited to speci&#xFB01;c types of fabric.</p>
+<h4 id="game-the-order-1886"><a name="game-the-order-1886" class="anchor-navigation-ex-anchor" href="#game-the-order-1886"><i class="fa fa-link" aria-hidden="true"></i></a>Game The Order: 1886</h4>
+<p>Velvet BRDF
+<a href="1652690360594.png" data-lightbox="125e2115-7752-4dc0-bfae-9ae448e48701" data-title="Alt text"><img src="1652690360594.png" alt="Alt text"></a></p>
+<h4 id="imageworks"><a name="imageworks" class="anchor-navigation-ex-anchor" href="#imageworks"><i class="fa fa-link" aria-hidden="true"></i></a>Imageworks</h4>
+<p><a href="1652690540868.png" data-lightbox="54d37ead-eaa0-496e-9053-27f5b7f55bc2" data-title="Alt text"><img src="1652690540868.png" alt="Alt text"></a>
+<a href="1652690549114.png" data-lightbox="9603a49c-5be8-48c1-bb02-b07265641160" data-title="Alt text"><img src="1652690549114.png" alt="Alt text"></a></p>
+<h3 id="micro-cylinder-cloth-models"><a name="micro-cylinder-cloth-models" class="anchor-navigation-ex-anchor" href="#micro-cylinder-cloth-models"><i class="fa fa-link" aria-hidden="true"></i></a>Micro-Cylinder Cloth Models</h3>
+<p>The micro-cylinder models used for cloth are quite similar to those used for hair.</p>
+<ul>
+<li>Kajiya and Kay Model</li>
+<li>DreamWorks relatively simple and artist-controllable microcylinder model for fabric
+&#x201C;Physically Based Shading at DreamWorks Animation,&#x201D; SIGGRAPH Physically Based Shading in Theory and Practice course, Aug. 2017</li>
+<li>using actual hair BSDF models</li>
+</ul>
+<h2 id="wave-optics-brdf-models"><a name="wave-optics-brdf-models" class="anchor-navigation-ex-anchor" href="#wave-optics-brdf-models"><i class="fa fa-link" aria-hidden="true"></i></a>Wave Optics BRDF Models</h2>
+<p><strong>Geometrical optics</strong>, which treats light as propagating in rays rather than waves, is based on the assumption that any surface irregularities are either smaller than a wavelength or larger than about 100 wavelengths.
+Surface with <strong>nanogeometry</strong> need using wave nature of light and wave optics to model some effects.</p>
+<h3 id="diffraction-models"><a name="diffraction-models" class="anchor-navigation-ex-anchor" href="#diffraction-models"><i class="fa fa-link" aria-hidden="true"></i></a>Diffraction Models</h3>
+<ul>
+<li>Huygens-Fresnel principle
+ every point on a wavefront (the set of points that have the same wave phase) can be treated as the source of a new spherical wave.
+ <a href="1652694118535.png" data-lightbox="82651a8f-6386-4484-afb4-a31dd4e3919d" data-title="Alt text"><img src="1652694118535.png" alt="Alt text"></a>
+  <a href="1652694204765.png" data-lightbox="14c0bd1f-c487-4132-85f6-735524c7f931" data-title="Alt text"><img src="1652694204765.png" alt="Alt text"></a></li>
+<li>real-world phenomena
+CD and DVD optical disks and certain insects</li>
+<li>researches<ul>
+<li>Holzschuch, Nicolas, and Romain Pacanowski, &#x201C;Identifying Di&#xFB00;raction E&#xFB00;ects in Measured Re&#xFB02;ectances,&#x201D; Eurographics Workshop on Material Appearance Modeling, June 2015.</li>
+<li>Toisoul, Antoine, and Abhijeet Ghosh, &#x201C;Real-Time Rendering of Realistic Surface Di&#xFB00;raction with Low Rank Factorisation,&#x201D; European Conference on Visual Media Production (CVMP), Dec. 2017.</li>
+</ul>
+</li>
+</ul>
+<h3 id="models-for-thin-film-interface"><a name="models-for-thin-film-interface" class="anchor-navigation-ex-anchor" href="#models-for-thin-film-interface"><i class="fa fa-link" aria-hidden="true"></i></a>Models for Thin-Film Interface</h3>
+<ul>
+<li>definition
+  Thin-&#xFB01;lm interference is a wave optics phenomenon that occurs when light paths re&#xFB02;ecting from the top and bottom of a thin dielectric layer interfere with each other.
+  <a href="1652694476487.png" data-lightbox="0aa69d23-86c0-47a5-b13a-8ca47e5b5a14" data-title="Alt text"><img src="1652694476487.png" alt="Alt text"></a>
+  The reason that the &#xFB01;lm needs to be thin for this e&#xFB00;ect to occur is related to the concept of <strong>coherence length</strong>. This length is the maximum distance by which a copy of a light wave can be displaced and still interfere coherently with the original wave. This length is inversely proportional to the bandwidth of the light, which is the range of wavelengths over which its spectral power distribution (SPD) extends.</li>
+<li>real-world phenomena
+soap bubbles and oil stains
+<a href="1652694796443.png" data-lightbox="37487bcd-42ea-4e6a-9d4c-533df597b98a" data-title="Alt text"><img src="1652694796443.png" alt="Alt text"></a></li>
+<li>researches<ul>
+<li>Drobot, Michal, &#x201C;Practical Multilayered Materials in Call of Duty In&#xFB01;nite Warfare,&#x201D; SIGGRAPH Physically Based Shading in Theory and Practice course, Aug. 2017</li>
+<li>Belcour, Laurent, and Pascal Barla, &#x201C;A Practical Extension to Microfacet Theory for the Modeling of Varying Iridescence,&#x201D; ACM Transactions on Graphics (SIGGRAPH 2017)</li>
+</ul>
+</li>
+</ul>
+<h2 id="layered-materials"><a name="layered-materials" class="anchor-navigation-ex-anchor" href="#layered-materials"><i class="fa fa-link" aria-hidden="true"></i></a>Layered Materials</h2>
+<h3 id="clear-coat"><a name="clear-coat" class="anchor-navigation-ex-anchor" href="#clear-coat"><i class="fa fa-link" aria-hidden="true"></i></a>clear coat</h3>
+<ul>
+<li>realization<ul>
+<li>Disney</li>
+<li>UE</li>
+<li>PIxar</li>
+<li>Dreamworks</li>
+<li>Imageworks</li>
+</ul>
+</li>
+<li>properties<ul>
+<li>The most notable visual result of a clear-coat layer is the <strong>double re&#xFB02;ection</strong> resulting from light re&#xFB02;ecting o&#xFB00; both the clear-coat and the underlying substrate.</li>
+<li>tinted clear-coat caused by absorption depends on the length of the path length that light travels which is view-dependent</li>
+<li>di&#xFB00;erent layers could have di&#xFB00;erent surface normals</li>
+</ul>
+</li>
+</ul>
+<h3 id="layered-material-models"><a name="layered-material-models" class="anchor-navigation-ex-anchor" href="#layered-material-models"><i class="fa fa-link" aria-hidden="true"></i></a>layered material models</h3>
+<p>Drobot, Michal, &#x201C;Practical Multilayered Materials in Call of Duty In&#xFB01;nite Warfare,&#x201D; SIGGRAPH Physically Based Shading in Theory and Practice course, Aug. 2017.
+<a href="1652695456327.png" data-lightbox="ce972a63-356e-488d-8854-fba1f0cf9581" data-title="Alt text"><img src="1652695456327.png" alt="Alt text"></a></p>
+<h2 id="blending-and-filtering-materials"><a name="blending-and-filtering-materials" class="anchor-navigation-ex-anchor" href="#blending-and-filtering-materials"><i class="fa fa-link" aria-hidden="true"></i></a>Blending and Filtering Materials</h2>
+<h3 id="material-blending"><a name="material-blending" class="anchor-navigation-ex-anchor" href="#material-blending"><i class="fa fa-link" aria-hidden="true"></i></a>Material Blending</h3>
+<p>Material blending is the process of combining the properties, i.e., the BRDF parameters, of multiple materials.
+<a href="1652695948516.png" data-lightbox="82628820-818d-4fb3-82e3-d624f06beec6" data-title="Alt text"><img src="1652695948516.png" alt="Alt text"></a></p>
+<h3 id="material-filtering"><a name="material-filtering" class="anchor-navigation-ex-anchor" href="#material-filtering"><i class="fa fa-link" aria-hidden="true"></i></a>Material Filtering</h3>
+<h4 id="filtering-normals-and-normal-distributions"><a name="filtering-normals-and-normal-distributions" class="anchor-navigation-ex-anchor" href="#filtering-normals-and-normal-distributions"><i class="fa fa-link" aria-hidden="true"></i></a>Filtering Normals and Normal Distributions</h4>
+<p><a href="1652696081098.png" data-lightbox="124a8cb5-fbc7-40da-8039-51c1b50ba229" data-title="Alt text"><img src="1652696081098.png" alt="Alt text"></a>
+<a href="1652696110877.png" data-lightbox="66121c81-9c09-4bc1-9f65-099b54b1ca14" data-title="Alt text"><img src="1652696110877.png" alt="Alt text"></a></p>
+<ul>
+<li>normal filtering solutions<ul>
+<li>modify roughness according to unnormalized average normal length
+<a href="1652697537784.png" data-lightbox="8c2dd166-c514-4233-b814-6a1198dd691e" data-title="Alt text"><img src="1652697537784.png" alt="Alt text"></a></li>
+<li>mapping the covariance matrix of the normal distribution</li>
+<li>geometry curvature estimation </li>
+</ul>
+</li>
+<li>sparkly appearance
+<a href="1652697809000.png" data-lightbox="ea0b33ce-93aa-4f32-835a-84f40c64d742" data-title="Alt text"><img src="1652697809000.png" alt="Alt text"></a><ul>
+<li>render sparkling snow in the game Disney In&#xFB01;nity 3.0
+ Bowles, Huw, and Beibei Wang, &#x201C;Sparkly but not too Sparkly! A Stable and Robust Procedural Sparkle E&#xFB00;ect,&#x201D; SIGGRAPH Advances in Real-Time Rendering in Games course, Aug. 2015.<ul>
+<li>Zirr, Tobias, and Anton Kaplanyan, &#x201C;Real-Time Rendering of Procedural Multiscale Materials,&#x201D; Symposium on Interactive 3D Graphics and Games, Feb. 2016.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tingxia.top 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-05-16 19:28:56
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../resource.html" class="navigation navigation-prev " aria-label="Previous page: PBR">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../material/resource.html" class="navigation navigation-next " aria-label="Next page: Material">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Real-Time PBR Summary","level":"1.7.1","depth":2,"next":{"title":"Material","level":"1.7.2","depth":2,"path":"pbr/material/resource.md","ref":"pbr/material/resource.md","articles":[{"title":"Reflection Models","level":"1.7.2.1","depth":3,"path":"pbr/material/reflection_models/reflection_models.md","ref":"pbr/material/reflection_models/reflection_models.md","articles":[]},{"title":"Deep in Microfacet BRDF","level":"1.7.2.2","depth":3,"path":"pbr/material/brdf/brdf.md","ref":"pbr/material/brdf/brdf.md","articles":[]}]},"previous":{"title":"PBR","level":"1.7","depth":1,"path":"pbr/resource.md","ref":"pbr/resource.md","articles":[{"title":"Real-Time PBR Summary","level":"1.7.1","depth":2,"path":"pbr/rtr_pbr/rtr_pbr.md","ref":"pbr/rtr_pbr/rtr_pbr.md","articles":[]},{"title":"Material","level":"1.7.2","depth":2,"path":"pbr/material/resource.md","ref":"pbr/material/resource.md","articles":[{"title":"Reflection Models","level":"1.7.2.1","depth":3,"path":"pbr/material/reflection_models/reflection_models.md","ref":"pbr/material/reflection_models/reflection_models.md","articles":[]},{"title":"Deep in Microfacet BRDF","level":"1.7.2.2","depth":3,"path":"pbr/material/brdf/brdf.md","ref":"pbr/material/brdf/brdf.md","articles":[]}]},{"title":"Lighting","level":"1.7.3","depth":2,"path":"pbr/lighting/resource.md","ref":"pbr/lighting/resource.md","articles":[{"title":"Filament Basic Physical Lighting","level":"1.7.3.1","depth":3,"path":"pbr/lighting/filament_base_lighting/filament_base_lighting.md","ref":"pbr/lighting/filament_base_lighting/filament_base_lighting.md","articles":[]}]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pbr/rtr_pbr/rtr_pbr.md","mtime":"2022-05-16T11:28:56.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-16T11:30:32.477Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
