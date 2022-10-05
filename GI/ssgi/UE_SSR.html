@@ -1,0 +1,2198 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>UE SSR Implementation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ppr/ppr.html" />
+    
+    
+    <link rel="prev" href="resource.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../space_trans/resource.html">
+            
+                <a href="../../space_trans/resource.html">
+            
+                    
+                    Space Transformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../camera/resource.html">
+            
+                <a href="../../camera/resource.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../camera/photography/photography.html">
+            
+                <a href="../../camera/photography/photography.html">
+            
+                    
+                    科学解释摄影中的一些概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../ray_tracing/resource.html">
+            
+                <a href="../../ray_tracing/resource.html">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../ray_tracing/sampling/resource.html">
+            
+                <a href="../../ray_tracing/sampling/resource.html">
+            
+                    
+                    Sampling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../ray_tracing/denoising/resource.html">
+            
+                <a href="../../ray_tracing/denoising/resource.html">
+            
+                    
+                    Denoising and Filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../ray_tracing/intersection_acceleration/resource.html">
+            
+                <a href="../../ray_tracing/intersection_acceleration/resource.html">
+            
+                    
+                    Intersection Acceleration Structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../ray_tracing/intersection_acceleration/bvh/bvh.html">
+            
+                <a href="../../ray_tracing/intersection_acceleration/bvh/bvh.html">
+            
+                    
+                    BVH and KdTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../volume/resource.html">
+            
+                <a href="../../volume/resource.html">
+            
+                    
+                    Volume Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../volume/volume_rendering/volume_rendering.html">
+            
+                <a href="../../volume/volume_rendering/volume_rendering.html">
+            
+                    
+                    Volume Rendering Basic Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../LI/resource.html">
+            
+                <a href="../../LI/resource.html">
+            
+                    
+                    LI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../LI/li_summary/li.html">
+            
+                <a href="../../LI/li_summary/li.html">
+            
+                    
+                    Real-Time LI Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    GI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../GI_draft/GI_draft.html">
+            
+                <a href="../GI_draft/GI_draft.html">
+            
+                    
+                    GI Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="resource.html">
+            
+                <a href="resource.html">
+            
+                    
+                    SSGI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.2.1" data-path="UE_SSR.html">
+            
+                <a href="UE_SSR.html">
+            
+                    
+                    UE SSR Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="ppr/ppr.html">
+            
+                <a href="ppr/ppr.html">
+            
+                    
+                    Optimized Pixel-Projected Reflections for Planar Reflectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="stochastic_ssr/stochastic_ssr.html">
+            
+                <a href="stochastic_ssr/stochastic_ssr.html">
+            
+                    
+                    Stochastic Screen Space Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="implementation/implementation.html">
+            
+                <a href="implementation/implementation.html">
+            
+                    
+                    SSGI Implementation Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../precompute/resource.html">
+            
+                <a href="../precompute/resource.html">
+            
+                    
+                    Precomputed Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../voxel_based/resource.html">
+            
+                <a href="../voxel_based/resource.html">
+            
+                    
+                    Voxel Based GI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../distance_field/resource.html">
+            
+                <a href="../distance_field/resource.html">
+            
+                    
+                    Distance Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../lumen/resource.html">
+            
+                <a href="../lumen/resource.html">
+            
+                    
+                    Lumen
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../pbr/resource.html">
+            
+                <a href="../../pbr/resource.html">
+            
+                    
+                    PBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../pbr/rtr_pbr/rtr_pbr.html">
+            
+                <a href="../../pbr/rtr_pbr/rtr_pbr.html">
+            
+                    
+                    Real-Time PBR Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../pbr/material/resource.html">
+            
+                <a href="../../pbr/material/resource.html">
+            
+                    
+                    Material
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../pbr/material/reflection_models/reflection_models.html">
+            
+                <a href="../../pbr/material/reflection_models/reflection_models.html">
+            
+                    
+                    Reflection Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../pbr/material/brdf/brdf.html">
+            
+                <a href="../../pbr/material/brdf/brdf.html">
+            
+                    
+                    Deep in Microfacet BRDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../pbr/lighting/resource.html">
+            
+                <a href="../../pbr/lighting/resource.html">
+            
+                    
+                    Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../pbr/solutions/resource.html">
+            
+                <a href="../../pbr/solutions/resource.html">
+            
+                    
+                    Solutions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" >
+            
+                <span>
+            
+                    
+                    Disney
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.2" >
+            
+                <span>
+            
+                    
+                    UE
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.3" >
+            
+                <span>
+            
+                    
+                    Frosbite
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.4" >
+            
+                <span>
+            
+                    
+                    Filament
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.4.1" data-path="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Filament Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../light/resource.html">
+            
+                <a href="../../light/resource.html">
+            
+                    
+                    Light
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../light/punctual/punctual.html">
+            
+                <a href="../../light/punctual/punctual.html">
+            
+                    
+                    Punctual Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    Area Light
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../color/resource.html">
+            
+                <a href="../../color/resource.html">
+            
+                    
+                    Color
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../color/light_color/light_color.html">
+            
+                <a href="../../color/light_color/light_color.html">
+            
+                    
+                    Real-Time Light and Color Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../shadow/resource.html">
+            
+                <a href="../../shadow/resource.html">
+            
+                    
+                    Shadow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../shadow/assignment/assignment.html">
+            
+                <a href="../../shadow/assignment/assignment.html">
+            
+                    
+                    games202 shadow assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Post Process
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../ao/resource.html">
+            
+                <a href="../../ao/resource.html">
+            
+                    
+                    AO
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../aa/resource.html">
+            
+                <a href="../../aa/resource.html">
+            
+                    
+                    AA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.2.1" data-path="../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2.2" data-path="../../aa/taa/taa.html">
+            
+                <a href="../../aa/taa/taa.html">
+            
+                    
+                    TAA Implementation Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2.3" data-path="../../aa/specular_aa/specular_aa.html">
+            
+                <a href="../../aa/specular_aa/specular_aa.html">
+            
+                    
+                    Specular AA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../dlss/resource.html">
+            
+                <a href="../../dlss/resource.html">
+            
+                    
+                    DLSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.3.1" data-path="../../dlss/dlss/dlss.html">
+            
+                <a href="../../dlss/dlss/dlss.html">
+            
+                    
+                    DLSS Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3.2" data-path="../../dlss/dlss_implementation/dlss_implementation.html">
+            
+                <a href="../../dlss/dlss_implementation/dlss_implementation.html">
+            
+                    
+                    DLSS Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../texture/resource.html">
+            
+                <a href="../../texture/resource.html">
+            
+                    
+                    Texture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../texture/multiple_textures/multiple_textures.html">
+            
+                <a href="../../texture/multiple_textures/multiple_textures.html">
+            
+                    
+                    Multiple Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../texture/multiple_textures/virtual_textures.md">
+            
+                <span>
+            
+                    
+                    Virtual Texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    Pipeline
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../pipeline/visibility/resource.html">
+            
+                <a href="../../pipeline/visibility/resource.html">
+            
+                    
+                    Dynamic Visibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                <a href="../../pipeline/visibility/dynamic_visibility_draft/draft.html">
+            
+                    
+                    Dynamic Visibility Draft
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../pipeline/cs/resource.html">
+            
+                <a href="../../pipeline/cs/resource.html">
+            
+                    
+                    Compute Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../../pipeline/gpudriven/resource.html">
+            
+                <a href="../../pipeline/gpudriven/resource.html">
+            
+                    
+                    GPU Driven Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="../../pipeline/gpudriven/oc/oc.html">
+            
+                <a href="../../pipeline/gpudriven/oc/oc.html">
+            
+                    
+                    GPU Driven Occlusion Culling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3.2" data-path="../../pipeline/gpudriven/oc_implementation/oc_implementation.html">
+            
+                <a href="../../pipeline/gpudriven/oc_implementation/oc_implementation.html">
+            
+                    
+                    Occlusion Culling Imlementation Minimal Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../../pipeline/cb/resource.html">
+            
+                <a href="../../pipeline/cb/resource.html">
+            
+                    
+                    Checkerboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    Structure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../structure/framegraph/resource.html">
+            
+                <a href="../../structure/framegraph/resource.html">
+            
+                    
+                    Frame Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../structure/ecs/resource.html">
+            
+                <a href="../../structure/ecs/resource.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    Graphics API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../api/dx/resource.md">
+            
+                <span>
+            
+                    
+                    DirectX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../../api/dx/multi_indirect_draw/resource.html">
+            
+                <a href="../../api/dx/multi_indirect_draw/resource.html">
+            
+                    
+                    Multi-Indirect Draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    Special Effect
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../special_effect/atmosphere/resource.html">
+            
+                <a href="../../special_effect/atmosphere/resource.html">
+            
+                    
+                    Atmosphere
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1.1" data-path="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                <a href="../../special_effect/atmosphere/ue_ray_marching/ue.html">
+            
+                    
+                    A Scalable and Production Ready Sky and Atmosphere Rendering Technique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.2" data-path="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                <a href="../../special_effect/atmosphere/multi_scattering/multi_scattering.html">
+            
+                    
+                    multi-scattering计算的一些思考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../special_effect/cloud/resource.html">
+            
+                <a href="../../special_effect/cloud/resource.html">
+            
+                    
+                    Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../simulation/resource.html">
+            
+                <a href="../../simulation/resource.html">
+            
+                    
+                    Simulation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../simulation/fluid/resource.html">
+            
+                <a href="../../simulation/fluid/resource.html">
+            
+                    
+                    Fluid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../simultation/cloth/resource.md">
+            
+                <span>
+            
+                    
+                    Cloth
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../course/resource.html">
+            
+                <a href="../../course/resource.html">
+            
+                    
+                    Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../course/UC_Davis_Computer_Graphics/UC_Davis_Computer_Graphics.html">
+            
+                <a href="../../course/UC_Davis_Computer_Graphics/UC_Davis_Computer_Graphics.html">
+            
+                    
+                    UC Davis Compute Graphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    UCSD CES 272 Advanced Image Synthesis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.2.1" data-path="../../course/UCSD_CSE_272_part1/part1.html">
+            
+                <a href="../../course/UCSD_CSE_272_part1/part1.html">
+            
+                    
+                    Intro & Simple BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2.2" data-path="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                <a href="../../course/UCSD_CSE_272_part2/part2.html">
+            
+                    
+                    Advanced BSDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    Engine
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../engine/filament/resource.html">
+            
+                <a href="../../engine/filament/resource.html">
+            
+                    
+                    Filament
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1.1" data-path="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../engine/ue/resource.html">
+            
+                <a href="../../engine/ue/resource.html">
+            
+                    
+                    Unreal
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.20.2.1" data-path="UE_SSR.html">
+            
+                <a href="UE_SSR.html">
+            
+                    
+                    UE SSR Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" >
+            
+                <span>
+            
+                    
+                    PBR
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1.1" data-path="../../ray_tracing/intersection_acceleration/bvh/bvh.html">
+            
+                <a href="../../ray_tracing/intersection_acceleration/bvh/bvh.html">
+            
+                    
+                    Primitives and Intersection Acceleration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.1.2" data-path="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                <a href="../../ray_tracing/sampling/montecarlo/montecarlo.html">
+            
+                    
+                    Monte Carlo Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.1.3" data-path="../../pbr/material/reflection_models/reflection_models.html">
+            
+                <a href="../../pbr/material/reflection_models/reflection_models.html">
+            
+                    
+                    Reflection Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" >
+            
+                <span>
+            
+                    
+                    Real-Time Rendering
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.2.1" data-path="../../color/light_color/light_color.html">
+            
+                <a href="../../color/light_color/light_color.html">
+            
+                    
+                    Real-Time Light and Color Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.2" data-path="../../pbr/rtr_pbr/rtr_pbr.html">
+            
+                <a href="../../pbr/rtr_pbr/rtr_pbr.html">
+            
+                    
+                    Real-Time PBR Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.3" data-path="../../ao/ao_summary/ao_summary.html">
+            
+                <a href="../../ao/ao_summary/ao_summary.html">
+            
+                    
+                    Real-Time AO Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.4" data-path="../../shadow/shadow_summary/shadow_summary.html">
+            
+                <a href="../../shadow/shadow_summary/shadow_summary.html">
+            
+                    
+                    Real-Time Shadow Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.5" data-path="../../aa/aa_summary/aa_summary.html">
+            
+                <a href="../../aa/aa_summary/aa_summary.html">
+            
+                    
+                    Real-Time AA Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2.6" data-path="../../LI/li_summary/li.html">
+            
+                <a href="../../LI/li_summary/li.html">
+            
+                    
+                    Real-Time LI Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >UE SSR Implementation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ue-ssr-realization"><b></b>UE SSR Realization</a></li><ul><li><span class="title-icon "></span><a href="#pre-frame-reduction"><b></b>pre frame reduction</a></li><ul><li><span class="title-icon "></span><a href="#&#x7528;&#x6765;&#x751F;&#x6210;mip-map&#x7684;source-texture-&#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth-&#x548C;-color"><b></b>&#x7528;&#x6765;&#x751F;&#x6210;mip map&#x7684;source texture &#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth &#x548C; color</a></li><li><span class="title-icon "></span><a href="#&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;"><b></b>&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;</a></li><li><span class="title-icon "></span><a href="#depth"><b></b>depth</a></li><li><span class="title-icon "></span><a href="#color-and-alpha"><b></b>color and alpha</a></li></ul><li><span class="title-icon "></span><a href="#tile-based-classification"><b></b>tile-based classification</a></li><ul><li><span class="title-icon "></span><a href="#&#x5206;&#x7EC4;"><b></b>&#x5206;&#x7EC4;</a></li><li><span class="title-icon "></span><a href="#classification"><b></b>classification</a></li><li><span class="title-icon "></span><a href="#ray-discard"><b></b>ray discard</a></li></ul><li><span class="title-icon "></span><a href="#deal-with-gbuffer-data"><b></b>deal with gbuffer data</a></li><li><span class="title-icon "></span><a href="#ssr-quality"><b></b>SSR quality</a></li><li><span class="title-icon "></span><a href="#importance-sampling"><b></b>importance sampling</a></li><ul><li><span class="title-icon "></span><a href="#half-vector"><b></b>half vector</a></li><li><span class="title-icon "></span><a href="#incident-light"><b></b>incident light</a></li></ul><li><span class="title-icon "></span><a href="#jitter"><b></b>jitter</a></li><ul><li><span class="title-icon "></span><a href="#interleavedgradientnoise-&#x4F5C;&#x4E3A;stepoffset"><b></b>InterleavedGradientNoise &#x4F5C;&#x4E3A;step_offset</a></li></ul><li><span class="title-icon "></span><a href="#ray-marching"><b></b>ray marching</a></li><ul><li><span class="title-icon "></span><a href="#transform-a-ray-for-screen-space-ray-casting"><b></b>transform a ray for screen space ray casting</a></li><li><span class="title-icon "></span><a href="#ray-marching_1"><b></b>ray marching</a></li></ul><li><span class="title-icon "></span><a href="#hit-result"><b></b>hit result</a></li></ul></ul></div><a href="#ue-ssr-realization" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ue-ssr-realization"><a name="ue-ssr-realization" class="anchor-navigation-ex-anchor" href="#ue-ssr-realization"><i class="fa fa-link" aria-hidden="true"></i></a>UE SSR Realization</h1>
+<ul>
+<li><a href="#pre-frame-reduction">pre frame reduction</a><ul>
+<li><a href="#%E7%94%A8%E6%9D%A5%E7%94%9F%E6%88%90mip-map%E7%9A%84source-texture-%E9%83%BD%E6%98%AF%E4%B8%8A%E4%B8%80%E5%B8%A7%E7%9A%84depth-%E5%92%8C-color">&#x7528;&#x6765;&#x751F;&#x6210;mip map&#x7684;source texture &#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth &#x548C; color</a></li>
+<li><a href="#%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E8%AE%A1%E7%AE%97%E5%A4%A9%E7%A9%BA">&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;</a></li>
+<li><a href="#depth">depth</a></li>
+<li><a href="#color-and-alpha">color and alpha</a></li>
+</ul>
+</li>
+<li><a href="#tile-based-classification">tile-based classification</a><ul>
+<li><a href="#%E5%88%86%E7%BB%84">&#x5206;&#x7EC4;</a></li>
+<li><a href="#classification">classification</a></li>
+<li><a href="#ray-discard">ray discard</a></li>
+</ul>
+</li>
+<li><a href="#deal-with-gbuffer-data">deal with gbuffer data</a></li>
+<li><a href="#ssr-quality">SSR quality</a></li>
+<li><a href="#importance-sampling">importance sampling</a><ul>
+<li><a href="#half-vector">half vector</a></li>
+<li><a href="#incident-light">incident light</a></li>
+</ul>
+</li>
+<li><a href="#jitter">jitter</a><ul>
+<li><a href="#interleavedgradientnoise-%E4%BD%9C%E4%B8%BAstep_offset">InterleavedGradientNoise &#x4F5C;&#x4E3A;step_offset</a></li>
+</ul>
+</li>
+<li><a href="#ray-marching">ray marching</a><ul>
+<li><a href="#transform-a-ray-for-screen-space-ray-casting">transform a ray for screen space ray casting</a></li>
+<li><a href="#ray-marching-1">ray marching</a></li>
+</ul>
+</li>
+<li><a href="#hit-result">hit result</a></li>
+</ul>
+<h2 id="pre-frame-reduction"><a name="pre-frame-reduction" class="anchor-navigation-ex-anchor" href="#pre-frame-reduction"><i class="fa fa-link" aria-hidden="true"></i></a>pre frame reduction</h2>
+<p><strong>SSRTPrevFrameReduction.usf</strong></p>
+<h3 id="&#x7528;&#x6765;&#x751F;&#x6210;mip-map&#x7684;source-texture-&#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth-&#x548C;-color"><a name="&#x7528;&#x6765;&#x751F;&#x6210;mip-map&#x7684;source-texture-&#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth-&#x548C;-color" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6765;&#x751F;&#x6210;mip-map&#x7684;source-texture-&#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth-&#x548C;-color"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6765;&#x751F;&#x6210;mip map&#x7684;source texture &#x90FD;&#x662F;&#x4E0A;&#x4E00;&#x5E27;&#x7684;depth &#x548C; color</h3>
+<ul>
+<li>&#x6839;&#x636E;screen space &#x7684; velocity &#x8BA1;&#x7B97;&#x4E0A;&#x4E00;&#x5E27;&#x7684;uv<pre class="language-"><code class="lang-cpp">  float4 EncodedVelocity <span class="token operator">=</span> GBufferVelocityTexture<span class="token punctuation">.</span><span class="token function">SampleLevel</span><span class="token punctuation">(</span>GBufferVelocityTextureSampler<span class="token punctuation">,</span> SceneBufferUV<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>EncodedVelocity<span class="token punctuation">.</span>x <span class="token operator">&gt;</span> <span class="token number">0.0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+      PrevScreen <span class="token operator">=</span> ThisClip<span class="token punctuation">.</span>xy <span class="token operator">-</span> <span class="token function">DecodeVelocityFromTexture</span><span class="token punctuation">(</span>EncodedVelocity<span class="token punctuation">)</span><span class="token punctuation">.</span>xy<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>mip map level = 5</li>
+<li>&#x7B2C;&#x4E00;&#x4E2A;pass&#x751F;&#x6210;mip map level 0-1
+level 0 &#x5C31;&#x76F4;&#x63A5;&#x662F;pre frame &#x7684;color texture&#x7684;&#x4E0B;&#x4E00;&#x7EA7;&#x91C7;&#x6837;&#x4E86;&#xFF0C;&#x7B49;&#x4E8E;&#x4E0D;&#x518D;&#x6D6A;&#x8D39;&#x4E00;&#x4E2A;level&#x53BB;&#x5B58;&#x539F;&#x59CB;&#x7684;color&#x503C;&#xFF0C;&#x8FD9;&#x96BE;&#x9053;&#x5C31;&#x662F;&#x4F20;&#x8BF4;&#x4E2D;&#x7684;SSR&#x5728;half resolution&#x91CC;&#x505A;&#x3002;
+&#x8FD9;&#x91CC;&#x7684;&#x64CD;&#x4F5C;&#x5F88;&#x9A9A;&#x6C14;&#xFF0C;&#x6BCF;&#x4E2A;pass&#x6700;&#x591A;&#x53EA;&#x751F;&#x6210;3&#x4E2A;level&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;pass&#x53EA;&#x751F;&#x6210;2&#x4E2A;level&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8F93;&#x51FA;&#x6700;&#x540E;2&#x4E2A;color_output&#x3002;</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;pass&#x751F;&#x6210;mip map level 2-4<h3 id="&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;"><a name="&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5224;&#x65AD;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x5929;&#x7A7A;</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> bIsSky <span class="token operator">=</span> WorldDepth <span class="token operator">&gt;</span> SkyDistance <span class="token operator">&amp;&amp;</span> SkyDistance <span class="token operator">&gt;</span> <span class="token number">0.0</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="depth"><a name="depth" class="anchor-navigation-ex-anchor" href="#depth"><i class="fa fa-link" aria-hidden="true"></i></a>depth</h3>
+&#x53D6;&#x4E86;&#x6700;&#x5927;&#xFF0C;&#x8FD9;&#x4E2A;&#x6709;&#x70B9;&#x5947;&#x602A;&#xFF0C;&#x6309;&#x7406;&#x8BF4;&#x4E0D;&#x662F;&#x6700;&#x5C0F;&#x7684;depth&#x4E48;&#xFF1F;
+&#x5E76;&#x4E0D;&#x662F;&#x5728;&#x8FD9;&#x4E2A;pass&#x751F;&#x6210;&#x7684;hi-z,  &#x4F46;&#x662F;&#x4E5F;&#x662F;&#x53D6;&#x4E86;&#x56DB;&#x4E2A;pixel&#x4E2D;&#x7684;&#x6700;&#x5927;depth&#x3002;
+&#x540E;&#x6765;&#x770B;&#x4E86;&#x4E0B;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x505A;SSRT&#x7684;&#x65F6;&#x5019;&#x7528;&#x7684;&#x662F;minimum depth&#xFF0C;&#x8FD9;&#x91CC;&#x8BA1;&#x7B97;&#x6743;&#x91CD;&#x7684;&#x65F6;&#x5019;&#x8FD8;&#x662F;&#x7528;&#x4E86;&#x6700;&#x5927;&#x7684;depth.</li>
+</ul>
+<h3 id="color-and-alpha"><a name="color-and-alpha" class="anchor-navigation-ex-anchor" href="#color-and-alpha"><i class="fa fa-link" aria-hidden="true"></i></a>color and alpha</h3>
+<p>alpha&#x5E94;&#x8BE5;&#x662F;&#x4E3A;&#x534A;&#x900F;&#x660E;&#x7269;&#x4F53;&#x7684;&#x6E32;&#x67D3;&#x65F6;&#x7528;&#x7684;&#x3002;
+&#x5176;&#x5B9E;&#x8FD9;&#x91CC;&#x770B;&#x5B9E;&#x73B0;&#x771F;&#x7684;&#x6709;&#x70B9;&#x8BE1;&#x5F02;&#x7684;&#x3002;</p>
+<ul>
+<li><p>&#x53D6;&#x524D;&#x4E00;&#x5E27;&#x7684;&#x539F;color&#x503C;&#x65F6;
+&#x8FD9;&#x91CC;&#x662F;&#x6839;&#x636E;uv&#x548C;depth&#x53CD;&#x7B97;&#x51FA;&#x4E16;&#x754C;&#x5750;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x5230;&#x4E0A;&#x4E00;&#x7EA7;&#x7684;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7684;&#x5E73;&#x65B9;&#xFF0C;&#x518D;&#x9664;&#x4EE5;radius&#x5E73;&#x65B9;&#x6765;&#x4F5C;&#x4E3A;weight&#x7684;&#xFF0C;&#x8BB2;&#x9053;&#x7406;&#x8FD9;&#x56DB;&#x4E2A;weight&#x52A0;&#x4E00;&#x8D77;&#x4E5F;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;1&#xFF0C;&#x8FD9;&#x6837;&#x76F4;&#x63A5;&#x52A0;&#x6743;&#x4F1A;&#x4E0D;&#x4F1A;&#x6709;&#x95EE;&#x9898;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp">  <span class="token keyword">float</span> WorldDepthToPixelWorldRadius <span class="token operator">=</span> <span class="token function">GetTanHalfFieldOfView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x <span class="token operator">*</span> View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>z <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">;</span> <span class="token comment">//  &#x8FD9;&#x8FB9;&#x7684;100&#x500D;&#x662F;&#x968F;&#x610F;&#x5F04;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x5565;&#x542B;&#x4E49;&#x989D;</span>
+ <span class="token comment">// &#x8FD9;&#x91CC;&#x7684;radius&#x8BA1;&#x7B97;&#x4E5F;&#x662F;&#x6709;&#x70B9;&#x8FF7;&#xFF0C;&#x4E0D;&#x592A;&#x7406;&#x89E3;&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x62FF;world_depth / near_plane_depth&#x4E48;</span>
+  <span class="token keyword">float</span> WorldBluringRadius <span class="token operator">=</span> WorldDepthToPixelWorldRadius <span class="token operator">*</span> WorldDepth<span class="token punctuation">;</span>
+  <span class="token keyword">float</span> InvSquareWorldBluringRadius <span class="token operator">=</span> <span class="token function">rcp</span><span class="token punctuation">(</span>WorldBluringRadius <span class="token operator">*</span> WorldBluringRadius<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  float2 SampleUV <span class="token operator">=</span> PrevFrameUV<span class="token punctuation">;</span> <span class="token comment">// + View.BufferSizeAndInvSize.zw * (float2(i % 2, i / 2) - 0.5);</span>
+                      SampleUV <span class="token operator">=</span> <span class="token function">clamp</span><span class="token punctuation">(</span>SampleUV<span class="token punctuation">,</span> PrevBufferBilinearUVMinMax<span class="token punctuation">.</span>xy<span class="token punctuation">,</span> PrevBufferBilinearUVMinMax<span class="token punctuation">.</span>zw<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">float</span> PrevDeviceZ <span class="token operator">=</span> PrevSceneDepth<span class="token punctuation">.</span><span class="token function">SampleLevel</span><span class="token punctuation">(</span>PrevSceneDepthSampler<span class="token punctuation">,</span> SampleUV<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>r<span class="token punctuation">;</span>
+
+  float3 SampleWorldPosition <span class="token operator">=</span> <span class="token function">ComputeTranslatedWorldPosition</span><span class="token punctuation">(</span>PrevScreen<span class="token punctuation">.</span>xy<span class="token punctuation">,</span> <span class="token function">ConvertFromDeviceZ</span><span class="token punctuation">(</span>PrevDeviceZ<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* bIsPrevFrame = */</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">float</span> SampleDistSquare <span class="token operator">=</span> <span class="token function">length2</span><span class="token punctuation">(</span>RefWorldPosition <span class="token operator">-</span> SampleWorldPosition<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">float</span> SampleWeight <span class="token operator">=</span> <span class="token function">saturate</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> SampleDistSquare <span class="token operator">*</span> InvSquareWorldBluringRadius<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  PrevColor <span class="token operator">=</span> <span class="token function">float4</span><span class="token punctuation">(</span>PrevSceneColor<span class="token punctuation">.</span><span class="token function">SampleLevel</span><span class="token punctuation">(</span>PrevSceneColorSampler<span class="token punctuation">,</span> SampleUV<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rgb <span class="token operator">*</span> SampleWeight<span class="token punctuation">,</span> SampleWeight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>mip map level 0-4
+&#x8FD9;&#x91CC;&#x7684;&#x6743;&#x91CD;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#x8DDF;&#x4E0A;&#x9762;&#x8FD8;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x76F4;&#x63A5;&#x7528;depth&#x76F8;&#x51CF;&#x7136;&#x540E;&#x9664;&#x4EE5;radius&#x5E73;&#x65B9;&#xFF0C;&#x6700;&#x540E;&#x8FD8;&#x9664;&#x4EE5;&#x4E00;&#x4E2A;4&#xFF0C;&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x9A9A;&#x64CD;&#x4F5C;&#x989D;&#xFF0C;&#x770B;&#x4E0D;&#x61C2;&#xFF0C;&#x96BE;&#x9053;&#x662F;&#x56E0;&#x4E3A;&#x4E0D;&#x597D;&#x518D;&#x53CD;&#x8BA1;&#x7B97;world position&#x4E86;&#xFF0C;&#x603B;&#x4E4B;&#x611F;&#x89C9;&#x6709;&#x70B9;&#x602A;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp">  UNROLL
+  <span class="token keyword">for</span> <span class="token punctuation">(</span>uint x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+      UNROLL
+      <span class="token keyword">for</span> <span class="token punctuation">(</span>uint y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> y <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">;</span> y<span class="token operator">++</span><span class="token punctuation">)</span>
+      <span class="token punctuation">{</span>
+          <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+          <span class="token keyword">float</span> SampleWeight <span class="token operator">=</span> <span class="token number">1.0</span><span class="token punctuation">;</span>
+          <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">if</span> <span class="token expression">DIM_LEAK_FREE</span></span>
+          <span class="token punctuation">{</span>
+              <span class="token keyword">float</span> NeighborDepth <span class="token operator">=</span> SharedFurthestDepth<span class="token punctuation">[</span>LDSIndex<span class="token punctuation">]</span><span class="token punctuation">;</span>
+              <span class="token keyword">float</span> SampleDist <span class="token operator">=</span> <span class="token punctuation">(</span>FurthestDepth <span class="token operator">-</span> NeighborDepth<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+              SampleWeight <span class="token operator">=</span> <span class="token function">saturate</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> <span class="token punctuation">(</span>SampleDist <span class="token operator">*</span> SampleDist<span class="token punctuation">)</span> <span class="token operator">*</span> InvSquareWorldBluringRadius<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+
+          ReducedColor <span class="token operator">+=</span> Color <span class="token operator">*</span> SampleWeight<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  ReducedColor <span class="token operator">*=</span> <span class="token function">rcp</span><span class="token punctuation">(</span><span class="token number">4.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="tile-based-classification"><a name="tile-based-classification" class="anchor-navigation-ex-anchor" href="#tile-based-classification"><i class="fa fa-link" aria-hidden="true"></i></a>tile-based classification</h2>
+<p>&#x641C;&#x4E86;&#x4E0B;&#x611F;&#x89C9;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x662F;&#x4E0D;&#x662F;&#x5E9F;&#x5F03;&#x4E86;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x4EBA;&#x8C03;&#x7528;&#xFF0C;&#x770B;&#x903B;&#x8F91;&#x611F;&#x89C9;&#x4E5F;&#x6709;&#x70B9;&#x8BE1;&#x5F02;&#x3002;
+<strong>SSRTTileClassification.usf</strong> &amp; <strong>SSRTTileClassificationBuffer.ush</strong></p>
+<h3 id="&#x5206;&#x7EC4;"><a name="&#x5206;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x7EC4;</h3>
+<p>8x8&#x4E2A;&#x50CF;&#x7D20;&#x4E3A;&#x4E00;&#x4E2A;tile&#xFF0C;&#x6BCF;&#x4E2A;tile&#x5206;&#x6210;8&#x4E2A;&#x65B9;&#x5411;&#x53BB;&#x8BA1;&#x7B97;&#x3002;&#x53D6;8x8&#x4E2D;&#x7684;(4,4)&#x4F4D;&#x7F6E;&#x4F5C;&#x4E3A;&#x4EE3;&#x8868;&#x8BA1;&#x7B97;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token comment">// GROUP_TILE_SIZE 8</span>
+<span class="token comment">// SSRT_DIRECTIONALITY_DIVISION 8</span>
+<span class="token punctuation">[</span><span class="token function">numthreads</span><span class="token punctuation">(</span>GROUP_TILE_SIZE<span class="token punctuation">,</span> GROUP_TILE_SIZE<span class="token punctuation">,</span> SSRT_DIRECTIONALITY_DIVISION<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+uint2 TileCoord <span class="token operator">=</span> DispatchThreadId<span class="token punctuation">;</span>
+    uint DirectionId <span class="token operator">=</span> GroupThreadId<span class="token punctuation">.</span>z<span class="token punctuation">;</span>
+
+float2 ViewportUV <span class="token operator">=</span> <span class="token punctuation">(</span>TileCoord <span class="token operator">*</span> GROUP_TILE_SIZE <span class="token operator">+</span> GROUP_TILE_SIZE <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">*</span> View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>zw<span class="token punctuation">;</span>
+
+<span class="token keyword">float</span> DirectionAndle <span class="token operator">=</span> <span class="token keyword">float</span><span class="token punctuation">(</span>DirectionId<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> PI <span class="token operator">*</span> <span class="token function">rcp</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">(</span>SSRT_DIRECTIONALITY_DIVISION<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="classification"><a name="classification" class="anchor-navigation-ex-anchor" href="#classification"><i class="fa fa-link" aria-hidden="true"></i></a>classification</h3>
+<p>&#x8BB2;&#x9053;&#x7406;&#x8FD9;&#x8FB9;&#x5E94;&#x8BE5;&#x7528;furthest depth.</p>
+<ul>
+<li><p>&#x8BA1;&#x7B97;screen space &#x4E0B;&#x7684; start, direction, end</p>
+<pre class="language-"><code class="lang-cpp">    float2 RayStartScreen <span class="token operator">=</span> <span class="token function">ViewportUVToScreenPos</span><span class="token punctuation">(</span>ViewportUV<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  float2 RayStepScreen <span class="token operator">=</span> <span class="token function">normalize</span><span class="token punctuation">(</span>View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>zw <span class="token operator">*</span> RayPixelDirection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  RayStepScreen <span class="token operator">*=</span> <span class="token function">GetStepScreenFactorToClipAtScreenEdge</span><span class="token punctuation">(</span>RayStartScreen<span class="token punctuation">,</span> RayStepScreen<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  float2 RayEndViewportUV <span class="token operator">=</span> <span class="token function">ScreenPosToViewportUV</span><span class="token punctuation">(</span>RayStartScreen <span class="token operator">+</span> RayStepScreen<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  float2 RayStartPixel <span class="token operator">=</span> ViewportUV <span class="token operator">*</span> View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>xy<span class="token punctuation">;</span>
+  float2 RayEndPixel <span class="token operator">=</span> RayEndViewportUV <span class="token operator">*</span> View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>xy<span class="token punctuation">;</span>
+  <span class="token keyword">float</span> MaxSampleDistance <span class="token operator">=</span> <span class="token function">length</span><span class="token punctuation">(</span>RayStartPixel <span class="token operator">-</span> RayEndPixel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li>ray marching
+&#x6BCF;&#x4E2A;&#x65B9;&#x5411;&#x8D70;&#x4E94;&#x6B65;&#xFF0C;&#x6B65;&#x5B50;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#xFF0C;&#x6BCF;&#x4E00;&#x6B65;&#x8BA1;&#x7B97;&#x5468;&#x56F4;&#x7684;&#x6700;&#x5C0F;depth&#xFF0C;&#x9664;&#x4EE5;delta_width, &#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x6700;&#x5927;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x5B58;&#x50A8;&#x8FD9;&#x4E2A;&#x6700;&#x5927;&#x7684;&#x89D2;&#x5EA6;&#x548C;tile&#x4EE3;&#x8868;pixel&#x7684;&#x6700;&#x5C0F;depth.
+ &#x8FD9;&#x4E2A;&#x6709;&#x5565;&#x53C2;&#x8003;&#x4EF7;&#x503C;&#x4E48;&#xFF0C;&#x601D;&#x8DEF;&#x611F;&#x89C9;&#x6709;&#x70B9;&#x602A;&#x5440;~</li>
+</ul>
+<h3 id="ray-discard"><a name="ray-discard" class="anchor-navigation-ex-anchor" href="#ray-discard"><i class="fa fa-link" aria-hidden="true"></i></a>ray discard</h3>
+<p>&#x6839;&#x636E;&#x4E4B;&#x524D;&#x8BA1;&#x7B97;&#x7684;&#x6700;&#x5927;&#x89D2;&#x5EA6;&#x53BB;&#x5254;&#x9664;&#x4E00;&#x4E9B;ray marching direction.</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">TestRayEarlyReturn</span><span class="token punctuation">(</span>FSSRTTileInfos TileInfos<span class="token punctuation">,</span> FSSRTRay Ray<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    float2 RayStepPixel <span class="token operator">=</span> Ray<span class="token punctuation">.</span>RayStepScreen<span class="token punctuation">.</span>xy <span class="token operator">*</span> View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>xy<span class="token punctuation">;</span>
+
+    <span class="token keyword">float</span> DeltaU <span class="token operator">=</span> <span class="token function">length</span><span class="token punctuation">(</span>RayStepPixel<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">0.5</span> <span class="token operator">*</span> View<span class="token punctuation">.</span>ViewSizeAndInvSize<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">float</span> DeltaZ <span class="token operator">=</span> Ray<span class="token punctuation">.</span>RayStepScreen<span class="token punctuation">.</span>z<span class="token punctuation">;</span>
+    <span class="token keyword">float</span> RayTheta <span class="token operator">=</span> <span class="token function">atan2</span><span class="token punctuation">(</span>DeltaU<span class="token punctuation">,</span> <span class="token operator">-</span>DeltaZ<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    uint DirectionId <span class="token operator">=</span><span class="token function">ComputeRayDirectionId</span><span class="token punctuation">(</span>Ray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> bEarlyReturn <span class="token operator">=</span> RayTheta <span class="token operator">&gt;</span> TileInfos<span class="token punctuation">.</span>Directionality<span class="token punctuation">[</span>DirectionId<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> bEarlyReturn<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="deal-with-gbuffer-data"><a name="deal-with-gbuffer-data" class="anchor-navigation-ex-anchor" href="#deal-with-gbuffer-data"><i class="fa fa-link" aria-hidden="true"></i></a>deal with gbuffer data</h2>
+<ul>
+<li>roughness
+ &#x8FD9;&#x4E00;&#x6B65;&#x662F;&#x4E3A;&#x4E86;&#x5565;&#xFF1F;&#xFF1F;<pre class="language-"><code class="lang-cpp">  <span class="token keyword">float</span> <span class="token function">GetRoughnessFade</span><span class="token punctuation">(</span>in <span class="token keyword">float</span> Roughness<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+      <span class="token comment">// mask SSR to reduce noise and for better performance, roughness of 0 should have SSR, at MaxRoughness we fade to 0</span>
+      <span class="token keyword">return</span> <span class="token function">min</span><span class="token punctuation">(</span>Roughness <span class="token operator">*</span> SSRParams<span class="token punctuation">.</span>y <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="ssr-quality"><a name="ssr-quality" class="anchor-navigation-ex-anchor" href="#ssr-quality"><i class="fa fa-link" aria-hidden="true"></i></a>SSR quality</h2>
+<p>different quality &#x51B3;&#x5B9A; </p>
+<ul>
+<li>num of steps</li>
+<li>num of rays</li>
+<li>b_glossy ??
+&#x53EA; trace &#x4E00;&#x6761;&#x5149;&#x7EBF;&#x7684;&#x65F6;&#x5019; &#x662F;&#x5426;&#x7528; GGX importance sampling</li>
+</ul>
+<pre class="language-"><code class="lang-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">if</span> <span class="token expression">SSR_QUALITY <span class="token operator">==</span> <span class="token number">1</span></span></span>
+    uint NumSteps <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+    uint NumRays <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> bGlossy <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">elif</span> <span class="token expression">SSR_QUALITY <span class="token operator">==</span> <span class="token number">2</span></span></span>
+    uint NumSteps <span class="token operator">=</span> <span class="token number">16</span><span class="token punctuation">;</span>
+    uint NumRays <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">if</span> <span class="token expression">SSR_OUTPUT_FOR_DENOISER</span></span>
+        <span class="token keyword">bool</span> bGlossy <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">else</span></span>
+        <span class="token keyword">bool</span> bGlossy <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">elif</span> <span class="token expression">SSR_QUALITY <span class="token operator">==</span> <span class="token number">3</span></span></span>
+    uint NumSteps <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+    uint NumRays <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> bGlossy <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">else</span> <span class="token comment">// SSR_QUALITY == 4</span></span>
+    uint NumSteps <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+    uint NumRays <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> bGlossy <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+</code></pre>
+<h2 id="importance-sampling"><a name="importance-sampling" class="anchor-navigation-ex-anchor" href="#importance-sampling"><i class="fa fa-link" aria-hidden="true"></i></a>importance sampling</h2>
+<h3 id="half-vector"><a name="half-vector" class="anchor-navigation-ex-anchor" href="#half-vector"><i class="fa fa-link" aria-hidden="true"></i></a>half vector</h3>
+<ul>
+<li>GGX of visible normal</li>
+<li>GGX
+```cpp
+float3x3 TangentBasis = GetTangentBasis( N );
+float3 TangentV = mul( TangentBasis, V );</li>
+</ul>
+<p>float2 E = Hammersley16( i, NumRays, Random );</p>
+<p>float3 H = mul( ImportanceSampleVisibleGGX(UniformSampleDisk(E), roughness<em>roughness, TangentV ).xyz, TangentBasis );
+float3 L = 2 </em> dot( V, H ) * H - V;</p>
+<pre class="language-"><code>```cpp
+// [ Heitz 2018, &quot;Sampling the GGX Distribution of Visible Normals&quot; ]
+// http://jcgt.org/published/0007/04/01/
+// PDF = G_SmithV * VoH * D / NoV / (4 * VoH)
+// PDF = G_SmithV * D / (4 * NoV)
+float4 ImportanceSampleVisibleGGX( float2 DiskE, float a2, float3 V )
+{
+    // NOTE: See below for anisotropic version that avoids this sqrt
+    float a = sqrt(a2);
+
+    // stretch
+    float3 Vh = normalize( float3( a * V.xy, V.z ) );
+
+    // Orthonormal basis
+    // Tangent0 is orthogonal to N.
+    #if 1 // Stable tangent basis based on V.
+        float3 Tangent0 = (V.z &lt; 0.9999) ? normalize( cross( float3(0, 0, 1), V ) ) : float3(1, 0, 0);
+        float3 Tangent1 = normalize(cross( Vh, Tangent0 ));
+    #else
+        float3 Tangent0 = (Vh.z &lt; 0.9999) ? normalize( cross( float3(0, 0, 1), Vh ) ) : float3(1, 0, 0);
+        float3 Tangent1 = cross( Vh, Tangent0 );
+    #endif
+
+    float2 p = DiskE;
+    float s = 0.5 + 0.5 * Vh.z;
+    p.y = (1 - s) * sqrt( 1 - p.x * p.x ) + s * p.y;
+
+    float3 H;
+    H  = p.x * Tangent0;
+    H += p.y * Tangent1;
+    H += sqrt( saturate( 1 - dot( p, p ) ) ) * Vh;
+
+    // unstretch
+    H = normalize( float3( a * H.xy, max(0.0, H.z) ) );
+
+    return float4(H, VisibleGGXPDF(V, H, a2));
+}
+
+float2 Hammersley16( uint Index, uint NumSamples, uint2 Random )
+{
+    float E1 = frac( (float)Index / NumSamples + float( Random.x ) * (1.0 / 65536.0) );
+    float E2 = float( ( reversebits(Index) &gt;&gt; 16 ) ^ Random.y ) * (1.0 / 65536.0);
+    return float2( E1, E2 );
+}
+
+float2 UniformSampleDisk( float2 E )
+{
+    float Theta = 2 * PI * E.x;
+    float Radius = sqrt( E.y );
+    return Radius * float2( cos( Theta ), sin( Theta ) );
+}
+
+// [ Duff et al. 2017, &quot;Building an Orthonormal Basis, Revisited&quot; ]
+// Discontinuity at TangentZ.z == 0
+
+float3x3 GetTangentBasis( float3 TangentZ )
+{
+    const float Sign = TangentZ.z &gt;= 0 ? 1 : -1;
+    const float a = -rcp( Sign + TangentZ.z );
+    const float b = TangentZ.x * TangentZ.y * a;
+
+    float3 TangentX = { 1 + Sign * a * Pow2( TangentZ.x ), Sign * b, -Sign * TangentZ.x };
+    float3 TangentY = { b,  Sign + a * Pow2( TangentZ.y ), -TangentZ.y };
+
+    return float3x3( TangentX, TangentY, TangentZ );
+}
+</code></pre><h3 id="incident-light"><a name="incident-light" class="anchor-navigation-ex-anchor" href="#incident-light"><i class="fa fa-link" aria-hidden="true"></i></a>incident light</h3>
+<ul>
+<li>cos hemisphere</li>
+<li>uniform concentric disk</li>
+</ul>
+<h2 id="jitter"><a name="jitter" class="anchor-navigation-ex-anchor" href="#jitter"><i class="fa fa-link" aria-hidden="true"></i></a>jitter</h2>
+<h3 id="interleavedgradientnoise-&#x4F5C;&#x4E3A;stepoffset"><a name="interleavedgradientnoise-&#x4F5C;&#x4E3A;stepoffset" class="anchor-navigation-ex-anchor" href="#interleavedgradientnoise-&#x4F5C;&#x4E3A;stepoffset"><i class="fa fa-link" aria-hidden="true"></i></a>InterleavedGradientNoise &#x4F5C;&#x4E3A;step_offset</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token comment">// high frequency dither pattern appearing almost random without banding steps</span>
+<span class="token comment">//note: from &quot;NEXT GENERATION POST PROCESSING IN CALL OF DUTY: ADVANCED WARFARE&quot;</span>
+<span class="token comment">//      http://advances.realtimerendering.com/s2014/index.html</span>
+<span class="token comment">// Epic extended by FrameId</span>
+<span class="token comment">// ~7 ALU operations (2 frac, 3 mad, 2 *)</span>
+<span class="token comment">// @return 0..1</span>
+<span class="token keyword">float</span> <span class="token function">InterleavedGradientNoise</span><span class="token punctuation">(</span> float2 uv<span class="token punctuation">,</span> <span class="token keyword">float</span> FrameId <span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// magic values are found by experimentation</span>
+    uv <span class="token operator">+=</span> FrameId <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token function">float2</span><span class="token punctuation">(</span><span class="token number">47</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.695f</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> float3 magic <span class="token operator">=</span> <span class="token function">float3</span><span class="token punctuation">(</span> <span class="token number">0.06711056f</span><span class="token punctuation">,</span> <span class="token number">0.00583715f</span><span class="token punctuation">,</span> <span class="token number">52.9829189f</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">frac</span><span class="token punctuation">(</span>magic<span class="token punctuation">.</span>z <span class="token operator">*</span> <span class="token function">frac</span><span class="token punctuation">(</span><span class="token function">dot</span><span class="token punctuation">(</span>uv<span class="token punctuation">,</span> magic<span class="token punctuation">.</span>xy<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="ray-marching"><a name="ray-marching" class="anchor-navigation-ex-anchor" href="#ray-marching"><i class="fa fa-link" aria-hidden="true"></i></a>ray marching</h2>
+<h3 id="transform-a-ray-for-screen-space-ray-casting"><a name="transform-a-ray-for-screen-space-ray-casting" class="anchor-navigation-ex-anchor" href="#transform-a-ray-for-screen-space-ray-casting"><i class="fa fa-link" aria-hidden="true"></i></a>transform a ray for screen space ray casting</h3>
+<ul>
+<li>&#x8BA1;&#x7B97;&#x4E00;&#x6761;ray&#x7684;world space&#x7684; start &#x548C; end point</li>
+<li>&#x5C06;world space &#x4E0B;&#x7684; start &#x548C; end &#x8F6C;&#x6362;&#x5230; screen space --&gt; RayStartScreen </li>
+<li>&#x8BA1;&#x7B97;screen space&#x4E0B;&#x7684;trace direction --&gt; RayStepScreen</li>
+<li><p>&#x8BA1;&#x7B97; CompareTolerance &#x662F;&#x505A;&#x5565;&#x7684; &#xFF1F;&#xFF1F;&#xFF1F;</p>
+<pre class="language-"><code class="lang-cpp">FSSRTRay <span class="token function">InitScreenSpaceRayFromWorldSpace</span><span class="token punctuation">(</span>
+  float3 RayOriginTranslatedWorld<span class="token punctuation">,</span>
+  float3 WorldRayDirection<span class="token punctuation">,</span>
+  <span class="token keyword">float</span> WorldTMax<span class="token punctuation">,</span>
+  <span class="token keyword">float</span> SceneDepth<span class="token punctuation">,</span>
+  <span class="token keyword">float</span> SlopeCompareToleranceScale<span class="token punctuation">,</span>
+  <span class="token keyword">const</span> <span class="token keyword">bool</span> bExtendRayToScreenBorder<span class="token punctuation">,</span>
+  out <span class="token keyword">bool</span> bRayWasClipped<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  WorldTMax <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>WorldTMax<span class="token punctuation">,</span> <span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  float3 ViewRayDirection <span class="token operator">=</span> <span class="token function">mul</span><span class="token punctuation">(</span><span class="token function">float4</span><span class="token punctuation">(</span>WorldRayDirection<span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> View<span class="token punctuation">.</span>TranslatedWorldToView<span class="token punctuation">)</span><span class="token punctuation">.</span>xyz<span class="token punctuation">;</span>
+
+  <span class="token keyword">float</span> RayEndWorldDistance <span class="token operator">=</span> ViewRayDirection<span class="token punctuation">.</span>z <span class="token operator">&lt;</span> <span class="token number">0.0</span> <span class="token operator">?</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">0.95</span> <span class="token operator">*</span> SceneDepth <span class="token operator">/</span> ViewRayDirection<span class="token punctuation">.</span>z<span class="token punctuation">,</span> WorldTMax<span class="token punctuation">)</span> <span class="token operator">:</span> WorldTMax<span class="token punctuation">;</span>
+
+  float3 RayEndWorld <span class="token operator">=</span> RayOriginTranslatedWorld <span class="token operator">+</span> WorldRayDirection <span class="token operator">*</span> RayEndWorldDistance<span class="token punctuation">;</span>
+
+  float4 RayStartClip <span class="token operator">=</span> <span class="token function">mul</span><span class="token punctuation">(</span><span class="token function">float4</span><span class="token punctuation">(</span>RayOriginTranslatedWorld<span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> View<span class="token punctuation">.</span>TranslatedWorldToClip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  float4 RayEndClip <span class="token operator">=</span> <span class="token function">mul</span><span class="token punctuation">(</span><span class="token function">float4</span><span class="token punctuation">(</span>RayEndWorld<span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> View<span class="token punctuation">.</span>TranslatedWorldToClip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  float3 RayStartScreen <span class="token operator">=</span> RayStartClip<span class="token punctuation">.</span>xyz <span class="token operator">*</span> <span class="token function">rcp</span><span class="token punctuation">(</span>RayStartClip<span class="token punctuation">.</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  float3 RayEndScreen <span class="token operator">=</span> RayEndClip<span class="token punctuation">.</span>xyz <span class="token operator">*</span> <span class="token function">rcp</span><span class="token punctuation">(</span>RayEndClip<span class="token punctuation">.</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  float4 RayDepthClip <span class="token operator">=</span> RayStartClip <span class="token operator">+</span> <span class="token function">mul</span><span class="token punctuation">(</span><span class="token function">float4</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> RayEndWorldDistance<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> View<span class="token punctuation">.</span>ViewToClip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  float3 RayDepthScreen <span class="token operator">=</span> RayDepthClip<span class="token punctuation">.</span>xyz <span class="token operator">*</span> <span class="token function">rcp</span><span class="token punctuation">(</span>RayDepthClip<span class="token punctuation">.</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  FSSRTRay Ray<span class="token punctuation">;</span>
+  Ray<span class="token punctuation">.</span>RayStartScreen <span class="token operator">=</span> RayStartScreen<span class="token punctuation">;</span>
+  Ray<span class="token punctuation">.</span>RayStepScreen <span class="token operator">=</span> RayEndScreen <span class="token operator">-</span> RayStartScreen<span class="token punctuation">;</span>
+
+  <span class="token keyword">float</span> ClipToScreenFactor <span class="token operator">=</span> <span class="token function">GetStepScreenFactorToClipAtScreenEdge</span><span class="token punctuation">(</span>RayStartScreen<span class="token punctuation">.</span>xy<span class="token punctuation">,</span> Ray<span class="token punctuation">.</span>RayStepScreen<span class="token punctuation">.</span>xy<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>bExtendRayToScreenBorder<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+      bRayWasClipped <span class="token operator">=</span> ClipToScreenFactor <span class="token operator">&lt;</span> <span class="token number">1.0</span> <span class="token operator">||</span> RayEndWorldDistance <span class="token operator">!=</span> WorldTMax<span class="token punctuation">;</span>
+      ClipToScreenFactor <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>ClipToScreenFactor<span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">else</span>
+  <span class="token punctuation">{</span>
+      bRayWasClipped <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  Ray<span class="token punctuation">.</span>RayStepScreen <span class="token operator">*=</span> ClipToScreenFactor<span class="token punctuation">;</span>
+  Ray<span class="token punctuation">.</span>CompareTolerance <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">abs</span><span class="token punctuation">(</span>Ray<span class="token punctuation">.</span>RayStepScreen<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>RayStartScreen<span class="token punctuation">.</span>z <span class="token operator">-</span> RayDepthScreen<span class="token punctuation">.</span>z<span class="token punctuation">)</span> <span class="token operator">*</span> SlopeCompareToleranceScale<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> Ray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="ray-marching_1"><a name="ray-marching_1" class="anchor-navigation-ex-anchor" href="#ray-marching_1"><i class="fa fa-link" aria-hidden="true"></i></a>ray marching</h3>
+</li>
+<li>mip map level<pre class="language-"><code class="lang-cpp">Level <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token number">8.0</span> <span class="token operator">/</span> NumSteps<span class="token punctuation">)</span> <span class="token operator">*</span> Roughness<span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li>&#x56DB;&#x4E2A;step&#x4F5C;&#x4E3A;&#x4E00;&#x628A;batch&#x4E00;&#x8D77;&#x7B97;</li>
+<li>&#x8BA1;&#x7B97;hit&#x7684;&#x65F6;&#x5019;&#x7528;&#x4E8C;&#x5206;&#x6CD5;&#xFF0C;&#x8FD8;&#x7528;&#x4E86;&#x524D;&#x540E;&#x4E24;&#x6B65;&#x63D2;&#x503C;</li>
+</ul>
+<h2 id="hit-result"><a name="hit-result" class="anchor-navigation-ex-anchor" href="#hit-result"><i class="fa fa-link" aria-hidden="true"></i></a>hit result</h2>
+<ul>
+<li>&#x6240;&#x6709;rays&#x7684;&#x7ED3;&#x679C;&#x7D2F;&#x52A0;&#x6C42;&#x5E73;&#x5747;</li>
+<li>&#x5269;&#x4E0B;&#x7684;&#x662F;&#x5728;&#x505A;&#x5565;&#x5466;<pre class="language-"><code class="lang-cpp">OutColor<span class="token punctuation">.</span>rgb <span class="token operator">*=</span> <span class="token function">rcp</span><span class="token punctuation">(</span> <span class="token number">1</span> <span class="token operator">-</span> <span class="token function">Luminance</span><span class="token punctuation">(</span>OutColor<span class="token punctuation">.</span>rgb<span class="token punctuation">)</span> <span class="token punctuation">)</span>
+OutColor <span class="token operator">*=</span> RoughnessFade<span class="token punctuation">;</span>
+OutColor <span class="token operator">*=</span> SSRParams<span class="token punctuation">.</span>r<span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tingxia.top 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-10-05 11:24:53
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="resource.html" class="navigation navigation-prev " aria-label="Previous page: SSGI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ppr/ppr.html" class="navigation navigation-next " aria-label="Next page: Optimized Pixel-Projected Reflections for Planar Reflectors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"UE SSR Implementation","level":"1.7.2.1","depth":3,"next":{"title":"Optimized Pixel-Projected Reflections for Planar Reflectors","level":"1.7.2.2","depth":3,"path":"GI/ssgi/ppr/ppr.md","ref":"GI/ssgi/ppr/ppr.md","articles":[]},"previous":{"title":"SSGI","level":"1.7.2","depth":2,"path":"GI/ssgi/resource.md","ref":"GI/ssgi/resource.md","articles":[{"title":"UE SSR Implementation","level":"1.7.2.1","depth":3,"path":"GI/ssgi/UE_SSR.md","ref":"GI/ssgi/UE_SSR.md","articles":[]},{"title":"Optimized Pixel-Projected Reflections for Planar Reflectors","level":"1.7.2.2","depth":3,"path":"GI/ssgi/ppr/ppr.md","ref":"GI/ssgi/ppr/ppr.md","articles":[]},{"title":"Stochastic Screen Space Ray Tracing","level":"1.7.2.3","depth":3,"path":"GI/ssgi/stochastic_ssr/stochastic_ssr.md","ref":"GI/ssgi/stochastic_ssr/stochastic_ssr.md","articles":[]},{"title":"SSGI Implementation Summary","level":"1.7.2.4","depth":3,"path":"GI/ssgi/implementation/implementation.md","ref":"GI/ssgi/implementation/implementation.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"GI/ssgi/UE_SSR.md","mtime":"2022-10-05T03:24:53.242Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-05T03:58:28.682Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

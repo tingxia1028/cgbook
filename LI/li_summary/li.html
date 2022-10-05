@@ -385,6 +385,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../GI/ssgi/UE_SSR.html">
+            
+                <a href="../../GI/ssgi/UE_SSR.html">
+            
+                    
+                    UE SSR Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../GI/ssgi/ppr/ppr.html">
+            
+                <a href="../../GI/ssgi/ppr/ppr.html">
+            
+                    
+                    Optimized Pixel-Projected Reflections for Planar Reflectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../../GI/ssgi/stochastic_ssr/stochastic_ssr.html">
+            
+                <a href="../../GI/ssgi/stochastic_ssr/stochastic_ssr.html">
+            
+                    
+                    Stochastic Screen Space Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../../GI/ssgi/implementation/implementation.html">
+            
+                <a href="../../GI/ssgi/implementation/implementation.html">
+            
+                    
+                    SSGI Implementation Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.7.3" data-path="../../GI/precompute/resource.html">
@@ -527,25 +585,6 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.8.3.1" data-path="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
-            
-                <a href="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
-            
-                    
-                    Filament Basic Physical Lighting
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
         <li class="chapter " data-level="1.8.4" data-path="../../pbr/solutions/resource.html">
@@ -611,6 +650,25 @@
                 </span>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.4.1" data-path="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                <a href="../../pbr/lighting/filament_base_lighting/filament_base_lighting.html">
+            
+                    
+                    Filament Basic Physical Lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -819,7 +877,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.2" data-path="../../aa/specular_aa/specular_aa.html">
+        <li class="chapter " data-level="1.12.2.2" data-path="../../aa/taa/taa.html">
+            
+                <a href="../../aa/taa/taa.html">
+            
+                    
+                    TAA Implementation Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2.3" data-path="../../aa/specular_aa/specular_aa.html">
             
                 <a href="../../aa/specular_aa/specular_aa.html">
             
@@ -1011,6 +1082,19 @@
             
                     
                     GPU Driven Occlusion Culling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3.2" data-path="../../pipeline/gpudriven/oc_implementation/oc_implementation.html">
+            
+                <a href="../../pipeline/gpudriven/oc_implementation/oc_implementation.html">
+            
+                    
+                    Occlusion Culling Imlementation Minimal Set
             
                 </a>
             
@@ -1393,6 +1477,25 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.2.1" data-path="../../GI/ssgi/UE_SSR.html">
+            
+                <a href="../../GI/ssgi/UE_SSR.html">
+            
+                    
+                    UE SSR Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -1694,7 +1797,7 @@
 <li>In order to form a more realistic lighting model, we need to integrate the BRDF response over the full hemisphere of incident directions on the surface.</li>
 <li>In offline rendering, usually averaging multiple samples(rays)</li>
 <li>In real-time rendering, we will need to approximate the light emitter, the BRDF, or both.
-<a href="1653721071522.png" data-lightbox="629ec11e-1ef2-4cda-b2dc-950832f1f401" data-title="Alt text"><img src="1653721071522.png" alt="Alt text"></a></li>
+<a href="1653721071522.png" data-lightbox="fb2bf6bb-751b-4211-b97e-780204075a9b" data-title="Alt text"><img src="1653721071522.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="area-light-sources"><a name="area-light-sources" class="anchor-navigation-ex-anchor" href="#area-light-sources"><i class="fa fa-link" aria-hidden="true"></i></a>Area Light Sources</h2>
 <ul>
@@ -1704,53 +1807,53 @@ uniformly emitting spherical area lights and arbitrary glossy BRDFs<h4 id="mittr
 </li>
 <li>Mittring, Martin, &#x201C;The Technology Behind the &#x2018;Unreal Engine 4 Elemental Demo&#x2019;,&#x201D; Game Developers Conference, Mar. 2012.</li>
 <li>Approximate the convolution between the light source and the material BRDF by &#xFB01;nding <strong>a new BRDF lobe</strong>, <strong>of a di&#xFB00;erent roughness</strong>, that has a corresponding <strong>cone</strong> whose solid angle is equal to the sum of the <strong>light lobe</strong> angle and the <strong>material</strong> one.
-<a href="1653987221203.png" data-lightbox="717e5f41-1c3f-403e-8856-e3d1fff4ce92" data-title="Alt text"><img src="1653987221203.png" alt="Alt text"></a>
-<a href="1653987209170.png" data-lightbox="8a9a465c-7eb3-44dd-b808-3f372f143a60" data-title="Alt text"><img src="1653987209170.png" alt="Alt text"></a></li>
+<a href="1653987221203.png" data-lightbox="30f3833c-bf3e-4b3b-917a-2075a7a26cda" data-title="Alt text"><img src="1653987221203.png" alt="Alt text"></a>
+<a href="1653987209170.png" data-lightbox="0e4e1d3a-296b-4afd-96f2-2dbacb864236" data-title="Alt text"><img src="1653987209170.png" alt="Alt text"></a></li>
 <li>roughness clamp cause artifacts</li>
 </ul>
 <h4 id="representative-point-technique"><a name="representative-point-technique" class="anchor-navigation-ex-anchor" href="#representative-point-technique"><i class="fa fa-link" aria-hidden="true"></i></a>Representative Point Technique</h4>
 <ul>
 <li>Represent the area illumination&#x2019;s source with a light direction that changes based on the point being shaded</li>
 <li>These approaches resemble the idea of <strong>importance sampling</strong> in Monte Carlo integration, where we numerically compute the value of a de&#xFB01;nite integral by averaging samples over the integration domain. In order to do so more e&#xFB03;ciently, we can try to prioritize samples that <strong>have a large contribution</strong> to the overall average.
-<a href="1654482546491.png" data-lightbox="b72e7f20-af1e-4d1a-82ae-472136575206" data-title="Alt text"><img src="1654482546491.png" alt="Alt text"></a></li>
+<a href="1654482546491.png" data-lightbox="f2477fec-1df9-4b48-a837-fbee6aa05206" data-title="Alt text"><img src="1654482546491.png" alt="Alt text"></a></li>
 <li>mean value theorem of definite integrals
-<a href="1654482733100.png" data-lightbox="bc4e493b-4d0b-4230-876c-854ad37f2267" data-title="Alt text"><img src="1654482733100.png" alt="Alt text"></a></li>
+<a href="1654482733100.png" data-lightbox="652857ef-f16f-4f84-8f10-3b68be98dd92" data-title="Alt text"><img src="1654482733100.png" alt="Alt text"></a></li>
 </ul>
 <h3 id="general-light-shapes"><a name="general-light-shapes" class="anchor-navigation-ex-anchor" href="#general-light-shapes"><i class="fa fa-link" aria-hidden="true"></i></a>General Light Shapes</h3>
 <h4 id="tube-lights-capsules"><a name="tube-lights-capsules" class="anchor-navigation-ex-anchor" href="#tube-lights-capsules"><i class="fa fa-link" aria-hidden="true"></i></a>tube lights (capsules)</h4>
-<p><a href="1654483484018.png" data-lightbox="5720c314-d70b-4aa0-b69a-6126d056823e" data-title="Alt text"><img src="1654483484018.png" alt="Alt text"></a></p>
+<p><a href="1654483484018.png" data-lightbox="e0fa2a80-f609-46bf-bd79-eebcc844ea4e" data-title="Alt text"><img src="1654483484018.png" alt="Alt text"></a></p>
 <h4 id="card-lights"><a name="card-lights" class="anchor-navigation-ex-anchor" href="#card-lights"><i class="fa fa-link" aria-hidden="true"></i></a>card lights</h4>
 <ul>
 <li>Drobot, Michal, &#x201C;Physically Based Area Lights,&#x201D; in Wolfgang Engel, ed., GPU Pro 5, CRC Press, pp. 67&#x2013;100, 2014. Cited on p. 116, 388</li>
 <li>representative point solution
-<a href="1654484042656.png" data-lightbox="ae1c285f-93ea-4ac9-9279-c9e337747247" data-title="Alt text"><img src="1654484042656.png" alt="Alt text"></a>
-<a href="1654484168855.png" data-lightbox="fd0b86ee-690b-4ba3-9028-33bdadcff9f3" data-title="Alt text"><img src="1654484168855.png" alt="Alt text"></a></li>
+<a href="1654484042656.png" data-lightbox="1d3f811b-6254-4ccc-a178-a640dbb06a3b" data-title="Alt text"><img src="1654484042656.png" alt="Alt text"></a>
+<a href="1654484168855.png" data-lightbox="48aa216c-e7e2-4ef8-9492-3c503e258e00" data-title="Alt text"><img src="1654484168855.png" alt="Alt text"></a></li>
 </ul>
 <h4 id="planar-polygonal-area-lights"><a name="planar-polygonal-area-lights" class="anchor-navigation-ex-anchor" href="#planar-polygonal-area-lights"><i class="fa fa-link" aria-hidden="true"></i></a>planar polygonal area lights</h4>
 <ul>
 <li>Heitz, Eric, Jonathan Dupuy, Stephen Hill, and David Neubelt, &#x201C;Real-Time Polygonal-Light Shading with Linearly Transformed Cosines,&#x201D; ACM Transactions on Graphics (SIGGRAPH 2016), vol. 35, no. 4, pp. 41:1&#x2013;41:8, July 2016. Cited on p. 390</li>
 <li>key idea of LTC
  &#x628A;&#x4E0D;&#x540C;&#x7684;BRDF&#x548C;simple cosine BRDF&#x505A;&#x8F6C;&#x6362;
-<a href="1654484548944.png" data-lightbox="e4c37de5-7106-4c41-b6f8-e4500c166ad5" data-title="Alt text"><img src="1654484548944.png" alt="Alt text"></a>
-<a href="1654484629286.png" data-lightbox="76ad9ff4-69a2-4df3-b168-e2f8fcb64382" data-title="Alt text"><img src="1654484629286.png" alt="Alt text"></a></li>
+<a href="1654484548944.png" data-lightbox="5dc53f1f-681f-4408-9b6f-b1b4e51e0344" data-title="Alt text"><img src="1654484548944.png" alt="Alt text"></a>
+<a href="1654484629286.png" data-lightbox="c1d346c2-66f7-442f-b109-385bebe00797" data-title="Alt text"><img src="1654484629286.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="environment-lighting"><a name="environment-lighting" class="anchor-navigation-ex-anchor" href="#environment-lighting"><i class="fa fa-link" aria-hidden="true"></i></a>Environment Lighting</h2>
 <p>Methods to integrate radiance de&#xFB01;ned by a varying function over all the possible incoming directions.</p>
 <h3 id="ambient-light"><a name="ambient-light" class="anchor-navigation-ex-anchor" href="#ambient-light"><i class="fa fa-link" aria-hidden="true"></i></a>Ambient Light</h3>
 <ul>
 <li>the radiance does not vary with direction and has a constant value
-<a href="1654485422319.png" data-lightbox="f2fc7b58-3219-4897-97c9-444e5dae1aca" data-title="Alt text"><img src="1654485422319.png" alt="Alt text"></a></li>
+<a href="1654485422319.png" data-lightbox="f5f08115-2876-46a7-8bbe-62d17f173257" data-title="Alt text"><img src="1654485422319.png" alt="Alt text"></a></li>
 </ul>
 <h2 id="spherical-and-hemispherical-functions"><a name="spherical-and-hemispherical-functions" class="anchor-navigation-ex-anchor" href="#spherical-and-hemispherical-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Spherical and Hemispherical Functions</h2>
 <ul>
 <li>spherical bases</li>
 <li>properties in a given basis
-<a href="1654485869776.png" data-lightbox="a9d3cf33-6bac-457b-82b0-c371d6d5670c" data-title="Alt text"><img src="1654485869776.png" alt="Alt text"></a><h3 id="simple-tabulated-forms"><a name="simple-tabulated-forms" class="anchor-navigation-ex-anchor" href="#simple-tabulated-forms"><i class="fa fa-link" aria-hidden="true"></i></a>Simple Tabulated Forms</h3>
+<a href="1654485869776.png" data-lightbox="d7e4611a-579d-47a5-810f-28f2ec41e414" data-title="Alt text"><img src="1654485869776.png" alt="Alt text"></a><h3 id="simple-tabulated-forms"><a name="simple-tabulated-forms" class="anchor-navigation-ex-anchor" href="#simple-tabulated-forms"><i class="fa fa-link" aria-hidden="true"></i></a>Simple Tabulated Forms</h3>
 </li>
 <li>pick several directions and store a value for each</li>
 <li>encode many di&#xFB00;erent spherical functions with arbitrarily low error by adding more samples as needed</li>
 <li>samples to choose
-<a href="1654486053708.png" data-lightbox="a5b0cf82-5f51-4281-96e8-c2269aa38fd4" data-title="Alt text"><img src="1654486053708.png" alt="Alt text"></a></li>
+<a href="1654486053708.png" data-lightbox="79cf16db-9baa-47c4-805d-02d3644f6534" data-title="Alt text"><img src="1654486053708.png" alt="Alt text"></a></li>
 </ul>
 <h3 id="spherical-bases"><a name="spherical-bases" class="anchor-navigation-ex-anchor" href="#spherical-bases"><i class="fa fa-link" aria-hidden="true"></i></a>Spherical Bases</h3>
 <h4 id="basic-ideas"><a name="basic-ideas" class="anchor-navigation-ex-anchor" href="#basic-ideas"><i class="fa fa-link" aria-hidden="true"></i></a>Basic Ideas</h4>
@@ -1758,12 +1861,12 @@ uniformly emitting spherical area lights and arbitrary glossy BRDFs<h4 id="mittr
 <li>ways to <strong>project</strong> (encode) functions onto <strong>representations</strong> that use a &#xFB01;xed number of values (<strong>coe&#xFB03;cients</strong>)</li>
 <li>basic example<ul>
 <li>one kind of most minimal possible base --- constant
- <a href="1655892463248.png" data-lightbox="0ff31279-aeaf-48d2-922d-ae2977f840e5" data-title="Alt text"><img src="1655892463248.png" alt="Alt text"></a>
-  <a href="1655892686623.png" data-lightbox="3cec3a62-9209-4f91-8426-c8c7ca11bd2d" data-title="Alt text"><img src="1655892686623.png" alt="Alt text"></a></li>
+ <a href="1655892463248.png" data-lightbox="51a1cbbd-3ddb-4a6d-8cc9-e46e287982b9" data-title="Alt text"><img src="1655892463248.png" alt="Alt text"></a>
+  <a href="1655892686623.png" data-lightbox="7adf5ef2-9df4-430a-84e9-c003e6337aca" data-title="Alt text"><img src="1655892686623.png" alt="Alt text"></a></li>
 <li>two coefficients
-<a href="1655892506514.png" data-lightbox="89175eee-8bc7-4747-9e26-3c4c4e4d06f4" data-title="Alt text"><img src="1655892506514.png" alt="Alt text"></a> </li>
+<a href="1655892506514.png" data-lightbox="4fe269f2-fafe-42b7-b359-d651746226e7" data-title="Alt text"><img src="1655892506514.png" alt="Alt text"></a> </li>
 <li>a more complex example
- <a href="1655892738304.png" data-lightbox="6f40c603-86eb-422f-b650-18d5c72c6ffb" data-title="Alt text"><img src="1655892738304.png" alt="Alt text"></a></li>
+ <a href="1655892738304.png" data-lightbox="c34748bd-1394-42c7-9e3b-4cd1f6b291e4" data-title="Alt text"><img src="1655892738304.png" alt="Alt text"></a></li>
 </ul>
 </li>
 </ul>
@@ -1777,25 +1880,25 @@ makes the function only one argument</li>
 <h4 id="spherical-gaussians"><a name="spherical-gaussians" class="anchor-navigation-ex-anchor" href="#spherical-gaussians"><i class="fa fa-link" aria-hidden="true"></i></a>Spherical Gaussians</h4>
 <ul>
 <li>definition
-<a href="1655893831123.png" data-lightbox="030e6746-f041-42d3-9594-36811a95538f" data-title="Alt text"><img src="1655893831123.png" alt="Alt text"></a></li>
+<a href="1655893831123.png" data-lightbox="4a56796d-b6f9-459e-b0a2-ca1672d8a804" data-title="Alt text"><img src="1655893831123.png" alt="Alt text"></a></li>
 <li>A proper basis is obtained only when we choose <strong>a &#xFB01;xed set of lobes</strong> (directions and spreads), so that the entire domain is well covered, and perform projection by &#xFB01;tting <strong>only the weights</strong> w_k.</li>
 <li>The optimization problem is formulated as ordinary <strong>least-squares optimization</strong>.</li>
 <li>production and integration
-<a href="1659756472813.png" data-lightbox="763ca02c-7d74-4b7a-9050-737559d93927" data-title="Alt text"><img src="1659756472813.png" alt="Alt text"></a></li>
+<a href="1659756472813.png" data-lightbox="28d236ee-2984-4079-a5e2-197931552159" data-title="Alt text"><img src="1659756472813.png" alt="Alt text"></a></li>
 <li>anisotropic spherical guassians
-<a href="1659756578037.png" data-lightbox="44a2a4dd-a31b-4952-b73e-303d95557491" data-title="Alt text"><img src="1659756578037.png" alt="Alt text"></a>
-<a href="1659756599300.png" data-lightbox="065d36bb-2a8b-4d3b-a18d-b9737e9f0c50" data-title="Alt text"><img src="1659756599300.png" alt="Alt text"></a></li>
+<a href="1659756578037.png" data-lightbox="09b0dd65-85d3-4cb0-b961-4a70998cd213" data-title="Alt text"><img src="1659756578037.png" alt="Alt text"></a>
+<a href="1659756599300.png" data-lightbox="d26d2d4b-b498-4ad4-b49a-060d4a37a799" data-title="Alt text"><img src="1659756599300.png" alt="Alt text"></a></li>
 </ul>
 <h4 id="spherical-harmonics"><a name="spherical-harmonics" class="anchor-navigation-ex-anchor" href="#spherical-harmonics"><i class="fa fa-link" aria-hidden="true"></i></a>Spherical Harmonics</h4>
 <ul>
 <li>Spherical harmonics (SH) are an <strong>orthogonal</strong> set of basis functions over the sphere.</li>
 <li>orthogonal means that the <strong>inner product</strong> of any two di&#xFB00;erent functions from the set is zero
- <a href="1659757010421.png" data-lightbox="85626b5d-80f2-4bc1-91c8-65b8a2b424e9" data-title="Alt text"><img src="1659757010421.png" alt="Alt text"></a></li>
+ <a href="1659757010421.png" data-lightbox="284fbb5e-1d7e-4f1e-a912-54058fa64fcd" data-title="Alt text"><img src="1659757010421.png" alt="Alt text"></a></li>
 <li>projection
-<a href="1659757030934.png" data-lightbox="1165a67d-2860-404b-80c9-9e29682a6a63" data-title="Alt text"><img src="1659757030934.png" alt="Alt text"></a></li>
+<a href="1659757030934.png" data-lightbox="7a901db6-ca98-497b-ae64-32dc6b9ed5dd" data-title="Alt text"><img src="1659757030934.png" alt="Alt text"></a></li>
 <li>A function space has <strong>an in&#xFB01;nite number of dimensions</strong>, so a &#xFB01;nite number of basis functions can never perfectly represent it.</li>
 <li>frequency bands
-<a href="1659757559685.png" data-lightbox="0070c697-47f8-4f2b-8658-d2117bf3bbb0" data-title="Alt text"><img src="1659757559685.png" alt="Alt text"></a></li>
+<a href="1659757559685.png" data-lightbox="ee51cf3f-3f7d-488a-bd12-b665413dbf12" data-title="Alt text"><img src="1659757559685.png" alt="Alt text"></a></li>
 <li>integral
  In this spectral domain, the <strong>integral</strong> of the product of two functions is equal to the <strong>dot product</strong> <strong>of the coe&#xFB03;cient</strong>s of the function projections.</li>
 </ul>
@@ -1821,11 +1924,11 @@ makes the function only one argument</li>
 </li>
 </ul>
 <h4 id="radiosity-normal-mappinghalf-life-2-basis"><a name="radiosity-normal-mappinghalf-life-2-basis" class="anchor-navigation-ex-anchor" href="#radiosity-normal-mappinghalf-life-2-basis"><i class="fa fa-link" aria-hidden="true"></i></a>Radiosity Normal Mapping/Half-Life 2 Basis</h4>
-<p><a href="1659929827844.png" data-lightbox="3a4ac0e0-7abb-4021-b5fe-7336d6c1222f" data-title="Alt text"><img src="1659929827844.png" alt="Alt text"></a></p>
+<p><a href="1659929827844.png" data-lightbox="336f8e91-8022-4e63-b583-01682f899d15" data-title="Alt text"><img src="1659929827844.png" alt="Alt text"></a></p>
 <ul>
 <li>represents hemispherical functions on surfaces by sampling three directions in tangent space</li>
 <li>projection and reconstruction
-<a href="1659929911672.png" data-lightbox="3816af5f-9fc5-430e-af28-6e307b015d5b" data-title="Alt text"><img src="1659929911672.png" alt="Alt text"></a></li>
+<a href="1659929911672.png" data-lightbox="4670abfc-1945-4d21-87b0-0ca4f0a6eefb" data-title="Alt text"><img src="1659929911672.png" alt="Alt text"></a></li>
 </ul>
 <h4 id="hemispherical-harmonicshshh-basis"><a name="hemispherical-harmonicshshh-basis" class="anchor-navigation-ex-anchor" href="#hemispherical-harmonicshshh-basis"><i class="fa fa-link" aria-hidden="true"></i></a>Hemispherical Harmonics(HSH)/H-Basis</h4>
 <ul>
@@ -1847,15 +1950,15 @@ makes the function only one argument</li>
 <ul>
 <li>assume that the BRDF is a perfect mirror</li>
 <li>calculation
-<a href="1659931342060.png" data-lightbox="bbcf54c6-b8bc-4ffb-a540-2ba3d0eeee84" data-title="Alt text"><img src="1659931342060.png" alt="Alt text"></a>
-<a href="1659931371618.png" data-lightbox="21cb1314-d5c0-4691-b073-161231de8f66" data-title="Alt text"><img src="1659931371618.png" alt="Alt text"></a></li>
+<a href="1659931342060.png" data-lightbox="5d62218c-9733-4eb8-a892-f4899288b985" data-title="Alt text"><img src="1659931342060.png" alt="Alt text"></a>
+<a href="1659931371618.png" data-lightbox="866c2c9c-1d36-43ac-b26d-5680f17de909" data-title="Alt text"><img src="1659931371618.png" alt="Alt text"></a></li>
 </ul>
 <h3 id="mapping"><a name="mapping" class="anchor-navigation-ex-anchor" href="#mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Mapping</h3>
 <h4 id="latitude-longitude-mapping"><a name="latitude-longitude-mapping" class="anchor-navigation-ex-anchor" href="#latitude-longitude-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Latitude-Longitude Mapping</h4>
 <ul>
 <li>spherical coordinates ( &#x3C1; , &#x3C6; ). Here &#x3C6; , equivalent to the longitude, varies from 0 to 2&#x3C0; radians, and &#x3C1; , the latitude, varies from 0 to &#x3C0; radians.
-<a href="1659931517101.png" data-lightbox="d8a502cb-d205-4e2f-b736-4efaac5cc401" data-title="Alt text"><img src="1659931517101.png" alt="Alt text"></a>
-<a href="1659931682111.png" data-lightbox="435d5a9d-2ea4-418d-befd-50755cbde1b5" data-title="Alt text"><img src="1659931682111.png" alt="Alt text"></a></li>
+<a href="1659931517101.png" data-lightbox="070b0885-fac5-47cc-adfa-dd2673ebedea" data-title="Alt text"><img src="1659931517101.png" alt="Alt text"></a>
+<a href="1659931682111.png" data-lightbox="5a347dec-1f49-4291-80b6-d6bb93b3065f" data-title="Alt text"><img src="1659931682111.png" alt="Alt text"></a></li>
 <li>problem<ul>
 <li>the density of information is nowhere near uniform</li>
 <li>the areas near the poles receive many more texels than those near the equator</li>
@@ -1865,20 +1968,20 @@ makes the function only one argument</li>
 </li>
 </ul>
 <h4 id="sphere-mapping"><a name="sphere-mapping" class="anchor-navigation-ex-anchor" href="#sphere-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Sphere Mapping</h4>
-<p><a href="1659932167494.png" data-lightbox="be977221-67c1-4f26-b1ca-5046c335adff" data-title="Alt text"><img src="1659932167494.png" alt="Alt text"></a>
-<a href="1659948779437.png" data-lightbox="b144480e-d281-44f4-83b8-671e457c622f" data-title="Alt text"><img src="1659948779437.png" alt="Alt text"></a></p>
+<p><a href="1659932167494.png" data-lightbox="e969b32f-bc78-4701-8ca6-cca0266f000c" data-title="Alt text"><img src="1659932167494.png" alt="Alt text"></a>
+<a href="1659948779437.png" data-lightbox="5d4d4025-638e-4d4e-89c9-132855e6e0b9" data-title="Alt text"><img src="1659948779437.png" alt="Alt text"></a></p>
 <ul>
 <li>in sphere map&apos;s space, view vector is always (0, 0, 1)</li>
 <li>maps each re&#xFB02;ected view direction to a point on the two-dimensional image of this sphere</li>
 <li>derive the surface normal(view space) on the sphere, which will then yield the (u, v) parameters needed to access the sphere map
-<a href="1659949204642.png" data-lightbox="6a984e0f-89d7-45c5-afa7-ddec73b619e8" data-title="Alt text"><img src="1659949204642.png" alt="Alt text"></a>
-<a href="1660028129888.png" data-lightbox="d900fe20-1a7b-4b33-b3be-1815bcb893c6" data-title="Alt text"><img src="1660028129888.png" alt="Alt text"></a></li>
+<a href="1659949204642.png" data-lightbox="c3cf7b48-9b19-4f92-9ab0-5a621b2618ee" data-title="Alt text"><img src="1659949204642.png" alt="Alt text"></a>
+<a href="1660028129888.png" data-lightbox="4b7eba0c-20b2-4dc0-98ae-570f2f1cf316" data-title="Alt text"><img src="1660028129888.png" alt="Alt text"></a></li>
 <li>much simpler to compute</li>
 <li>one singularity located around the edge of the image circle</li>
 <li>valid for only a single view direction</li>
 </ul>
 <h4 id="cube-mapping"><a name="cube-mapping" class="anchor-navigation-ex-anchor" href="#cube-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Cube Mapping</h4>
-<p><a href="1660028959475.png" data-lightbox="4abc862c-ebed-47b2-85df-e62669993b67" data-title="Alt text"><img src="1660028959475.png" alt="Alt text"></a></p>
+<p><a href="1660028959475.png" data-lightbox="6a6a4455-47eb-40b1-9dbc-7b38abdf068f" data-title="Alt text"><img src="1660028959475.png" alt="Alt text"></a></p>
 <ul>
 <li>created by projecting the environment onto the sides of a cube positioned with its center at the camera&#x2019;s location</li>
 <li>its projection is implemented directly in hardware on modern GPUs</li>
@@ -1889,16 +1992,16 @@ makes the function only one argument</li>
 <h4 id="other-projections"><a name="other-projections" class="anchor-navigation-ex-anchor" href="#other-projections"><i class="fa fa-link" aria-hidden="true"></i></a>Other Projections</h4>
 <ul>
 <li>dual paraboloid environment mapping
-<a href="1660029319578.png" data-lightbox="e1097dc2-29a2-48da-9bee-cf89a895c36d" data-title="Alt text"><img src="1660029319578.png" alt="Alt text"></a><ul>
+<a href="1660029319578.png" data-lightbox="4130311d-462d-4abd-8f20-7a588ac45db8" data-title="Alt text"><img src="1660029319578.png" alt="Alt text"></a><ul>
 <li>more uniform texel sampling of the environment compared to the sphere map and the cube map</li>
 <li>take care for proper sampling and interpolation at the seam between the two projections which is expensive</li>
 </ul>
 </li>
 <li>Octahedral(&#x516B;&#x9762;&#x4F53;) mapping
- <a href="1660029417269.png" data-lightbox="078f36af-0c9b-48b8-adc8-1aef4c618d58" data-title="Alt text"><img src="1660029417269.png" alt="Alt text"></a><ul>
+ <a href="1660029417269.png" data-lightbox="501aa500-7f5e-44bf-90f0-efa6772917b2" data-title="Alt text"><img src="1660029417269.png" alt="Alt text"></a><ul>
 <li>projection
 Given a re&#xFB02;ection direction r
-<a href="1660029541362.png" data-lightbox="d51a2bd6-cb89-4d16-928e-3e442fa02061" data-title="Alt text"><img src="1660029541362.png" alt="Alt text"></a><ul>
+<a href="1660029541362.png" data-lightbox="e56c03ca-2a29-4b3b-b40b-fd2c3ac2faed" data-title="Alt text"><img src="1660029541362.png" alt="Alt text"></a><ul>
 <li>no &#xFB01;ltering issues as the seams of the parameterization correspond with the edges of the texture used</li>
 </ul>
 </li>
@@ -1913,35 +2016,35 @@ Given a re&#xFB02;ection direction r
 <h3 id="ideas"><a name="ideas" class="anchor-navigation-ex-anchor" href="#ideas"><i class="fa fa-link" aria-hidden="true"></i></a>Ideas</h3>
 <ul>
 <li>blurring the environment map texture to simulate surface roughness
- <a href="1660030241998.png" data-lightbox="285aceb0-bc35-4a5a-9d58-e39b52de769f" data-title="Alt text"><img src="1660030241998.png" alt="Alt text"></a></li>
+ <a href="1660030241998.png" data-lightbox="5e16145f-57c2-4e8d-8e60-680f3ac3052e" data-title="Alt text"><img src="1660030241998.png" alt="Alt text"></a></li>
 <li>consider the shape a BRDF function
  at least &#xFB01;ve dimensions of input values (roughness and two polar angles each for the view and normal directions) that control the resulting lobe shape
- <a href="1660030358953.png" data-lightbox="d6f0dd03-ab87-42e6-ab17-00a17ba30e37" data-title="Alt text"><img src="1660030358953.png" alt="Alt text"></a></li>
+ <a href="1660030358953.png" data-lightbox="f366ad96-95ea-42d6-b5b7-b501fa6459a4" data-title="Alt text"><img src="1660030358953.png" alt="Alt text"></a></li>
 <li>indexed with the <strong>re&#xFB02;ected view vector</strong> which contain <strong>radiance</strong> values</li>
 </ul>
 <h3 id="pre&#xFB01;ltered-environment-mapping"><a name="pre&#xFB01;ltered-environment-mapping" class="anchor-navigation-ex-anchor" href="#pre&#xFB01;ltered-environment-mapping"><i class="fa fa-link" aria-hidden="true"></i></a>Pre&#xFB01;ltered Environment Mapping</h3>
-<p><a href="1660182010918.png" data-lightbox="598567b1-a9e8-4267-99de-10b7a70414ed" data-title="Alt text"><img src="1660182010918.png" alt="Alt text"></a>
+<p><a href="1660182010918.png" data-lightbox="54646d99-673c-4c05-9083-90ed74ec65c6" data-title="Alt text"><img src="1660182010918.png" alt="Alt text"></a>
 To accommodate for di&#xFB00;erent roughness levels, it is common to employ the <strong>mipmaps</strong> of an environment cube map. Each level is used to store <strong>blurred versions of the incoming radiance</strong>, with higher mip levels storing rougher surfaces.</p>
 <h4 id="convolving-the-environment-map"><a name="convolving-the-environment-map" class="anchor-navigation-ex-anchor" href="#convolving-the-environment-map"><i class="fa fa-link" aria-hidden="true"></i></a>Convolving the Environment Map</h4>
-<p><a href="1660183068379.png" data-lightbox="a158afdf-cd0d-4c2c-bad7-16474025735e" data-title="Alt text"><img src="1660183068379.png" alt="Alt text"></a></p>
+<p><a href="1660183068379.png" data-lightbox="22f2f91b-4aa6-4dd3-a4f8-79cceab0b9df" data-title="Alt text"><img src="1660183068379.png" alt="Alt text"></a></p>
 <h4 id="split-integral-approximation-for-microfacet-brdfs"><a name="split-integral-approximation-for-microfacet-brdfs" class="anchor-navigation-ex-anchor" href="#split-integral-approximation-for-microfacet-brdfs"><i class="fa fa-link" aria-hidden="true"></i></a>Split-Integral Approximation for Microfacet BRDFs</h4>
 <ul>
 <li>many techniques have been developed to <strong>lessen the BRDF approximation issues</strong> inherent in cube map <strong>pre&#xFB01;ltering</strong></li>
 <li>split-integral approximation
-<a href="1660183387491.png" data-lightbox="4e3a0680-08eb-464f-8b62-010c0dc8a943" data-title="Alt text"><img src="1660183387491.png" alt="Alt text"></a><ul>
+<a href="1660183387491.png" data-lightbox="8d929bd6-e8b3-4693-b9c2-2352b36323ba" data-title="Alt text"><img src="1660183387491.png" alt="Alt text"></a><ul>
 <li>the &#xFB01;rst depends only on surface <strong>roughness</strong> and <strong>the re&#xFB02;ection vector,</strong> with the assumption of a radial <strong>symmetric D lobe</strong><ul>
 <li>in practice, we can use any lobe, imposing n = v = r</li>
 </ul>
 </li>
 <li>the second integral is the <strong>hemispherical-directional</strong> re&#xFB02;ectance of the specular term
-<a href="1660183663331.png" data-lightbox="809ef3c4-8bba-4a01-9321-644e29cf7ba0" data-title="Alt text"><img src="1660183663331.png" alt="Alt text"></a><ul>
+<a href="1660183663331.png" data-lightbox="a9534d58-9768-460b-a94e-ca7fa044ead8" data-title="Alt text"><img src="1660183663331.png" alt="Alt text"></a><ul>
 <li>depends on the elevation angle &#x3B8;, roughness &#x3B1;, and Fresnel term F (F0)</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<p><a href="1660184368867.png" data-lightbox="6f75ec55-2f9b-404a-b487-bba73830754c" data-title="Alt text"><img src="1660184368867.png" alt="Alt text"></a></p>
+<p><a href="1660184368867.png" data-lightbox="96fc0571-f7d8-4031-9881-5af856ee0cc6" data-title="Alt text"><img src="1660184368867.png" alt="Alt text"></a></p>
 <h4 id="asymmetric-and-anisotropic-lobes"><a name="asymmetric-and-anisotropic-lobes" class="anchor-navigation-ex-anchor" href="#asymmetric-and-anisotropic-lobes"><i class="fa fa-link" aria-hidden="true"></i></a>Asymmetric and Anisotropic Lobes</h4>
 <ul>
 <li>uses a single sample, but tries to &#xFB01;nd the best lobe to approximate the BRDF in the current view direction instead of relying on a constant correction factor<ul>
@@ -1957,9 +2060,9 @@ To accommodate for di&#xFB00;erent roughness levels, it is common to employ the 
 <ul>
 <li>indexed with just the surface <strong>normal</strong> n, and they contain <strong>irradiance</strong> values</li>
 <li>for each texel in the map, we need to sum up the <strong>cosine-weighted contributions</strong> of all illumination a&#xFB00;ecting a surface facing in a given normal direction
-<a href="1660189106158.png" data-lightbox="cc8d8372-4829-4ad9-b4a8-fa16828cfb25" data-title="Alt text"><img src="1660189106158.png" alt="Alt text"></a></li>
+<a href="1660189106158.png" data-lightbox="5e440e0a-24e7-4a2d-b8ca-e454a09ec2fc" data-title="Alt text"><img src="1660189106158.png" alt="Alt text"></a></li>
 <li>stored and accessed separately from the specular environment or re&#xFB02;ection map, usually in a view-independent representation such as a cube map
-<a href="1660189318888.png" data-lightbox="a1ffb88e-06ce-45c1-a2fd-a080000e942c" data-title="Alt text"><img src="1660189318888.png" alt="Alt text"></a></li>
+<a href="1660189318888.png" data-lightbox="0f39ec63-4b53-485c-bae2-e5f85702ff9c" data-title="Alt text"><img src="1660189318888.png" alt="Alt text"></a></li>
 </ul>
 <h3 id="spherical-harmonics-irradiance"><a name="spherical-harmonics-irradiance" class="anchor-navigation-ex-anchor" href="#spherical-harmonics-irradiance"><i class="fa fa-link" aria-hidden="true"></i></a>Spherical Harmonics Irradiance</h3>
 <ul>
@@ -1967,7 +2070,7 @@ To accommodate for di&#xFB00;erent roughness levels, it is common to employ the 
 <li>convolving radiance with a cosine lobe results in the removal of all the high-frequency components from the environment map</li>
 <li>an accuracy of about 1% with just the &#xFB01;rst nine SH coe&#xFB03;cients (each coe&#xFB03;cient is an RGB vector, so we need to store 27 &#xFB02;oating point numbers)</li>
 <li>SH projection
-<a href="1660190487277.png" data-lightbox="02bd4e39-f4c0-4bde-89fb-874efc727492" data-title="Alt text"><img src="1660190487277.png" alt="Alt text"></a></li>
+<a href="1660190487277.png" data-lightbox="afdfaf3d-0e4c-4b8d-95f2-f89dd6e0d4e7" data-title="Alt text"><img src="1660190487277.png" alt="Alt text"></a></li>
 <li>dynamic light sources can be added into an existing SH irradiance environment map</li>
 </ul>
 <h3 id="other-representations"><a name="other-representations" class="anchor-navigation-ex-anchor" href="#other-representations"><i class="fa fa-link" aria-hidden="true"></i></a>Other Representations</h3>
@@ -1976,12 +2079,12 @@ To accommodate for di&#xFB00;erent roughness levels, it is common to employ the 
 <li>hemisphere lighting model<ul>
 <li>the upper hemisphere is assumed to emit a uniform radiance L_sky</li>
 <li>the lower hemisphere is assumed to emit a uniform radiance L_ground
-<a href="1660268371125.png" data-lightbox="c7490480-985b-4070-b2e0-46b26802391b" data-title="Alt text"><img src="1660268371125.png" alt="Alt text"></a>
+<a href="1660268371125.png" data-lightbox="e8a86ab4-c790-4a6b-982e-8a9d657c04f0" data-title="Alt text"><img src="1660268371125.png" alt="Alt text"></a>
 where &#x3B8; is the angle between the surface normal and the sky hemisphere axis</li>
 </ul>
 </li>
 <li>a faster approximation
- <a href="1660268714444.png" data-lightbox="51c48598-3f83-4289-befe-e561002b1f6d" data-title="Alt text"><img src="1660268714444.png" alt="Alt text"></a></li>
+ <a href="1660268714444.png" data-lightbox="69649ce5-2837-4bd6-a095-d0d5e15e79ac" data-title="Alt text"><img src="1660268714444.png" alt="Alt text"></a></li>
 <li>wavelet representations</li>
 </ul>
 <h2 id="sources-of-error"><a name="sources-of-error" class="anchor-navigation-ex-anchor" href="#sources-of-error"><i class="fa fa-link" aria-hidden="true"></i></a>Sources of Error</h2>
@@ -2037,7 +2140,7 @@ where &#x3B8; is the angle between the surface normal and the sky hemisphere axi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Real-Time LI Summary","level":"1.6.1","depth":2,"next":{"title":"GI","level":"1.7","depth":1,"path":"GI/resource.md","ref":"GI/resource.md","articles":[{"title":"GI Draft","level":"1.7.1","depth":2,"path":"GI/GI_draft/GI_draft.md","ref":"GI/GI_draft/GI_draft.md","articles":[]},{"title":"SSGI","level":"1.7.2","depth":2,"path":"GI/ssgi/resource.md","ref":"GI/ssgi/resource.md","articles":[]},{"title":"Precomputed Based GI","level":"1.7.3","depth":2,"path":"GI/precompute/resource.md","ref":"GI/precompute/resource.md","articles":[]},{"title":"Voxel Based GI","level":"1.7.4","depth":2,"path":"GI/voxel_based/resource.md","ref":"GI/voxel_based/resource.md","articles":[]},{"title":"Distance Field","level":"1.7.5","depth":2,"path":"GI/distance_field/resource.md","ref":"GI/distance_field/resource.md","articles":[]},{"title":"Lumen","level":"1.7.6","depth":2,"path":"GI/lumen/resource.md","ref":"GI/lumen/resource.md","articles":[]}]},"previous":{"title":"LI","level":"1.6","depth":1,"path":"LI/resource.md","ref":"LI/resource.md","articles":[{"title":"Real-Time LI Summary","level":"1.6.1","depth":2,"path":"LI/li_summary/li.md","ref":"LI/li_summary/li.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"LI/li_summary/li.md","mtime":"2022-10-05T02:42:01.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-05T02:55:22.414Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Real-Time LI Summary","level":"1.6.1","depth":2,"next":{"title":"GI","level":"1.7","depth":1,"path":"GI/resource.md","ref":"GI/resource.md","articles":[{"title":"GI Draft","level":"1.7.1","depth":2,"path":"GI/GI_draft/GI_draft.md","ref":"GI/GI_draft/GI_draft.md","articles":[]},{"title":"SSGI","level":"1.7.2","depth":2,"path":"GI/ssgi/resource.md","ref":"GI/ssgi/resource.md","articles":[{"title":"UE SSR Implementation","level":"1.7.2.1","depth":3,"path":"GI/ssgi/UE_SSR.md","ref":"GI/ssgi/UE_SSR.md","articles":[]},{"title":"Optimized Pixel-Projected Reflections for Planar Reflectors","level":"1.7.2.2","depth":3,"path":"GI/ssgi/ppr/ppr.md","ref":"GI/ssgi/ppr/ppr.md","articles":[]},{"title":"Stochastic Screen Space Ray Tracing","level":"1.7.2.3","depth":3,"path":"GI/ssgi/stochastic_ssr/stochastic_ssr.md","ref":"GI/ssgi/stochastic_ssr/stochastic_ssr.md","articles":[]},{"title":"SSGI Implementation Summary","level":"1.7.2.4","depth":3,"path":"GI/ssgi/implementation/implementation.md","ref":"GI/ssgi/implementation/implementation.md","articles":[]}]},{"title":"Precomputed Based GI","level":"1.7.3","depth":2,"path":"GI/precompute/resource.md","ref":"GI/precompute/resource.md","articles":[]},{"title":"Voxel Based GI","level":"1.7.4","depth":2,"path":"GI/voxel_based/resource.md","ref":"GI/voxel_based/resource.md","articles":[]},{"title":"Distance Field","level":"1.7.5","depth":2,"path":"GI/distance_field/resource.md","ref":"GI/distance_field/resource.md","articles":[]},{"title":"Lumen","level":"1.7.6","depth":2,"path":"GI/lumen/resource.md","ref":"GI/lumen/resource.md","articles":[]}]},"previous":{"title":"LI","level":"1.6","depth":1,"path":"LI/resource.md","ref":"LI/resource.md","articles":[{"title":"Real-Time LI Summary","level":"1.6.1","depth":2,"path":"LI/li_summary/li.md","ref":"LI/li_summary/li.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","splitter","-back-to-top-button","lightbox","prism","-highlight","copy-code-button","pageview-count","-expandable-chapters-small@^0.1.7","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tingxia.top 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"5","minHeaderDeep":"5"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"tingxia1028"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/tingxia1028/render/blob/master/IMG_6745.JPG?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"TingXia1028","width":"180","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"LI/li_summary/li.md","mtime":"2022-10-05T02:42:01.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-05T03:58:28.682Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
